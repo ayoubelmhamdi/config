@@ -1,4 +1,4 @@
-set nvimdir "$HOME/.config/nvim"
+set nvimdir "$HOME/.config/nvim/lua"
 set packerdir "$HOME/.local/share/nvim/site/pack/packer/start"
 
 alias xro='xbps-remove -vROo'
