@@ -11,8 +11,11 @@ function ....  ; cd ../../.. ; end
 function ..... ; cd ../../../.. ; end
 
 # Utilities
-function grep     ; command grep --color=auto $argv ; end
-function ig       ; command grep -i --color=auto $argv ; end
+function ig       ; /sbin/grep -i --color=auto $argv ; end
+
+# swallow by devour /sbin/mpv
+alias mpv='devour /sbin/mpv'
+alias zt='devour zathura'
 
 
 # mv, rm, cp
