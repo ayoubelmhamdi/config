@@ -1,0 +1,83 @@
+#!/bin/sh
+super + {ctrl, shift} + 0
+	sudo pkill openvpn && \
+	sleep 0.5 && \
+	{poweroff || poweroff, systemctl reboot || systemctl reboot}
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+alt + z
+	zathura
+
+#suspend
+control+alt+super + s 
+  systemctl suspend 
+
+## #mpd vol up
+## shift + XF86AudioRaiseVolume 
+##      mpc volume +4 
+## 
+## #mpd vol down
+## shift + XF86AudioLowerVolume 
+##      mpc volume -4 
+
+## change langague by scripte.sh
+
+## paint lunch
+
+## brithniss
+
+# Launch web browser
+super + f
+  firefox
+  # brave-browser-stable --no-sandbox
+  #chromium
+  # gtksu -u ayoub chromium
+
+# Launch whatsapp on firefox
+# super + shift + f
+#   firefox -P whatsapp
+
+# Take a screenshot
+shift + Print
+  ~/scripts/my/video/record.sh
+
+# screenshot select area
+Print
+  flameshot gui
+
+
+# keybroad layout us
+alt + shift + u
+  setxkbmap us
+  
+
+# keybroad layot arabic
+alt + shift + a
+  setxkbmap ara
+
+# pass in dmenu
+# super + shift + p
+#     passmenu
+
+# add work to learn.txt
+super + a
+  bash ~/scripts/my/dmenu/add-word.sh
+
+# start dmenu_command
+super + shift + p
+  bash ~/scripts/my/dmenu/dmenu_command.sh
+
+# telegram
+super + t
+  telegram-desktop    
+
+# obs
+super + o
+  mpv --loop $(xclip -o -sel clip)
+
+# tradiction
+super + c 
+  [[ $(cat /tmp/ison) == "on" ]] &&  echo "" > /tmp/ison || echo "on" > /tmp/ison

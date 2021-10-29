@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Android termux
+# export AAPT2=$PREFIX/android-sdk/gradlec/caches/modules-2/files-2.1/com.android.tools.build/aapt2
+
+# nvim
+export symlink="$HOME/.cache/symlink/"
+export nvimdir="$HOME/.config/nvim"
+export packerdir=~/.local/share/nvim/site/pack/packer
+
+# config file
+export sv=/var/service
+export exports_=$HOME/.config/zsh/export_Dirs
+export path_=$HOME/.config/zsh/all_PATH
+export alias_=$HOME/.config/zsh/my_alias
+export function_=$HOME/.config/zsh/my_function
+export DOWNLOAD=$HOME/Downloads
+
+#xdg-config
+export zshrc=~/.zshrc
+export kitty=~/.config/kitty/kitty.conf
+export tmux=~/.tmux.conf
+
+# repo
+export cloud=/mega/cloud
+export repo=/mega/repo
+export wiki=/mega/repo/wiki
+export todo=/mega/repo/todo
+export codes=/mega/repo/codes
+export accadimeque=/mega/cloud/accadimique
+export byphone=/mega/byPhone
+export bylnux=/mega/byLinux
+export scripts=~/scripts
+
+#project
+export snippet=/projects/lua/friendly-snippets
+export luaplugin=/projects/lua
+
+
+# flutter app dir
+export app8=/projects/flutter/app8
+export app9=/projects/flutter/app9
+export animation1=/projects/flutter/animation1
+export app9=/projects/flutter/app9
