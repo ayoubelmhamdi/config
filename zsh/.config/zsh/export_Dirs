@@ -35,6 +35,7 @@ export scripts=~/scripts
 #project
 export snippet=/projects/lua/friendly-snippets
 export luaplugin=/projects/lua
+export latex=/opt/texlive/2021/texmf-dist/tex/latex/base
 
 
 # flutter app dir

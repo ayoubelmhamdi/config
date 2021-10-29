@@ -64,6 +64,8 @@ PATH=$PATH:"$HOME/bin/depot_tools"
 
 # gitmux for git in tmux
 PATH=$PATH:"$HOME/.config/zsh/gitmux"
+# latex 
+PATH=$PATH:"/opt/texlive/2021/bin/x86_64-linux"
 
 
 # remove duplique path

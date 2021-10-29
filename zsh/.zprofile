@@ -7,7 +7,7 @@ then
   # echo " " > /tmp/istrash
   # echo " " > /tmp/ison
 
-  wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+  wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
   mega-sync &
   exec startx
   # if ! [[ "$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)" =~ 'bicon'* ]]; then
