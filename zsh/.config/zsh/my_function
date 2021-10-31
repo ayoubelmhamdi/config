@@ -85,7 +85,10 @@ function get_cwd(){
   echo "${cwd}"
 }
 
+
 function findin(){
+  local dir
+  local var
   dir="$1"
   var=$(fd . "$dir"|fzf)
   [ -z "$var" ] && nvim $dir || nvim $var
@@ -98,15 +101,11 @@ function findin(){
 
 
 function i(){
-  local pkg
-  pkg="$1"
-	xbps-install -y $pkg && echo $pkg >> /opt/pkg.list
+	xbps-install "$@" && echo "$@" >> /opt/pkg.list
 }
 
 function is(){
-  local pkg
-  pkg="$1"
-	xbps-install -S $pkg && echo $pkg >> /opt/pkg.list
+	xbps-install -S "$@" && echo "$@" >> /opt/pkg.list
 }
 
 
@@ -114,26 +113,30 @@ function is(){
 # pip is alias to <...> pip and not load function
 # so i ovverire alias then i use function
 
-alias pip='/usr/bin/python3 -m pip'
+unset pip
+alias pip='pip'
 unalias pip
 function pip(){
-  if [[ "$#" == 2 && ( "$1" == "install" || "$1" == "i" ) ]]; then
-    /usr/bin/python3 -m pip install "$2"
+  if [[ ( "$1" == "install" || "$1" == "i" ) && "$#" == 2 ]]; then
+    python3 -m pip install "$2"
     echo "$3" >> /opt/pip.list
   else
     echo -e "pip not use /opt/pip.list ...\n\n"
-    /usr/bin/python3 -m pip install "$@"
+    python3 -m pip install "$@"
   fi
 }
 
+alias npm=npm
+unalias npm
 function npm(){
+  # TODO: use if $1== install or uninstall or fund..
   if [[ "$#" == 2 || "$#" == 3 ]]; then
     if [[ "$2" == "-g" ]]; then
       # npm install -g pkg
       /usr/bin/npm  install -g "$3"  && echo "$3" >> /opt/npm.list
     else
       # npm install pkg
-      /usr/bin/npm install -g "$2"  && echo "$2" >> /opt/npm.list
+      /usr/bin/npm install -g "$@"  && echo "$@" >> /opt/npm.list
     fi
   else
     echo -e "npm not use /opt/npm.list ...\n\n"
@@ -176,12 +179,6 @@ rg_repo(){
 alias rgdir='rg_repo'
 
 
-com(){
-  git add -u
-  git commit -a
-  git push
-}
-
 mk(){
   mkdir $1 && cd $_
 }
@@ -195,4 +192,15 @@ mk(){
 
 function xev(){
         /usr/bin/xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
+}
+
+# Git functions
+_fzf_pic(){
+  git status | grep -E " *modified" | awk '{print $2}' | fzf
+}
+
+com(){
+  git add -u
+  git commit -a
+  git push
 }

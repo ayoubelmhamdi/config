@@ -149,7 +149,6 @@ alias .5='cd ../../../../..'
 
 alias ncat='/bin/cat'
 alias cat='bat -p'
-alias p5='cd /storage/emulated/0/Download/yyy/p5.js'
 
 
 #++++++++++++++++++++++++++++++++++++++++
