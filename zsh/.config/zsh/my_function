@@ -204,3 +204,7 @@ com(){
   git commit -a
   git push
 }
+
+headapp(){
+  head $(which $1)
+}

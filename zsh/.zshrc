@@ -5,9 +5,11 @@
  #  / /_ ___) |  _  |  _ <| |___ 
  # /____|____/|_| |_|_| \_\\____|
  
+
+
  #  TODO: isExcite modifile
  . $HOME/.config/zsh/zsh-init
-# . $HOME/.config/zsh/tmux.zsh
+#. $HOME/.config/zsh/tmux.zsh
  . $HOME/.oh-my-zsh/oh-my-zsh.sh
  
  . $HOME/.config/zsh/zsh_config
@@ -48,18 +50,24 @@
  
  #}}
  
- # plugin for shaeat-cheat.sh
- fpath=(~/.zsh.d/ $fpath)
- eval "$(jump shell)"
- #  TODO: use "\r" + sleep 5 seconds to view answer
+###############################################################
+#  TODO: use "\r" + sleep 5 seconds to view answer            #
+###############################################################
  echo; shuf -n 1 $wiki/learn.txt ; echo
  
  # . $HOME/.config/zsh/ayoub_zsh
 
 alias luamake=/root/.cache/lua-language-server/3rd/luamake/luamake
 
+# latex
+#
+#  TODO: move to subdir
+#
 PATH="/root/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/root/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/root/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/root/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/root/perl5"; export PERL_MM_OPT;
+
+# plugin and complition for cht.sh 
+eval "$(jump shell)"

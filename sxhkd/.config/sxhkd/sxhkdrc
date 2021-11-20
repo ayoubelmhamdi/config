@@ -1,8 +1,10 @@
 #!/bin/sh
+# shellcheck disable=SC1117,SC1083,SC1073,SC1056,SC1072
+
 super + {ctrl, shift} + 0
 	sudo pkill openvpn && \
 	sleep 0.5 && \
-	{poweroff || poweroff, systemctl reboot || systemctl reboot}
+	{ poweroff || poweroff, systemctl reboot || systemctl reboot }
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -79,5 +81,6 @@ super + o
   mpv --loop $(xclip -o -sel clip)
 
 # tradiction
+# [[ $(cat /tmp/ison) == "on" ]] &&  echo "" > /tmp/ison || echo "on" > /tmp/ison
 super + c 
-  [[ $(cat /tmp/ison) == "on" ]] &&  echo "" > /tmp/ison || echo "on" > /tmp/ison
+  wpa_cli reassociate 1

@@ -34,4 +34,4 @@ export LIBVA_DRIVER_NAME="i965"
 export XDG_RUNTIME_DIR=~/.cache/runtime-root
 
 # xdeb fir
-XDEB_PKGROOT=/tmp/xdeb
+export XDEB_PKGROOT=/tmp/xdeb

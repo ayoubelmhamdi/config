@@ -65,22 +65,22 @@ alias xro-pip='pip uninstall'
 alias xro-npm='npm uninstall'
 
 
-# bare git repo alias for dotfiles
-alias cgit='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-# bare git repo alias for .dotfiles
-alias cgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias csta="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME status"
-alias clog="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME log --oneline"
-alias ccheckout="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout"
-alias cadd="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME add"
-alias caddu="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME add -u"
-alias cc='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit -m'
-alias cpush="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push"
-alias cpush-first="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push --set-upstream origin"
-alias cpull="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME pull && source $HOME/.alias"
-alias cdiff="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME diff"
-# /usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME  config --local status.showUntrackedFiles no
-# /usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME  checkout
+  # bare git repo alias for dotfiles
+  #alias cgit='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+  ## bare git repo alias for .dotfiles
+  #alias cgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+  #alias csta="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME status"
+  #alias clog="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME log --oneline"
+  #alias ccheckout="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout"
+  #alias cadd="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME add"
+  #alias caddu="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME add -u"
+  #alias cc='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit -m'
+  #alias cpush="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push"
+  #alias cpush-first="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME push --set-upstream origin"
+  #alias cpull="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME pull && source $HOME/.alias"
+  #alias cdiff="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME diff"
+  ## /usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME  config --local status.showUntrackedFiles no
+  ## /usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME  checkout
 
 
 
@@ -141,13 +141,10 @@ alias up='git commit -m "up"'
 # navigation
 alias ..='cd ..' 
 alias ...='cd ../..'
-alias .3='cd ../../..'
-alias .4='cd ../../../..'
-alias .5='cd ../../../../..'
 
 
 
-alias ncat='/bin/cat'
+alias catt='cat'
 alias cat='bat -p'
 
 
@@ -167,7 +164,7 @@ alias ig='grep --color=auto -i'
 alias cp="cp -ivr"
 alias mv='mv -iv'
 alias rm='rm -Ivr'
-alias rmy='rm -vr'
+alias rmf='/sbin/rm -vrf'
 
 #++++++++++++++++++++++++++++++++++++++++
 #		size files		+
@@ -267,6 +264,7 @@ alias e='clear;exit;la'
 alias flatex='tlmgr search -- global'
 alias ilatex='tlmgr install'
 alias topdf='latex -output-format=pdf'
+alias z=zathura
 
 
 # accepte not corect command   sort /.*\%5v/  
@@ -283,13 +281,12 @@ alias stopvnc='vncserver-stop'
 alias vzshrc='v ~/.zshrc'
 alias valiasrc='v ~/.config/zsh/my_alias'
 alias vrangerc='v ~/.config/ranger/rc.conf'
-
-alias pssh='sshpass -p 'root' ssh -o UserKnownHostsFile=\/dev\/null -o StrictHostKeyChecking=no '
+alias pssh="sshpass -p root ssh -o UserKnownHostsFile=\/dev\/null -o StrictHostKeyChecking=no"
 
 
 
 alias x="chmod +x"
-alias p="ping google.com"
+alias p="ping google.com -c 1"
 alias newbranch="git checkout -b "
 alias checkout='git checkout -m '
 alias master='git checkout -m master '

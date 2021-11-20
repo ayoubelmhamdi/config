@@ -28,18 +28,31 @@ export wiki=/mega/repo/wiki
 export todo=/mega/repo/todo
 export codes=/mega/repo/codes
 export accadimeque=/mega/cloud/accadimique
-export byphone=/mega/byPhone
-export bylnux=/mega/byLinux
+export by_phone=/mega/by_phone
+export by_linux=/mega/by_linux
 export scripts=~/scripts
 
 #project
-export snippet=/projects/lua/friendly-snippets
-export luaplugin=/projects/lua
-export latex=/opt/texlive/2021/texmf-dist/tex/latex/base
+export lua_project=/projects/lua
+export p5_project=/projects/p5
+export c_project=/projects/c
+export js_project=/projects/js
+export tex_project=/projects/tex
+
+export latex_dir=/opt/texlive/2021/texmf-dist/tex/latex/base
 
 
 # flutter app dir
 export app8=/projects/flutter/app8
 export app9=/projects/flutter/app9
 export animation1=/projects/flutter/animation1
-export app9=/projects/flutter/app9
+
+# mega
+export mega_wiki="repo/wiki"
+export mega_todo="repo/todo"
+export mega_by_phone="by_phone"
+export mega_by_linux="by_linux"
+
+
+
+export __CHTSH_LANGS=("${(@f)$(cat /tmp/cheatcheat)}")
