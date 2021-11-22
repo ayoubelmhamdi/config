@@ -7,32 +7,33 @@
  
 
 
- #  TODO: isExcite modifile
- . $HOME/.config/zsh/zsh-init
-#. $HOME/.config/zsh/tmux.zsh
- . $HOME/.oh-my-zsh/oh-my-zsh.sh
- 
- . $HOME/.config/zsh/zsh_config
- . $HOME/.config/zsh/zsh-keybinding.zsh
- . $HOME/.config/zsh/fzf.zsh
- 
- . $HOME/.config/zsh/isExcite
- . $HOME/.config/zsh/myOS
- . $HOME/.config/zsh/color.zsh
- 
- 
- . $HOME/.config/zsh/keyboard.zsh
- . $HOME/.config/zsh/all_PATH
- . $HOME/.config/zsh/export_Linux
- . $HOME/.config/zsh/export_Dirs
- 
- . $HOME/.config/zsh/my_alias
- . $HOME/.config/zsh/my_function
- 
+  #  TODO: isExcite modifile
+  source /root/.config/zsh/zsh-init
+# source /root/.config/zsh/tmux.zsh
+  source /root/.oh-my-zsh/oh-my-zsh.sh
+  
+  source /root/.config/zsh/zsh_config
+  source /root/.config/zsh/zsh-keybinding.zsh
+  source /root/.config/zsh/fzf.zsh
+  
+  source /root/.config/zsh/isExcite #  TODO: refactoring this file
+  source /root/.config/zsh/myOS #  TODO: use stow repo to handle multi distrubition alia & conf
+  source /root/.config/zsh/color.zsh
  
 
- VISUAL="nvim"
- EDITOR="nvim"
+ 
+  source /root/.config/zsh/keyboard.zsh
+  source /root/.config/zsh/all_PATH
+  source /root/.config/zsh/export_Linux
+  source /root/.config/zsh/export_Dirs
+  
+  source /root/.config/zsh/my_alias
+  source /root/.config/zsh/my_function
+ 
+
+ 
+  export VISUAL="nvim"
+  export EDITOR="nvim"
  
  
  # ANDROID SDK {{
@@ -43,7 +44,7 @@
  # yes | sdkmanager --sdk_root=${ANDROID_HOME} --licenses 
  # sdkmanager --sdk_root=${ANDROID_HOME} --version
  # echo "sdk.dir=${PREFIX}/android-sdk" >> local.properties
- # mkdir $HOME/android-sdk/
+ # mkdir /root/android-sdk/
  # dont do this in termux
  # sdkmanager --sdk_root=${ANDROID_HOME} "platform-tools"
  # ./gradlew assembleDebug
@@ -53,11 +54,8 @@
 ###############################################################
 #  TODO: use "\r" + sleep 5 seconds to view answer            #
 ###############################################################
- echo; shuf -n 1 $wiki/learn.txt ; echo
+ echo; shuf -n 1 $wiki/learn-zsh.txt ; echo
  
- # . $HOME/.config/zsh/ayoub_zsh
-
-alias luamake=/root/.cache/lua-language-server/3rd/luamake/luamake
 
 # latex
 #

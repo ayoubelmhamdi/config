@@ -66,7 +66,7 @@ alt + shift + a
 
 # add work to learn.txt
 super + a
-  bash ~/scripts/my/dmenu/add-word.sh
+  bash /root/scripts/dmenu/learn-with-dmenu.md
 
 # start dmenu_command
 super + shift + p
