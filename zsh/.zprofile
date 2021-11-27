@@ -8,7 +8,7 @@ then
   # echo " " > /tmp/ison
 
   cp ~/.cache/cheatcheat /tmp/cheatcheat
-  wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+  # wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
   mega-sync &!
   startx 
   # if ! [[ "$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)" =~ 'bicon'* ]]; then

@@ -86,7 +86,7 @@ alias xro-npm='npm uninstall'
 
 # alias mk='f(){ clear ; sudo mkdir -p "$1"; la; }; f'
 # alias rr='f(){ clear ; sudo rm -r "$1"; la; }; f'
-alias ddd='clear;du -ah --max-depth 1|sort --sort=human-numeric --human-numeric-sort -r'
+alias ddd='clear ;echo ; du -ah --max-depth 1|sort --sort=human-numeric --human-numeric-sort -r;'
 
 
 
@@ -94,12 +94,12 @@ alias ddd='clear;du -ah --max-depth 1|sort --sort=human-numeric --human-numeric-
 #++++++++++++++++++++++++++++++++++++++++
 #		ls			+
 #++++++++++++++++++++++++++++++++++++++++
-alias nls='/bin/exa  --color=always --group-directories-first' 
-alias ls='clear;exa  --color=always --group-directories-first' 
-alias la='clear;exa -a --color=always --group-directories-first'  
-alias ll='clear;exa -l --color=always --group-directories-first'  
-alias lt='clear;exa -aT --color=always --group-directories-first' 
-alias l.='clear;exa -a | egrep "^\."'
+alias nls='/bin/exa  --color=always --group-directories-first'
+alias ls='clear ; echo ; ;exa  --color=always --group-directories-first'
+alias la='clear ; echo ; ;exa -a --color=always --group-directories-first'
+alias ll='clear ; echo ; ;exa -l --color=always --group-directories-first'
+alias lt='clear ; echo ; ;exa -aT --color=always --group-directories-first'
+alias l.='clear ; echo ; ;exa -a | egrep "^\.'
 #++++++++++++++++++++++++++++++++++++++++
 #		other			+
 #++++++++++++++++++++++++++++++++++++++++
@@ -109,7 +109,7 @@ alias shut='sudo shutdown -h now'
 
 #++++++++++++++++++++++++++++++++++++++++
 #		git			+
-#++++++++++++++++++++++++++++++++++++++++
+#++++++++++++++++++++++++++++++++++++++
 
 # cu config push sh view in top
 
@@ -235,7 +235,7 @@ alias tarxf='tar xf'
 
 
 alias sm='scim'
-alias c='clear && tmux clear-history  >/dev/null 2>&1'
+alias c='clear && tmux clear-history  >/dev/null 2>&1;echo'
 alias pi='ping google.com'
 alias void='~/start-void.sh'
 
@@ -260,7 +260,6 @@ alias remote='git remote add origin'
 alias storage='cd /storage/sdcard0/Download/sc'
 alias ytm="youtube-dl --extract-audio --audio-format mp3 "
 alias sc='scim'
-alias e='clear;exit;la'
 alias flatex='tlmgr search -- global'
 alias ilatex='tlmgr install'
 alias topdf='latex -output-format=pdf'

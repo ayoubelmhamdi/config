@@ -56,3 +56,4 @@ export mega_by_linux="by_linux"
 
 
 export __CHTSH_LANGS=("${(@f)$(cat /tmp/cheatcheat)}")
+export MANPAGER='nvim +Man!'
