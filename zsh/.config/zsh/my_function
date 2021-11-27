@@ -146,7 +146,7 @@ function npm(){
 
 #use pwd in tmux status
 precmd () {
-  [[ $(pgrep tmux| wc -l) >1 ]] && tmux set -qg status-right '#{pane_current_path}'
+  [[ $(pgrep tmux| wc -l) >1 ]] && tmux set -qg status-left '#[bold]#{pane_current_path}    '
 }
 
 # edit wiki
@@ -207,4 +207,13 @@ com(){
 
 headapp(){
   head $(which $1)
+}
+
+
+e(){
+  if [[ "$@" != 0 ]]; then
+    nvim "$@"
+  else
+    exec nvim -c 'Telescopefy'
+  fi
 }
