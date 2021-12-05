@@ -263,7 +263,6 @@ alias sc='scim'
 alias flatex='tlmgr search -- global'
 alias ilatex='tlmgr install'
 alias topdf='latex -output-format=pdf'
-alias z=zathura
 
 
 # accepte not corect command   sort /.*\%5v/  
@@ -285,7 +284,7 @@ alias pssh="sshpass -p root ssh -o UserKnownHostsFile=\/dev\/null -o StrictHostK
 
 
 alias x="chmod +x"
-alias p="ping google.com -c 1"
+# alias p="ping google.com -c 1"
 alias newbranch="git checkout -b "
 alias checkout='git checkout -m '
 alias master='git checkout -m master '
@@ -302,5 +301,6 @@ alias xl='xlocate'
 # alias v='nvim -u $avim/init.lua'
 alias v='nvim'
 alias vv='v -c "Telescope frecency default_text=:CWD:"'
-
-
+alias time='/usr/bin/time -p'
+alias lookatme='lookatme --style vim'
+alias p='lookatme --style vim'

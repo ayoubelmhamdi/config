@@ -128,25 +128,65 @@ function pip(){
 
 alias npm=npm
 unalias npm
+# function npm(){
+#   # TODO: use if $1== install or uninstall or fund..
+#   if [[ "$#" == 2 || "$#" == 3 ]]; then
+#     if [[ "$2" == "-g" ]]; then
+#       # npm install -g pkg
+#       /usr/bin/npm  install -g "$3"  && echo "$3" >> /opt/npm.list
+#     else
+#       # npm install pkg
+#       /usr/bin/npm install -g "$@"  && echo "$@" >> /opt/npm.list
+#     fi
+#   else
+#     echo -e "npm not use /opt/npm.list ...\n\n"
+#     /usr/bin/npm "$@"
+#   fi
+# }
+
 function npm(){
-  # TODO: use if $1== install or uninstall or fund..
-  if [[ "$#" == 2 || "$#" == 3 ]]; then
-    if [[ "$2" == "-g" ]]; then
-      # npm install -g pkg
-      /usr/bin/npm  install -g "$3"  && echo "$3" >> /opt/npm.list
+  if [[ "$#" == 1 ]]; then
+    # npm xxx;
+    /usr/bin/npm "$@"
+  elif [[ "$#" == 2 ]];then 
+    if [[ "$1" == "i"|| "$1" = "install"  ]]; then
+      #npm i/install xxx
+      if [[ "$2" != "-g" ]]; then
+         /usr/bin/npm  install  "$2"  && echo "$2" >> /opt/npm.list
+      else
+        echo "ERROR: npm install -g null"
+      fi
+    elif [[ "$1" == "-g" ]]; then
+      # npm -g xxx
+      echo "ERROR: npm install -g null"
     else
-      # npm install pkg
-      /usr/bin/npm install -g "$@"  && echo "$@" >> /opt/npm.list
+      # npm gaggs xxxx
+      /usr/bin/npm "$@"
+    fi
+  elif [[ "$#" == 3 ]];then 
+    if [[ "$1" == "i"|| "$1" = "install"  ]]; then
+      #npm i/install -g xxx
+      if [[ "$2" == "-g" ]]; then
+         /usr/bin/npm  install  -g "$3"  && echo "$3" >> /opt/npm.list
+      else
+        /usr/bin/npm "$@"
+      fi
+    else
+      # npm gaggs xxxx xxx
+      /usr/bin/npm "$@"
     fi
   else
-    echo -e "npm not use /opt/npm.list ...\n\n"
+    # npm xxx xxx xxx;
+    # npm xxx xxxx xxxx xxxx
     /usr/bin/npm "$@"
   fi
 }
 
+
+
 #use pwd in tmux status
 precmd () {
-  [[ $(pgrep tmux| wc -l) >1 ]] && tmux set -qg status-left '#[bold]#{pane_current_path}    '
+  [[ $(pgrep tmux| wc -l) >1 ]] && tmux set -qg status-left '[ #[bold]#{pane_current_path} ]    '
 }
 
 # edit wiki
@@ -216,4 +256,16 @@ e(){
   else
     exec nvim -c 'Telescopefy'
   fi
+}
+
+
+z(){
+  echo $! > /tmp/zathura.pid 
+  zathura $1 > /dev/null &!
+  echo $! >> /tmp/zathura.pid 
+  # kill -USR1 $(cat /tmp/zathura.pid)
+}
+
+xlb(){
+  xlocate "$1" | grep "/$1$"
 }

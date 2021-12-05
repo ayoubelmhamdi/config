@@ -44,7 +44,7 @@ super + f
 
 # Take a screenshot
 shift + Print
-  ~/scripts/my/video/record.sh
+  $HOME/scripts/video/record.sh
 
 # screenshot select area
 Print

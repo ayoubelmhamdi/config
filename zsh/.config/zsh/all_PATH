@@ -39,6 +39,8 @@ PATH=$PATH:/opt/app/git-fuzzy/bin
 # apps:python,go...
 PATH=$PATH:"$HOME/.local/bin"
 PATH=$PATH:"$HOME/go/bin"
+#emacs
+PATH=$PATH:"$HOME/.emacs.d/bin"
 
 # java 
 # PATH=$PATH:"/opt/sdk/jdk-18/bin"

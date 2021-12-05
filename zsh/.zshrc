@@ -54,7 +54,7 @@
 ###############################################################
 #  TODO: use "\r" + sleep 5 seconds to view answer            #
 ###############################################################
- echo; shuf -n 1 $wiki/learn-zsh.txt ; echo
+ echo; shuf -n 1 $wiki/learn.txt | awk -F ';' '{ print $2 }'  ; echo
  
 
 # latex
@@ -69,3 +69,5 @@ PERL_MM_OPT="INSTALL_BASE=/root/perl5"; export PERL_MM_OPT;
 
 # plugin and complition for cht.sh 
 eval "$(jump shell)"
+
+alias luamake=/root/.cache/lua-language-server/3rd/luamake/luamake
