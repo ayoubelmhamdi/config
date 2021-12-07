@@ -61,12 +61,14 @@ function glow_codes(){
 
 # xbps search query
 function xbps_search(){
-   # clear
-   if [ "$#" -ne 1 ]; then
-       xbps-query -Rs $1
-   else
-      xbps-query -Rs "$1" | grep --color=auto -i "$2"
-   fi
+  pkg="$1"
+  # clear
+  if [[ "$#" == 1 ]]; then
+      xbps-query -Rs "$pkg" | grep --color=auto -i "$pkg"
+  else
+    shift 1
+     xbps-query -Rs  "$pkg" | grep --color=auto -i "$@"
+  fi
 }
 alias f=xbps_search 
 
@@ -260,10 +262,7 @@ e(){
 
 
 z(){
-  echo $! > /tmp/zathura.pid 
-  zathura $1 > /dev/null &!
-  echo $! >> /tmp/zathura.pid 
-  # kill -USR1 $(cat /tmp/zathura.pid)
+  zathura $@ > /dev/null &!
 }
 
 xlb(){

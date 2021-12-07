@@ -99,7 +99,7 @@ alias ls='clear ; echo ; ;exa  --color=always --group-directories-first'
 alias la='clear ; echo ; ;exa -a --color=always --group-directories-first'
 alias ll='clear ; echo ; ;exa -l --color=always --group-directories-first'
 alias lt='clear ; echo ; ;exa -aT --color=always --group-directories-first'
-alias l.='clear ; echo ; ;exa -a | egrep "^\.'
+alias l.='clear ; echo ; ;exa -a | egrep "^\."'
 #++++++++++++++++++++++++++++++++++++++++
 #		other			+
 #++++++++++++++++++++++++++++++++++++++++
@@ -210,20 +210,20 @@ alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 ex (){
   if [ -f $1 ] ; then
     case $1 in
-      *.7z)        7z x       $1   ;;
-      *.Z)         uncompress $1   ;;
-      *.bz2)       bunzip2    $1   ;;
-      *.deb)       ar x       $1   ;;
-      *.gz)        gunzip     $1   ;;
-      *.rar)       unar       $1   ;;      
-      *.tar)       /bin/tar   $1   ;;
-      *.tar.bz2)   /bin/tar   $1   ;;
-      *.tar.gz)    /bin/tar   $1   ;;
-      *.tar.xz)    /bin/tar   $1   ;;
-      *.tar.zst)   unzstd     $1   ;;      
-      *.tbz2)      tar        $1   ;;
-      *.tgz)       tar        $1   ;;
-      *.zip)       unzip      $1   ;;
+      *.7z)        7z x         $1   ;;
+      *.Z)         uncompress   $1   ;;
+      *.bz2)       bunzip2      $1   ;;
+      *.deb)       ar x         $1   ;;
+      *.gz)        gunzip       $1   ;;
+      *.rar)       unar         $1   ;;      
+      *.tar)       /sbin/tar xf $1   ;;
+      *.tar.bz2)   /sbin/tar xf $1   ;;
+      *.tar.gz)    /sbin/tar xf $1   ;;
+      *.tar.xz)    /sbin/tar xf $1   ;;
+      *.tar.zst)   unzstd       $1   ;;      
+      *.tbz2)      tar          $1   ;;
+      *.tgz)       tar          $1   ;;
+      *.zip)       unzip        $1   ;;
       *)           echo "'$1' cannot be extracted via ex()" ;;
     esac
   else
