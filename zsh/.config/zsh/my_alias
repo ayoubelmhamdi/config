@@ -144,7 +144,7 @@ alias ...='cd ../..'
 
 
 
-alias catt='cat'
+alias ncat='/sbin/cat'
 alias cat='bat -p'
 
 
@@ -304,3 +304,4 @@ alias vv='v -c "Telescope frecency default_text=:CWD:"'
 alias time='/usr/bin/time -p'
 alias lookatme='lookatme --style vim'
 alias p='lookatme --style vim'
+alias atmux='tmux a|| tmux'

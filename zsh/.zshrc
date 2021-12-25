@@ -54,13 +54,14 @@
 ###############################################################
 #  TODO: use "\r" + sleep 5 seconds to view answer            #
 ###############################################################
- echo; shuf -n 1 $wiki/learn.txt | awk -F ';' '{ print $2 }'  ; echo
+word=$(grep -v "^#" $wiki/learn.txt | shuf -n 1   | awk -F ';' '{ print $2 }');
+printf "\n$word\n\n"
  
 
 # latex
 #
 #  TODO: move to subdir
-#
+##
 PATH="/root/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/root/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/root/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;

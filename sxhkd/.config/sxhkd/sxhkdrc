@@ -66,11 +66,11 @@ alt + shift + a
 
 # add work to learn.txt
 super + a
-  bash /root/scripts/dmenu/learn-with-dmenu.md
+  bash /root/scripts/dmenu/learn_with_dmenu.sh
 
 # start dmenu_command
-super + shift + p
-  bash ~/scripts/my/dmenu/dmenu_command.sh
+# super + shift + p
+#   bash ~/scripts/my/dmenu/dmenu_command.sh
 
 # telegram
 super + t

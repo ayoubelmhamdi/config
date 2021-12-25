@@ -33,6 +33,7 @@ export by_linux=/mega/by_linux
 export scripts=~/scripts
 
 #project
+export py_project=/projects/py
 export lua_project=/projects/lua
 export p5_project=/projects/p5
 export c_project=/projects/c
