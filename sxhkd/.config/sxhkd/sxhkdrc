@@ -1,21 +1,12 @@
 #!/bin/sh
 # shellcheck disable=SC1117,SC1083,SC1073,SC1056,SC1072
 
-super + {ctrl, shift} + 0
-	sudo pkill openvpn && \
-	sleep 0.5 && \
-	{ poweroff || poweroff, systemctl reboot || systemctl reboot }
-
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
+# super + Escape
+# 	pkill -USR1 -x sxhkd
 
 alt + z
 	zathura
 
-#suspend
-control+alt+super + s 
-  systemctl suspend 
 
 ## #mpd vol up
 ## shift + XF86AudioRaiseVolume 
@@ -57,16 +48,20 @@ alt + shift + u
   
 
 # keybroad layot arabic
-alt + shift + a
-  setxkbmap ara
+# alt + shift + a
+#   setxkbmap ara
 
 # pass in dmenu
 # super + shift + p
 #     passmenu
 
-# add work to learn.txt
+# add word to learn.txt
 super + a
   bash /root/scripts/dmenu/learn_with_dmenu.sh
+
+# search for answer from learn.txt
+super + shift + a
+  bash /root/scripts/dmenu/add-word.sh
 
 # start dmenu_command
 # super + shift + p
@@ -78,7 +73,7 @@ super + t
 
 # obs
 super + o
-  mpv --loop $(xclip -o -sel clip)
+  mpv --loop `xclip -o -sel clip`
 
 # tradiction
 # [[ $(cat /tmp/ison) == "on" ]] &&  echo "" > /tmp/ison || echo "on" > /tmp/ison

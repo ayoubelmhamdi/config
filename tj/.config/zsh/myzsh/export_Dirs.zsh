@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Android termux
+# export AAPT2=$PREFIX/android-sdk/gradlec/caches/modules-2/files-2.1/com.android.tools.build/aapt2
+
+# nvim
+export symlink="$HOME/.cache/symlink/"
+export nvimdir="$HOME/.config/nvim"
+export packerdir=~/.local/share/nvim/site/pack/packer
+
+# config file
+export sv=/var/service
+export exports_=$HOME/.config/zsh/myzsh/export_Dirs.zsh
+export path_=$HOME/.config/zsh/myzsh/all_PATH.zsh
+export alias_=$HOME/.config/zsh/myzsh/my_alias.zsh
+export function_=$HOME/.config/zsh/myzsh/my_function.zsh
+export DOWNLOAD=$HOME/Downloads
+
+#xdg-config
+export zshrc=~/.config/zsh/.zshrc
+export kitty=~/.config/kitty/kitty.conf
+export tmux=~/.tmux.conf
+
+# repo
+export cloud=/mega/cloud
+export repo=/mega/repo
+export wiki=/mega/repo/wiki
+export todo=/mega/repo/todo
+export codes=/mega/repo/codes
+export accadimeque=/mega/cloud/accadimique
+export by_phone=/mega/by_phone
+export by_linux=/mega/by_linux
+# export scripts=~/scripts
+
+#project
+export py_project=/projects/py
+export lua_project=/projects/lua
+export p5_project=/projects/p5
+export c_project=/projects/c
+export js_project=/projects/js
+export tex_project=/projects/tex
+export pdf_project=/projects/pdf
+
+export latex_dir=/opt/texlive/2021/texmf-dist/tex/latex/base
+
+
+# flutter app dir
+export app8=/projects/flutter/app8
+export app9=/projects/flutter/app9
+export animation1=/projects/flutter/animation1
+
+# mega
+export mega_wiki="repo/wiki"
+export mega_todo="repo/todo"
+export mega_by_phone="by_phone"
+export mega_by_linux="by_linux"
+
+
+
+# export __CHTSH_LANGS=("${(@f)$(cat /tmp/cheatcheat)}")
+export MANPAGER='nvim +Man!'
