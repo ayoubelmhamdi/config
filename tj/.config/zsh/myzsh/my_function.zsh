@@ -75,47 +75,31 @@ alias f=xbps_search
 function get_cwd(){
   #NOTE: use star * outside "" not inside qoute
   cwd=$(pwd)
-  if [[ "$cwd" == "/root" ]];then #parent
+
+  if [[ "$cwd" == "$HOME" ]];then #parent
     cwd="%B%F{3}~"
- 
-  # for scripts
-  elif [[ "$cwd" == "/root/scripts" ]];then #parent
-    cwd="%B%F{3}scripts %B%F{1}>%B%F{2}>%B%F{3}>"
-  elif [[ "$cwd" == "/root/scripts"* ]];then # shild
-    cwd="%B%F{3}scripts:%B%F{7}${cwd##/root/scripts/} %B%F{1}>%B%F{2}>%B%F{3}>"
-
-  # for stow-dotfiles
-  elif [[ "$cwd" == "/root/stow-dotfiles" ]];then #parent
-    cwd="%B%F{3}stow %B%F{1}>%B%F{2}>%B%F{3}>"
-  elif [[ "$cwd" == "/root/stow-dotfiles"* ]];then # shild
-    cwd="%B%F{3}stow:%B%F{7}${cwd##/root/stow-dotfiles/} %B%F{1}>%B%F{2}>%B%F{3}>"
-
-  # for wiki
-  elif [[ "$cwd" == "$wiki" ]];then #parent
-    cwd="%B%F{3}wiki %B%F{1}>%B%F{2}>%B%F{3}>"
-  elif [[ "$cwd" == "$wiki"* ]];then # shild
-    cwd="%B%F{3}wiki:%B%F{7}${cwd##$wiki/} %B%F{1}>%B%F{2}>%B%F{3}>"
-
-  # for ecart_type
-  elif [[ "$cwd" == "$c_project/ecart_type" ]];then #parent
-    cwd="%B%F{3}ecart_type %B%F{1}>%B%F{2}>%B%F{3}>"
-  elif [[ "$cwd" == "$c_project/ecart_type"* ]];then # shild
-    cwd="%B%F{3}ecart_type:%B%F{7}${cwd##$c_project/ecart_type/} %B%F{1}>%B%F{2}>%B%F{3}>"
-
-  # for neovim
-  elif [[ "$cwd" == "/root/.config/nvim" ]];then #parent
-    cwd="%B%F{3}neovim %B%F{1}>%B%F{2}>%B%F{3}>"
-  elif [[ "$cwd" == "/root/.config/nvim"* ]];then # shild
-    cwd="%B%F{3}neovim:%B%F{7}${cwd##/root/.config/nvim/} %B%F{1}>%B%F{2}>%B%F{3}>"
-
-  # for master
-  elif [[ "$cwd" == "$c_project/master" ]];then #parent
-    cwd="%B%F{3}master %B%F{1}>%B%F{2}>%B%F{3}>"
-  elif [[ "$cwd" == "$c_project/master"* ]];then # shild
-    cwd="%B%F{3}master:%B%F{7}${cwd##/projects/c/master/} %B%F{1}>%B%F{2}>%B%F{3}>"
+  elif [[ "$cwd" == "$HOME"* ]];then #parent
+    cwd="%B%F{3}~/${cwd##${HOME}/}"
   else
-    cwd="$cwd"
+    sources=(
+    "$wiki"
+    "$HOME/scripts"
+    "$HOME/stow-dotfiles"
+    "$HOME/.config/nvim"
+    "$c_project/master"
+    "$c_project/ecart_type"
+    )
+
+    for s in "${sources[@]}"; do
+      project=$(basename $s)
+      if [[ "$cwd" == "$s" ]];then #parent
+        cwd="%B%F{3}${project} %B%F{1}>%B%F{2}>%B%F{3}>"
+      elif [[ "$cwd" == "$s"* ]];then # shild
+        cwd="%B%F{3}${project}:%B%F{7}${cwd##${s}/} %B%F{1}>%B%F{2}>%B%F{3}>"
+      fi
+    done
   fi
+
 
   echo "${cwd}"
 }
