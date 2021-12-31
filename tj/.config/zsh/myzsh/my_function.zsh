@@ -76,13 +76,19 @@ function get_cwd(){
   #NOTE: use star * outside "" not inside qoute
   cwd=$(pwd)
   if [[ "$cwd" == "/root" ]];then #parent
-    cwd="%B%F{3}~ %B%F{1}>%B%F{2}>%B%F{3}>"
+    cwd="%B%F{3}~"
  
   # for scripts
   elif [[ "$cwd" == "/root/scripts" ]];then #parent
     cwd="%B%F{3}scripts %B%F{1}>%B%F{2}>%B%F{3}>"
   elif [[ "$cwd" == "/root/scripts"* ]];then # shild
     cwd="%B%F{3}scripts:%B%F{7}${cwd##/root/scripts/} %B%F{1}>%B%F{2}>%B%F{3}>"
+
+  # for stow-dotfiles
+  elif [[ "$cwd" == "/root/stow-dotfiles" ]];then #parent
+    cwd="%B%F{3}stow %B%F{1}>%B%F{2}>%B%F{3}>"
+  elif [[ "$cwd" == "/root/stow-dotfiles"* ]];then # shild
+    cwd="%B%F{3}stow:%B%F{7}${cwd##/root/stow-dotfiles/} %B%F{1}>%B%F{2}>%B%F{3}>"
 
   # for wiki
   elif [[ "$cwd" == "$wiki" ]];then #parent
