@@ -86,6 +86,7 @@ antigen apply
 bindkey '^ ' autosuggest-accept
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+bindkey '^[[P' delete-char
 
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
