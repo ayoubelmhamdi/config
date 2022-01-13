@@ -71,9 +71,10 @@ source $XDG_CONFIG_HOME/antigen.zsh
 antigen bundle 'zsh-users/zsh-syntax-highlighting'
 antigen bundle 'zsh-users/zsh-autosuggestions'
 antigen bundle 'zsh-users/zsh-completions'
+
 antigen bundle 'zsh-users/zsh-history-substring-search'
 
-source $HOME/.antigen/bundles/zsh-users/zsh-history-substring-search/zsh-history-substring-search.zsh
+# source $HOME/.antigen/bundles/zsh-users/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 antigen bundle 'agkozak/zsh-z'
 
