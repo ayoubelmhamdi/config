@@ -31,17 +31,6 @@ alias w=whereis
 
 alias ag='ag --follow --hidden -W (math $COLUMNS - 11)'
 alias df="df -h"
-
-
-
-
-# npm and pipe
-alias ipip='pip install'
-alias inpm='npm i -g'
-
-
-# alias mk='f(){ clear ; sudo mkdir -p "$1"; la; }; f'
-# alias rr='f(){ clear ; sudo rm -r "$1"; la; }; f'
 # alias ddd='clear ;echo ; du -ah --max-depth 1|sort --sort=human-numeric --human-numeric-sort -r;'
 
 

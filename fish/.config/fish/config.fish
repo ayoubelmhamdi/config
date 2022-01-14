@@ -1,6 +1,7 @@
 source ~/.config/fish/aliases.fish
 source ~/.config/fish/path.fish
-source ~/.config/fish/functions.fish
+source ~/.config/fish/functions/linux.fish
+source ~/.config/fish/functions/git.fish
 
 # Completions
 function make_completion --argument-names alias command
@@ -22,3 +23,5 @@ if status --is-login
      exec startx -- -keeptty
   end
 end
+
+set -gx EDITOR nvim
