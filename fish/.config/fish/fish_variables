@@ -6,9 +6,12 @@ SETUVAR ANDROID_SDK_ROOT:/opt/sdk/android
 SETUVAR DOWNLOAD:/root/Downloads
 SETUVAR GRADLE_HOME:/opt/sdk/gradle/gradle\x2d7\x2e1\x2e1
 SETUVAR GRADLE_USER_HOME:/opt/sdk/gradlec
+SETUVAR INSTALL_BASE:/root/perl5
 SETUVAR JAVA_HOME:/opt/sdk/jdk\x2d18
 SETUVAR LANG:de_DE\x2eUTF\x2d8
 SETUVAR LIBVA_DRIVER_NAME:i965
+SETUVAR PERL5LIB:/root/perl5/lib/perl5
+SETUVAR PERL_LOCAL_LIB_ROOT:/root/perl5
 SETUVAR SETUVARs_:/root/\x2econfig/zsh/SETUVAR_Dirs
 SETUVAR XDEB_PKGROOT:/tmp/xdeb
 SETUVAR XDG_CONFIG_HOME:\x24HOME/\x2econfig
@@ -60,7 +63,9 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_right_prompt:yes
+SETUVAR fish_user_paths:/root/perl5/bin\x1e/opt/sdk/flutter/bin\x1e/root/bin
 SETUVAR fish_vi_key_bindings:\x1d
+SETUVAR flutter_project:/projects/flutter
 SETUVAR function_:/root/\x2econfig/zsh/my_function
 SETUVAR js_project:/projects/js
 SETUVAR kitty:/root/\x2econfig/kitty/kitty\x2econf
