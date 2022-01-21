@@ -1,3 +1,5 @@
 .ccls-cache/
 jump/.config/jump/scores.json
 config_manager/
+criss/
+nvim-ayoub/.config/nvim/plugin/packer_compiled.lua
