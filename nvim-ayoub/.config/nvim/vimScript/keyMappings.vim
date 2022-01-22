@@ -117,7 +117,7 @@ nnoremap gn :tabnew<CR>
 nnoremap s <Nop>
 nnoremap Y y$
 nnoremap V V$h
-nnoremap <C-q> :q<cr>
+nnoremap <C-q> :noautocmd q<cr>
 nnoremap <C-s> :wq<cr>
 nnoremap <Space>w :w<cr>
 inoremap <C-space><C-space> <esc>

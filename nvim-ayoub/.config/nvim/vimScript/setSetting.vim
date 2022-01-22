@@ -22,6 +22,7 @@ EOF
 " syntax on
 
 
+" set scrolloff=4
 set sidescrolloff=20
 set path+=**
 set whichwrap=b,s,<,>,h,l,[,]
@@ -46,7 +47,6 @@ set smarttab
 set backspace=indent,eol,start
 set colorcolumn=110
 set cursorline
-set scrolloff=4
 
 set mouse=a
 set updatetime=600
