@@ -82,8 +82,9 @@ alias p='lookatme --style vim'
 alias atmux='tmux a|| tmux'
 
 
-
 # typos
 abbr gti git
 abbr yearn yarn
+abbr py python
 abbr -a -- - 'cd -'
+
