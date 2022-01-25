@@ -3,3 +3,9 @@ jump/.config/jump/scores.json
 config_manager/
 criss/
 nvim-ayoub/.config/nvim/plugin/packer_compiled.lua
+nvim-ayoub/.config/nvim/sh.sh
+nvim-ayoub/.config/nvim/vim.vim
+nvim-ayoub/.config/nvim/py.py
+nvim-ayoub/.config/nvim/dart.dart
+nvim-ayoub/.config/nvim/lua.lua
+nvim-ayoub/.config/nvim/c.c

@@ -39,9 +39,6 @@ function inpm --description 'use  npm to list install pkg npm'
   end
 end
 
-function zt --description 'open pdf by zathura'
-  bash -c "zathura $argv > /dev/null &!;"
-end
 
 
 #use pwd in tmux status
