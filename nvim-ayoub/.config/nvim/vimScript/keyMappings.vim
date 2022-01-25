@@ -159,21 +159,17 @@ nnoremap < v<
 vnoremap > >gv
 vnoremap < <gv
 
-
+inoremap <CR> <C-]><C-G>u<CR>
+inoremap <M-a> <C-o>a
+inoremap <M-o> <Nop>
+inoremap <M-o> <C-o>o
 
 " Make sure all types of requirements.txt files get syntax highlighting.
 autocmd BufNewFile,BufRead requirements*.txt set syntax=python
 
 
 
-" dd = dd+1
-" nnoremap 3dd 4dd
-" nnoremap 4dd 5dd
-" nnoremap 5dd 6dd
-" nnoremap 6dd 7dd
-" nnoremap 7dd 4dd
-" nnoremap 8dd 9dd
-" nnoremap 9dd 10dd
+
 
 
 " Move : 
