@@ -24,6 +24,8 @@ require('packer').startup(function(use)
     -- use 'nvim-telescope/telescope-project.nvim'
 
     -- LSP+IDE
+    use 'mfussenegger/nvim-dap'
+    use 'rcarriga/nvim-dap-ui'
     use 'neovim/nvim-lspconfig'
     -- use 'hrsh7th/nvim-compe'
     -- use 'L3MON4D3/LuaSnip'

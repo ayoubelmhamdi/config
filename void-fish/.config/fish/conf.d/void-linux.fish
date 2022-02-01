@@ -1,3 +1,6 @@
+alias xro='xbps-remove -vROo'
+
+
 
 function f --description 'search for xbps app'
 

@@ -9,7 +9,7 @@ require'lspconfig'.sumneko_lua.setup {
     capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
     -- on_attach = function() require "lsp_signature".on_attach() end,
     require"lsp_signature".setup({signature_config}),
-    autostart = false,
+    -- autostart = false,
     flags = {allow_incremental_sync = false},
     cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
     settings = {

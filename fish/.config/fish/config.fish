@@ -16,7 +16,6 @@ function make_completion --argument-names alias command
 end
 
 make_completion g 'git'
-make_completion xro 'xbps-remove -vROo'
 
 #startx
 if status --is-login

@@ -27,6 +27,10 @@ alias w=whereis
 
 
 
+alias ls='clear ; echo ; ;exa  --color=always --group-directories-first'
+alias nls='exa    --color=always --group-directories-first'
+alias la='exa -a --color=always --group-directories-first'
+alias ll='exa -l --color=always --group-directories-first'
 
 
 alias ag='ag --follow --hidden -W (math $COLUMNS - 11)'
@@ -44,6 +48,7 @@ alias addu='git add -u'
 alias branch='git branch'
 alias checkout='git checkout'
 alias push='git push '
+alias pull='git pull '
 alias sta='git status'
 alias gdiff='git diff'
 alias up='git commit -m "up"'
@@ -76,7 +81,7 @@ alias xl='xlocate'
 
 # nvim alias
 # alias v='nvim -u $avim/init.lua'
-alias v='nvim'
+alias v='nvimdir=~/.config/nvim nvim'
 alias vv='v -c "Telescope frecency default_text=:CWD:"'
 alias p='lookatme --style vim'
 alias atmux='tmux a|| tmux'

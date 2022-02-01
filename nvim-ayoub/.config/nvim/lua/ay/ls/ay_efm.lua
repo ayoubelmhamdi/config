@@ -52,7 +52,6 @@ require"lspconfig".efm.setup {
             sh = {shellcheck, shfmt}, -- test for best
             tex = {latexindent},
             yaml = {prettier},
-            html ={prettier},
         }
     }
 }

@@ -9,3 +9,5 @@ nvim-ayoub/.config/nvim/py.py
 nvim-ayoub/.config/nvim/dart.dart
 nvim-ayoub/.config/nvim/lua.lua
 nvim-ayoub/.config/nvim/c.c
+nvim-ayoub/.config/nvim/vscode/
+nvim-ayoub/.config/nvim/codelldb/
