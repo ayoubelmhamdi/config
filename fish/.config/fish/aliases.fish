@@ -83,7 +83,6 @@ alias xl='xlocate'
 # alias v='nvim -u $avim/init.lua'
 alias v='nvimdir=~/.config/nvim nvim'
 alias vv='v -c "Telescope frecency default_text=:CWD:"'
-alias p='lookatme --style vim'
 alias atmux='tmux a|| tmux'
 
 

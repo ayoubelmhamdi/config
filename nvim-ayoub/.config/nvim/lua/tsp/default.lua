@@ -2,7 +2,7 @@ local action_state = require('telescope.actions.state')
 require('telescope').setup {
     defaults = {
         -- vimgrep_arguments = {'fd'},
-        find_command = {'fad'},
+        -- find_command = {'fad'},
         -- vimgrep_arguments = {"rig", "--color=never", "--no-heading", "--with-filename", "--line-number", "--column", "--smart-case", "--hidden"},
         -- find_command = {"rg", '--no-binary', "--no-heading", "--with-filename", "--line-number", "--column", "--smart-case"},
         -- use_less = true,

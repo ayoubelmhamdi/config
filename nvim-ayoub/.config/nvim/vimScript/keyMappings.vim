@@ -2,7 +2,7 @@
 nnoremap <Space>ca  <cmd>lua vim.lsp.buf.code_action()<CR>
 nnoremap <Space>rn  <cmd>lua vim.lsp.buf.rename()<CR>
 " nnoremap <Space>f   <cmd>lua vim.lsp.buf.formatting()<CR>
-nnoremap <Space>f   <cmd>lua vim.lsp.buf.formatting_seq_sync()<CR>
+nnoremap <Space>ff   <cmd>lua vim.lsp.buf.formatting_seq_sync()<CR>
 nnoremap <space>K   <Cmd>lua vim.lsp.buf.hover()<CR>
 
 
@@ -38,7 +38,7 @@ autocmd TermOpen * setlocal nonu nornu | startinsert
 nnoremap     <M-m>    <cmd>lua require('nvPlugins.mytelescope').gl()<cr>
 nnoremap <Space>o     :Telescopefy<cr>
 nnoremap <Space>fg    <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <Space>      <cmd>lua require('telescope.builtin').find_files({ find_command = { 'fd','--type','file'}})  <cr>
+nnoremap <Space>f     <cmd>lua require('telescope.builtin').find_files({ find_command = { 'fd','--type','file'}})  <cr>
 nnoremap <Space>fb    <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <Space>fh    <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <Space>fs    :Telescope current_buffer_fuzzy_find<cr>
