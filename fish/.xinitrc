@@ -1,7 +1,7 @@
 #!/bin/bash
 st &
-sl &
 ~/.fehbg &
+sl &
 sxhkd &
 ~/dwm/dwm
 
