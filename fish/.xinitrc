@@ -3,6 +3,6 @@ st &
 ~/.fehbg &
 sl &
 sxhkd &
-~/dwm/dwm
+dwm
 
 

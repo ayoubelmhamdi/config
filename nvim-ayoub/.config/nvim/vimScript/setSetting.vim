@@ -23,7 +23,7 @@ EOF
 
 
 " set scrolloff=4
-set sidescrolloff=20
+set sidescrolloff=3
 set path+=**
 set whichwrap=b,s,<,>,h,l,[,]
 set nojoinspaces 

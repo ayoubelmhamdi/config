@@ -132,23 +132,27 @@ vnoremap <C-r> "hy:%s/<C-r>h/
 
 " Prevent x from overriding what's in the clipboard.
 " use this tow symbole "_ after motion, 
+nnoremap x "_x
 snoremap x "_x
-snoremap X "_X
-snoremap c "_c
-snoremap C "_C
-
 vnoremap x "_x
+snoremap X "_X
+nnoremap X "_X
 vnoremap X "_X
+
+nnoremap c "_c
+snoremap c "_c
 vnoremap c "_c
+snoremap C "_C
+nnoremap C "_C
 vnoremap C "_C
 
-nnoremap x "_x
-nnoremap X "_X
-nnoremap c "_c
-nnoremap C "_C
 
+
+" Prevent selecting and and from overwriting what you originally copied.
 " Prevent selecting and pasting from overwriting what you originally copied.
 xnoremap p pgvy
+vnoremap p pgvy
+
 
 " Keep cursor at the bottom of the visual selection after you yank it.
 " vmap y ygv<Esc>

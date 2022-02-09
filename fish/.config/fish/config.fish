@@ -25,3 +25,4 @@ if status --is-login
 end
 
 set -gx EDITOR nvim
+#cd /projects/c/suckless/dwm
