@@ -1,81 +1,39 @@
 #!/bin/sh
 # shellcheck disable=SC1117,SC1083,SC1073,SC1056,SC1072
 
-# super + Escape
-# 	pkill -USR1 -x sxhkd
-
-alt + z
-	zathura
+super + Escape
+	pkill -USR1 -x sxhkd
 
 
-## #mpd vol up
-## shift + XF86AudioRaiseVolume 
-##      mpc volume +4 
-## 
-## #mpd vol down
-## shift + XF86AudioLowerVolume 
-##      mpc volume -4 
-
-## change langague by scripte.sh
-
-## paint lunch
-
-## brithniss
-
-# Launch web browser
 super + f
   firefox
-  # brave-browser-stable --no-sandbox
-  #chromium
-  # gtksu -u ayoub chromium
 
-# Launch whatsapp on firefox
-# super + shift + f
-#   firefox -P whatsapp
-
-# Take a screenshot
 shift + Print
   $HOME/scripts/video/record.sh
 
-# screenshot select area
 Print
   flameshot gui
 
-
-# keybroad layout us
-alt + shift + u
+control + 1
   setxkbmap us
   
+control + 2
+  setxkbmap ara
 
-# keybroad layot arabic
-# alt + shift + a
-#   setxkbmap ara
+super + shift + p
+    passmenu
 
-# pass in dmenu
-# super + shift + p
-#     passmenu
-
-# add word to learn.txt
 super + a
   bash /root/scripts/dmenu/learn_with_dmenu.sh
 
-# search for answer from learn.txt
 super + shift + a
   bash /root/scripts/dmenu/add-word.sh
 
-# start dmenu_command
-# super + shift + p
-#   bash ~/scripts/my/dmenu/dmenu_command.sh
+super + shift + p
+  bash ~/scripts/my/dmenu/dmenu_command.sh
 
-# telegram
-super + t
-  telegram-desktop    
-
-# obs
 super + o
   mpv --loop `xclip -o -sel clip`
 
-# tradiction
-# [[ $(cat /tmp/ison) == "on" ]] &&  echo "" > /tmp/ison || echo "on" > /tmp/ison
 super + c 
   wpa_cli reassociate 1

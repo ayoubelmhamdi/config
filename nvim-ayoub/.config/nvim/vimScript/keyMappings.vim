@@ -51,7 +51,7 @@ nnoremap <Space>1    :lua require('tsp.cwd-tsp').search_proj("sl")<cr>
 nnoremap <Space>2    :lua require('tsp.cwd-tsp').search_proj("slstatus")<cr> 
 
 " Hop
-nnoremap <Space><Space> :HopChar2<cr>
+" nnoremap <Space><Space> :HopChar2<cr>
 
 " Train
 nnoremap <Space>tl :TrainUpDown<cr>

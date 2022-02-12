@@ -16,6 +16,7 @@ SETUVAR SETUVARs_:/root/\x2econfig/zsh/SETUVAR_Dirs
 SETUVAR XDEB_PKGROOT:/tmp/xdeb
 SETUVAR XDG_CONFIG_HOME:\x24HOME/\x2econfig
 SETUVAR XDG_DATA_HOME:\x24HOME/\x2eclocal/share
+SETUVAR XDG_VTNR:1
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr__2D_:cd\x20\x2d
 SETUVAR _fish_abbr_gti:git
