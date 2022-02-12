@@ -1,6 +1,6 @@
 function fish_prompt
     if test -n "$SSH_TTY"
-        echo -n (set_color brred)"$user:"''
+        echo -n (set_color brred)"ssh"(set_color green)": $user:"''
     end
 
     echo -n (set_color blue)(prompt_pwd)' '
