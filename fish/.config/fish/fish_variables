@@ -36,7 +36,7 @@ SETUVAR cloud:/mega/cloud
 SETUVAR codes:/mega/repo/codes
 SETUVAR fish_color_autosuggestion:50FA7B
 SETUVAR fish_color_cancel:\x2dr
-SETUVAR fish_color_command:FFB86C
+SETUVAR fish_color_command:green
 SETUVAR fish_color_comment:6272A4
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
@@ -49,7 +49,7 @@ SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:00a6b2
-SETUVAR fish_color_param:FF79C6
+SETUVAR fish_color_param:normal
 SETUVAR fish_color_quote:F1FA8C
 SETUVAR fish_color_redirection:8BE9FD
 SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
