@@ -16,17 +16,20 @@ if not impatient_ok then
   print("impatient not loading")
 end
 
-local nvim_treesitter_configs_ok, nvim_treesitter_configs = pcall(require, "nvim-treesitter.configs")
-if not nvim_treesitter_configs_ok then
-  print("nvim_treesitter_configs not loading")
-end
+--local ts_ok, ts = pcall(require, "nvim-treesitter.configs")
+--if not ts_ok then
+--  print("ts not loading")
+--end
 
 
-nvim_treesitter_configs.setup {
+require'nvim-treesitter.configs'.setup  {
     ensure_installed = "maintained",
     sync_install = false,
     ignore_install = {"javascript"},
     highlight = {enable = true, additional_vim_regex_highlighting = false},
+  indent = {
+    enable = true
+  }
 }
 
 

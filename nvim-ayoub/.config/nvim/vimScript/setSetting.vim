@@ -70,6 +70,7 @@ augroup vimrc-incsearch-highlight
   autocmd CmdlineEnter /,\? :set hlsearch
 augroup END
 
+
 " Disabled Now: 
 "     set foldmethod=manual
 "     set formatprg=prettier

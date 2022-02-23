@@ -165,8 +165,6 @@ vnoremap < <gv
 
 inoremap <CR> <C-]><C-G>u<CR>
 inoremap <M-a> <C-o>a
-inoremap <M-o> <Nop>
-inoremap <M-o> <C-o>o
 
 " Make sure all types of requirements.txt files get syntax highlighting.
 autocmd BufNewFile,BufRead requirements*.txt set syntax=python

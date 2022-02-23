@@ -14,7 +14,7 @@ require('packer').startup(function(use)
     use 'nvim-lua/plenary.nvim'
     use 'ojroques/nvim-lspfuzzy'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-    use 'nvim-treesitter/playground' -- viewer
+    -- use 'nvim-treesitter/playground' -- viewer
     use 'nvim-telescope/telescope.nvim'
     use 'sudormrfbin/cheatsheet.nvim'
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
