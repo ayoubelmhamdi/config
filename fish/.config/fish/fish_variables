@@ -80,6 +80,7 @@ SETUVAR path_:/root/\x2econfig/zsh/all_PATH
 SETUVAR py_project:/projects/py
 SETUVAR repo:/mega/repo
 SETUVAR scripts:/root/scripts
+SETUVAR shell_project:/projects/shell
 SETUVAR sv:/var/service
 SETUVAR tex_project:/projects/tex
 SETUVAR tmux:/root/\x2etmux\x2econf
