@@ -10,9 +10,17 @@ SETUVAR INSTALL_BASE:/root/perl5
 SETUVAR JAVA_HOME:/opt/sdk/jdk\x2d18
 SETUVAR LANG:de_DE\x2eUTF\x2d8
 SETUVAR LIBVA_DRIVER_NAME:i965
-SETUVAR PERL5LIB:/root/perl5/lib/perl5
+SETUVAR --export PERL5LIB:/root/perl5/lib\x3a/root/perl5/lib/perl5\x3a/usr/share/texmf\x2ddist/tlpkg
 SETUVAR PERL_LOCAL_LIB_ROOT:/root/perl5
 SETUVAR SETUVARs_:/root/\x2econfig/zsh/SETUVAR_Dirs
+SETUVAR TEXMFCACHE:/var/lib/texmf\x3b/root/\x2etexlive/texmf\x2dvar
+SETUVAR TEXMFCONFIG:/root/\x2etexlive/texmf\x2dconfig
+SETUVAR TEXMFDIST:/usr/share/texmf\x2ddist
+SETUVAR TEXMFHOME:/root/texmf
+SETUVAR TEXMFLOCAL:/usr/local/share/texmf\x3a/usr/share/texmf\x2ddist
+SETUVAR TEXMFSYSCONFIG:/etc/texmf
+SETUVAR TEXMFSYSVAR:/var/lib/texmf
+SETUVAR TEXMFVAR:/root/\x2etexlive/texmf\x2dvar
 SETUVAR XDEB_PKGROOT:/tmp/xdeb
 SETUVAR XDG_CONFIG_HOME:\x24HOME/\x2econfig
 SETUVAR XDG_DATA_HOME:\x24HOME/\x2eclocal/share

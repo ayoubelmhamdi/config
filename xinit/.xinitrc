@@ -1,8 +1,6 @@
 #!/bin/bash
-st &
-~/.fehbg &
-sl &
-sxhkd &
+exec st &
+exec ~/.fehbg &
+exec sl &
+exec sxhkd &
 dwm
-
-
