@@ -3,6 +3,7 @@ source ~/.config/fish/path.fish
 source ~/.config/fish/functions/linux.fish
 source ~/.config/fish/functions/git.fish
 source ~/.config/fish/functions/ovvride.fish
+source ~/.config/fish/functions/fish_user_key_bindings.fish
 
 # Completions
 function make_completion --argument-names alias command

@@ -20,7 +20,7 @@ function f --description 'search for xbps app'
 end
 
 function i --description 'install app and add to list'
-	xbps-install $argv && echo $argv >> /opt/pkg.list
+	xbps-install $argv && echo $argv >> /opt/applist/xbps.list
 end
 
 function iu --description 'install app and add to list'
@@ -29,12 +29,12 @@ end
  
  
 function is --description 'sync and function i'
-	xbps-install -S $argv && echo $argv >> /opt/pkg.list
+	xbps-install -S $argv && echo $argv >> /opt/applist/xbps.list
 end
 
 function ipip --description 'use pip to list install pkg'
   if count $argv -ge 1 >/dev/null
-     python3 -m pip install $argv && echo $argv >> /opt/pip.list
+     python3 -m pip install $argv && echo $argv >> /opt/applist/pip.list
   else
      echo -e "\nsomthing wrong ...\n\n"
   end
@@ -42,7 +42,7 @@ end
 
 function inpm --description 'use  npm to list install pkg npm'
   if count $argv -ge 1 >/dev/null
-     /usr/bin/npm  install -g $argv && echo $argv >> /opt/npm.list
+     /usr/bin/npm  install -g $argv && echo $argv >> /opt/applist/npm.list
   else
      echo -e "\nsomthing wrong ...\n\n"
   end
