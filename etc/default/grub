@@ -19,3 +19,6 @@ GRUB_CMDLINE_LINUX_DEFAULT="loglevel=4"
 # modes only.  Entries specified as foreground/background.
 #GRUB_COLOR_NORMAL="light-blue/black"
 #GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
+
+# Ayoub
+#GRUB_DISABLE_OS_PROBER=false
