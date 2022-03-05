@@ -6,6 +6,7 @@ SETUVAR ANDROID_SDK_ROOT:/opt/sdk/android
 SETUVAR DOWNLOAD:/root/Downloads
 SETUVAR GRADLE_HOME:/opt/sdk/gradle/gradle\x2d7\x2e1\x2e1
 SETUVAR GRADLE_USER_HOME:/opt/sdk/gradlec
+SETUVAR GTK_DEBUG:interactive
 SETUVAR INSTALL_BASE:/root/perl5
 SETUVAR JAVA_HOME:/opt/sdk/jdk\x2d18
 SETUVAR LANG:de_DE\x2eUTF\x2d8

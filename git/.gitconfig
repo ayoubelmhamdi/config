@@ -1,0 +1,7 @@
+[user]
+	name = Ayoub EL Mhamdi
+	email = ayoub.elmhamdi@gmail.com
+[init]
+	defaultBranch = master
+[core]
+	editor = nvim
