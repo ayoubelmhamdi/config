@@ -18,7 +18,7 @@ SETUVAR TEXMFCACHE:/var/lib/texmf\x3b/root/\x2etexlive/texmf\x2dvar
 SETUVAR TEXMFCONFIG:/root/\x2etexlive/texmf\x2dconfig
 SETUVAR TEXMFDIST:/usr/share/texmf\x2ddist
 SETUVAR TEXMFHOME:/root/texmf
-SETUVAR TEXMFLOCAL:/usr/local/share/texmf\x3a/usr/share/texmf\x2ddist
+SETUVAR TEXMFLOCAL:/usr/share/texmf\x2ddist
 SETUVAR TEXMFSYSCONFIG:/etc/texmf
 SETUVAR TEXMFSYSVAR:/var/lib/texmf
 SETUVAR TEXMFVAR:/root/\x2etexlive/texmf\x2dvar
