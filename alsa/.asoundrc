@@ -1,10 +1,9 @@
-pcm.!default {
-   type hw
-   card bytcrrt5640
+# pcm.!default {
+#    type hw
+#    card bytcrrt5640
+# }
 
-}
-
-ctl.!default {
-   type hw
-   card bytcrrt5640
-}
+# ctl.!default {
+#    type hw
+#    card bytcrrt5640
+# }

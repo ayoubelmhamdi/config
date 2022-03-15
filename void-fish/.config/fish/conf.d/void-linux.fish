@@ -48,7 +48,10 @@ function inpm --description 'use  npm to list install pkg npm'
   end
 end
 
-
+function linkxbps
+  rm -f "$xbps_src/srcpkgs"
+  ln -vsd "$template/$argv[1]/srcpkgs" "$xbps_src"
+end
 
 #use pwd in tmux status
 # precmd () {

@@ -88,11 +88,15 @@ SETUVAR packerdir:/root/\x2elocal/share/nvim/site/pack/packer/start
 SETUVAR path_:/root/\x2econfig/zsh/all_PATH
 SETUVAR py_project:/projects/py
 SETUVAR repo:/mega/repo
+SETUVAR rust_project:/projects/rust
 SETUVAR scripts:/root/scripts
 SETUVAR shell_project:/projects/shell
 SETUVAR sv:/var/service
+SETUVAR template:/xbps\x2dsrc/all\x2dsrcpkgs
 SETUVAR tex_project:/projects/tex
 SETUVAR tmux:/root/\x2etmux\x2econf
 SETUVAR todo:/mega/repo/todo
+SETUVAR whatsapp_doc:/mnt/simple/Android/media/com\x2ewhatsapp/WhatsApp/Media/WhatsApp\x20Documents
 SETUVAR wiki:/mega/repo/wiki
+SETUVAR xbps_src:/xbps\x2dsrc/void\x2dpackages
 SETUVAR zshrc:/root/\x2ezshrc

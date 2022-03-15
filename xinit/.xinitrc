@@ -4,3 +4,4 @@ exec ~/.fehbg &
 exec sl &
 exec sxhkd &
 dwm
+#dwl
