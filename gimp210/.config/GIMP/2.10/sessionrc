@@ -12,7 +12,7 @@
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
     (position 0 47)
-    (size 1274 724)
+    (size 1280 753)
     (open-on-exit)
     (aux-info
         (left-docks-width "178")
@@ -41,7 +41,7 @@
     (gimp-dock
         (side right)
         (book
-            (current-page 1)
+            (current-page 5)
             (dockable "gimp-brush-grid"
                 (tab-style automatic)
                 (aux-info
@@ -63,10 +63,14 @@
                 (aux-info
                     (show-button-bar "true")
                     (edit-active "true")
-                    (current-data "Browns And Yellows"))))
+                    (current-data "Browns And Yellows")))
+            (dockable "gimp-navigation-view"
+                (tab-style automatic)
+                (aux-info
+                    (show-button-bar "true"))))
         (book
-            (position 407)
-            (current-page 0)
+            (position 424)
+            (current-page 2)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
                 (preview-size 32)
@@ -111,6 +115,9 @@
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
     (position 193 90))
+(session-info "toplevel"
+    (factory-entry "gimp-image-new-dialog")
+    (position 0 47))
 
 (hide-docks no)
 (single-window-mode yes)
