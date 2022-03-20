@@ -21,4 +21,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="loglevel=4"
 #GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
 
 # Ayoub
-#GRUB_DISABLE_OS_PROBER=false
+GRUB_DISABLE_OS_PROBER=false
+GRUB_THEME="/usr/share/grub/themes/sleek/theme.txt"
+#GRUB_CMDLINE_LINUX="... console=tty2"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet console=tty2 i915.enable_psr=0"
