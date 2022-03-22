@@ -7,8 +7,8 @@ function i --description 'install app and add to list'
 end
 
 function iu --description 'install app and add to list'
-  apt-get update
-  apt-get upgrade
+  apt-get update -y
+  apt-get upgrade -y
 	apt-get dist-upgrade 
 end
  
