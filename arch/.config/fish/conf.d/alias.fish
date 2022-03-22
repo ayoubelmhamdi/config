@@ -17,4 +17,4 @@ alias fix='pacman dep level - testdb, shared lib level - findbrokenpkgs or lddd'
 
 alias ff='pacman -[S|Q]i'
 alias lxl='pkgfile -s' #local xlocate file /bin/usr/wget : output is wget-2-3
-
+#alias xl=''

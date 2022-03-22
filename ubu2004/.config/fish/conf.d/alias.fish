@@ -19,3 +19,4 @@ alias unholdpkg='apt-mark unhold pkg'
 
 alias ff='apt-cache show '; # or 'apt-cache policy'
 alias lxl='apt-file search' #local xlocate file /bin/usr/wget : output is wget-2-3
+#alias xl=''

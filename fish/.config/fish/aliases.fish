@@ -79,7 +79,6 @@ alias log='git log --oneline'
 alias xc='xclip -selection clipboard'
 alias du='du -h '
 alias wget 'wget -c'
-alias xl='xlocate'
 
 # nvim alias
 # alias v='nvim -u $avim/init.lua'

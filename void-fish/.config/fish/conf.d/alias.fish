@@ -18,3 +18,4 @@ alias unholdpkg='xbps-pkgdb -m unhold'
 
 alias ff='xbps-query -RS'
 alias lxl='xbps-query -o' #local xlocate file /bin/usr/wget : output is wget-2-3
+alias xl='xlocate'
