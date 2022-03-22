@@ -90,7 +90,7 @@ alias v='nvimdir=~/.config/nvim nvim'
 alias vv='v -c "Telescope frecency default_text=:CWD:"'
 alias atmux='tmux a|| tmux'
 
-
+alias ping='ping -c 1'
 # typos
 abbr gti git
 abbr yearn yarn
