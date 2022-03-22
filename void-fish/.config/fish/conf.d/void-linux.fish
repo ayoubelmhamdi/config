@@ -1,10 +1,3 @@
-set nvimdir "$HOME/.config/nvim/lua"
-set packerdir "$HOME/.local/share/nvim/site/pack/packer/start"
-
-alias xro='xbps-remove -vROo'
-
-
-
 function f --description 'search for xbps app'
 
   set n (count $argv)
@@ -47,27 +40,3 @@ function inpm --description 'use  npm to list install pkg npm'
      echo -e "\nsomthing wrong ...\n\n"
   end
 end
-
-function linkxbps
-  rm -f "$xbps_src/srcpkgs"
-  ln -vsd "$template/$argv[1]/srcpkgs" "$xbps_src"
-end
-
-#use pwd in tmux status
-# precmd () {
-#   [[ $(pgrep tmux| wc -l) >1 ]] && tmux set -qg status-left '[ #[bold]#{pane_current_path} ]    '
-# }
-# 
-# 
-
-# 
-# 
-# vfzf () {
-#         a=$(fzf)
-#         if [[ ! -z "$a" ]]
-#         then
-#                 nvim "$a"
-#         else
-#                 echo "no args"
-#         fi
-# }

@@ -1,10 +1,3 @@
-set nvimdir "$HOME/.config/nvim/lua"
-set packerdir "$HOME/.local/share/nvim/site/pack/packer/start"
-
-alias xro='xbps-remove -vROo'
-
-
-
 function f --description 'search for xbps app'
 
   set n (count $argv)
@@ -13,23 +6,23 @@ function f --description 'search for xbps app'
   set lastpkg $argv[2..]
 
   if test $n = 1 
-    xbps-query -Rs $pkg | grep --color=auto -i $pkg
+    pacman -Ss $pkg | grep --color=auto -i $pkg
   else
-    xbps-query -Rs $pkg | grep --color=auto -iE "$color|$pkg"
+    pacman -Ss $pkg | grep --color=auto -iE "$color|$pkg"
   end
 end
 
 function i --description 'install app and add to list'
-	xbps-install $argv && echo $argv >> /opt/applist/xbps.list
+	pacman -S $argv && echo $argv >> /opt/applist/pacman.list
 end
 
 function iu --description 'install app and add to list'
-	xbps-install -Su 
+	pacman -Syu 
 end
  
  
 function is --description 'sync and function i'
-	xbps-install -S $argv && echo $argv >> /opt/applist/xbps.list
+	pacman -Sy $argv && echo $argv >> /opt/applist/pacman.list
 end
 
 function ipip --description 'use pip to list install pkg'
@@ -47,27 +40,3 @@ function inpm --description 'use  npm to list install pkg npm'
      echo -e "\nsomthing wrong ...\n\n"
   end
 end
-
-function linkxbps
-  rm -f "$xbps_src/srcpkgs"
-  ln -vsd "$template/$argv[1]/srcpkgs" "$xbps_src"
-end
-
-#use pwd in tmux status
-# precmd () {
-#   [[ $(pgrep tmux| wc -l) >1 ]] && tmux set -qg status-left '[ #[bold]#{pane_current_path} ]    '
-# }
-# 
-# 
-
-# 
-# 
-# vfzf () {
-#         a=$(fzf)
-#         if [[ ! -z "$a" ]]
-#         then
-#                 nvim "$a"
-#         else
-#                 echo "no args"
-#         fi
-# }
