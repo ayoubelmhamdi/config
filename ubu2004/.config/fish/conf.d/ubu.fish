@@ -1,15 +1,5 @@
 function f --description 'search for xbps app'
-
-  set n (count $argv)
-  set pkg $argv[1]
-  set color $argv[2]
-  set lastpkg $argv[2..]
-
-  if test $n = 1 
-    apt-cache search $pkg | grep --color=auto -i $pkg
-  else
-    apt-cache search $pkg | grep --color=auto -iE "$color|$pkg"
-  end
+    apt-cache search "$argv" | grep --color=auto -i "$argv"
 end
 
 function i --description 'install app and add to list'
