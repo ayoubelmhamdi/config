@@ -11,3 +11,4 @@ alias ll='/bin/exa -l --color=always --group-directories-first'
 
 
 alias xro='pacman -Rs'
+alias fix='pacman dep level - testdb, shared lib level - findbrokenpkgs or lddd' # todo

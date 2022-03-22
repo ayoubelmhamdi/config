@@ -13,3 +13,4 @@ alias ll='/bin/ls -l --color=always --group-directories-first'
 
 
 alias xro='apt-get remove'
+alias fix='apt-get --fix-broken'

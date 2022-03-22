@@ -12,3 +12,4 @@ alias ll='/bin/exa -l --color=always --group-directories-first'
 
 
 alias xro='xbps-remove -vROo'
+alias fix='xbps-pkgdb -a'
