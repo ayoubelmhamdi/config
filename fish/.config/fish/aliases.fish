@@ -30,10 +30,10 @@ alias w=whereis
 
 
 
-alias ls='clear ; echo ; ;exa  --color=always --group-directories-first'
-alias nls='exa    --color=always --group-directories-first'
-alias la='exa -a --color=always --group-directories-first'
-alias ll='exa -l --color=always --group-directories-first'
+#alias ls='clear ; echo ; ;exa  --color=always --group-directories-first'
+#alias nls='exa    --color=always --group-directories-first'
+#alias la='exa -a --color=always --group-directories-first'
+#alias ll='exa -l --color=always --group-directories-first'
 
 
 alias ag='ag --follow --hidden -W (math $COLUMNS - 11)'
@@ -58,7 +58,6 @@ alias up='git commit -m "up"'
 
 
 alias ncat='/sbin/cat'
-alias cat='bat -p'
 alias tarxf='tar xf'
 alias tarcf='tar cf'
 alias c='clear && tmux clear-history  >/dev/null 2>&1;echo'
