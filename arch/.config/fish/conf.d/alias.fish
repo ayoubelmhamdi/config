@@ -16,5 +16,8 @@ alias fix='pacman dep level - testdb, shared lib level - findbrokenpkgs or lddd'
 #alias unholdpkg='xxx' # modify IgnorePkg array: /etc/pacman.conf
 
 alias ff='pacman -[S|Q]i'
-alias lxl='pkgfile -s' #local xlocate file /bin/usr/wget : output is wget-2-3
-#alias xl=''
+#local xlocate file /bin/usr/wget : output is wget-2-3
+alias lxl='pacman -Ql'
+alias xl='pkgfile'
+#alias xl='pkgfile -l' # all file
+#alias xl='pkgfile -s' 
