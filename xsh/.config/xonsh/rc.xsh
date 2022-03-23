@@ -1,5 +1,8 @@
 #!/usr/bin/env xonsh
-$PROMPT = '{env_name}{BOLD_GREEN}{user}{RESET}@{hostname}:{BOLD_GREEN}{cwd}{RESET}|{gitstatus}......................................................................................\n{BOLD_INTENSE_RED}➤➤ {RESET} '
+
+#$PROMPT = '{env_name}{BOLD_GREEN}{user}{RESET}@{hostname}:{BOLD_GREEN}{cwd}{RESET}|{gitstatus}......................................................................................\n{BOLD_INTENSE_RED}➤➤ {RESET} '
+$PROMPT = '{env_name}{BOLD_GREEN}{user}{RESET}@{hostname}:{BOLD_GREEN}{cwd} {RESET}{gitstatus}\n{BOLD_RED}➤ {BOLD_BLUE}➤ {RESET} '
+
 $XONSH_HISTORY_BACKEND = 'sqlite'
 $HISTCONTROL='ignoredups'
 
@@ -8,6 +11,7 @@ $HISTCONTROL='ignoredups'
 xontrib load argcomplete
 xontrib load fzf-widgets
 xontrib load output_search
+xontrib load sh
 
 # config for fzf
 $fzf_history_binding = "c-r"  # Ctrl+R
@@ -28,7 +32,8 @@ aliases['ll'] = lambda args: $[$LC_COLLATE='C' ls --group-directories-first -lAh
 aliases['md'] = lambda args: execx(f'mkdir -p {repr(args[0])} && cd {repr(args[0])}')
 aliases['cp'] = ['rsync', '--progress', '--recursive', '--archive']
 aliases['greps'] = 'grep -ri'
-aliases['clp'] = 'xclip -sel clip'    
+aliases['xc'] = 'xclip -sel clip'    
+aliases['c'] = 'clear'    
 
 
 from xonsh.platform import ON_LINUX  # remove if not necessary
