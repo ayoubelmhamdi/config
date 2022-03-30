@@ -11,7 +11,7 @@ alias ll='/bin/exa -l --color=always --group-directories-first'
 
 
 alias xro='pacman -Qdtq | pacman -Rs -;pacman -Sc;pacman -Scc; pacman -Rs'
-alias fix='pacman dep level - testdb, shared lib level - findbrokenpkgs or lddd' # todo
+alias fix='rm -f /var/lib/pacman/db.lck' # todo
 #alias holdpkg='xxx' # modify IgnorePkg array: /etc/pacman.conf
 #alias unholdpkg='xxx' # modify IgnorePkg array: /etc/pacman.conf
 
