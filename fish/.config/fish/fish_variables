@@ -3,7 +3,7 @@
 SETUVAR ANDROID_HOME:/opt/sdk/android
 SETUVAR ANDROID_SDK_HOME:/opt/sdk/android\x2dHOME
 SETUVAR ANDROID_SDK_ROOT:/opt/sdk/android
-SETUVAR DOWNLOAD:/root/Downloads
+SETUVAR --export DOWNLOAD:/mnt/simple/Download
 SETUVAR GRADLE_HOME:/opt/sdk/gradle/gradle\x2d7\x2e1\x2e1
 SETUVAR GRADLE_USER_HOME:/opt/sdk/gradlec
 SETUVAR GTK_DEBUG:interactive
