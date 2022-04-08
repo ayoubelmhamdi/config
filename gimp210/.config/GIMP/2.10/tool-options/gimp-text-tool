@@ -1,6 +1,6 @@
 # GIMP gimp-text-tool options
 
-(foreground (color-rgb 0.87745098039215685 0.85545408451576432 0.12955652059481512))
+(foreground (color-rgb 1 1 1))
 (palette "Browns And Yellows")
 (font "Sans-serif")
 

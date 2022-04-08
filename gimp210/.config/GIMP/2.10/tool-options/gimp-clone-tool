@@ -1,10 +1,10 @@
 # GIMP gimp-clone-tool options
 
-(foreground (color-rgb 0.87745098039215685 0.85545408451576432 0.12955652059481512))
-(background (color-rgb 0.27058823529411763 0.27058823529411763 0.27058823529411763))
+(foreground (color-rgb 1 1 1))
+(background (color-rgb 0 0 0))
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
-(pattern "Electric Blue")
+(pattern "Wood #1")
 (palette "Browns And Yellows")
 (brush-size 23)
 (brush-spacing 0.050000000000000003)

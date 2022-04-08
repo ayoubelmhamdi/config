@@ -41,7 +41,7 @@
     (gimp-dock
         (side right)
         (book
-            (current-page 5)
+            (current-page 6)
             (dockable "gimp-brush-grid"
                 (tab-style automatic)
                 (aux-info
@@ -67,10 +67,14 @@
             (dockable "gimp-navigation-view"
                 (tab-style automatic)
                 (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-gradient-list"
+                (tab-style automatic)
+                (aux-info
                     (show-button-bar "true"))))
         (book
             (position 424)
-            (current-page 2)
+            (current-page 0)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
                 (preview-size 32)
