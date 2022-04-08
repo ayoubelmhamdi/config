@@ -1,7 +1,11 @@
 #!/bin/bash
+
+kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
 exec st &
 exec ~/.fehbg &
 exec sl &
 exec sxhkd &
-dwm
 #dwl
+while true; do
+    dwm >/dev/null 2>&1
+done

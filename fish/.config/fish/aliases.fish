@@ -15,7 +15,6 @@ function ig       ; /sbin/grep -i --color=auto $argv ; end
 
 # swallow by devour /sbin/mpv
 alias mpv='devour /sbin/mpv'
-alias zt='devour zathura'
 
 
 # mv, rm, cp
@@ -83,7 +82,7 @@ alias wget 'wget -c'
 # nvim alias
 # alias v='nvim -u $avim/init.lua'
 alias which='command -v'
-alias e='nvimdir=~/.config/nvim nvim'
+#alias e='nvimdir=~/.config/nvim nvim'
 alias v='nvimdir=~/.config/nvim nvim'
 alias vv='v -c "Telescope frecency default_text=:CWD:"'
 alias atmux='tmux a|| tmux'
