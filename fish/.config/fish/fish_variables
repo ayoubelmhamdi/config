@@ -85,6 +85,7 @@ SETUVAR kitty:/root/\x2econfig/kitty/kitty\x2econf
 SETUVAR latex_dir:/opt/texlive/2021/texmf\x2ddist/tex/latex/base
 SETUVAR lua_project:/projects/lua
 SETUVAR nvim:nvim
+SETUVAR nvimdoc:/usr/share/nvim/runtime/doc
 SETUVAR p5_project:/projects/p5
 SETUVAR packerdir:/root/\x2elocal/share/nvim/site/pack/packer/start
 SETUVAR path_:/root/\x2econfig/zsh/all_PATH
