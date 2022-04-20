@@ -3,7 +3,6 @@
 SETUVAR ANDROID_HOME:/opt/sdk/android
 SETUVAR ANDROID_SDK_HOME:/opt/sdk/android\x2dHOME
 SETUVAR ANDROID_SDK_ROOT:/opt/sdk/android
-SETUVAR --export DOWNLOAD:/mnt/simple/Download
 SETUVAR GRADLE_HOME:/opt/sdk/gradle/gradle\x2d7\x2e1\x2e1
 SETUVAR GRADLE_USER_HOME:/opt/sdk/gradlec
 SETUVAR GTK_DEBUG:interactive
@@ -44,6 +43,7 @@ SETUVAR by_phone:/mega/by_phone
 SETUVAR c_project:/projects/c
 SETUVAR cloud:/mega/cloud
 SETUVAR codes:/mega/repo/codes
+SETUVAR download_simple:/mnt/simple/Download
 SETUVAR fish_color_autosuggestion:50FA7B
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:green
