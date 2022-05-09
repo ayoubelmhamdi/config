@@ -36,6 +36,7 @@ SETUVAR _fisher_plugins:jorgebucaran/fisher
 SETUVAR accadimeque:/mega/cloud/accadimique
 SETUVAR alias_:/root/\x2econfig/zsh/my_alias
 SETUVAR animation1:/projects/flutter/animation1
+SETUVAR anki_project:/projects/anki
 SETUVAR app8:/projects/flutter/app8
 SETUVAR app9:/projects/flutter/app9
 SETUVAR by_linux:/mega/by_linux
@@ -75,6 +76,7 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_prompt_pwd_dir_length:1
 SETUVAR fish_right_prompt:yes
 SETUVAR fish_user_paths:/root/perl5/bin\x1e/opt/sdk/flutter/bin\x1e/root/bin
 SETUVAR --export fish_vi_key_bindings:\x1d

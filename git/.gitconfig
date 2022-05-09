@@ -25,3 +25,5 @@
 	untracked = red bold
 [diff]
 	tool = vimdiff
+[safe]
+	directory = /root/stow/nvim-v2/.config/nvim/lua
