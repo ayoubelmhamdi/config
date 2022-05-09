@@ -1,14 +1,10 @@
-  UUID=f2f74f33-f884-46ff-8dad-ee637421f39c    /               ext4  defaults                       0 1
-  UUID=6ABE-6B3D                               /boot/efi       vfat  defaults                       0 2
-  tmpfs                                        /tmp            tmpfs defaults,nosuid,nodev          0 0
 
   UUID=2ec0aeed-974f-40a5-9cff-9afbbdc91afd    /opt             ext4 defaults,noatime               0 2
   UUID=145758be-421e-4c80-a29a-868398a1081f    /data            ext4 defaults                       0 2
   /data/root                                   /root            auto default,nofail,nobootwait,bind 0 2
-# /data/Downloads                              /root/Downloads  auto default,nofail,nobootwait,bind 0 2
   /data/mega                                   /mega            auto default,nofail,nobootwait,bind 0 2
   /data/projects                               /projects        auto default,nofail,nobootwait,bind 0 2
-# /data/opt                                    /opt             auto default,nofail,nobootwait,bind 0 2
+  /data/opt                                    /opt             auto default,nofail,nobootwait,bind 0 2
+# /data/Downloads                              /root/Downloads  auto default,nofail,nobootwait,bind 0 2
 
-  /data/swapfile                               none             swap defaults                       0 0
-
+# /swapfile                                    none             swap defaults                       0 0
