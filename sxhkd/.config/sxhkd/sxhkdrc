@@ -1,12 +1,13 @@
 #!/bin/sh
 # shellcheck disable=SC1117,SC1083,SC1073,SC1056,SC1072
+# dmenu not load setxkbmap in xinitrc
 
 super + Escape
 	pkill -USR1 -x sxhkd
 
-
 super + f
-  firefox
+    launch_brave
+    #firefox
 
 shift + Print
   $HOME/scripts/video/record.sh
@@ -23,20 +24,27 @@ control + 2
 super + shift + p
     passmenu
 
-super + a
-  bash /root/scripts/dmenu/learn_with_dmenu.sh
+#super + q
+#  bash /root/scripts/dmenu/learn_with_dmenu.sh
+#
+#super + shift + q
+#  bash /root/scripts/dmenu/add-word.sh
 
 super + n
   nv
-
-super + shift + a
-  bash /root/scripts/dmenu/add-word.sh
 
 super + shift + p
   bash ~/scripts/my/dmenu/dmenu_command.sh
 
 super + o
-  mpv --loop `xclip -o -sel clip`
+  mpv --loop $(xclip -o -sel clip)
 
-super + c 
-  wpa_cli reassociate 1
+#connect
+super + shift + c
+    kdeconnect-cli -d ca4847d95527874b --pair
+
+# super + s
+#     kdeconnect-cli -d ca4847d95527874b --share-text $(xclip -o -sel clip)
+
+# super + c 
+#   wpa_cli reassociate 1
