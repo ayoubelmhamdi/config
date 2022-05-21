@@ -1,9 +1,11 @@
 pcm.!default {
    type hw
-   card bytcrrt5640
+   card 1
+   # card bytcrrt5640
 }
 
 ctl.!default {
    type hw
-   card bytcrrt5640
+   card 1
+   #card bytcrrt5640
 }
