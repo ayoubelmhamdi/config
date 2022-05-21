@@ -14,6 +14,7 @@ SETUVAR LIBVA_DRIVER_NAME:i965
 SETUVAR --export PERL5LIB:/root/perl5/lib\x3a/root/perl5/lib/perl5\x3a/usr/share/texmf\x2ddist/tlpkg
 SETUVAR PERL_LOCAL_LIB_ROOT:/root/perl5
 SETUVAR SETUVARs_:/root/\x2econfig/zsh/SETUVAR_Dirs
+SETUVAR --export TERM:xterm\x2dkitty
 SETUVAR TEXMFCACHE:/var/lib/texmf\x3b/root/\x2etexlive/texmf\x2dvar
 SETUVAR TEXMFCONFIG:/root/\x2etexlive/texmf\x2dconfig
 SETUVAR TEXMFDIST:/usr/share/texmf\x2ddist
@@ -37,6 +38,13 @@ SETUVAR accadimeque:/mega/cloud/accadimique
 SETUVAR alias_:/root/\x2econfig/zsh/my_alias
 SETUVAR animation1:/projects/flutter/animation1
 SETUVAR anki_project:/projects/anki
+SETUVAR app1:/projects/flutter/app1
+SETUVAR app2:/projects/flutter/app2
+SETUVAR app3:/projects/flutter/app3
+SETUVAR app4:/projects/flutter/app4
+SETUVAR app5:/projects/flutter/app5
+SETUVAR app6:/projects/flutter/app6
+SETUVAR app7:/projects/flutter/app7
 SETUVAR app8:/projects/flutter/app8
 SETUVAR app9:/projects/flutter/app9
 SETUVAR by_linux:/mega/by_linux
