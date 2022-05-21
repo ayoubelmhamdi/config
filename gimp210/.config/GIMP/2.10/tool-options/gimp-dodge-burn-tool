@@ -1,7 +1,7 @@
 # GIMP gimp-dodge-burn-tool options
 
-(foreground (color-rgb 0.92156862745098034 0.50196078431372548 0.10196078431372549))
-(background (color-rgb 0 0 0))
+(foreground (color-rgb 0.72156864404678345 0.47843140363693237 0.38431376218795776))
+(background (color-rgb 0.43529415130615234 0.68627452850341797 0.59215688705444336))
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (palette "Browns And Yellows")

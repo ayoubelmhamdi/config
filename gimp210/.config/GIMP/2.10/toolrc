@@ -50,7 +50,7 @@
     (visible yes))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-perspective-tool")
+    (active-tool "gimp-scale-tool")
     (children
         (GimpToolInfo "gimp-unified-transform-tool"
             (icon-name "gimp-tool-unified-transform")
@@ -152,7 +152,7 @@
     (visible yes))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-color-picker-tool")
+    (active-tool "gimp-measure-tool")
     (children
         (GimpToolInfo "gimp-color-picker-tool"
             (icon-name "gimp-tool-color-picker")

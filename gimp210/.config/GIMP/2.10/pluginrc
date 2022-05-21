@@ -1178,37 +1178,6 @@
         (proc-arg 13 "image" "Output image")
         (proc-arg 0 "image-width" "Width of full-sized image")
         (proc-arg 0 "image-height" "Height of full-sized image")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-gih/file-gih" 1641283471
-    (proc-def "file-gih-save" 1
-         "exports images in GIMP brush pipe format"
-         "This plug-in exports an image in the GIMP brush pipe format. For a colored brush pipe, RGBA layers are used, otherwise the layers should be grayscale masks. The image can be multi-layered, and additionally the layers can be divided into a rectangular array of brushes."
-         "Tor Lillqvist"
-         "Tor Lillqvist"
-         "1999"
-         "GIMP brush (animated)"
-         0
-        (icon icon-name -1 "gimp-tool-paintbrush")
-        (save-proc
-            (extensions "gih")
-            (mime-types "image/x-gimp-gih")
-            (handles-uri))
-         "RGB*, GRAY*"
-         15 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to export")
-        (proc-arg 4 "uri" "The URI of the file to export the brush pipe in")
-        (proc-arg 4 "raw-uri" "The URI of the file to export the brush pipe in")
-        (proc-arg 0 "spacing" "Spacing of the brush")
-        (proc-arg 4 "description" "Short description of the brush pipe")
-        (proc-arg 0 "cell-width" "Width of the brush cells")
-        (proc-arg 0 "cell-height" "Width of the brush cells")
-        (proc-arg 2 "display-cols" "Display column number")
-        (proc-arg 2 "display-rows" "Display row number")
-        (proc-arg 0 "dimension" "Dimension of the brush pipe")
-        (proc-arg 7 "rank" "Ranks of the dimensions")
-        (proc-arg 0 "dimension" "Dimension (again)")
-        (proc-arg 9 "sel" "Selection modes")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-gif-save/file-gif-save" 1641283471
     (proc-def "file-gif-save" 1
          "exports files in Compuserve GIF file format"
@@ -1257,6 +1226,53 @@
         (proc-arg 0 "as-animation" "Export GIF as animation?")
         (proc-arg 0 "force-delay" "(animated gif) Use specified delay for all frames?")
         (proc-arg 0 "force-dispose" "(animated gif) Use specified disposal for all frames?")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-gih/file-gih" 1641283471
+    (proc-def "file-gih-save" 1
+         "exports images in GIMP brush pipe format"
+         "This plug-in exports an image in the GIMP brush pipe format. For a colored brush pipe, RGBA layers are used, otherwise the layers should be grayscale masks. The image can be multi-layered, and additionally the layers can be divided into a rectangular array of brushes."
+         "Tor Lillqvist"
+         "Tor Lillqvist"
+         "1999"
+         "GIMP brush (animated)"
+         0
+        (icon icon-name -1 "gimp-tool-paintbrush")
+        (save-proc
+            (extensions "gih")
+            (mime-types "image/x-gimp-gih")
+            (handles-uri))
+         "RGB*, GRAY*"
+         15 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to export")
+        (proc-arg 4 "uri" "The URI of the file to export the brush pipe in")
+        (proc-arg 4 "raw-uri" "The URI of the file to export the brush pipe in")
+        (proc-arg 0 "spacing" "Spacing of the brush")
+        (proc-arg 4 "description" "Short description of the brush pipe")
+        (proc-arg 0 "cell-width" "Width of the brush cells")
+        (proc-arg 0 "cell-height" "Width of the brush cells")
+        (proc-arg 2 "display-cols" "Display column number")
+        (proc-arg 2 "display-rows" "Display row number")
+        (proc-arg 0 "dimension" "Dimension of the brush pipe")
+        (proc-arg 7 "rank" "Ranks of the dimensions")
+        (proc-arg 0 "dimension" "Dimension (again)")
+        (proc-arg 9 "sel" "Selection modes")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-glob/file-glob" 1641283471
+    (proc-def "file-glob" 1
+         "Returns a list of matching filenames"
+         "This can be useful in scripts and other plug-ins (e.g., batch-conversion). See the glob(7) manpage for more info. Note however that this isn't a full-featured glob implementation. It only handles simple patterns like \"/home/foo/bar/*.jpg\"."
+         "Sven Neumann"
+         "Sven Neumann"
+         "2004"
+         ""
+         0
+        (icon icon-name -1 "")
+         ""
+         2 2
+        (proc-arg 4 "pattern" "The glob pattern (in UTF-8 encoding)")
+        (proc-arg 0 "encoding" "Encoding of the returned names: { UTF-8 (0), filename encoding (1) }")
+        (proc-arg 0 "num-files" "The number of returned names")
+        (proc-arg 9 "files" "The list of matching names")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-header/file-header" 1641283471
     (proc-def "file-header-save" 1
          "saves files as C unsigned character array"
@@ -1280,22 +1296,6 @@
         (proc-arg 4 "raw-filename" "The name of the file to save the image in")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-heif/file-heif" 1641283471
     (has-init))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-glob/file-glob" 1641283471
-    (proc-def "file-glob" 1
-         "Returns a list of matching filenames"
-         "This can be useful in scripts and other plug-ins (e.g., batch-conversion). See the glob(7) manpage for more info. Note however that this isn't a full-featured glob implementation. It only handles simple patterns like \"/home/foo/bar/*.jpg\"."
-         "Sven Neumann"
-         "Sven Neumann"
-         "2004"
-         ""
-         0
-        (icon icon-name -1 "")
-         ""
-         2 2
-        (proc-arg 4 "pattern" "The glob pattern (in UTF-8 encoding)")
-        (proc-arg 0 "encoding" "Encoding of the returned names: { UTF-8 (0), filename encoding (1) }")
-        (proc-arg 0 "num-files" "The number of returned names")
-        (proc-arg 9 "files" "The list of matching names")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-html-table/file-html-table" 1641283471
     (proc-def "file-gtm-save" 1
          "GIMP Table Magic"
