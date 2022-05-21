@@ -27,6 +27,7 @@
 	tool = vimdiff
 [safe]
 	directory = /root/stow/nvim-v2/.config/nvim/lua
+	directory = /opt/sdk/flutter
 [pull]
 	rebase = true
 [rebase]
