@@ -21,20 +21,9 @@ SETUVAR --export ANDROID_SDK_ROOT:/opt/sdk/android
 SETUVAR --export GRADLE_HOME:/opt/sdk/gradle/gradle\x2d7\x2e1\x2e1
 SETUVAR --export GRADLE_USER_HOME:/opt/sdk/gradlec
 SETUVAR --export GTK_DEBUG:interactive
-SETUVAR --export INSTALL_BASE:/root/perl5
 SETUVAR --export JAVA_HOME:/opt/sdk/jdk\x2d18
 SETUVAR --export LIBVA_DRIVER_NAME:i965
-SETUVAR --export PERL5LIB:/root/perl5/lib\x3a/root/perl5/lib/perl5\x3a/usr/share/texmf\x2ddist/tlpkg
-SETUVAR --export PERL_LOCAL_LIB_ROOT:/root/perl5
 SETUVAR --export SETUVARs_:/root/\x2econfig/zsh/SETUVAR_Dirs
-SETUVAR --export TEXMFCACHE:/var/lib/texmf\x3b/root/\x2etexlive/texmf\x2dvar
-SETUVAR --export TEXMFCONFIG:/root/\x2etexlive/texmf\x2dconfig
-SETUVAR --export TEXMFDIST:/usr/share/texmf\x2ddist
-SETUVAR --export TEXMFHOME:/root/texmf
-SETUVAR --export TEXMFLOCAL:/usr/share/texmf\x2ddist
-SETUVAR --export TEXMFSYSCONFIG:/etc/texmf
-SETUVAR --export TEXMFSYSVAR:/var/lib/texmf
-SETUVAR --export TEXMFVAR:/root/\x2etexlive/texmf\x2dvar
 SETUVAR --export XDEB_PKGROOT:/tmp/xdeb
 SETUVAR --export accadimeque:/mega/cloud/accadimique
 SETUVAR --export alias_:/root/\x2econfig/zsh/my_alias
@@ -52,7 +41,6 @@ SETUVAR --export flutter_project:/projects/flutter
 SETUVAR --export function_:/root/\x2econfig/zsh/my_function
 SETUVAR --export js_project:/projects/js
 SETUVAR --export kitty:/root/\x2econfig/kitty/kitty\x2econf
-SETUVAR --export latex_dir:/opt/texlive/2021/texmf\x2ddist/tex/latex/base
 SETUVAR --export lua_project:/projects/lua
 SETUVAR --export nvimdoc:/usr/local/share/nvim/runtime/doc
 SETUVAR --export p5_project:/projects/p5
@@ -111,4 +99,3 @@ SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_right_prompt:yes
-SETUVAR fish_user_paths:/root/perl5/bin\x1e/opt/sdk/flutter/bin\x1e/root/bin

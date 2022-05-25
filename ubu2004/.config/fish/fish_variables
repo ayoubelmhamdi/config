@@ -1,32 +1,53 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR ANDROID_HOME:/opt/sdk/android
-SETUVAR ANDROID_SDK_HOME:/opt/sdk/android\x2dHOME
-SETUVAR ANDROID_SDK_ROOT:/opt/sdk/android
+SETUVAR --export ANDROID_HOME:/opt/sdk/android
+SETUVAR --export ANDROID_SDK_HOME:/opt/sdk/android\x2dHOME
+SETUVAR --export ANDROID_SDK_ROOT:/opt/sdk/android
 SETUVAR --export DOWNLOAD:/mnt/simple/Download
-SETUVAR GRADLE_HOME:/opt/sdk/gradle/gradle\x2d7\x2e1\x2e1
-SETUVAR GRADLE_USER_HOME:/opt/sdk/gradlec
-SETUVAR GTK_DEBUG:interactive
-SETUVAR INSTALL_BASE:/root/perl5
-SETUVAR JAVA_HOME:/opt/sdk/jdk\x2d18
-SETUVAR LANG:de_DE\x2eUTF\x2d8
-SETUVAR LANGUAGE:en_US\x2dUTF\x2d8
-SETUVAR LIBVA_DRIVER_NAME:i965
-SETUVAR --export PERL5LIB:/root/perl5/lib\x3a/root/perl5/lib/perl5\x3a/usr/share/texmf\x2ddist/tlpkg
-SETUVAR PERL_LOCAL_LIB_ROOT:/root/perl5
-SETUVAR SETUVARs_:/root/\x2econfig/zsh/SETUVAR_Dirs
-SETUVAR TEXMFCACHE:/var/lib/texmf\x3b/root/\x2etexlive/texmf\x2dvar
-SETUVAR TEXMFCONFIG:/root/\x2etexlive/texmf\x2dconfig
-SETUVAR TEXMFDIST:/usr/share/texmf\x2ddist
-SETUVAR TEXMFHOME:/root/texmf
-SETUVAR TEXMFLOCAL:/usr/share/texmf\x2ddist
-SETUVAR TEXMFSYSCONFIG:/etc/texmf
-SETUVAR TEXMFSYSVAR:/var/lib/texmf
-SETUVAR TEXMFVAR:/root/\x2etexlive/texmf\x2dvar
-SETUVAR XDEB_PKGROOT:/tmp/xdeb
-SETUVAR XDG_CONFIG_HOME:\x24HOME/\x2econfig
-SETUVAR XDG_DATA_HOME:\x24HOME/\x2eclocal/share
-SETUVAR XDG_VTNR:1
+SETUVAR --export GRADLE_HOME:/opt/sdk/gradle/gradle\x2d7\x2e1\x2e1
+SETUVAR --export GRADLE_USER_HOME:/opt/sdk/gradlec
+SETUVAR --export GTK_DEBUG:interactive
+SETUVAR --export JAVA_HOME:/opt/sdk/jdk\x2d18
+SETUVAR --export LANG:de_DE\x2eUTF\x2d8
+SETUVAR --export LANGUAGE:en_US\x2dUTF\x2d8
+SETUVAR --export LIBVA_DRIVER_NAME:i965
+SETUVAR --export SETUVARs_:/root/\x2econfig/zsh/SETUVAR_Dirs
+SETUVAR --export XDEB_PKGROOT:/tmp/xdeb
+SETUVAR --export accadimeque:/mega/cloud/accadimique
+SETUVAR --export alias_:/root/\x2econfig/zsh/my_alias
+SETUVAR --export animation1:/projects/flutter/animation1
+SETUVAR --export app8:/projects/flutter/app8
+SETUVAR --export app9:/projects/flutter/app9
+SETUVAR --export by_linux:/mega/by_linux
+SETUVAR --export by_phone:/mega/by_phone
+SETUVAR --export c_project:/projects/c
+SETUVAR --export cloud:/mega/cloud
+SETUVAR --export codes:/mega/repo/codes
+SETUVAR --export fish_vi_key_bindings:\x1d
+SETUVAR --export flutter_project:/projects/flutter
+SETUVAR --export function_:/root/\x2econfig/zsh/my_function
+SETUVAR --export js_project:/projects/js
+SETUVAR --export kitty:/root/\x2econfig/kitty/kitty\x2econf
+SETUVAR --export lua_project:/projects/lua
+SETUVAR --export nvim:nvim
+SETUVAR --export nvimdoc:/usr/share/nvim/runtime/doc
+SETUVAR --export p5_project:/projects/p5
+SETUVAR --export packerdir:/root/\x2elocal/share/nvim/site/pack/packer/start
+SETUVAR --export path_:/root/\x2econfig/zsh/all_PATH
+SETUVAR --export py_project:/projects/py
+SETUVAR --export repo:/mega/repo
+SETUVAR --export rust_project:/projects/rust
+SETUVAR --export scripts:/root/scripts
+SETUVAR --export shell_project:/projects/shell
+SETUVAR --export sv:/var/service
+SETUVAR --export template:/xbps\x2dsrc/all\x2dsrcpkgs
+SETUVAR --export tex_project:/projects/tex
+SETUVAR --export tmux:/root/\x2etmux\x2econf
+SETUVAR --export todo:/mega/repo/todo
+SETUVAR --export whatsapp_doc:/mnt/simple/Android/media/com\x2ewhatsapp/WhatsApp/Media/WhatsApp\x20Documents
+SETUVAR --export wiki:/mega/repo/wiki
+SETUVAR --export xbps_src:/xbps\x2dsrc/void\x2dpackages
+SETUVAR --export zshrc:/root/\x2ezshrc
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr__2D_:cd\x20\x2d
 SETUVAR _fish_abbr_gti:git
@@ -34,16 +55,6 @@ SETUVAR _fish_abbr_py:python
 SETUVAR _fish_abbr_yearn:yarn
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/root/\x2econfig/fish/functions/fisher\x2efish\x1e/root/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
-SETUVAR accadimeque:/mega/cloud/accadimique
-SETUVAR alias_:/root/\x2econfig/zsh/my_alias
-SETUVAR animation1:/projects/flutter/animation1
-SETUVAR app8:/projects/flutter/app8
-SETUVAR app9:/projects/flutter/app9
-SETUVAR by_linux:/mega/by_linux
-SETUVAR by_phone:/mega/by_phone
-SETUVAR c_project:/projects/c
-SETUVAR cloud:/mega/cloud
-SETUVAR codes:/mega/repo/codes
 SETUVAR fish_color_autosuggestion:50FA7B
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:green
@@ -76,30 +87,3 @@ SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_right_prompt:yes
-SETUVAR fish_user_paths:/root/perl5/bin\x1e/opt/sdk/flutter/bin\x1e/root/bin
-SETUVAR --export fish_vi_key_bindings:\x1d
-SETUVAR flutter_project:/projects/flutter
-SETUVAR function_:/root/\x2econfig/zsh/my_function
-SETUVAR js_project:/projects/js
-SETUVAR kitty:/root/\x2econfig/kitty/kitty\x2econf
-SETUVAR latex_dir:/opt/texlive/2021/texmf\x2ddist/tex/latex/base
-SETUVAR lua_project:/projects/lua
-SETUVAR nvim:nvim
-SETUVAR nvimdoc:/usr/share/nvim/runtime/doc
-SETUVAR p5_project:/projects/p5
-SETUVAR packerdir:/root/\x2elocal/share/nvim/site/pack/packer/start
-SETUVAR path_:/root/\x2econfig/zsh/all_PATH
-SETUVAR py_project:/projects/py
-SETUVAR repo:/mega/repo
-SETUVAR rust_project:/projects/rust
-SETUVAR scripts:/root/scripts
-SETUVAR shell_project:/projects/shell
-SETUVAR sv:/var/service
-SETUVAR template:/xbps\x2dsrc/all\x2dsrcpkgs
-SETUVAR tex_project:/projects/tex
-SETUVAR tmux:/root/\x2etmux\x2econf
-SETUVAR todo:/mega/repo/todo
-SETUVAR whatsapp_doc:/mnt/simple/Android/media/com\x2ewhatsapp/WhatsApp/Media/WhatsApp\x20Documents
-SETUVAR wiki:/mega/repo/wiki
-SETUVAR xbps_src:/xbps\x2dsrc/void\x2dpackages
-SETUVAR zshrc:/root/\x2ezshrc
