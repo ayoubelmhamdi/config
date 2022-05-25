@@ -4,7 +4,7 @@
 exec st &
 exec ~/.fehbg &
 exec sl &
-exec sxhkd &
+sxhkd   >/dev/tty6 2>&1 &
 #setxkbmap fr
 #dwl
 while true; do
