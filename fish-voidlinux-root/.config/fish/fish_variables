@@ -79,6 +79,7 @@ SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_right_prompt:yes
+SETUVAR fish_user_paths:/opt/perl5/bin\x1e/opt/sdk/flutter/bin\x1e/root/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/sbin\x1e/bin\x1e/usr/sbin\x1e/usr/bin
 SETUVAR --export fish_vi_key_bindings:\x1d
 SETUVAR --export flutter_project:/projects/flutter
 SETUVAR --export function_:/root/\x2econfig/zsh/my_function
