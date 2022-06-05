@@ -14,9 +14,6 @@ exec ls &
 fix_date &
 pkill iwd
 
-echo 'sleep 5'
-sleep 5
-
 #setxkbmap fr
 #dwl
 while true; do
