@@ -23,6 +23,7 @@
 [safe]
 	directory = /root/stow/nvim-v2/.config/nvim/lua
 	directory = /opt/sdk/flutter
+	directory = /opt/xbps-src/void-packages
 [pull]
 	rebase = true
 [rebase]
@@ -30,6 +31,7 @@
 
 [core]
 	pager = delta --line-numbers --dark
+	editor = nvim
 
 [interactive]
     diffFilter = delta --color-only
