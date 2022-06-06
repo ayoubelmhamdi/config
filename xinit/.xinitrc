@@ -4,7 +4,11 @@
 exec st &
 exec ~/.fehbg &
 exec sl &
-sxhkd   >/dev/tty6 2>&1 &
+sxhkd   &
+
+fix_date &
+pkill iwd
+
 #setxkbmap fr
 #dwl
 while true; do
