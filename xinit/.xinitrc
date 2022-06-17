@@ -6,6 +6,8 @@ exec ~/.fehbg &
 exec sl &
 sxhkd   &
 
+
+
 fix_date &
 pkill iwd
 
