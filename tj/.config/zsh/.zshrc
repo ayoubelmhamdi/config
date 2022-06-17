@@ -1,3 +1,5 @@
+source ~/Git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export _TJ_PROFILE=0
 
 if [[ $_TJ_PROFILE -eq 1 ]]; then
