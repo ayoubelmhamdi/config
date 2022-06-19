@@ -63,7 +63,6 @@ zinit wait lucid for \
     atload"
         alias gcd='gco dev'
     " \
-	OMZP::git \
 	OMZP::fzf \
     atload"
         alias dcupb='docker-compose up --build'
@@ -280,6 +279,8 @@ prcheck() { gh pr checkout "$1" && gh pr diff }
 # zinit is-snippet for \
 #     ${(M)config_files:#*/*e.zsh} \
 #     ${config_files:#*/*e.zsh}  \
+
+# alias g="command g"
 
 zinit is-snippet for \
     if"[[ -f $HOME/.config/zsh/autoloadrc  ]]" $HOME/.config/zsh/autoloadrc
