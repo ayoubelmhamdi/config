@@ -53,7 +53,6 @@ zinit wait lucid for \
         alias ....='cd ../../..'
         alias .....='cd ../../../..'
     " \
-	OMZL::directories.zsh \
 	OMZL::git.zsh \
 	OMZL::grep.zsh \
 	OMZL::history.zsh \
@@ -151,15 +150,15 @@ zinit wait lucid for \
 # PROGRAMS          #
 #####################
 
-# A fork of `z' by rupa deadwyler with much improved zsh/bash completion and better results. The data file format and core algorithm are compatible with those of the original.
-zinit wait'1' lucid light-mode for \
-    pick"z.sh" \
-    knu/z \
-    as'command' atinit'export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"' pick"bin/n" \
-    tj/n \
-    from'gh-r' as'command' atinit'export PATH="$HOME/.yarn/bin:$PATH"' mv'yarn* -> yarn' pick"yarn/bin/yarn" bpick'*.tar.gz' \
-    yarnpkg/yarn \
-
+# # A fork of `z' by rupa deadwyler with much improved zsh/bash completion and better results. The data file format and core algorithm are compatible with those of the original.
+# zinit wait'1' lucid light-mode for \
+#     pick"z.sh" \
+#     knu/z \
+#     as'command' atinit'export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"' pick"bin/n" \
+#     tj/n \
+#     from'gh-r' as'command' atinit'export PATH="$HOME/.yarn/bin:$PATH"' mv'yarn* -> yarn' pick"yarn/bin/yarn" bpick'*.tar.gz' \
+#     yarnpkg/yarn \
+#
 
 #####################
 # HISTORY           #
@@ -282,6 +281,9 @@ prcheck() { gh pr checkout "$1" && gh pr diff }
 
 # alias g="command g"
 
+if command -v pazi &>/dev/null; then
+  eval "$(pazi init zsh)" # or 'bash'
+fi
 zinit is-snippet for \
     if"[[ -f $HOME/.config/zsh/autoloadrc  ]]" $HOME/.config/zsh/autoloadrc
 
