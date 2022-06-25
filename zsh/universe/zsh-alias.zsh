@@ -117,3 +117,16 @@ function ff(){
   xbps-query -RS $@ | awk '/homepage/ {print $2}'
 }
 
+alias l=libreoffice
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushdminus
+
+
+alias -- -='cd -'
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+alias -g ......='../../../../..'
+
+bindkey '^ ' forward-word
