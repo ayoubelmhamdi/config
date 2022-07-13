@@ -24,6 +24,9 @@
 	directory = /root/stow/nvim-v2/.config/nvim/lua
 	directory = /opt/sdk/flutter
 	directory = /opt/xbps-src/void-packages
+	directory = /tmp/new_tmp/autocmd.nvim
+	directory = /root/Git/plugin/cfg-highlight.nvim/after
+	directory = /root/Git/plugin/cfg-highlight.nvim
 [pull]
 	rebase = true
 [rebase]

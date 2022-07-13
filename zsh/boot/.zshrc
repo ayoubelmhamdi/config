@@ -40,7 +40,7 @@ zinit ice atinit"
         ZSH_TMUX_FIXTERM=true;
         ZSH_TMUX_AUTOCONNECT=true;"
         # ZSH_TMUX_AUTOSTART=true;
-zinit snippet OMZP::tmux
+# zinit snippet OMZP::tmux
 
 zinit wait lucid for \
 	OMZL::clipboard.zsh \

@@ -48,3 +48,6 @@ super + shift + c
 
 # super + c 
 #   wpa_cli reassociate 1
+
+super + w
+    fix_wifi

@@ -80,7 +80,7 @@ alias curl 'curl -OL'
 # alias v='nvim -u $avim/init.lua'
 alias which='command -v'
 #alias e='nvimdir=~/.config/nvim nvim'
-alias v='nvim'
+# alias v='nvim'
 alias vv='v -c "Telescope frecency default_text=:CWD:"'
 alias atmux='tmux a|| tmux'
 
@@ -110,12 +110,6 @@ alias xl='xlocate'
 
 
 alias sysinfo="inxi -Fxxxz"
-
-# Defined via `source`
-#--wraps='xbps-query -RS' --description 'alias ff=xbps-query -RS'
-function ff(){
-  xbps-query -RS $@ | awk '/homepage/ {print $2}'
-}
 
 alias l=libreoffice
 setopt auto_pushd
