@@ -17,7 +17,10 @@ alias mpv='devour /sbin/mpv'
 # mv, rm, cp
 alias cp="cp -ivr"
 alias mv='mv -iv'
-alias rm='rm -Ivr'
+# alias rm='rm -Ivr'
+alias trash-list="trash-list --trash-dir=/root/.Trash-0"
+alias trash-restore="trash-restore --trash-dir=/root/.Trash-0"
+alias rm='trash_rm'
 alias rmf='/sbin/rm -vrf'
 alias x='chmod +x'
 
