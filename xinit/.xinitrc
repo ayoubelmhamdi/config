@@ -4,12 +4,18 @@
 exec st &
 exec ~/.fehbg &
 exec sl &
-sxhkd   &
+exec sxhkd   &
+exec nvim --headless -c 'qall' &
+exec launch_brave &
+exec ls &
 
 
 
 fix_date &
 pkill iwd
+
+echo 'sleep 5'
+sleep 5
 
 #setxkbmap fr
 #dwl
