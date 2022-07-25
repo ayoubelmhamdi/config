@@ -1,4 +1,5 @@
 # GIMP gimp-transform-3d-tool options
 
+(local-frame yes)
 
 # end of gimp-transform-3d-tool options

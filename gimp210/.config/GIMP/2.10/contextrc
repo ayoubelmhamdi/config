@@ -1,12 +1,12 @@
 # GIMP user context
 
-(tool "gimp-rect-select-tool")
+(tool "gimp-unified-transform-tool")
 (paint-info "gimp-paintbrush")
-(foreground (color-rgb 0.68627452850341797 0.43529415130615234 0.52453161875406884))
+(foreground (color-rgb 0.68627452850341797 0.64936564950382014 0.43529415130615234))
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
-(pattern "Wood #1")
+(pattern "Rain")
 (gradient "Browns")
 (palette "Browns And Yellows")
 (font "Sans-serif")

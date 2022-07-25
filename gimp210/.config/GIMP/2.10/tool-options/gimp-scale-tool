@@ -1,5 +1,6 @@
 # GIMP gimp-scale-tool options
 
+(interpolation linear)
 (frompivot-scale yes)
 
 # end of gimp-scale-tool options

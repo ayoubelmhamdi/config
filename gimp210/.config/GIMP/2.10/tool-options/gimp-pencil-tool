@@ -1,6 +1,6 @@
 # GIMP gimp-pencil-tool options
 
-(foreground (color-rgb 0.68627452850341797 0.43529415130615234 0.52453161875406884))
+(foreground (color-rgb 0.68627452850341797 0.64936564950382014 0.43529415130615234))
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (gradient "Browns")
