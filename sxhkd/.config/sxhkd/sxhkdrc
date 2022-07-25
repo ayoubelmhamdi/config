@@ -51,3 +51,9 @@ super + shift + c
 
 super + w
     fix_wifi
+
+XF86Audio{Raise,Lower}Volume
+    amixer sset Master {1+,1-} unmute
+
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
