@@ -95,9 +95,6 @@ alias df_device="df -h -kHl | grep -v 'cgroup\|tmp'"
 # abbr py python
 # abbr -a -- - 'cd -'
 
-export nvimdir="$HOME/.config/nvim/lua"
-export packerdir="$HOME/.local/share/nvim/site/pack/packer/start"
-
 
 
 alias cat='bat -p'
