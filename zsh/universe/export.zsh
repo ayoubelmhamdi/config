@@ -59,3 +59,6 @@ export whatsapp_doc="/mnt/simple/Android/media/com.whatsapp/WhatsApp/Media/Whats
 export wiki="/mega/repo/wiki"
 export xbps_src="/xbps-src/void-packages"
 export zshrc="$HOME/.zshrc"
+
+export nvimdir="$HOME/.config/nvim"
+export packerdir="$HOME/.local/share/nvim/site/pack/packer/start"
