@@ -15,10 +15,10 @@ shift + Print
 Print
   flameshot gui
 
-super + alt + 1
+ctrl + shift + 1
   setxkbmap us
   
-super + alt + 1
+ctrl + shift + 1
   setxkbmap ara
 
 super + shift + p
