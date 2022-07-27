@@ -1,18 +1,24 @@
 #!/bin/bash
 
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
-exec st &
-exec ~/.fehbg &
-exec sl &
-exec sxhkd   &
-exec nvim --headless -c 'qall' &
-exec launch_brave &
-exec ls &
+
+funbrave(){
+    sleep 20
+    launch_brave
+}
+
+st &
+~/.fehbg &
+sl &
+sxhkd   &
+nvim --headless -c 'qall' &
+ls &
+funbrave &
 
 
 
 fix_date &
-pkill iwd
+# pkill iwd
 
 #setxkbmap fr
 #dwl

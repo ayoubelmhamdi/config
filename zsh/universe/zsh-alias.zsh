@@ -76,8 +76,8 @@ alias log='git log --oneline'
 # xclip
 alias xc='xclip -selection clipboard'
 alias du='du -h '
-alias wget 'wget -c'
-alias curl 'curl -OL'
+alias wget='wget -c'
+alias curl='curl -LO'
 
 # nvim alias
 # alias v='nvim -u $avim/init.lua'
@@ -117,8 +117,8 @@ setopt pushd_ignore_dups
 setopt pushdminus
 
 
-alias -- -='cd -'
-alias -g ...='../..'
+alias cd_='cd $_'
+alias -g ..='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'

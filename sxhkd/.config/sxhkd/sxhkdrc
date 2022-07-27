@@ -15,10 +15,10 @@ shift + Print
 Print
   flameshot gui
 
-control + 1
+super + alt + 1
   setxkbmap us
   
-control + 2
+super + alt + 1
   setxkbmap ara
 
 super + shift + p
@@ -32,6 +32,12 @@ super + shift + p
 
 super + n
   nv
+
+super + m
+    mdbook serve /root/book/ayoubelmhamdi.github.io -p 8002
+
+super + s
+    surfer http://localhost:8002
 
 super + shift + p
   bash ~/scripts/my/dmenu/dmenu_command.sh

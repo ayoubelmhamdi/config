@@ -62,3 +62,4 @@ export zshrc="$HOME/.zshrc"
 
 export nvimdir="$HOME/.config/nvim"
 export packerdir="$HOME/.local/share/nvim/site/pack/packer/start"
+export book="$HOME/book/ayoubelmhamdi.github.io/src"
