@@ -1,7 +1,0 @@
-#!/bin/zsh
-
-stow --dir=$HOME/stow/zsh --target=$HOME boot
-stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh/autoload void
-stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh/autoload void-root
-stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh/autoload void-home
-stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh/autoload universe

@@ -284,8 +284,11 @@ prcheck() { gh pr checkout "$1" && gh pr diff }
 if command -v pazi &>/dev/null; then
   eval "$(pazi init zsh)" # or 'bash'
 fi
-zinit is-snippet for \
-    if"[[ -f $HOME/.config/zsh/autoloadrc  ]]" $HOME/.config/zsh/autoloadrc
+if [[ -s $HOME/.config/zsh  ]];then 
+    for file in $HOME/.config/zsh/*;do
+        source $file
+    done
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

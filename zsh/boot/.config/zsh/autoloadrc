@@ -1,3 +1,0 @@
-for file in $HOME/.config/zsh/autoload/*;do
-    source $file
-done
