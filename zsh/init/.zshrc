@@ -8,12 +8,11 @@ if [[ ! -d "$HOME/.local/share/zinit" ]]; then
     echo "\033[1;33mInstalling Zinit in $HOME/.local/share/zinit...\033[0m\n"
     git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
-
 source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
-
 #####################
 # PROMPT            #
 #####################
@@ -23,6 +22,7 @@ autoload -Uz _zinit
 # zinit light starship/starship
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
+
 ##########################
 # OMZ Libs and Plugins   #
 ##########################
@@ -31,7 +31,6 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 # Ohmyzsh plugins and libs are loaded first as some these sets some defaults which are required later on.
 # Otherwise something will look messed up
 # ie. some settings help zsh-autosuggestions to clear after tab completion
-
 setopt promptsubst
 
 # Loading tmux first, to prevent jumps when tmux is loaded after .zshrc
@@ -286,7 +285,8 @@ if command -v pazi &>/dev/null; then
 fi
 if [[ -s $HOME/.config/zsh  ]];then 
     for file in $HOME/.config/zsh/*;do
-        source $file
+        zi ice silent wait"2"
+        zi snippet $file
     done
 fi
 

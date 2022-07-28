@@ -12,6 +12,7 @@ function ig () {
 
 # swallow by devour /sbin/mpv
 alias mpv='devour /sbin/mpv'
+alias time='/usr/bin/time'
 
 
 # mv, rm, cp
