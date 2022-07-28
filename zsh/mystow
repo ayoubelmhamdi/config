@@ -7,7 +7,6 @@ mkdir -p ~/.config/zsh
 
 stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh void
 stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh universe
-
 stow --dir=$HOME/stow/zsh --target=$HOME init
 
 exit
