@@ -1,5 +1,5 @@
 #!/bin/zsh
-export nvimdir="$HOME/.config/nvim/lua"
+export nvimdir="$HOME/.config/nvim"
 export packerdir="$HOME/.local/share/nvim/site/pack/packer/start"
 
 
