@@ -45,31 +45,30 @@ autoload -Uz _zinit
 # OMZ Libs and Plugins   #
 ##########################
 
-# IMPORTANT:
-# Ohmyzsh plugins and libs are loaded first as some these sets some defaults which are required later on.
-# Otherwise something will look messed up
-# ie. some settings help zsh-autosuggestions to clear after tab completion
-# me: https://stackoverflow.com/questions/36192523/zsh-prompt-customization
-# setopt promptsubst
+zinit wait lucid for \
+    OMZL::completion.zsh \
+    # OMZL::compfix.zsh \
+    # OMZL::correction.zsh \
+	# OMZL::clipboard.zsh \
+	# OMZL::history.zsh \
+	# OMZL::key-bindings.zsh \
+	# OMZL::spectrum.zsh \
+	# OMZL::termsupport.zsh \
 
-# Loading tmux first, to prevent jumps when tmux is loaded after .zshrc
-# It will only be loaded on first start
-# zinit ice atinit"
-#         ZSH_TMUX_FIXTERM=true;
-#         ZSH_TMUX_AUTOCONNECT=true;"
-        # ZSH_TMUX_AUTOSTART=true;
-# zinit snippet OMZP::tmux
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
+# plugin
 zinit lucid light-mode depth=1 for             \
-    zdharma/fast-syntax-highlighting           \
+    atinit"typeset -gA FAST_HIGHLIGHT; FAST_HIGHLIGHT[git-cmsg-len]=100; zpcompinit; zpcdreplay" \
+        zdharma/fast-syntax-highlighting           \
 	atinit"zicompinit; zicdreplay"             \
         zsh-users/zsh-history-substring-search \
     blockf atpull'zinit creinstall -q .'       \
         zsh-users/zsh-completions              \
     atload"_zsh_autosuggest_start"             \
         zsh-users/zsh-autosuggestions          \
-    # atload                                     \
-    #     romkatv/powerlevel10k                  \
+    # atload                                   \
+    #     romkatv/powerlevel10k                \
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
