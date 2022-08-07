@@ -2,8 +2,9 @@
 
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
 
-funbrave(){
-    sleep 20
+lazy(){
+    nvim --headless +qall &
+    sleep 300
     launch_brave
 }
 
@@ -11,13 +12,14 @@ st &
 ~/.fehbg &
 sl &
 sxhkd   &
-nvim --headless -c 'qall' &
 ls &
-funbrave &
+lazy &
+amixer sset 'Master' 90% &
 
+# change caps to shift
+xmodmap -e "keycode 66 = ISO_Level3_Shift"
 
-
-fix_date &
+# fix_date &
 # pkill iwd
 
 #setxkbmap fr
