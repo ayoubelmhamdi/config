@@ -2,14 +2,14 @@
 
 root=${1:-root}
 
-mkdir -p ~/.config/zsh
+mkdir -p $HOME/.config/zsh
+mkdir -p $HOME/.texmf $HOME/.cpan/build
 
 
 stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh void
 stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh universe
 stow --dir=$HOME/stow/zsh --target=$HOME init
 
-exit
 if [[ "$root" = "root" ]];then
     stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh void-root
 else

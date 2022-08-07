@@ -21,8 +21,8 @@ alias mv='mv -iv'
 # alias rm='rm -Ivr'
 alias trash-list="trash-list --trash-dir=/root/.Trash-0"
 alias trash-restore="trash-restore --trash-dir=/root/.Trash-0"
-alias rm='trash_rm'
-alias rmf='/sbin/rm -vrf'
+alias rmt='trash_rm'
+alias rmf='command rm -vrf'
 alias x='chmod +x'
 
 alias w=whereis
@@ -118,10 +118,12 @@ setopt pushd_ignore_dups
 setopt pushdminus
 
 
+alias cd..="cd .." # Typo addressed.
+alias -- -="cd -"
 alias cd_='cd $_'
-alias -g ..='../..'
-alias -g ....='../../..'
-alias -g .....='../../../..'
-alias -g ......='../../../../..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='../../../../..'
 
-bindkey '^ ' forward-word
