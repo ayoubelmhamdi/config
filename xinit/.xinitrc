@@ -17,7 +17,7 @@ lazy &
 amixer sset 'Master' 90% &
 
 # change caps to shift
-xmodmap -e "keycode 66 = ISO_Level3_Shift"
+xmodmap -e "keycode 66 = Shift_L"
 
 # fix_date &
 # pkill iwd
