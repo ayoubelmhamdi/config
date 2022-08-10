@@ -10,12 +10,16 @@ function ig () {
  command grep -i --color=auto $@ 
 }
 
+# server http
+# alias live='setsid /root/.cargo/bin/live-server -h localhost -p 8001 >/dev/null 2>&1'
+
 # swallow by devour /sbin/mpv
 alias mpv='devour /sbin/mpv'
 alias time='/usr/bin/time'
 
 
 # mv, rm, cp
+alias rm="rm -ivr"
 alias cp="cp -ivr"
 alias mv='mv -iv'
 # alias rm='rm -Ivr'
