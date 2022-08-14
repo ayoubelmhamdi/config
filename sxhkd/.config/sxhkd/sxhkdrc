@@ -36,8 +36,8 @@ super + n
 super + m
     mdbook serve /root/book/ayoubelmhamdi.github.io -p 8002
 
-super + s
-    surfer http://localhost:8002
+# super + s
+    # surfer http://localhost:8002
 
 super + shift + p
   bash ~/scripts/my/dmenu/dmenu_command.sh
@@ -62,4 +62,4 @@ XF86Audio{Raise,Lower}Volume
     amixer sset Master {1+,1-} unmute
 
 XF86AudioMute
-    pactl set-sink-mute 0 toggle
+    amixer sset 'Master' 10%
