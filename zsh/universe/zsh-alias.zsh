@@ -6,9 +6,16 @@
 
 
 # Utilities
+
+# Source
+
+source $HOME/scripts/app/cdf
+
+
 function ig () {
  command grep -i --color=auto $@ 
 }
+
 
 # server http
 # alias live='setsid /root/.cargo/bin/live-server -h localhost -p 8001 >/dev/null 2>&1'
@@ -60,9 +67,10 @@ alias up='git commit -m "up"'
 
 
 alias ncat='/sbin/cat'
-alias tarxf='tar xf'
+alias tarxf='tar xvf'
 alias untar='tar xvf'
-alias tarcf='tar cf'
+alias tarcf='tar cvf'
+alias viewtar='tar -tf'
 alias c='clear && tmux clear-history  >/dev/null 2>&1;echo'
 
 
