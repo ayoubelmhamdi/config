@@ -16,10 +16,14 @@ ls &
 lazy &
 amixer sset 'Master' 90% &
 
-# change caps to shift
-# should after ALt-shift
+# should fisrt ALt-shift
 setxkbmap -layout us,ara -option grp:alt_shift_toggle
+# change caps to shift
 xmodmap -e "keycode 66 = Shift_L"
+# ALT_R --> Super
+# xmodmap -e "clear mod1"
+# xmodmap -e "clear mod4"
+# xmodmap -e "keycode 108 = Super_R NoSymbol Super_R"
 
 # fix_date &
 # pkill iwd
