@@ -1,8 +1,8 @@
 # GIMP user context
 
-(tool "gimp-rect-select-tool")
+(tool "gimp-paintbrush-tool")
 (paint-info "gimp-paintbrush")
-(foreground (color-rgb 1 1 1))
+(foreground (color-rgb 0.16078431372549021 0.72156862745098038 0.14509803921568629))
 (background (color-rgb 0.90588235294117647 0.90588235294117647 0.90588235294117647))
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")

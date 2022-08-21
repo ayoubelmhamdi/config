@@ -14,7 +14,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-rect-select-tool")
+    (active-tool "gimp-ellipse-select-tool")
     (children
         (GimpToolInfo "gimp-rect-select-tool"
             (icon-name "gimp-tool-rect-select")
@@ -50,7 +50,7 @@
     (visible yes))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-unified-transform-tool")
+    (active-tool "gimp-scale-tool")
     (children
         (GimpToolInfo "gimp-unified-transform-tool"
             (icon-name "gimp-tool-unified-transform")
@@ -78,7 +78,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-cage-tool")
+    (active-tool "gimp-warp-tool")
     (children
         (GimpToolInfo "gimp-warp-tool"
             (icon-name "gimp-tool-warp")
