@@ -5,7 +5,7 @@ export NNN_SSHFS="sshfs -o follow_symlinks"        # make sshfs follow symlinks 
 export NNN_COLORS="2136"                           # use a different color for each context
 export NNN_TRASH=1
 export NNN_FIFO=/tmp/nnn.fifo
-export VISUAL=ewrap
+# export VISUAL=ewrap
 export NNN_SSHFS='sshfs -o reconnect,idmap=user,cache_timeout=3600'
 
 # function nnn_cd()                                                                                                   

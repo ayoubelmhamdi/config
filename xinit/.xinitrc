@@ -18,6 +18,8 @@ amixer sset 'Master' 90% &
 
 # should fisrt ALt-shift
 setxkbmap -layout us,ara -option grp:alt_shift_toggle
+# change menu to super
+xmodmap -e "keycode 135 = Super_R"
 # change caps to shift
 xmodmap -e "keycode 66 = Shift_L"
 # ALT_R --> Super

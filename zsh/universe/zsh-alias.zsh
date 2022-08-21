@@ -124,7 +124,7 @@ alias xl='xlocate'
 
 alias sysinfo="inxi -Fxxxz"
 
-alias l=libreoffice
+alias liber=libreoffice
 setopt auto_pushd
 setopt pushd_ignore_dups
 setopt pushdminus
