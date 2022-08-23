@@ -27,6 +27,7 @@
 	directory = /tmp/new_tmp/autocmd.nvim
 	directory = /root/Git/plugin/cfg-highlight.nvim/after
 	directory = /root/Git/plugin/cfg-highlight.nvim
+	directory = /mnt/termux/scripts
 [pull]
 	rebase = true
 [rebase]
