@@ -32,6 +32,7 @@ xmodmap -e "keycode 66 = Shift_L"
 
 #setxkbmap fr
 #dwl
+echo 937 > /sys/class/backlight/intel_backlight/brightness
 while true; do
     # dwm >/dev/null 2>&1
     dwm >>/root/dwm.log 2>&1
