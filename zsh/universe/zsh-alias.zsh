@@ -10,6 +10,9 @@
 # Source
 
 source $HOME/scripts/app/cdf
+alias lsblk='echo;lsblk --output LABEL,FSUSE%,NAME,MOUNTPOINT'
+alias ip=/usr/local/bin/ip
+alias c='curl -LO'
 
 
 function ig () {
@@ -71,7 +74,7 @@ alias tarxf='tar xvf'
 alias untar='tar xvf'
 alias tarcf='tar cvf'
 alias viewtar='tar -tf'
-alias c='clear && tmux clear-history  >/dev/null 2>&1;echo'
+# alias c='clear && tmux clear-history  >/dev/null 2>&1;echo'
 
 
 
@@ -90,7 +93,6 @@ alias log='git log --oneline'
 alias xc='xclip -selection clipboard'
 alias du='du -h '
 alias wget='wget -c'
-alias curl='curl -LO'
 
 # nvim alias
 # alias v='nvim -u $avim/init.lua'
