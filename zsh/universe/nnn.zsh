@@ -1,6 +1,21 @@
 #!/bin/zsh
+declare -a bookmark=(
+    't:~/tmp'
+    'T:/tmp'
+    'd:/mnt/simple/Download'
+    'D:~/tmp/simple_download'
+    'm:/mnt/simple/movies'
+    'W:~/tmp/whatsapp'
+    'w:/mnt/simple/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents'
+    'r:/'
+)
 
-export NNN_BMS='d:~/Documents;r:/root;D:~/Downloads/'
+# echo "${arr[@]}"
+for b in  "${bookmark[@]}";do
+    NNN_BMS+="$b;"
+done
+echo "$NNN_BMS" > /tmp/nnn
+export NNN_BMS
 export NNN_SSHFS="sshfs -o follow_symlinks"        # make sshfs follow symlinks on the remote
 export NNN_COLORS="2136"                           # use a different color for each context
 export NNN_TRASH=1
