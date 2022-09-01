@@ -13,6 +13,7 @@ source $HOME/scripts/app/cdf
 alias lsblk='echo;lsblk --output LABEL,FSUSE%,NAME,MOUNTPOINT'
 alias ip=/usr/local/bin/ip
 alias c='curl -LO'
+alias nv='devour neovide --nofork'
 
 
 function ig () {
