@@ -6,7 +6,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 super + f
-    launch_brave
+    DRI_PRIME=1 launch_brave
     #firefox
 
 shift + Print
