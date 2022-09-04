@@ -66,7 +66,7 @@ alias branch='git branch'
 alias checkout='git checkout'
 alias push='git push '
 alias pull='git pull '
-alias sta='git status'
+alias sta='git status -s'
 alias gdiff='git diff'
 alias up='git commit -m "up"'
 
