@@ -36,6 +36,7 @@
 [core]
 	pager = delta --line-numbers --dark
 	editor = nvim
+	excludesfile = /root/.gitignore
 
 [interactive]
     diffFilter = delta --color-only
@@ -50,3 +51,5 @@
 
 [diff]
     colorMoved = default
+[alias]
+    ignore = !echo "$2" >> $(git rev-parse --show-toplevel)/.git/info/exclude 
