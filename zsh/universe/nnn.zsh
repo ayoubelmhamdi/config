@@ -23,7 +23,7 @@ export NNN_FIFO=/tmp/nnn.fifo
 # export VISUAL=ewrap
 export NNN_SSHFS='sshfs -o reconnect,idmap=user,cache_timeout=3600'
 
-# function nnn_cd()                                                                                                   
+# function nnn_cd()
 # {
 #     if ! [ -z "$NNN_PIPE" ]; then
 #         printf "%s\0" "0c${PWD}" > "${NNN_PIPE}" !&
