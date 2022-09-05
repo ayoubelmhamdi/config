@@ -36,8 +36,8 @@ super + n
 super + m
     mdbook serve /root/book/ayoubelmhamdi.github.io -p 8002
 
-# super + s
-    # surfer http://localhost:8002
+super + shift + s
+    surfer http://localhost:8002
 
 super + shift + p
   bash ~/scripts/my/dmenu/dmenu_command.sh
