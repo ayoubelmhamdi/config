@@ -1,10 +1,11 @@
 #!/bin/zsh
 declare -a bookmark=(
-    't:~/tmp'
-    'T:/tmp'
+    't:/tmp'
+    'T:~/tmp'
     'd:/mnt/simple/Download'
     'D:~/tmp/simple_download'
     'm:/mnt/simple/movies'
+    'b:~/book/TRPM'
     'W:~/tmp/whatsapp'
     'w:/mnt/simple/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents'
     'r:/'
