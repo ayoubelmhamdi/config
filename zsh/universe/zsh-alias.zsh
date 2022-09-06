@@ -15,6 +15,7 @@ alias ip=/usr/local/bin/ip
 alias cu='curl -LO'
 alias c=clear
 alias nv='devour neovide --nofork'
+alias history='history 0|fzf'
 
 
 function ig () {
