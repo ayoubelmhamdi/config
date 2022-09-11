@@ -11,7 +11,7 @@
 
 source $HOME/scripts/app/cdf
 alias lsblk='echo;lsblk --output LABEL,FSUSE%,NAME,MOUNTPOINT'
-alias ip=/usr/local/bin/ip
+# alias ip=/usr/local/bin/ip
 alias cu='curl -LO'
 alias c=clear
 alias nv='devour neovide --nofork'
@@ -115,12 +115,12 @@ alias df_device="df -h -kHl | grep -v 'cgroup\|tmp'"
 
 
 
-alias cat='bat -p'
-
-alias ls='clear ;exa --icons --color=always --group-directories-first'
-alias nls='exa   --icons --color=always --group-directories-first'
-alias la='exa -a --icons --color=always --group-directories-first'
-alias ll="exa -abghHlS --icons --git --group-directories-first"
+# alias cat='bat -p'
+#
+# alias ls='clear ;exa --icons --color=always --group-directories-first'
+# alias nls='exa   --icons --color=always --group-directories-first'
+# alias la='exa -a --icons --color=always --group-directories-first'
+# alias ll="exa -abghHlS --icons --git --group-directories-first"
 
 
 alias lxl='xbps-query -o' #local xlocate file /bin/usr/wget : output is wget-2-3
