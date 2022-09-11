@@ -8,6 +8,9 @@ declare -a bookmark=(
     'b:~/book/TRPM'
     'W:~/tmp/whatsapp'
     'w:/mnt/simple/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents'
+    'u:/mnt'
+    's:/mnt/winD/s3'
+    'S:~/tmp/s3'
     'r:/'
 )
 
