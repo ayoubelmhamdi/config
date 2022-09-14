@@ -32,9 +32,9 @@ xmodmap -e "keycode 66 = Shift_L"
 
 #setxkbmap fr
 #dwl
-echo 937 > /sys/class/backlight/intel_backlight/brightness
-sed -E -i 's#nameserver ([0-9]{1,3}\.?){4}#nameserver 1.1.1.1#' /etc/resolv.conf 
+echo 937 > /sys/class/backlight/intel_backlight/brightness &
+sed -E -i 's#nameserver ([0-9]{1,3}\.?){4}#nameserver 1.1.1.1#' /etc/resolv.conf  &
+sleep 1
 while true; do
-    # dwm >/dev/null 2>&1
-    dwm >>/root/dwm.log 2>&1
+    dwm >/dev/null 2>&1
 done
