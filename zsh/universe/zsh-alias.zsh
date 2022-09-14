@@ -10,6 +10,7 @@
 # Source
 
 source $HOME/scripts/app/cdf
+alias b=cd_book
 alias lsblk='echo;lsblk --output LABEL,FSUSE%,NAME,MOUNTPOINT'
 # alias ip=/usr/local/bin/ip
 alias cu='curl -LO'
