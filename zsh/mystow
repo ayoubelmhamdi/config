@@ -1,14 +1,17 @@
 #!/bin/bash
 
 root=${1:-ayoub}
-
+LINUX=${1:-void}
 
 mkdir -p $HOME/.config/zsh
 mkdir -p $HOME/.texmf $HOME/.cpan/build
 
 
-if [[ -d $HOME/stow/zsh/{init,universe} ]];then
+if [[ -d $HOME/stow/zsh/init ]];then
     stow --dir=$HOME/stow/zsh --target=$HOME init
+fi
+
+if [[ -d $HOME/stow/zsh/universe ]];then
     stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh universe
 fi
 

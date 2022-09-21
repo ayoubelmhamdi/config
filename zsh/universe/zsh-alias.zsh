@@ -34,18 +34,6 @@ alias mpv='devour /sbin/mpv'
 alias time='/usr/bin/time'
 
 
-# mv, rm, cp
-alias rm="rm -ivr"
-alias cp="cp -ivr"
-alias mv='mv -iv'
-# alias rm='rm -Ivr'
-alias trash-list="trash-list --trash-dir=/root/.Trash-0"
-alias trash-restore="trash-restore --trash-dir=/root/.Trash-0"
-alias rmt='trash_rm'
-alias rmf='command rm -vrf'
-alias x='chmod +x'
-
-
 
 
 #alias ls='clear ; echo ; ;exa  --color=always --group-directories-first'
@@ -73,7 +61,6 @@ alias gdiff='git diff'
 alias up='git commit -m "up"'
 
 
-alias ncat='/sbin/cat'
 alias tarxf='tar xvf'
 alias untar='tar xvf'
 alias tarcf='tar cvf'

@@ -28,6 +28,8 @@
 	directory = /root/Git/plugin/cfg-highlight.nvim/after
 	directory = /root/Git/plugin/cfg-highlight.nvim
 	directory = /mnt/termux/scripts
+	directory = /home/mhamdi/book/TRPM
+	directory = /root/.config/nvim
 [pull]
 	rebase = true
 [rebase]

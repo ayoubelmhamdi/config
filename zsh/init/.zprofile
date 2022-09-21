@@ -1,22 +1,24 @@
 #!/bin/sh
+
+lazy(){
+    sleep 1
+    cp ~/.cache/cheatcheat /tmp/cheatcheat
+    mkdir -p /tmp/ayoub
+    echo "1 1" > /tmp/ayoub/cpu
+    echo " " > /tmp/ayoub/status
+    sudo rmmod wl && sudo modprobe wl
+}
+
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];
 then 
-  # echo " " > /tmp/chrono
-  # echo " " > /tmp/cliptxt
-  # echo " " > /tmp/iscro
-  # echo " " > /tmp/istrash
-  # echo " " > /tmp/ison
+    lazy &
+    startx &
 
-  cp ~/.cache/cheatcheat /tmp/cheatcheat
-  mkdir -p /tmp/ayoub
-  echo "1 1" > /tmp/ayoub/cpu
-  echo " " > /tmp/ayoub/status
-  # wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
-  #mega-sync &!
-  startx 
-  # if ! [[ "$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)" =~ 'bicon'* ]]; then
-  #  bicon.bin
-  # fi
 fi
 
 
+# echo " " > /tmp/chrono
+# echo " " > /tmp/cliptxt
+# echo " " > /tmp/iscro
+# echo " " > /tmp/istrash
+# echo " " > /tmp/ison

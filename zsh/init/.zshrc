@@ -103,3 +103,5 @@ if [[ -s $HOME/.config/zsh  ]];then
         zi snippet $file
     done
 fi
+
+alias luamake=/home/mhamdi/.cache/lua-language-server/3rd/luamake/luamake
