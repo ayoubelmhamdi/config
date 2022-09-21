@@ -47,7 +47,6 @@ alias df="df -h"
 
 
 
-
 alias main="git checkout main ^ /dev/null || git checkout master"
 alias master="main"
 alias add='git add'
