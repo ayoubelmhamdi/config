@@ -10,8 +10,8 @@ super + f
     # DRI_PRIME=1 launch_brave
     #firefox
 
-shift + Print
-  $HOME/scripts/video/record.sh
+# shift + Print
+#   $HOME/scripts/video/record.sh
 
 Print
   flameshot gui
@@ -34,11 +34,11 @@ super + shift + p
 super + n
   nv
 
-super + m
-    mdbook serve /root/book/ayoubelmhamdi.github.io -p 8002
+# super + m
+#     mdbook serve /root/book/ayoubelmhamdi.github.io -p 8002
 
-super + shift + s
-    surfer http://localhost:8002
+# super + shift + s
+#     surfer http://localhost:8002
 
 super + shift + p
   bash ~/scripts/my/dmenu/dmenu_command.sh
