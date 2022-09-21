@@ -19,3 +19,12 @@ cd_book(){
     cd $BOOK/$DIR
     nvim -c 'lua require("harpoon.ui").toggle_quick_menu()'
 }
+
+cd_git_root(){
+    GITROOT="$(git rev-parse --show-toplevel)"
+    if [ -d "$GITROOT" ];then
+        cd "$GITROOT"
+    else
+        echo "no git in this path"
+    fi
+}
