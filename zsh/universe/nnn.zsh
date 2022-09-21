@@ -5,7 +5,7 @@ declare -a bookmark=(
     'd:/mnt/simple/Download'
     'D:~/tmp/simple_download'
     'm:/mnt/simple/movies'
-    'b:~/book/TRPM'
+    'b:~/book/new'
     'W:~/tmp/whatsapp'
     'w:/mnt/simple/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents'
     'u:/mnt'
@@ -39,7 +39,7 @@ export NNN_SSHFS='sshfs -o reconnect,idmap=user,cache_timeout=3600'
 
 
 NNN_A='a:-'
-NNN_B='b:-'
+NNN_B='b:-!bat -p'
 NNN_C='c:-'
 NNN_D='d:-!git diff'
 NNN_E='e:-'
