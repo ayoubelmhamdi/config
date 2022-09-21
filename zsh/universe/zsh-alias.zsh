@@ -1,3 +1,5 @@
+#!/usr/bin/zsh
+#
 #         _   _               
 #  __ _  | | (_)   __ _   ___ 
 # / _` | | | | |  / _` | / __|
@@ -42,8 +44,6 @@ alias trash-restore="trash-restore --trash-dir=/root/.Trash-0"
 alias rmt='trash_rm'
 alias rmf='command rm -vrf'
 alias x='chmod +x'
-
-alias w=whereis
 
 
 
@@ -145,3 +145,4 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='../../../../..'
 
+alias cg=cd_git_root
