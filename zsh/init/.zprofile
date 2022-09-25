@@ -7,6 +7,7 @@ lazy(){
     echo "1 1" > /tmp/ayoub/cpu
     echo " " > /tmp/ayoub/status
     sudo rmmod wl && sudo modprobe wl
+    sudo chown -R $USER /tmp/nvim/undodir
 }
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];
