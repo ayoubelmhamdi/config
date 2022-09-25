@@ -9,6 +9,8 @@ cd_book(){
             DIR="ayoubelmhamdi.github.io" ;;
         [rR]|[rR][uU][sS][tT])
             DIR="rust-lang.org"           ;;
+        [iI]|[iI][nN][fF][oO])
+            DIR="info"                    ;;
         [lL]|[lL][iI][nn][uU][xX])
             DIR="linux"                   ;;
         [nN]|[nN][eE][wW])
