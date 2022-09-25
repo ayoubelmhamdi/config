@@ -5,6 +5,7 @@
 st &
 lazy(){
     sleep 1
+    sudo chown -R $USER /sys/class/backlight/intel_backlight/brightness &&
     echo 937 > /sys/class/backlight/intel_backlight/brightness &
     sed -E -i 's#nameserver ([0-9]{1,3}\.?){4}#nameserver 1.1.1.1#' /etc/resolv.conf  &
     ~/.fehbg &
