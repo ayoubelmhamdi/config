@@ -11,15 +11,17 @@ cd_book(){
             DIR="rust-lang.org"           ;;
         [iI]|[iI][nN][fF][oO])
             DIR="info"                    ;;
+        [pP]|[pP][rR][oO][jJ][eE][cC][tT][sS])
+            DIR="projects"                ;;
         [lL]|[lL][iI][nn][uU][xX])
             DIR="linux"                   ;;
         [nN]|[nN][eE][wW])
-            DIR="new"                   ;;
+            DIR="new"                     ;;
         *)  echo "no book at $BOOK";return;;
     esac
 
     cd $BOOK/$DIR
-    nvim -c 'lua require("harpoon.ui").toggle_quick_menu()'
+    # nvim -c 'lua require("harpoon.ui").toggle_quick_menu()'
 }
 
 cd_git_root(){
