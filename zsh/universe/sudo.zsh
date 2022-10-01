@@ -28,6 +28,7 @@ alias sv='sudo sv'
 alias mount="sudo mount"
 alias umount="sudo umount"
 
+alias sed="sudo sed"
 
 # fix sudo
 # alis ln
