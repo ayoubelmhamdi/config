@@ -1,4 +1,9 @@
 # !/bin/zsh
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(starship init zsh)"
+
 
 # SETOPT
 # ===== Basics
@@ -72,9 +77,9 @@ zinit lucid light-mode depth=1 for             \
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
-zinit ice depth=1;
-zinit light romkatv/powerlevel10k
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# zinit ice depth=1;
+# zinit light romkatv/powerlevel10k
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
 
@@ -97,11 +102,16 @@ export PATH="$GOPATH/bin:$PATH"
 if command -v pazi &>/dev/null; then
   eval "$(pazi init zsh)" # or 'bash'
 fi
+
+if command -v direnv &>/dev/null; then
+  eval "$(direnv hook zsh)"
+fi
+
+
 if [[ -s $HOME/.config/zsh  ]];then 
     for file in $HOME/.config/zsh/*;do
         zi ice silent wait
         zi snippet $file
     done
 fi
-
-alias luamake=/home/mhamdi/.cache/lua-language-server/3rd/luamake/luamake
+#exit
