@@ -1,0 +1,210 @@
+# $package\
+
+# $cmake\
+# $container\
+# $fill\
+
+format = """
+$directory\
+$sudo\
+$username\
+$hostname\
+$git_branch\
+$git_status\
+$git_commit\
+$git_state\
+$git_metrics\
+$deno\
+$golang\
+$java\
+$kotlin\
+$lua\
+$nodejs\
+$python\
+$swift\
+$env_var\
+$cmd_duration\
+$custom\
+$line_break\
+$dart\
+$rust\
+$memory_usage\
+$jobs\
+$character""" 
+
+# $status\
+
+scan_timeout = 100
+
+# $battery\
+# $time\
+
+# [sudo]
+# disabled = false
+# format = "[$symbol ]($style)"
+
+# [username]
+# format = "[$user]($style)@"
+# style_user = "bold bright-purple"
+
+[aws]
+disabled = true
+
+[azure]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[openstack]
+disabled = true
+
+[singularity]
+disabled = true
+
+[directory]
+read_only = " "
+# fish_style_pwd_dir_length = 3
+truncate_to_repo = true
+
+[vcsh]
+disabled = true
+
+[git_branch]
+symbol = "🌱 "
+truncation_symbol = ""
+ignore_branches = ["master", "main"]
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨×${count} "
+behind = "🐢×${count} "
+diverged = "🔱 🏎️ 💨×{ahead_count} 🐢×${behind_count} "
+untracked = "🛤️ ×${count} "
+stashed = "📦 "
+modified = "[ ×${count} ](red)"
+staged = "🗃️ ×${count} "
+renamed = "📛×${count} "
+deleted = "🗑️ ×${count} "
+style = "brightwhite"
+format = "$all_status$ahead_behind"
+
+[fill]
+symbol = " "
+
+[docker_context]
+disabled = true
+symbol = " "
+
+[package]
+symbol = "📦 "
+format = "[$symbol$version]($style) "
+version_format = "${raw}"
+
+[cobol]
+disabled = true
+
+[dotnet]
+disabled = true
+
+[elixir]
+disabled = true
+
+[elm]
+disabled = true
+
+[erlang]
+disabled = true
+
+[helm]
+disabled = true
+
+[julia]
+disabled = true
+
+[nim]
+disabled = true
+
+[nix_shell]
+disabled = true
+
+[ocaml]
+disabled = true
+
+[perl]
+disabled = true
+
+[php]
+disabled = true
+
+[pulumi]
+disabled = true
+
+[purescript]
+disabled = true
+
+[rlang]
+disabled = true
+
+[red]
+disabled = true
+
+[ruby]
+disabled = true
+
+[scala]
+disabled = true
+
+[terraform]
+disabled = true
+
+[vlang]
+disabled = true
+
+[vagrant]
+disabled = true
+
+[zig]
+disabled = true
+
+[conda]
+disabled = true
+
+[crystal]
+disabled = true
+
+[character]
+error_symbol = "[✗](bold red) "
+
+[memory_usage]
+disabled = false
+threshold = 90
+format = "$symbol[$ram]($style)"
+style = "bold dimmed red"
+
+[status]
+disabled = false
+map_symbol = true
+success_symbol = "✓"
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "yellow"
+min_time = 5_000
+
+
+[battery]
+format = "[$symbol]($style)"
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 99
+style = "bold green"
+
