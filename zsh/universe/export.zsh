@@ -4,7 +4,7 @@ export ANDROID_SDK_root="/opt/sdk/android"
 export GRADLE_HOME="/opt/sdk/gradle/gradle-7.1.1"
 export GRADLE_USER_HOME="/opt/sdk/gradlec"
 export GTK_DEBUG="interactive"
-export JAVA_HOME="/opt/sdk/jdk-18"
+export JAVA_HOME="$HOME/opt/sdk/jdk-18"
 
 export HOWDOI_COLORIZE="1"
 export XDEB_PK_ROOT="/tmp/xdeb"
@@ -75,4 +75,8 @@ export plugin="$HOME/.config/nvim/after/plugin"
 export book="$HOME/book/ayoubelmhamdi.github.io/src"
 
 
-export LIBVA_DRIVER_NAME="i965"
+# export LIBVA_DRIVER_NAME="i965"
+
+
+
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
