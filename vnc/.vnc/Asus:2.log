@@ -1,0 +1,20 @@
+
+Xvnc TigerVNC 1.10.0 - built Jun  7 2020 06:29:07
+Copyright (C) 1999-2019 TigerVNC Team and many others (see README.rst)
+See https://www.tigervnc.org for information on TigerVNC.
+Underlying X server release 12000000, The X.Org Foundation
+
+
+Tue Aug 16 16:46:05 2022
+ vncext:      VNC extension running!
+ vncext:      Listening for VNC connections on all interface(s), port 5902
+ vncext:      created VNC server for screen 0
+/etc/X11/xinit/xinitrc: 51: twm: not found
+/etc/X11/xinit/xinitrc: 52: xclock: not found
+/etc/X11/xinit/xinitrc: 53: xterm: not found
+/etc/X11/xinit/xinitrc: 54: xterm: not found
+/etc/X11/xinit/xinitrc: 55: exec: xterm: not found
+
+Tue Aug 16 17:55:38 2022
+ ComparingUpdateTracker: 0 pixels in / 0 pixels out
+ ComparingUpdateTracker: (1:-nan ratio)

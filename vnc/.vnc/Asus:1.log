@@ -1,0 +1,166 @@
+TurboVNC Server (Xvnc) 64-bit v2.2.7 (build 20211230)
+Copyright (C) 1999-2021 The VirtualGL Project and many others (see README.txt)
+Visit http://www.TurboVNC.org for more information on TurboVNC
+
+16/08/2022 16:08:30 Using security configuration file /etc/turbovncserver-security.conf
+16/08/2022 16:08:30 Enabled security type 'tlsvnc'
+16/08/2022 16:08:30 Enabled security type 'tlsotp'
+16/08/2022 16:08:30 Enabled security type 'tlsplain'
+16/08/2022 16:08:30 Enabled security type 'x509vnc'
+16/08/2022 16:08:30 Enabled security type 'x509otp'
+16/08/2022 16:08:30 Enabled security type 'x509plain'
+16/08/2022 16:08:30 Enabled security type 'vnc'
+16/08/2022 16:08:30 Enabled security type 'otp'
+16/08/2022 16:08:30 Enabled security type 'unixlogin'
+16/08/2022 16:08:30 Enabled security type 'plain'
+16/08/2022 16:08:30 Desktop name 'TurboVNC: Asus:1 (root)' (Asus:1)
+16/08/2022 16:08:30 Protocol versions supported: 3.3, 3.7, 3.8, 3.7t, 3.8t
+16/08/2022 16:08:30 Listening for VNC connections on TCP port 5901
+16/08/2022 16:08:30   Interface 0.0.0.0
+16/08/2022 16:08:30 Framebuffer: BGRX 8/8/8/8
+16/08/2022 16:08:30 New desktop size: 1240 x 900
+16/08/2022 16:08:30 New screen layout:
+16/08/2022 16:08:30   0x00000040 (output 0x00000040): 1240x900+0+0
+16/08/2022 16:08:30 Maximum clipboard transfer size: 1048576 bytes
+16/08/2022 16:08:30 VNC extension running!
+/etc/X11/xinit/xinitrc: 51: twm: not found
+/etc/X11/xinit/xinitrc: 52: xclock: not found
+/etc/X11/xinit/xinitrc: 53: xterm: not found
+/etc/X11/xinit/xinitrc: 54: xterm: not found
+/etc/X11/xinit/xinitrc: 55: exec: xterm: not found
+
+16/08/2022 16:48:40 Got connection from client 192.168.61.113
+16/08/2022 16:48:40 Using protocol version 3.8
+16/08/2022 16:48:40 Enabling VeNCrypt protocol extensions
+16/08/2022 16:48:40 Client requested VeNCrypt sub-type 258
+16/08/2022 16:48:40 Successfully loaded symbols from libssl.so.1.1
+16/08/2022 16:48:40 Successfully loaded symbols from libcrypto.so.1.1
+16/08/2022 16:48:41 Anonymous TLS key length: 2048 bits
+16/08/2022 16:48:41 Available cipher suites: TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ADH-AES256-GCM-SHA384:ADH-AES128-GCM-SHA256:ADH-AES256-SHA256:ADH-CAMELLIA256-SHA256:ADH-AES128-SHA256:ADH-CAMELLIA128-SHA256:AECDH-AES256-SHA:ADH-AES256-SHA:ADH-CAMELLIA256-SHA:AECDH-AES128-SHA:ADH-AES128-SHA:ADH-SEED-SHA:ADH-CAMELLIA128-SHA:AECDH-NULL-SHA
+16/08/2022 16:48:41 Deferring TLS handshake
+16/08/2022 16:48:41 Negotiated cipher suite: AECDH-AES256-SHA
+16/08/2022 16:48:47 Full-control authentication enabled for 192.168.61.113
+16/08/2022 16:48:47 rfbProcessClientNormalMessage: ignoring unknown encoding -314 (fffffec6)
+16/08/2022 16:48:47 rfbProcessClientNormalMessage: ignoring unknown encoding 1464686180 (574d5664)
+16/08/2022 16:48:47 Enabling full-color cursor updates for client 192.168.61.113
+16/08/2022 16:48:47 Enabling Desktop Size protocol extension for client 192.168.61.113
+16/08/2022 16:48:47 Enabling Extended Desktop Size protocol extension for client 192.168.61.113
+16/08/2022 16:48:47 rfbProcessClientNormalMessage: ignoring unknown encoding -261 (fffffefb)
+16/08/2022 16:48:47 rfbProcessClientNormalMessage: ignoring unknown encoding 1464686184 (574d5668)
+16/08/2022 16:48:47 rfbProcessClientNormalMessage: ignoring unknown encoding -307 (fffffecd)
+16/08/2022 16:48:47 Enabling LastRect protocol extension for client 192.168.61.113
+16/08/2022 16:48:47 rfbProcessClientNormalMessage: ignoring unknown encoding -1063131698 (c0a1e5ce)
+16/08/2022 16:48:47 Enabling Continuous Updates protocol extension for client 192.168.61.113
+16/08/2022 16:48:47 Enabling Fence protocol extension for client 192.168.61.113
+16/08/2022 16:48:47 rfbProcessClientNormalMessage: ignoring unknown encoding -258 (fffffefe)
+16/08/2022 16:48:47 Using tight encoding for client 192.168.61.113
+16/08/2022 16:48:47 Using JPEG subsampling 0, Q92 for client 192.168.61.113
+16/08/2022 16:48:47 Using Tight compression level 2 for client 192.168.61.113
+16/08/2022 16:48:47 Using 4 threads for Tight encoding
+16/08/2022 16:48:47 Continuous updates enabled
+16/08/2022 16:48:48 New desktop size: 704 x 753
+16/08/2022 16:48:48 New screen layout:
+16/08/2022 16:48:48   0x00000040 (output 0x00000040): 704x753+0+0
+16/08/2022 16:48:48 Continuous updates enabled
+16/08/2022 16:48:48 Continuous updates enabled
+16/08/2022 16:49:07 New desktop size: 1280 x 753
+16/08/2022 16:49:07 New screen layout:
+16/08/2022 16:49:07   0x00000000 (output 0x00000040): 1280x753+0+0
+16/08/2022 16:49:07 Continuous updates enabled
+16/08/2022 16:49:07 Continuous updates enabled
+16/08/2022 16:49:14 Continuous updates enabled
+16/08/2022 16:49:23 New desktop size: 1280 x 800
+16/08/2022 16:49:23 New screen layout:
+16/08/2022 16:49:23   0x74b0dc51 (output 0x00000040): 1280x800+0+0
+16/08/2022 16:49:23 Continuous updates enabled
+16/08/2022 16:49:23 Continuous updates enabled
+16/08/2022 16:50:46 New desktop size: 1280 x 753
+16/08/2022 16:50:46 New screen layout:
+16/08/2022 16:50:46   0x00000000 (output 0x00000040): 1280x753+0+0
+16/08/2022 16:50:46 Continuous updates enabled
+16/08/2022 16:50:46 Continuous updates enabled
+16/08/2022 16:50:48 Client 192.168.61.113 gone
+16/08/2022 16:50:48 Statistics:
+16/08/2022 16:50:48   key events received 56, pointer events 123
+16/08/2022 16:50:48   framebuffer updates 6, rectangles 31, bytes 468
+16/08/2022 16:50:48     LastRect markers 6, bytes 72
+16/08/2022 16:50:48     cursor shape updates 1, bytes 12
+16/08/2022 16:50:48     Tight rectangles 24, bytes 384
+16/08/2022 16:50:48   raw equivalent 22.246600 Mbytes, compression ratio 57933.854167
+
+16/08/2022 16:53:38 Got connection from client 192.168.61.113
+16/08/2022 16:53:38 Using protocol version 3.8
+16/08/2022 16:53:38 Enabling VeNCrypt protocol extensions
+16/08/2022 16:53:38 Client requested VeNCrypt sub-type 258
+16/08/2022 16:53:41 Anonymous TLS key length: 2048 bits
+16/08/2022 16:53:41 Available cipher suites: TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ADH-AES256-GCM-SHA384:ADH-AES128-GCM-SHA256:ADH-AES256-SHA256:ADH-CAMELLIA256-SHA256:ADH-AES128-SHA256:ADH-CAMELLIA128-SHA256:AECDH-AES256-SHA:ADH-AES256-SHA:ADH-CAMELLIA256-SHA:AECDH-AES128-SHA:ADH-AES128-SHA:ADH-SEED-SHA:ADH-CAMELLIA128-SHA:AECDH-NULL-SHA
+16/08/2022 16:53:41 Deferring TLS handshake
+16/08/2022 16:53:41 Negotiated cipher suite: AECDH-AES256-SHA
+16/08/2022 16:53:45 Full-control authentication enabled for 192.168.61.113
+16/08/2022 16:53:45 rfbProcessClientNormalMessage: ignoring unknown encoding -314 (fffffec6)
+16/08/2022 16:53:45 rfbProcessClientNormalMessage: ignoring unknown encoding 1464686180 (574d5664)
+16/08/2022 16:53:45 Enabling full-color cursor updates for client 192.168.61.113
+16/08/2022 16:53:45 Enabling Desktop Size protocol extension for client 192.168.61.113
+16/08/2022 16:53:45 Enabling Extended Desktop Size protocol extension for client 192.168.61.113
+16/08/2022 16:53:45 rfbProcessClientNormalMessage: ignoring unknown encoding -261 (fffffefb)
+16/08/2022 16:53:45 rfbProcessClientNormalMessage: ignoring unknown encoding 1464686184 (574d5668)
+16/08/2022 16:53:45 rfbProcessClientNormalMessage: ignoring unknown encoding -307 (fffffecd)
+16/08/2022 16:53:45 Enabling LastRect protocol extension for client 192.168.61.113
+16/08/2022 16:53:45 rfbProcessClientNormalMessage: ignoring unknown encoding -1063131698 (c0a1e5ce)
+16/08/2022 16:53:45 Enabling Continuous Updates protocol extension for client 192.168.61.113
+16/08/2022 16:53:45 Enabling Fence protocol extension for client 192.168.61.113
+16/08/2022 16:53:45 rfbProcessClientNormalMessage: ignoring unknown encoding -258 (fffffefe)
+16/08/2022 16:53:45 Using tight encoding for client 192.168.61.113
+16/08/2022 16:53:45 Using JPEG subsampling 0, Q92 for client 192.168.61.113
+16/08/2022 16:53:45 Using Tight compression level 2 for client 192.168.61.113
+16/08/2022 16:53:45 Using 4 threads for Tight encoding
+16/08/2022 16:53:45 Continuous updates enabled
+16/08/2022 16:53:45 New desktop size: 704 x 753
+16/08/2022 16:53:45 New screen layout:
+16/08/2022 16:53:45   0x00000000 (output 0x00000040): 704x753+0+0
+16/08/2022 16:53:45 Continuous updates enabled
+16/08/2022 16:53:45 Continuous updates enabled
+16/08/2022 16:54:52 Client 192.168.61.113 gone
+16/08/2022 16:54:52 Statistics:
+16/08/2022 16:54:52   key events received 0, pointer events 6
+16/08/2022 16:54:52   framebuffer updates 2, rectangles 11, bytes 164
+16/08/2022 16:54:52     LastRect markers 2, bytes 24
+16/08/2022 16:54:52     cursor shape updates 1, bytes 12
+16/08/2022 16:54:52     Tight rectangles 8, bytes 128
+16/08/2022 16:54:52   raw equivalent 5.975832 Mbytes, compression ratio 46686.187500
+
+16/08/2022 16:54:54 Got connection from client 192.168.61.113
+16/08/2022 16:54:54 Using protocol version 3.8
+16/08/2022 16:54:54 Enabling VeNCrypt protocol extensions
+16/08/2022 16:54:54 Client requested VeNCrypt sub-type 258
+16/08/2022 16:54:55 Anonymous TLS key length: 2048 bits
+16/08/2022 16:54:55 Available cipher suites: TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:ADH-AES256-GCM-SHA384:ADH-AES128-GCM-SHA256:ADH-AES256-SHA256:ADH-CAMELLIA256-SHA256:ADH-AES128-SHA256:ADH-CAMELLIA128-SHA256:AECDH-AES256-SHA:ADH-AES256-SHA:ADH-CAMELLIA256-SHA:AECDH-AES128-SHA:ADH-AES128-SHA:ADH-SEED-SHA:ADH-CAMELLIA128-SHA:AECDH-NULL-SHA
+16/08/2022 16:54:55 Deferring TLS handshake
+16/08/2022 16:54:55 Negotiated cipher suite: AECDH-AES256-SHA
+16/08/2022 16:54:59 Full-control authentication enabled for 192.168.61.113
+16/08/2022 16:54:59 rfbProcessClientNormalMessage: ignoring unknown encoding -314 (fffffec6)
+16/08/2022 16:54:59 rfbProcessClientNormalMessage: ignoring unknown encoding 1464686180 (574d5664)
+16/08/2022 16:54:59 Enabling full-color cursor updates for client 192.168.61.113
+16/08/2022 16:54:59 Enabling Desktop Size protocol extension for client 192.168.61.113
+16/08/2022 16:54:59 Enabling Extended Desktop Size protocol extension for client 192.168.61.113
+16/08/2022 16:54:59 rfbProcessClientNormalMessage: ignoring unknown encoding -261 (fffffefb)
+16/08/2022 16:54:59 rfbProcessClientNormalMessage: ignoring unknown encoding 1464686184 (574d5668)
+16/08/2022 16:54:59 rfbProcessClientNormalMessage: ignoring unknown encoding -307 (fffffecd)
+16/08/2022 16:54:59 Enabling LastRect protocol extension for client 192.168.61.113
+16/08/2022 16:54:59 rfbProcessClientNormalMessage: ignoring unknown encoding -1063131698 (c0a1e5ce)
+16/08/2022 16:54:59 Enabling Continuous Updates protocol extension for client 192.168.61.113
+16/08/2022 16:54:59 Enabling Fence protocol extension for client 192.168.61.113
+16/08/2022 16:54:59 rfbProcessClientNormalMessage: ignoring unknown encoding -258 (fffffefe)
+16/08/2022 16:54:59 Using tight encoding for client 192.168.61.113
+16/08/2022 16:54:59 Using JPEG subsampling 0, Q92 for client 192.168.61.113
+16/08/2022 16:54:59 Using Tight compression level 2 for client 192.168.61.113
+16/08/2022 16:54:59 Using 4 threads for Tight encoding
+16/08/2022 16:54:59 Continuous updates enabled
+16/08/2022 16:55:08 Client 192.168.61.113 gone
+16/08/2022 16:55:08 Statistics:
+16/08/2022 16:55:08   key events received 4, pointer events 0
+16/08/2022 16:55:08   framebuffer updates 1, rectangles 6, bytes 88
+16/08/2022 16:55:08     LastRect markers 1, bytes 12
+16/08/2022 16:55:08     cursor shape updates 1, bytes 12
+16/08/2022 16:55:08     Tight rectangles 4, bytes 64
+16/08/2022 16:55:08   raw equivalent 2.120460 Mbytes, compression ratio 33132.187500
