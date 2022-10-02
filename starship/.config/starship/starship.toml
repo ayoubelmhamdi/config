@@ -208,3 +208,8 @@ style = "bold yellow"
 threshold = 99
 style = "bold green"
 
+[custom.direnv]
+# command = "cat .envrc | grep -v -E '^[ ]*#|^$' | wc -l"
+files = [".envrc"]
+style = "bg:white fg:black"
+format = "[env]($style) "
