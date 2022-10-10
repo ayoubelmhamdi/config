@@ -19,25 +19,23 @@ $golang\
 $java\
 $kotlin\
 $lua\
-$nodejs\
 $python\
 $swift\
 $env_var\
 $cmd_duration\
 $custom\
-$line_break\
 $dart\
-$rust\
 $memory_usage\
-$jobs\
+$line_break\
 $character""" 
+# $nodejs\
+# $jobs\
+# $rust\
 
 # $status\
 
-scan_timeout = 100
-
-# $battery\
-# $time\
+scan_timeout = 10000000
+command_timeout = 100000000
 
 # [sudo]
 # disabled = false
@@ -73,7 +71,7 @@ disabled = true
 [git_branch]
 symbol = "🌱 "
 truncation_symbol = ""
-ignore_branches = ["master", "main"]
+# ignore_branches = ["master", "main"]
 
 [git_status]
 conflicted = "⚔️ "
