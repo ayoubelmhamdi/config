@@ -10,6 +10,6 @@ export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 
 # flutter
-export PATH=/opt/sdk/flutter/bin:$PATH
+export PATH=$HOME/opt/sdk/flutter/bin:$PATH
 
 
