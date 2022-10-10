@@ -1,7 +1,9 @@
 # !/bin/zsh
+
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv 2>/dev/null)"  
 eval "$(starship init zsh)"
 
 
@@ -115,3 +117,6 @@ if [[ -s $HOME/.config/zsh  ]];then
     done
 fi
 #exit
+# Set PATH, MANPATH, etc., for Homebrew.
+
+export B=2
