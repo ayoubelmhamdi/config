@@ -5,7 +5,8 @@
 xinit_lazy(){
     sl &
     sleep 1
-    echo 937 | sudo tee /sys/class/backlight/intel_backlight/brightness &
+    [ -f" $HOME/.config/brightness/brightness-kernel" ] &&
+        cat "$HOME/.config/brightness/brightness-kernel" | sudo tee /sys/class/backlight/intel_backlight/brightness &
     sudo sed -E -i 's#nameserver ([0-9]{1,3}\.?){4}#nameserver 1.1.1.1#' /etc/resolv.conf  &
     ~/.fehbg &
     sleep 1
@@ -21,14 +22,12 @@ xinit_lazy(){
     #dwl
 
     sleep 10
-    nvim --headless $HOME/.config/nvim/init.lua +qall
-    nvim --headless $HOME/.config/nvim/init.lua +qall
+    # nvim --headless $HOME/.config/nvim/init.lua +qall
     sleep 200
-    launch_brave
+    #launch_brave
 }
 
 setxkbmap -layout us,ara -option grp:alt_shift_toggle
-Xmodmap ~/.Xmodmap
 ### change menu to super
 ##xmodmap -e "keycode 135 = Super_R"
 ### change caps to shift
@@ -38,8 +37,8 @@ Xmodmap ~/.Xmodmap
 ### xmodmap -e "clear mod4"
 ### xmodmap -e "keycode 108 = Super_R NoSymbol Super_R"
 
-xmodmap ~/.Xmodmap &
-st &
+exec  xmodmap ~/.Xmodmap &
+exec  st &
 xinit_lazy &
 
 while true; do
