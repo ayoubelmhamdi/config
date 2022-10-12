@@ -25,6 +25,9 @@ ctrl + shift + 1
 super + shift + p
     passmenu
 
+super + w
+    iwgtk
+
 #super + q
 #  bash /root/scripts/dmenu/learn_with_dmenu.sh
 #
