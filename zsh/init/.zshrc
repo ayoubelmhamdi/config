@@ -5,7 +5,7 @@
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv 2>/dev/null)"  
 eval "$(starship init zsh)"
-
+eval "$(dbus-launch --auto-syntax)"
 
 # SETOPT
 # ===== Basics
