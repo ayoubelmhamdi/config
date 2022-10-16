@@ -22,7 +22,7 @@ xinit_lazy(){
     #dwl
 
     sleep 10
-    # nvim --headless $HOME/.config/nvim/init.lua +qall
+    nvim --headless $HOME/.config/nvim/init.lua +qall
     sleep 200
     #launch_brave
 }
@@ -40,6 +40,7 @@ setxkbmap -layout us,ara -option grp:alt_shift_toggle
 exec  xmodmap ~/.Xmodmap &
 exec  st &
 xinit_lazy &
+numlockx on &
 
 while true; do
     dwm >/dev/null 2>&1
