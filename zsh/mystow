@@ -1,7 +1,7 @@
 #!/bin/bash
 
-root=${1:-ayoub}
 LINUX=${1:-void}
+root=${2:-ayoub}
 
 mkdir -p $HOME/.config/zsh
 mkdir -p $HOME/.texmf $HOME/.cpan/build
