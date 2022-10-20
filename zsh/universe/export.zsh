@@ -56,7 +56,7 @@ export codes="/mega/repo/codes"
 export function_="$HOME/.config/zsh/my_function"
 export kitty="$HOME/.config/kitty/kitty.conf"
 export nvimdoc="/usr/local/share/nvim/runtime/doc"
-export packerdir="$HOME/.local/share/nvim/site/pack/packer/start"
+export packerdir="$HOME/.local/share/nvim/site/pack/packer/opt"
 export path_="$HOME/.config/zsh/all_PATH"
 export repo="/mega/repo"
 export scripts="$HOME/scripts"
@@ -71,13 +71,11 @@ export zshrc="$HOME/.zshrc"
 
 export nvimdir="$HOME/.config/nvim"
 export packerdir="$HOME/.local/share/nvim/site/pack/packer/start"
-export plugin="$HOME/.config/nvim/after/plugin"
-export book="$HOME/book/ayoubelmhamdi.github.io/src"
+export plugin="$HOME/.config/nvim/lua"
 
-
-# export LIBVA_DRIVER_NAME="i965"
-
-
+export opt="$HOME/opt"
+export porject="$HOME/project"
+export fork="$HOME/projects/git/fork"
 
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export DIRENV_LOG_FORMAT=
