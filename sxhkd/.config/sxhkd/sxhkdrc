@@ -28,8 +28,8 @@ super + shift + p
 super + w
     iwgtk
 
-#super + q
-#  bash /root/scripts/dmenu/learn_with_dmenu.sh
+super + q
+  bash /tmp/run
 #
 #super + shift + q
 #  bash /root/scripts/dmenu/add-word.sh
