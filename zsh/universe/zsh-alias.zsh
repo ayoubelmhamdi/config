@@ -92,7 +92,7 @@ alias which='command -v'
 alias vv='v -c "Telescope frecency default_text=:CWD:"'
 alias atmux='tmux a|| tmux'
 
-alias ping='ping -c 1'
+#alias ping='ping -c 1'
 alias df_device="df -h -kHl | grep -v 'cgroup\|tmp'"
 # # typos
 # abbr gti git
