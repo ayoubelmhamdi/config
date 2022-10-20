@@ -27,7 +27,7 @@ xinit_lazy(){
     #launch_brave
 }
 
-setxkbmap -layout us,ara -option grp:alt_shift_toggle
+#setxkbmap -layout us,ara -option grp:alt_shift_toggle
 ### change menu to super
 ##xmodmap -e "keycode 135 = Super_R"
 ### change caps to shift
