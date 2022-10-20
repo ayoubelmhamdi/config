@@ -10,12 +10,12 @@
 	current = yellow bold
 	local = green bold
 	remote = cyan bold
-; [color "diff"]
-; 	meta = yellow bold
-; 	frag = magenta bold
-; 	old = red bold
-; 	new = green bold
-; 	whitespace = red reverse
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
 [color "status"]
 	added = green bold
 	changed = yellow bold
@@ -38,7 +38,7 @@
 [core]
 	pager = delta --line-numbers --dark
 	editor = nvim
-	excludesfile = /root/.gitignore
+	excludesfile = $HOME/.gitignore
 
 [interactive]
     diffFilter = delta --color-only
@@ -48,10 +48,19 @@
     light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
 	; side-by-side = true
 
-[merge]
-    conflictstyle = diff3
-
-[diff]
-    colorMoved = default
 [alias]
     ignore = !echo "$2" >> $(git rev-parse --show-toplevel)/.git/info/exclude 
+
+[merge]
+    conflictstyle = diff3
+    tool=nvim
+[mergetool "nvim"]
+  cmd = nvim -f -c \"vert diffsplit\" \"$MERGED\"
+;"
+[difftool]
+    prompt = false
+[diff]
+    colorMoved = default
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d"
