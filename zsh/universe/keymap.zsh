@@ -14,3 +14,6 @@ bindkey '^[[1;5C' forward-word               # key <C-right>
 
 # keys
 bindkey '^[[P' delete-char                   # key <delete>
+
+set -o ignoreeof
+bindkey '^D' delete-char                   # key <delete>
