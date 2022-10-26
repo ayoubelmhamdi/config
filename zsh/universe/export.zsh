@@ -26,7 +26,7 @@ export LC_TELEPHONE="POSIX"
 export LC_TIME="POSIX"
 
 export TERM="st-256color"
-export TIME="\n%C\n\ttime = %e Sec \n\tCPU  = %P \n\tRAM  = %"
+export TIME="\n%E CPU=%P"
 
 
 export app8="$HOME/projects/flutter/app8"
