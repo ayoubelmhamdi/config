@@ -61,7 +61,7 @@ cd (){
 
     if [ -d "$1" ];then
         builtin cd "$1"
-        zoxide add "$1"
+        zoxide add .
         return
     fi
 
