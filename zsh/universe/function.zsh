@@ -20,14 +20,14 @@ cd_book(){
         *)  echo "no book at $BOOK";return;;
     esac
 
-    cd $BOOK/$DIR
+    builtin cd $BOOK/$DIR
     # nvim -c 'lua require("harpoon.ui").toggle_quick_menu()'
 }
 
 cd_git_root(){
     GITROOT="$(git rev-parse --show-toplevel)"
     if [ -d "$GITROOT" ];then
-        cd "$GITROOT"
+        builtin cd "$GITROOT"
     else
         echo "no git in this path"
     fi
