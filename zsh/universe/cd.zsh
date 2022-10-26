@@ -21,3 +21,43 @@ fork(){
     fi
 }
 
+#function z
+#    if test -d $argv
+#        cd $argv
+#        zoxide add
+#    else
+#        set zres ( zoxide query $argv|cut -c8-)
+#        if test (count $zres) -gt 0
+#            cd $zres
+#        end
+#    end
+#end
+
+cd (){
+    if [ $# -eq 0 ];then
+        builtin cd $HOME
+        return
+    fi
+
+    if ! [ "$1" != "~" ];then
+        builtin cd $HOME
+        return
+    fi
+
+    if ! [ "$1" != "-" ];then
+        builtin cd $HOME
+        return
+    fi
+
+    if [ -d "$1" ];then
+        builtin cd "$1"
+        zoxide add "$1"
+        return
+    fi
+
+    query=$( zoxide query "$1" | head -1)
+    if [ $? -eq 0 ] && [ -d "$query" ];then
+        builtin cd "$query"
+        zoxide add "$query"
+    fi
+}
