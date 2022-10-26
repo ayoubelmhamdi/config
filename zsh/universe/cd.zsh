@@ -39,6 +39,16 @@ cd (){
         return
     fi
 
+    if ! [ "$1" != ".." ];then
+        builtin cd "$(pwd)/.."
+        return
+    fi
+
+    if ! [ "$1" != "..." ];then
+        builtin cd "$(pwd)/../.."
+        return
+    fi
+
     if ! [ "$1" != "~" ];then
         builtin cd $HOME
         return
