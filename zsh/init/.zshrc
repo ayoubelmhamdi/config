@@ -3,9 +3,7 @@
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv 2>/dev/null)"  
 eval "$(starship init zsh)"
-eval "$(dbus-launch --auto-syntax)"
 
 # SETOPT
 # ===== Basics
@@ -86,8 +84,8 @@ zinit lucid light-mode depth=1 for             \
 
 
 # ENV VARIABLE
-ZSH_AUTOSUGGEST_MANUAL_REBIND=1  # make prompt faster
-DISABLE_MAGIC_FUNCTIONS=true     # make pasting into terminal faster
+export ZSH_AUTOSUGGEST_MANUAL_REBIND=1  # make prompt faster
+export DISABLE_MAGIC_FUNCTIONS=true     # make pasting into terminal faster
 export EDITOR=nvim
 export PAGER=bat
 export DOCKER_BUILDKIT=1
@@ -101,22 +99,51 @@ export CGO_CFLAGS="-g -O2 -Wno-return-local-addr"
 export GOPATH="$HOME/go/"
 export PATH="$GOPATH/bin:$PATH"
 
-if command -v pazi &>/dev/null; then
-  eval "$(pazi init zsh)" # or 'bash'
-fi
-
-if command -v direnv &>/dev/null; then
-  eval "$(direnv hook zsh)"
-fi
-
-
 if [[ -s $HOME/.config/zsh  ]];then 
     for file in $HOME/.config/zsh/*;do
         zi ice silent wait
         zi snippet $file
     done
 fi
-#exit
-# Set PATH, MANPATH, etc., for Homebrew.
 
-export B=2
+
+
+#if command -v pazi &>/dev/null; then
+#  eval "$(pazi init zsh)" # or 'bash'
+#fi
+
+#
+# after compinit and user zsh config
+#
+
+if command -v zoxide &>/dev/null; then
+  eval "$(zoxide init zsh)"
+fi
+
+if command -v direnv &>/dev/null; then
+  eval "$(direnv hook zsh)"
+fi
+
+if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv 2>/dev/null)"  
+fi
+
+if command -v dbus-launch &>/dev/null; then
+  eval "$(dbus-launch --auto-syntax)"
+fi
+
+### >>> conda initialize >>>
+### !! Contents within this block are managed by 'conda init' !!
+##__conda_setup="$('/home/mhamdi/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+##if [ $? -eq 0 ]; then
+##    eval "$__conda_setup"
+##else
+##    if [ -f "/home/mhamdi/miniconda3/etc/profile.d/conda.sh" ]; then
+##        . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
+##    else
+##        export PATH="/home/mhamdi/miniconda3/bin:$PATH"
+##    fi
+##fi
+##unset __conda_setup
+### <<< conda initialize <<<
+
