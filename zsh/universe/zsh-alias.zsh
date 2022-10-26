@@ -122,13 +122,11 @@ setopt pushd_ignore_dups
 setopt pushdminus
 
 
-alias cd..="cd .." # Typo addressed.
-alias -- -="cd -"
-alias cd_='cd $_'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias ......='../../../../..'
+alias cd..="builtin cd .." # Typo addressed.
+alias -- -="builtin cd -"
+alias cd_='builtin cd $_'
+alias ..='builtin cd ..'
+alias ...='builtin cd ../..'
+alias ....='builtin cd ../../..'
 
 alias cg=cd_git_root
