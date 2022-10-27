@@ -19,7 +19,7 @@ Print
 ctrl + shift + 1
   setxkbmap us
   
-ctrl + shift + 1
+ctrl + shift + 2
   setxkbmap ara
 
 super + shift + p
@@ -30,7 +30,9 @@ super + w
 
 super + q
   bash /tmp/run
-#
+
+super + y
+  /home/mhamdi/bin/yt
 #super + shift + q
 #  bash /root/scripts/dmenu/add-word.sh
 
@@ -47,7 +49,7 @@ super + shift + p
   bash ~/scripts/my/dmenu/dmenu_command.sh
 
 super + o
-  mpv --loop $(xclip -o -sel clip)
+mpv --loop "$(xclip -o -sel clip)"
 
 #connect
 super + shift + c
