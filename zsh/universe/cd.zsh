@@ -65,9 +65,14 @@ cd (){
         return
     fi
 
-    query=$( zoxide query "$1" | head -1)
+    query=$( zoxide query "$1" >/dev/null 2>&1 | head -1)
     if [ $? -eq 0 ] && [ -d "$query" ];then
         builtin cd "$query"
         zoxide add "$query"
+    else
+        case "$1" in
+            "pack"*) builtin cd "$packerdir" ;;
+            *) echo 'zoxide: no match found !!' ;;
+        esac
     fi
 }
