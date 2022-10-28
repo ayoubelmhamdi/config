@@ -11,8 +11,12 @@
 
 # Source
 
+# TODO: mouve to cd
 source $HOME/scripts/app/cdf
 alias b=cd_book
+
+alias stat="stat -c '%a  user:%U group:%G'"
+
 alias lsblk='echo;lsblk --output LABEL,FSUSE%,NAME,MOUNTPOINT'
 # alias ip=/usr/local/bin/ip
 alias cu='curl -LO'
