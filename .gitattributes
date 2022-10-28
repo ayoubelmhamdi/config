@@ -1,2 +1,2 @@
 # prevent auto generated perl
-latex/* linguist-vendored
+*.pm linguist-vendored
