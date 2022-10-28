@@ -31,8 +31,13 @@ super + w
 super + q
   bash /tmp/run
 
+# use xdotool to grep url
+super + shift + y
+  /home/mhamdi/bin/yt use_xdotool >/tmp/log.yt.log 2>&1
+
+# use url that already yanked
 super + y
-  /home/mhamdi/bin/yt
+  /home/mhamdi/bin/yt >/tmp/log.yt.log 2>&1
 #super + shift + q
 #  bash /root/scripts/dmenu/add-word.sh
 
