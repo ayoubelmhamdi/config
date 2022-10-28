@@ -10,7 +10,7 @@ xinit_lazy(){
     sudo sed -E -i 's#nameserver ([0-9]{1,3}\.?){4}#nameserver 1.1.1.1#' /etc/resolv.conf  &
     ~/.fehbg &
     sleep 1
-    sxhkd   &
+    sxhkd > /tmp/log.xshkd.log  &
     ls &
     amixer sset 'Master' 90% &
     # should fisrt ALt-shift
