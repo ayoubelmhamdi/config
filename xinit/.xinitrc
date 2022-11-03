@@ -10,7 +10,7 @@ xinit_lazy(){
     sudo sed -E -i 's#nameserver ([0-9]{1,3}\.?){4}#nameserver 1.1.1.1#' /etc/resolv.conf  &
     ~/.fehbg &
     sleep 1
-    sxhkd > /tmp/log.xshkd.log  &
+    sxhkd >> /tmp/log.xshkd.log  &
     ls &
     amixer sset 'Master' 90% &
     # should fisrt ALt-shift
@@ -22,8 +22,12 @@ xinit_lazy(){
     #dwl
 
     sleep 10
-    nvim --headless $HOME/.config/nvim/init.lua +qall
-    sleep 200
+    nvim --headless $HOME/.config/nvim/init.lua +qall &
+    # Sound
+    exec pipewire &
+    exec pulseaudio &
+    exec pipewire-pulse &
+    # sleep 200
     #launch_brave
 }
 
