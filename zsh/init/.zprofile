@@ -18,7 +18,7 @@ then
         echo 'zprofile'
     }
     lazy &
-    exec  startx &
+    exec startx
 
 fi
 
