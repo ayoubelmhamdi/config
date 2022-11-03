@@ -1,0 +1,26 @@
+clear lock
+!keycode 66 = Shift_L
+! keycode 37 = Control_L
+
+! keycode  68 = Super_L
+! keycode  95 = Super_R
+
+
+! ! use another key for ctrl and supper
+clear control
+keycode   66 =
+keycode   37 = Control_L
+add control = Control_L Control_R
+!
+! keycode  37 =
+! keycode 105 =
+
+
+!### change menu to super
+!##xmodmap -e "keycode 135 = Super_R"
+!### change caps to shift
+!##xmodmap -e "keycode 66 = Shift_L"
+!### ALT_R --> Super
+!### xmodmap -e "clear mod1"
+!### xmodmap -e "clear mod4"
+!### xmodmap -e "keycode 108 = Super_R NoSymbol Super_R"
