@@ -76,5 +76,9 @@ export opt="$HOME/opt"
 export porject="$HOME/project"
 export fork="$HOME/projects/git/fork"
 
+# override starship global config
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export DIRENV_LOG_FORMAT=
+
+# override ncrustify global config
+export UNCRUSTIFY_CONFIG=$HOME/.config/uncrustify/uncrustify.cfg
