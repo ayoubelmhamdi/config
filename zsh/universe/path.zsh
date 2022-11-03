@@ -12,4 +12,5 @@ export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 # flutter
 export PATH=$HOME/opt/sdk/flutter/bin:$PATH
 
-
+# USER
+export PATH=$HOME/scripts/bin:$PATH
