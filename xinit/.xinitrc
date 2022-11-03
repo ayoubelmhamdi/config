@@ -3,15 +3,15 @@
 #xrandr --auto
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
 xinit_lazy(){
-    sl &
+    $HOME/scripts/bin/sl &
     sleep 1
-    [ -f" $HOME/.config/brightness/brightness-kernel" ] &&
+    if [ -f "$HOME/.config/brightness/brightness-kernel" ];then
         cat "$HOME/.config/brightness/brightness-kernel" | sudo tee /sys/class/backlight/intel_backlight/brightness &
+    fi
     sudo sed -E -i 's#nameserver ([0-9]{1,3}\.?){4}#nameserver 1.1.1.1#' /etc/resolv.conf  &
     ~/.fehbg &
-    sleep 1
-    sxhkd >> /tmp/log.xshkd.log  &
-    ls &
+    sxhkd > /tmp/log.xshkd.log  &
+    ls /data ~ &
     amixer sset 'Master' 90% &
     # should fisrt ALt-shift
     
@@ -21,14 +21,14 @@ xinit_lazy(){
     #setxkbmap fr
     #dwl
 
-    sleep 10
-    nvim --headless $HOME/.config/nvim/init.lua +qall &
     # Sound
     exec pipewire &
     exec pulseaudio &
     exec pipewire-pulse &
-    # sleep 200
-    #launch_brave
+
+    sleep 10
+    nvim --headless $HOME/.config/nvim/init.lua +qall &
+
 }
 
 #setxkbmap -layout us,ara -option grp:alt_shift_toggle
@@ -41,10 +41,10 @@ xinit_lazy(){
 ### xmodmap -e "clear mod4"
 ### xmodmap -e "keycode 108 = Super_R NoSymbol Super_R"
 
-exec  xmodmap ~/.Xmodmap &
-exec  st &
+exec xmodmap ~/.Xmodmap &
+exec st &
+exec numlockx on &
 xinit_lazy &
-numlockx on &
 
 while true; do
     dwm >/dev/null 2>&1
