@@ -1,5 +1,6 @@
 # !/bin/zsh
 
+builtin cd /data
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -63,7 +64,7 @@ zinit wait lucid for \
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 # plugin
-zinit lucid light-mode depth=1 for             \
+zinit lucid light-mode wait depth=1 for             \
     atinit"typeset -gA FAST_HIGHLIGHT; FAST_HIGHLIGHT[git-cmsg-len]=100; zpcompinit; zpcdreplay" \
         zdharma/fast-syntax-highlighting           \
 	atinit"zicompinit; zicdreplay"             \
@@ -101,7 +102,7 @@ export PATH="$GOPATH/bin:$PATH"
 
 if [[ -s $HOME/.config/zsh  ]];then 
     for file in $HOME/.config/zsh/*;do
-        zi ice silent wait
+        zi ice silent wait 0.1
         zi snippet $file
     done
 fi
