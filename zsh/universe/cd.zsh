@@ -35,7 +35,8 @@ fork(){
 
 cd (){
     if [ $# -eq 0 ];then
-        builtin cd $HOME
+        # builtin cd $HOME
+        builtin cd /data
         return
     fi
 
