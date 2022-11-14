@@ -23,7 +23,7 @@ done
 export NNN_BMS
 export NNN_SSHFS="sshfs -o follow_symlinks"        # make sshfs follow symlinks on the remote
 export NNN_COLORS="2136"                           # use a different color for each context
-export NNN_TRASH=1
+export NNN_TRASH=0
 export NNN_FIFO=/tmp/nnn.fifo
 export NNN_TMPFILE="/tmp/nnn"
 
