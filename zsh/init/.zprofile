@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# TODO: mouve to xinitrc this lazy func
 lazy(){
     sleep 0.1
     cp -u ~/.cache/cheatcheat /tmp/cheatcheat
@@ -11,15 +12,22 @@ lazy(){
     #sudo rmmod wl && sudo modprobe wl
 }
 
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];
-then 
-    export A=2
-    f1(){
-        echo 'zprofile'
-    }
-    lazy &
-    exec startx
+set_env_var_and_path(){
+  # GO SETTINGS
+  export CGO_ENABLED=1
+  export CGO_CFLAGS="-g -O2 -Wno-return-local-addr"
+  export GOPATH="$HOME/go/"
+  export PATH="$GOPATH/bin:$PATH"
 
+  if [[ -s $HOME/.config/zprofile  ]];then 
+    for file in $HOME/.config/zprofile/*;do
+      source "$file"
+    done
+  fi
+}
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  set_env_var_and_path
+  lazy &
+  exec startx
 fi
-
-

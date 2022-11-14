@@ -6,7 +6,8 @@ xinit_lazy(){
     $HOME/scripts/bin/sl &
     sleep 1
     if [ -f "$HOME/.config/brightness/brightness-kernel" ];then
-        cat "$HOME/.config/brightness/brightness-kernel" | sudo tee /sys/class/backlight/intel_backlight/brightness &
+        # cat "$HOME/.config/brightness/xbps-install -Sy gtkbrightness-kernel" | sudo tee /sys/class/backlight/intel_backlight/brightness &
+        xbacklight -set $(cat "$HOME/.config/brightness/brightness-kernel")
     fi
     sudo sed -E -i 's#nameserver ([0-9]{1,3}\.?){4}#nameserver 1.1.1.1#' /etc/resolv.conf  &
     ~/.fehbg &

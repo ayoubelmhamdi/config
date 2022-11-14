@@ -3,29 +3,49 @@
 LINUX=${1:-void}
 root=${2:-ayoub}
 
-mkdir -p $HOME/.config/zsh
-mkdir -p $HOME/.texmf $HOME/.cpan/build
+mkdir -p "$HOME"/.config/zsh
+mkdir -p "$HOME"/.texmf "$HOME"/.cpan/build
 
+# "$HOME/stow/zsh/universe"
+# declare -a all_linux_dirs=(
+#   "universe"
+#   "zprofile"
+# )
 
-if [[ -d $HOME/stow/zsh/init ]];then
-    stow --dir=$HOME/stow/zsh --target=$HOME init
-fi
+_stow(){
+  local dir="$1"
+  # target: where we store new files
+  local target="${2:-$HOME/.config/zsh}"
+  if [[ -d "$HOME/stow/zsh/$dir" ]];then
+    stow --dir="$HOME/stow/zsh" --target="$target" "$dir"
+  fi
+}
 
-if [[ -d $HOME/stow/zsh/universe ]];then
-    stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh universe
-fi
+# stow_for_all_linux(){
+#   for dir in "${all_linux_dirs[@]}";do
+#     _stow "$dir"
+#   done
+# }
+
+# stow_init(){
+#   if [[ -d $HOME/stow/zsh/init ]];then
+#     stow --dir="$HOME"/stow/zsh --target="$HOME" init
+#   fi
+# }
+
+# stow_init
+_stow init     "$HOME"
+_stow zprofile "$HOME/.config/zprofile"
+_stow universe
 
 case "$LINUX" in
-    void)
-        if [[ -d $HOME/stow/zsh/void ]];then
-            stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh void
-        fi
-        if [[ "$root" == "root" ]];then
-            [[ -d $HOME/stow/zsh/void-root ]] && stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh void-root
-        else
-            [[ -d $HOME/stow/zsh/void-home ]] && stow --dir=$HOME/stow/zsh --target=$HOME/.config/zsh void-home
-        fi
-        ;;
-    *) echo '$LINUX not define' ;;
+  void)
+    _stow void
+    if [[ "$root" == "root" ]];then
+      _stow void-root
+    else
+      _stow void-home
+    fi
+    ;;
+  *) echo "$LINUX not define" ;;
 esac
-
