@@ -2,6 +2,7 @@
 
 (background (color-rgb 0.90588235294117647 0.90588235294117647 0.90588235294117647))
 (interpolation linear)
+(preview-opacity 0.5)
 (constrain-scale no)
 (frompivot-scale yes)
 

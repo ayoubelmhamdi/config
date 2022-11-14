@@ -1,0 +1,50 @@
+# GIMP toolrc
+
+(file-version 1)
+
+(GimpToolGroup "tool group"
+    (visible yes)
+    (active-tool "gimp-move-tool")
+    (children
+        (GimpToolInfo "gimp-move-tool"
+            (icon-name "gimp-tool-move")
+            (visible yes))
+        (GimpToolInfo "gimp-align-tool"
+            (icon-name "gimp-tool-align")
+            (visible yes))))
+(GimpToolGroup "tool group"
+    (visible yes)
+    (active-tool "gimp-ellipse-select-tool")
+    (children
+        (GimpToolInfo "gimp-rect-select-tool"
+            (icon-name "gimp-tool-rect-select")
+            (visible yes))
+        (GimpToolInfo "gimp-ellipse-select-tool"
+            (icon-name "gimp-tool-ellipse-select")
+            (visible yes))))
+(GimpToolGroup "tool group"
+    (visible yes)
+    (active-tool "gimp-iscissors-tool")
+    (children
+        (GimpToolInfo "gimp-free-select-tool"
+            (icon-name "gimp-tool-free-select")
+            (visible yes))
+        (GimpToolInfo "gimp-iscissors-tool"
+            (icon-name "gimp-tool-iscissors")
+            (visible yes))
+        (GimpToolInfo "gimp-foreground-select-tool"
+            (icon-name "gimp-tool-foreground-select")
+            (visible yes))))
+(GimpToolGroup "tool group"
+    (visible yes)
+    (active-tool "gimp-fuzzy-select-tool")
+    (children
+        (GimpToolInfo "gimp-fuzzy-select-tool"
+            (icon-name "gimp-tool-fuzzy-select")
+            (visible yes))
+        (GimpToolInfo "gimp-by-color-select-tool"
+            (icon-name "gimp-tool-by-color-select")
+            (visible yes))))
+(GimpToolInfo "gimp-crop-tool"
+    (icon-name "gimp-tool-crop")
+    (visible yes))
