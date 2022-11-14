@@ -1,6 +1,6 @@
 
 cd_book(){
-    BOOK="$HOME/book"
+    BOOK="/data/book"
 
     case ${1:-} in
         [tT]|[tT][rR][pP][mM])
