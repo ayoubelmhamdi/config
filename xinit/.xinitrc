@@ -23,7 +23,9 @@ xinit_lazy(){
 
     # Sound
     exec pipewire &
+    sleep 2
     exec pulseaudio &
+    sleep 2
     exec pipewire-pulse &
 
     sleep 10
@@ -41,7 +43,9 @@ xinit_lazy(){
 ### xmodmap -e "clear mod4"
 ### xmodmap -e "keycode 108 = Super_R NoSymbol Super_R"
 
-exec xmodmap ~/.Xmodmap &
+# turn off screen after 300 seconds
+xset s 300
+xmodmap ~/.Xmodmap
 exec st &
 exec numlockx on &
 xinit_lazy &
