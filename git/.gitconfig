@@ -1,66 +1,68 @@
 [user]
-	name = Ayoub EL Mhamdi
-	email = ayoub.elmhamdi@gmail.com
-    username = ayoubelmhamdi
+  name = Ayoub EL Mhamdi
+  email = ayoub.elmhamdi@gmail.com
+  username = ayoubelmhamdi
 [init]
-	defaultBranch = master
+  defaultBranch = master
 [color]
-	ui = auto
+  ui = auto
 [color "branch"]
-	current = yellow bold
-	local = green bold
-	remote = cyan bold
+  current = yellow bold
+  local = green bold
+  remote = cyan bold
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
 [color "status"]
-	added = green bold
-	changed = yellow bold
-	untracked = red bold
+  added = green bold
+  changed = yellow bold
+  untracked = red bold
 [safe]
-	directory = /root/stow/nvim-v2/.config/nvim/lua
-	directory = /opt/sdk/flutter
-	directory = /opt/xbps-src/void-packages
-	directory = /tmp/new_tmp/autocmd.nvim
-	directory = /root/Git/plugin/cfg-highlight.nvim/after
-	directory = /root/Git/plugin/cfg-highlight.nvim
-	directory = /mnt/termux/scripts
-	directory = /home/mhamdi/book/TRPM
-	directory = /root/.config/nvim
+  directory = /root/stow/nvim-v2/.config/nvim/lua
+  directory = /opt/sdk/flutter
+  directory = /opt/xbps-src/void-packages
+  directory = /tmp/new_tmp/autocmd.nvim
+  directory = /root/Git/plugin/cfg-highlight.nvim/after
+  directory = /root/Git/plugin/cfg-highlight.nvim
+  directory = /mnt/termux/scripts
+  directory = /home/mhamdi/book/TRPM
+  directory = /root/.config/nvim
 [pull]
-	rebase = true
+  rebase = true
 [rebase]
-	autoStash = true
+  autoStash = true
 
 [core]
-	pager = delta --line-numbers --dark
-	editor = nvim
-	excludesfile = $HOME/.gitignore
+  pager = delta --dark
+  editor = nvim
+  excludesfile = $HOME/.gitignore
 
 [interactive]
-    diffFilter = delta --color-only
+  diffFilter = delta --color-only
 
 [delta]
-    navigate = true  # use n and N to move between diff sections
-    light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
-	; side-by-side = true
+  navigate = true  # use n and N to move between diff sections
+  light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+  side-by-side = true
 
 [alias]
-    ignore = !echo "$2" >> $(git rev-parse --show-toplevel)/.git/info/exclude 
+  ignore = !echo "$2" >> $(git rev-parse --show-toplevel)/.git/info/exclude 
 
 [merge]
-    conflictstyle = diff3
-    tool=nvim
+  conflictstyle = diff3
+  tool=nvim
 [mergetool "nvim"]
   cmd = nvim -f -c \"vert diffsplit\" \"$MERGED\"
-;"
 [difftool]
-    prompt = false
+  prompt = false
 [diff]
-    colorMoved = default
-    tool = nvimdiff
+  colorMoved = default
+  tool = nvimdiff
 [difftool "nvimdiff"]
-    cmd = "nvim -d"
+  cmd = "nvim -d"
+
+[push]
+	default = current
