@@ -52,5 +52,8 @@ exec numlockx on &
 xinit_lazy &
 
 while true; do
-    dwm >/dev/null 2>&1
+    # exec dwm >/dev/null 2>&1
+    # exec gnome-shell
+    #exec metacity
+    exec i3
 done
