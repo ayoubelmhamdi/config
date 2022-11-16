@@ -1,8 +1,9 @@
 [theme.overrides]
-separator_bg = "#222222"
-separator_fg = "#222222"
+separator = ""
 idle_bg = "#222222"
 
+# separator_bg = "#222222"
+# separator_fg = "#222222"
 # idle_fg = "#ff00ff"
 # alternating_tint_bg = "#222222"
 # alternating_tint_fg = "#222222"
@@ -19,20 +20,22 @@ idle_bg = "#222222"
 
 [icons]
 name = "awesome5"
+[icons.overrides]
+cpu = ""
+
+# [[block]]
+# block = "disk_space"
+# path = "/"
+# info_type = "available"
+# unit = "GB"
+# interval = 20
+# warning = 1.1
+# alert = 1.0
+# separator=" "
 
 
 [[block]]
 block = "cpu"
-
-
-[[block]]
-block = "disk_space"
-path = "/"
-info_type = "available"
-unit = "GB"
-interval = 20
-warning = 1.1
-alert = 1.0
 
 
 [[block]]
@@ -42,30 +45,28 @@ display_type = "memory"
 interval = 5
 warning_mem = 80
 critical_mem = 95
+icons_format = "| "
 
 
 [[block]]
 block = "net"
-format= "{signal_strength} {ip}"
-interval = 5
-
-
-[[block]]
-block = "net"
-format = "{speed_up:4;K}"
+format= "{ip} {speed_up:4;K}"
 interval = 1
+icons_format = "| "
+
 
 
 [[block]]
 block = "backlight"
-icons_format = " "
 device = "intel_backlight"
 cycle = [100, 50, 5, 50]
+icons_format = "| "
 
 
 [[block]]
 block = "sound"
 format = "{volume:5#100}"
+icons_format = "  "
 
 
 [[block]]
