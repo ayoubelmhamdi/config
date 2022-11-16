@@ -46,7 +46,7 @@ alias time='/usr/bin/time'
 #alias ll='exa -l --color=always --group-directories-first'
 
 
-alias df="df -h"
+alias df="echo ;df -x squashfs -x tmpfs -x devtmpfs -h"
 # alias ddd='clear ;echo ; du -ah --max-depth 1|sort --sort=human-numeric --human-numeric-sort -r;'
 
 
