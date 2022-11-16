@@ -32,3 +32,22 @@ cd_git_root(){
         echo "no git in this path"
     fi
 }
+
+
+xp(){
+  xprop | awk '
+    /^WM_CLASS/{sub(/.* =/, "instance:"); sub(/,/, "\nclass:"); print}
+    /^WM_NAME/{sub(/.* =/, "title:"); print}'
+}
+
+get_archive_root(){
+  if [ $# -eq 1 ];then
+    tar tvf "$1" | head -1 | sed -E 's#^.{31}##'
+  elif [ $# -eq 0 ];then
+    echo
+    echo 'no args'
+  elif [ $# -ge 2 ];then
+    echo
+    echo 'args > 1'
+  fi
+}
