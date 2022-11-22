@@ -1,0 +1,192 @@
+# i3 config file (v4)
+
+
+font pango:monospace 8
+
+
+
+
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+# exec --no-startup-id nm-applet
+
+#[test] # Use pactl to adjust volume in PulseAudio.
+#[test] set $refresh_i3status pkill -SIGUSR1 i3status
+#[test] bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+#[test] bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+#[test] bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+#[test] bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+floating_modifier    Mod4
+tiling_drag modifier titlebar
+
+set $up    k
+set $down  j
+set $left  h
+set $right l
+
+# semicolon
+
+
+
+bindsym Mod4+Return    exec --no-startup-id st
+bindsym Mod4+r         mode "resize"
+bindsym Mod4+Shift+r   restart
+bindsym Mod4+Shift+q   kill
+bindsym Mod4+p         exec --no-startup-id dmenu_run
+
+bindsym Mod4+semicolon split h
+bindsym Mod4+v         split v
+
+bindsym Mod4+a         focus      parent
+bindsym Mod4+space     focus      mode_toggle
+
+bindsym Mod4+Tab       workspace  back_and_forth
+bindsym Mod4+Shift+m   fullscreen toggle
+bindsym Mod4+Shift+f   floating   toggle
+
+bindsym Mod4+Shift+s   layout     stacking
+bindsym Mod4+t         layout     toggle   tabbed
+bindsym Mod4+e         layout     toggle   split
+
+
+bindsym Mod4+Shift+minus scratchpad show
+bindsym Mod4+minus       move scratchpad
+
+
+
+
+bindsym Mod4+$left  focus left
+bindsym Mod4+$down  focus down
+bindsym Mod4+$up    focus up
+bindsym Mod4+$right focus right
+
+
+bindsym Mod4+Left  focus left
+bindsym Mod4+Down  focus down
+bindsym Mod4+Up    focus up
+bindsym Mod4+Right focus right
+
+bindsym Mod4+Shift+$left move left
+bindsym Mod4+Shift+$down move down
+bindsym Mod4+Shift+$up move up
+bindsym Mod4+Shift+$right move right
+
+bindsym Mod4+Shift+Left move left
+bindsym Mod4+Shift+Down move down
+bindsym Mod4+Shift+Up move up
+bindsym Mod4+Shift+Right move right
+
+
+
+
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym Mod4+1 workspace number $ws1
+bindsym Mod4+2 workspace number $ws2
+bindsym Mod4+3 workspace number $ws3
+bindsym Mod4+4 workspace number $ws4
+bindsym Mod4+5 workspace number $ws5
+bindsym Mod4+6 workspace number $ws6
+bindsym Mod4+7 workspace number $ws7
+bindsym Mod4+8 workspace number $ws8
+bindsym Mod4+9 workspace number $ws9
+bindsym Mod4+0 workspace number $ws10
+
+# move focused container to workspace
+bindsym Mod4+Shift+1 move container to workspace number $ws1
+bindsym Mod4+Shift+2 move container to workspace number $ws2
+bindsym Mod4+Shift+3 move container to workspace number $ws3
+bindsym Mod4+Shift+4 move container to workspace number $ws4
+bindsym Mod4+Shift+5 move container to workspace number $ws5
+bindsym Mod4+Shift+6 move container to workspace number $ws6
+bindsym Mod4+Shift+7 move container to workspace number $ws7
+bindsym Mod4+Shift+8 move container to workspace number $ws8
+bindsym Mod4+Shift+9 move container to workspace number $ws9
+bindsym Mod4+Shift+0 move container to workspace number $ws10
+
+
+mode "resize" {
+  # These bindings trigger as soon as you enter the resize mode
+  
+  bindsym $left       resize shrink width  10 px or 10 ppt
+  bindsym $down       resize grow   height 10 px or 10 ppt
+  bindsym $up         resize shrink height 10 px or 10 ppt
+  bindsym $right      resize grow   width  10 px or 10 ppt
+  
+  # same bindings, but for the arrow keys
+  bindsym Left        resize shrink width  10 px or 10 ppt
+  bindsym Down        resize grow   height 10 px or 10 ppt
+  bindsym Up          resize shrink height 10 px or 10 ppt
+  bindsym Right       resize grow   width  10 px or 10 ppt
+  
+  # back to normal: Enter or Escape or Mod4+r
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym Mod4+r mode "default"
+}
+
+
+bar {
+  # font pango:DejaVu Sans Mono, FontAwesome 12
+  # font pango:FiraCode Nerd Font, DejaVu Sans Mono, Font Awesome 6 Brands,Font Awesome 6 Brands Regular 
+  font pango:FiraCode Nerd Font
+  position top
+  status_command /usr/bin/i3status-rs
+  colors {
+    background #222222
+    statusline #dddddd
+    focused_workspace #0088CC #0088CC #ffffff
+    active_workspace #333333 #333333 #ffffff
+    inactive_workspace #333333 #333333 #888888
+    urgent_workspace #2f343a #900000 #ffffff
+  }
+}
+
+# All Apps after overriding
+for_window [class=".*"]      border pixel 2
+for_window [class="Firefox"] border none
+
+# firefox
+assign [instance="Navigator" class="Firefox" title=".*"]                 $ws6
+assign [instance="Toolkit"   class="Firefox" title="Picture-in-Picture"] $ws5
+assign [instance="Navigator" class="Firefox" title="Mozilla Firefox"]    $ws4
+
+
+assign [class="Brave"] $ws4
+assign [class="mpv"]   $ws3
+assign [class="Vlc"]   $ws3
+
+# ------------------- FLOATING ------------------------------------------------
+for_window [class="Anki"] floating enable;
+for_window [class="Anki"] resize set 500 500;
+
+for_window [title="Volume Control"] floating enable;
+for_window [title="Volume Control"] resize set 800 800;
+for_window [title="Volume Control"] move position 560 140;
+
+for_window [class="feh"] floating enable;
+for_window [class="Nautilus"] floating enable
+for_window [class="mpv"] floating enable
+# # gpas
+# for_window [class="^.*"] border pixel 0
+# gaps inner 6
+# gaps outer 0
+# for_window [title="SPad ST"] move scratchpad
+# for_window [class="Skype" title="Options"] floating enable
+# for_window [title="ncmpcpp"] border none
+
+# # scratchpad
+# for_window [title="SPad ST"] border 1pixel
+# for_window [title="SPad ST"] move scratchpad
