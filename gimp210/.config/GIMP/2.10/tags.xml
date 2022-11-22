@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="729d793459b754daa47069f6b3d4c8e6">
+  <resource identifier="gimp-palette-color-history" checksum="83730e92ca654c2336fa5043d7d054cf">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1315,16 +1315,40 @@
   <resource identifier="Bitstream Charter Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Century Schoolbook L Bold" checksum="(null)">
+  <resource identifier="C059" checksum="(null)">
   </resource>
 
-  <resource identifier="Century Schoolbook L Bold Italic" checksum="(null)">
+  <resource identifier="C059 Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Century Schoolbook L Italic" checksum="(null)">
+  <resource identifier="C059 Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Century Schoolbook L Medium" checksum="(null)">
+  <resource identifier="C059 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="C059 Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="C059 Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cantarell" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cantarell" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cantarell Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cantarell Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cantarell Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cantarell Ultra-Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Courier" checksum="(null)">
@@ -1349,6 +1373,9 @@
   </resource>
 
   <resource identifier="Courier Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="D050000L" checksum="(null)">
   </resource>
 
   <resource identifier="DejaVu Math TeX Gyre" checksum="(null)">
@@ -1417,9 +1444,6 @@
   <resource identifier="DejaVu Serif Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Dingbats" checksum="(null)">
-  </resource>
-
   <resource identifier="FiraAyoub" checksum="(null)">
   </resource>
 
@@ -1445,6 +1469,15 @@
   </resource>
 
   <resource identifier="Fisa Code weight=325 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Font Awesome 6 Brands" checksum="(null)">
+  </resource>
+
+  <resource identifier="Font Awesome 6 Free" checksum="(null)">
+  </resource>
+
+  <resource identifier="Font Awesome 6 Free Heavy" checksum="(null)">
   </resource>
 
   <resource identifier="FreeMono" checksum="(null)">
@@ -1493,6 +1526,42 @@
   </resource>
 
   <resource identifier="Kawkab Mono Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Mono Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Mono Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Sans" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Sans Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Sans Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Sans Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Serif" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Serif Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Serif Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Liberation Serif Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Luxi Mono" checksum="(null)">
@@ -1552,52 +1621,64 @@
   <resource identifier="Monospace Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Mono L" checksum="(null)">
+  <resource identifier="Nimbus Mono PS" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Mono L Bold" checksum="(null)">
+  <resource identifier="Nimbus Mono PS Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Mono L Bold Oblique" checksum="(null)">
+  <resource identifier="Nimbus Mono PS Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Mono L Oblique" checksum="(null)">
+  <resource identifier="Nimbus Mono PS Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Roman No9 L" checksum="(null)">
+  <resource identifier="Nimbus Roman," checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Roman No9 L Italic" checksum="(null)">
+  <resource identifier="Nimbus Roman, Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Roman No9 L Medium" checksum="(null)">
+  <resource identifier="Nimbus Roman, Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Roman No9 L Medium Italic" checksum="(null)">
+  <resource identifier="Nimbus Roman, Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Sans L" checksum="(null)">
+  <resource identifier="Nimbus Sans" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Sans L Bold" checksum="(null)">
+  <resource identifier="Nimbus Sans Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Sans L Bold Condensed" checksum="(null)">
+  <resource identifier="Nimbus Sans Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Sans L Bold Italic" checksum="(null)">
+  <resource identifier="Nimbus Sans Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Sans L Bold Italic Condensed" checksum="(null)">
+  <resource identifier="Nimbus Sans Narrow" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Sans L Condensed" checksum="(null)">
+  <resource identifier="Nimbus Sans Narrow Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Sans L Italic" checksum="(null)">
+  <resource identifier="Nimbus Sans Narrow Bold Oblique" checksum="(null)">
   </resource>
 
-  <resource identifier="Nimbus Sans L Italic Condensed" checksum="(null)">
+  <resource identifier="Nimbus Sans Narrow Bold Oblique Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Nimbus Sans Narrow Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Nimbus Sans Narrow Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Nimbus Sans Narrow Oblique Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Nimbus Sans Narrow Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Kufi Arabic" checksum="(null)">
@@ -1630,6 +1711,21 @@
   <resource identifier="Noto Kufi Arabic Ultra-Light" checksum="(null)">
   </resource>
 
+  <resource identifier="P052" checksum="(null)">
+  </resource>
+
+  <resource identifier="P052 Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="P052 Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="P052 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="P052 Medium" checksum="(null)">
+  </resource>
+
   <resource identifier="Sans-serif" checksum="(null)">
   </resource>
 
@@ -1654,49 +1750,148 @@
   <resource identifier="Serif Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Standard Symbols L" checksum="(null)">
+  <resource identifier="Source Code Pro" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Pro Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Source Code Variable Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Standard Symbols PS" checksum="(null)">
   </resource>
 
   <resource identifier="Symbola Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Bookman L Bold" checksum="(null)">
+  <resource identifier="URW Bookman" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Bookman L Bold Italic" checksum="(null)">
+  <resource identifier="URW Bookman Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Bookman L Italic" checksum="(null)">
+  <resource identifier="URW Bookman Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Bookman L Medium" checksum="(null)">
+  <resource identifier="URW Bookman Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Chancery L Medium Italic" checksum="(null)">
+  <resource identifier="URW Bookman Light" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Gothic L Book" checksum="(null)">
+  <resource identifier="URW Bookman Light Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Gothic L Book Oblique" checksum="(null)">
+  <resource identifier="URW Bookman Semi-Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Gothic L Semi-Bold" checksum="(null)">
+  <resource identifier="URW Bookman Semi-Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Gothic L Semi-Bold Oblique" checksum="(null)">
+  <resource identifier="URW Gothic" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Palladio L Bold" checksum="(null)">
+  <resource identifier="URW Gothic Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Palladio L Bold Italic" checksum="(null)">
+  <resource identifier="URW Gothic Bold Oblique" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Palladio L Italic" checksum="(null)">
+  <resource identifier="URW Gothic Book" checksum="(null)">
   </resource>
 
-  <resource identifier="URW Palladio L Medium" checksum="(null)">
+  <resource identifier="URW Gothic Book Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="URW Gothic Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="URW Gothic Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="URW Gothic Semi-Bold Oblique" checksum="(null)">
   </resource>
 
   <resource identifier="Utopia" checksum="(null)">
@@ -1709,6 +1904,12 @@
   </resource>
 
   <resource identifier="Utopia Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Z003 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Z003 Medium Italic" checksum="(null)">
   </resource>
 
   <resource identifier="${gimp_data_dir}/tool-presets/Crop/16_10.gtp" checksum="(null)">

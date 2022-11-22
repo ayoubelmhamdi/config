@@ -1,7 +1,7 @@
 # GIMP gimp-text-tool options
 
-(foreground (color-rgb 0.13333333333333333 0.15294117647058825 0.1803921568627451))
 (palette "Browns And Yellows")
-(font "Sans-serif")
+(font "Z003 Italic")
+(box-mode fixed)
 
 # end of gimp-text-tool options

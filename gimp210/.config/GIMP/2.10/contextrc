@@ -1,16 +1,14 @@
 # GIMP user context
 
-(tool "gimp-bucket-fill-tool")
+(tool "gimp-move-tool")
 (paint-info "gimp-paintbrush")
-(foreground (color-rgb 0.13333333333333333 0.15294117647058825 0.1803921568627451))
-(background (color-rgb 0.90588235294117647 0.90588235294117647 0.90588235294117647))
 (brush "2. Hardness 025")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Rain")
 (gradient "Browns")
 (palette "Browns And Yellows")
-(font "Sans-serif")
+(font "Z003 Italic")
 (tool-preset "Core Pointer")
 
 # end of user context
