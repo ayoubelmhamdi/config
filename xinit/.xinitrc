@@ -28,6 +28,7 @@ xinit_lazy(){
     exec pulseaudio &
     sleep 2
     exec pipewire-pulse &
+    exec firefox-ram 5kc8rznt.default-default
 
     sleep 10
     nvim --headless $HOME/.config/nvim/init.lua +qall &
