@@ -159,9 +159,9 @@ for_window [class=".*"]      border pixel 2
 for_window [class="Firefox"] border none
 
 # firefox
-assign [instance="Navigator" class="Firefox" title=".*"]                 $ws6
 assign [instance="Toolkit"   class="Firefox" title="Picture-in-Picture"] $ws5
 assign [instance="Navigator" class="Firefox" title="Mozilla Firefox"]    $ws4
+assign [instance="Navigator" class="Firefox" title=".*"]                 $ws6
 
 
 assign [class="Brave"] $ws4
