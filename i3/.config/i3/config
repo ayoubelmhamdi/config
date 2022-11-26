@@ -141,7 +141,8 @@ mode "resize" {
 bar {
   # font pango:DejaVu Sans Mono, FontAwesome 12
   # font pango:FiraCode Nerd Font, DejaVu Sans Mono, Font Awesome 6 Brands,Font Awesome 6 Brands Regular 
-  font pango:FiraCode Nerd Font
+  font pango:FONT AWESOME 6 FREE BOLD 10, FiraCode Nerd Font 10
+  # font pango:FiraCode Nerd Font
   position top
   status_command /usr/bin/i3status-rs
   colors {
@@ -163,6 +164,9 @@ assign [instance="Toolkit"   class="Firefox" title="Picture-in-Picture"] $ws5
 assign [instance="Navigator" class="Firefox" title="Mozilla Firefox"]    $ws4
 assign [instance="Navigator" class="Firefox" title=".*"]                 $ws6
 
+
+assign [class="jetbrains-studio"] $ws2
+assign [class="libreoffice"] $ws2
 
 assign [class="Brave"] $ws4
 assign [class="mpv"]   $ws3
