@@ -166,7 +166,7 @@ assign [instance="Navigator" class="Firefox" title=".*"]                 $ws6
 
 
 assign [class="jetbrains-studio"] $ws2
-assign [class="libreoffice"] $ws2
+assign [instance="libreoffice"] $ws2
 
 assign [class="Brave"] $ws4
 assign [class="mpv"]   $ws3
