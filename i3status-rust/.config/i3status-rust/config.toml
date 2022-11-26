@@ -19,7 +19,8 @@ idle_bg = "#222222"
 
 
 [icons]
-name = "awesome5"
+name = "awesome6"
+# name = "material-nf"
 [icons.overrides]
 cpu = ""
 
@@ -73,6 +74,7 @@ icons_format = "| "
 block = "sound"
 format = "{volume:5#100}"
 icons_format = "| "
+# icons_format = "| \U0000f9a1 \U0000f012 \U0000fc81 \U0000eb8a "
 
 
 [[block]]
