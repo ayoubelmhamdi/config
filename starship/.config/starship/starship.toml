@@ -14,20 +14,21 @@ $git_status\
 $git_commit\
 $git_state\
 $git_metrics\
-$deno\
-$golang\
-$java\
-$kotlin\
-$lua\
-$python\
-$swift\
 $env_var\
 $cmd_duration\
 $custom\
-$dart\
 $memory_usage\
 $line_break\
 $character""" 
+#-1$dart\
+#-1$deno\
+#-1$golang\
+#-1$java\
+#-1$kotlin\
+#-1$lua\
+#-1$python\
+#-1$swift\
+
 # $nodejs\
 # $jobs\
 # $rust\
@@ -69,18 +70,18 @@ truncate_to_repo = true
 disabled = true
 
 [git_branch]
-symbol = "🌱 "
+# symbol = "🌱 "
 truncation_symbol = ""
 # ignore_branches = ["master", "main"]
 
 [git_status]
 conflicted = "⚔️ "
-ahead = "🏎️ 💨×${count} "
+ahead = "|  ${count}"
 behind = "🐢×${count} "
 diverged = "🔱 🏎️ 💨×{ahead_count} 🐢×${behind_count} "
 untracked = "🛤️ ×${count} "
 stashed = "📦 "
-modified = "[ ×${count} ](red)"
+modified = "| [ ${count} ](red)"
 staged = "🗃️ ×${count} "
 renamed = "📛×${count} "
 deleted = "🗑️ ×${count} "
