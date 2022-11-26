@@ -1,16 +1,23 @@
+MY_PATH=
 
+# go
+export MY_PATH=$HOME/go/bin:$MY_PATH
 
-# go bin folder
-export PATH=$HOME/go/bin:$PATH
+# rust
+export MY_PATH=$HOME/.cargo/bin:$MY_PATH
 
-# rust bin folder
-export PATH=$HOME/.cargo/bin:$PATH
-
-# User bin folder
-export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+# User
+export MY_PATH=$HOME/bin:$HOME/.local/bin:$MY_PATH
 
 # flutter
-export PATH=$HOME/opt/sdk/flutter/bin:$PATH
+export MY_PATH=/app/flutter/bin:$MY_PATH
 
-# USER
-export PATH=$HOME/scripts/bin:$PATH
+# USER scripts
+export MY_PATH=$HOME/scripts/bin:$MY_PATH
+
+
+# Android-Studio
+export MY_PATH=/app/android-studio/bin:$MY_PATH
+
+# FINAL
+export PATH=$MY_PATH:$PATH
