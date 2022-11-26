@@ -1,5 +1,5 @@
 clear lock
-!keycode 66 = Shift_L
+keycode 66 = Shift_L
 ! keycode 37 = Control_L
 
 ! keycode  68 = Super_L
@@ -7,10 +7,10 @@ clear lock
 
 
 ! ! use another key for ctrl and supper
-clear control
-keycode   66 =
-keycode   37 = Control_L
-add control = Control_L Control_R
+! clear control
+! keycode   66 =
+! keycode   37 = Control_L
+! add control = Control_L Control_R
 !
 ! keycode  37 =
 ! keycode 105 =
