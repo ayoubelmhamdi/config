@@ -51,7 +51,7 @@ _xmodmap(){
 }
 
 _numlock(){
-  exec numlockx on &
+  numlockx on &
 }
 
 
@@ -78,6 +78,7 @@ _start_sound(){
 xinit_lazy(){
   sleep 1
   _st
+  _sxhkd
   _brightness
   _feh
   _ls
