@@ -2,60 +2,64 @@
 #xrandr --setprovideroutputsource modesetting NVIDIA-0
 #xrandr --auto
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
-_st(){
+start_st(){
   exec st &
 }
 
-_sl(){
+start_sl(){
   sl &
 }
 
-_brightness(){
+set_brightness(){
   if [ -f "$HOME/.config/brightness/brightness-kernel" ];then
     # cat "$HOME/.config/brightness/xbps-install -Sy gtkbrightness-kernel" | sudo tee /sys/class/backlight/intel_backlight/brightness &
     xbacklight -set "$(cat "$HOME/.config/brightness/brightness-kernel")"
   fi
 }
 
-_feh(){
+start_feh(){
   ~/.fehbg &
 }
 
-_sxhkd(){
+start_sxhkd(){
   sxhkd > /tmp/log.xshkd.log  &
 }
 
-_ls(){
+first_ls(){
   ls /data ~ &
 }
 
-_amixer(){
+_enable_execution(){
+  mount -o remount,exec /tmp
+}
+
+set_volume(){
   amixer sset 'Master' 90% &
 }
 
 
-_ramdisk(){
+firefox_ramdisk(){
   exec firefox-ram 5kc8rznt.default-default &
   sleep 3
   exec shm "$HOME"/.local/share/nvim/site/pack &&
     exec shm "$HOME"/.config/nvim
 }
 
-_xscreenoff(){
+screen_sleep(){
   # turn off screen after 300 seconds
   xset s 300
 }
 
-_xmodmap(){
+remap_keyboard(){
   xmodmap ~/.Xmodmap
 }
 
-_numlock(){
+enable_numlock(){
   numlockx on &
 }
 
 
-_start_sound(){
+start_sound(){
   echo "=====$(date)=========" >> /tmp/log.pipewire.log
   exec pipewire &
   if [ $? -eq 0 ];then
@@ -77,17 +81,17 @@ _start_sound(){
 
 xinit_lazy(){
   sleep 1
-  _st
-  _sxhkd
-  _brightness
-  _feh
-  _ls
-  _amixer
-  _start_sound
-  _ramdisk
-  _xscreenoff
-  _xmodmap
-  _numlock
+  start_st
+  start_sxhkd
+  set_brightness
+  start_feh
+  first_ls
+  set_volume
+  start_sound
+  screen_sleep
+  remap_keyboard
+  # enable_numlock
+  # firefox_ramdisk
 }
 
 

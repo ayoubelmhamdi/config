@@ -34,10 +34,10 @@ cpu = ""
 # alert = 1.0
 # separator=" "
 
-[[block]]
-block = "custom"
-interval = 1
-command = 'echo  [ $(xclip -o -sel clip | xargs | rg -o "^.{0,12}")...]'
+# [[block]]
+# block = "custom"
+# interval = 1
+# command = 'echo  [ $(xclip -o -sel clip | xargs | rg -o "^.{0,12}")...]'
 
 
 [[block]]
@@ -66,19 +66,22 @@ icons_format = "| "
 [[block]]
 block = "backlight"
 device = "intel_backlight"
-format = "{brightness:3}"
-icons_format = "| "
+format  = "{brightness:3#100}"
+icons_format = ""
+[block.theme_overrides]
+idle_bg="#040404"
 
 
 [[block]]
 block = "sound"
-format = "{volume:5#100}"
-icons_format = "| "
-# icons_format = "| \U0000f9a1 \U0000f012 \U0000fc81 \U0000eb8a "
+format = "{volume:3#100}"
+icons_format = " "
+[block.theme_overrides]
+idle_bg="#040404"
 
 
 [[block]]
 block = "time"
 interval = 1
 format = " %a %d %b %H:%M:%S "
-icons_format = "|"
+icons_format = ""

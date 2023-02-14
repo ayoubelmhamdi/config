@@ -5,6 +5,8 @@ root=${2:-ayoub}
 
 mkdir -p "$HOME"/.config/zsh
 mkdir -p "$HOME"/.texmf "$HOME"/.cpan/build
+mkdir -p "$HOME/.config/zprofile"
+
 
 # "$HOME/stow/zsh/universe"
 # declare -a all_linux_dirs=(
