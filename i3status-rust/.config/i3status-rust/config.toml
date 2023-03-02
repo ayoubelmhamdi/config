@@ -9,7 +9,7 @@ idle_bg = "#222222"
 # alternating_tint_fg = "#222222"
 # critical_bg = "#222222"
 # critical_fg = "#222222"
-# good_bg = "#222222"
+good_bg = "#222222"
 # good_fg = "#222222"
 # info_bg = "#222222"
 # info_fg = "#222222"
@@ -39,9 +39,27 @@ cpu = ""
 # interval = 1
 # command = 'echo  [ $(xclip -o -sel clip | xargs | rg -o "^.{0,12}")...]'
 
+# [[block]]
+# block = "custom"
+# interval = 1
+# command = '/tmp/new_1/get_ip'
+
+
+[[block]]
+block = "custom"
+command = "get_bandwith"
+interval = 1
+# json = true
+
+[[block]]
+block = "custom"
+command = "get_ip"
+json = true
+interval = 5
 
 [[block]]
 block = "cpu"
+icons_format = "| "
 
 
 [[block]]
@@ -54,28 +72,28 @@ critical_mem = 95
 icons_format = "| "
 
 
-[[block]]
-device = "wlp3s0"
-block = "net"
-format= "{ip} {speed_down:4;K}"
-interval = 1
-icons_format = "| "
+# [[block]]
+# device = "wlp3s0"
+# block = "net"
+# format= "{ip} {speed_down:4;K}"
+# interval = 1
+# icons_format = "| "
 
 
 
 [[block]]
 block = "backlight"
 device = "intel_backlight"
-format  = "{brightness:3#100}"
+format  = "{brightness:5#100}"
 icons_format = ""
 [block.theme_overrides]
-idle_bg="#040404"
+idle_bg="#202020"
 
 
 [[block]]
 block = "sound"
-format = "{volume:3#100}"
-icons_format = " "
+format = "{volume:5#100}"
+icons_format = ""
 [block.theme_overrides]
 idle_bg="#040404"
 
