@@ -3,9 +3,11 @@
 LINUX=${1:-void}
 root=${2:-ayoub}
 
-mkdir -p "$HOME"/.config/zsh
-mkdir -p "$HOME"/.texmf "$HOME"/.cpan/build
+mkdir -p "$HOME/.config/zsh"
+mkdir -p "$HOME/.texmf"
+mkdir -p "$HOME/.cpan/build"
 mkdir -p "$HOME/.config/zprofile"
+mkdir -p "$HOME/.config/zsh_post"
 
 
 # "$HOME/stow/zsh/universe"
@@ -38,6 +40,7 @@ _stow(){
 # stow_init
 _stow init     "$HOME"
 _stow zprofile "$HOME/.config/zprofile"
+_stow zsh_post "$HOME/.config/zsh_post"
 _stow universe
 
 case "$LINUX" in
