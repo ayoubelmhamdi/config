@@ -27,7 +27,7 @@ export TIMEFMT=$TIMEFMT       # Format for reporting usage with time
 export WATCHFMT=$WATCHFMT     # Format of reports for $watch
 
 
-alias ls=exa 
+alias ls=exa
 alias myexls=exa
 ### Added by Zinit's installer
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -100,51 +100,30 @@ export CGO_CFLAGS="-g -O2 -Wno-return-local-addr"
 export GOPATH="$HOME/go/"
 export PATH="$GOPATH/bin:$PATH"
 
-if [[ -s $HOME/.config/zsh  ]];then 
-    for file in $HOME/.config/zsh/*;do
-        zi ice silent wait 0.1
-        zi snippet $file
-    done
+if [[ -s $HOME/.config/zsh  ]];then
+  for file in $HOME/.config/zsh/*;do
+    zi ice silent wait 0.1
+    zi snippet $file
+  done
 fi
 
-
-
-#if command -v pazi &>/dev/null; then
-#  eval "$(pazi init zsh)" # or 'bash'
-#fi
-
-#
-# after compinit and user zsh config
-#
-
-if command -v zoxide &>/dev/null; then
-  eval "$(zoxide init zsh)"
+if [[ -s /home/mhamdi/.config/zsh_post/zsh_post  ]];then
+  zi ice silent wait 0.2
+  zi snippet /home/mhamdi/.config/zsh_post/zsh_post
 fi
 
-if command -v direnv &>/dev/null; then
-  eval "$(direnv hook zsh)"
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/mhamdi/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/mhamdi/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/mhamdi/miniconda3/bin:$PATH"
+    fi
 fi
-
-if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv 2>/dev/null)"  
-fi
-
-if command -v dbus-launch &>/dev/null; then
-  eval "$(dbus-launch --auto-syntax)"
-fi
-
-### >>> conda initialize >>>
-### !! Contents within this block are managed by 'conda init' !!
-##__conda_setup="$('/home/mhamdi/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-##if [ $? -eq 0 ]; then
-##    eval "$__conda_setup"
-##else
-##    if [ -f "/home/mhamdi/miniconda3/etc/profile.d/conda.sh" ]; then
-##        . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
-##    else
-##        export PATH="/home/mhamdi/miniconda3/bin:$PATH"
-##    fi
-##fi
-##unset __conda_setup
-### <<< conda initialize <<<
+unset __conda_setup
+# <<< conda initialize <<<
 
