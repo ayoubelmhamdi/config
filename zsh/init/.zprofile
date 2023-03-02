@@ -19,7 +19,7 @@ set_env_var_and_path(){
   export GOPATH="$HOME/go/"
   export PATH="$GOPATH/bin:$PATH"
 
-  if [[ -s $HOME/.config/zprofile  ]];then 
+  if [[ -s $HOME/.config/zprofile  ]];then
     for file in $HOME/.config/zprofile/*;do
       source "$file"
     done
