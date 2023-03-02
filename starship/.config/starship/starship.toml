@@ -15,18 +15,19 @@ $git_commit\
 $git_state\
 $git_metrics\
 $env_var\
+$python\
+$conda\
 $cmd_duration\
 $custom\
 $memory_usage\
 $line_break\
-$character""" 
+$character"""
 #-1$dart\
 #-1$deno\
 #-1$golang\
 #-1$java\
 #-1$kotlin\
 #-1$lua\
-#-1$python\
 #-1$swift\
 
 # $nodejs\
@@ -167,7 +168,7 @@ disabled = true
 disabled = true
 
 [conda]
-disabled = true
+disabled = false
 
 [crystal]
 disabled = true
@@ -212,3 +213,6 @@ style = "bold green"
 files = [".envrc"]
 style = "bg:white fg:black"
 format = "[env]($style) "
+
+
+[python]
