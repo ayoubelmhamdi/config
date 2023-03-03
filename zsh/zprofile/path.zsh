@@ -23,7 +23,6 @@ export MY_PATH=/app/android-studio/bin:$MY_PATH
 
 # cuda
 export MY_PATH="/usr/local/cuda-10.1/bin:$MY_PATH"
-export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
 # FINAL
-export PATH=$MY_PATH:$PATH
-
+export PATH=$PATH:$MY_PATH
