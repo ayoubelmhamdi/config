@@ -4,6 +4,8 @@
 # export GRADLE_HOME="/opt/sdk/gradle/gradle-7.1.1"
 # export GRADLE_USER_HOME="/opt/sdk/gradlec"
 # export JAVA_HOME="$HOME/.cache/ltex-ls-15.2.0/jdk-11.0.12+7"
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
 
 export HOWDOI_COLORIZE="1"
 export XDEB_PK_ROOT="/tmp/xdeb"
