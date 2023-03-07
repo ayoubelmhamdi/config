@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# shellcheck disable=2181
 #xrandr --setprovideroutputsource modesetting NVIDIA-0
 #xrandr --auto
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
@@ -59,12 +61,12 @@ enable_numlock(){
 }
 
 
-start_sound(){
+start_sound2(){
   echo "=====$(date)=========" >> /tmp/log.pipewire.log
   exec pipewire &
   if [ $? -eq 0 ];then
     sleep 3
-    exec pulseaudio &
+    exec pulseaudio --start &
     if [ $? -eq 0 ];then
       sleep 3
       exec pipewire-pulse &
@@ -79,6 +81,29 @@ start_sound(){
   fi
 }
 
+
+start_sound(){
+  echo "=====$(date)=========" >> /tmp/log.pipewire.log
+  exec pipewire  >> /tmp/log.pipewire.log 2>&1 &
+  if [ $? -eq 0 ];then
+    sleep 3
+    exec pulseaudio --start  >> /tmp/log.pipewire.log 2>&1 &
+    if [ $? -eq 0 ];then
+      sleep 3
+      exec pipewire-pulse  >> /tmp/log.pipewire.log 2>&1 &
+      if [ $? -ne 0 ];then
+        echo 'pipewire-pulse not start' >> /tmp/log.pipewire.log
+      fi
+    else
+      echo 'pulseaudio not start' >> /tmp/log.pipewire.log
+    fi
+  else
+    echo 'pipewire not start' >> /tmp/log.pipewire.log
+  fi
+}
+
+
+
 xinit_lazy(){
   sleep 1
   start_st
@@ -87,10 +112,10 @@ xinit_lazy(){
   start_feh
   first_ls
   set_volume
-  start_sound
+  # start_sound
   screen_sleep
   remap_keyboard
-  # enable_numlock
+  enable_numlock
   # firefox_ramdisk
 }
 
