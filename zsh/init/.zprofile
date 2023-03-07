@@ -1,16 +1,15 @@
 #!/bin/sh
 
 # TODO: mouve to xinitrc this lazy func
-# lazy(){
-#     sleep 0.1
-#     cp -u ~/.cache/cheatcheat /tmp/cheatcheat
-#     sudo mkdir -p /tmp/ayoub /tmp/nvim
-#     sudo chown -R mhamdi /tmp/ayoub /tmp/nvim
-#     echo "1 1" | tee /tmp/ayoub/cpu
-#     echo " "   | tee /tmp/ayoub/status
-#     #sudo chmod -R 7755 /home/mhamdi/.local/share/zinit
-#     #sudo rmmod wl && sudo modprobe wl
-# }
+init_zsh(){
+    sleep 0.1
+    sudo mkdir -p /tmp/ayoub /tmp/nvim
+    sudo chown -R mhamdi /tmp/ayoub /tmp/nvim
+    echo "1 1" | tee /tmp/ayoub/cpu
+    echo " "   | tee /tmp/ayoub/status
+    #sudo chmod -R 7755 /home/mhamdi/.local/share/zinit
+    #sudo rmmod wl && sudo modprobe wl
+}
 
 set_env_var_and_path(){
   # GO SETTINGS
@@ -26,6 +25,6 @@ set_env_var_and_path(){
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   set_env_var_and_path
-  # lazy &
+  init_zs &
   exec startx
 fi
