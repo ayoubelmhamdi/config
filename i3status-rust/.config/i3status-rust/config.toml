@@ -51,11 +51,11 @@ command = "get_bandwith"
 interval = 1
 # json = true
 
-[[block]]
-block = "custom"
-command = "get_ip"
-json = true
-interval = 5
+# [[block]]
+# block = "custom"
+# command = "get_ip"
+# json = true
+# interval = 5
 
 [[block]]
 block = "cpu"
