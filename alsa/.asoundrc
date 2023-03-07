@@ -1,11 +1,50 @@
-pcm.!default {
-   type hw
-   card 1
-   # card bytcrrt5640
+#pcm.!default {
+#   type hw
+#   card 1
+#   # card bytcrrt5640
+#}
+#
+#ctl.!default {
+#   type hw
+#   card 1
+#   #card bytcrrt5640
+#}
+#
+
+pcm.!bluealsa {
+ type plug
+ # service "org.bluealsa"
+ device "33:29:E8:26:C5:7C"
+ # profile "a2dp"
 }
 
-ctl.!default {
-   type hw
-   card 1
-   #card bytcrrt5640
+pcm.!bluetooth {
+  type bluealsa
+  device "33:29:E8:26:C5:7C"
+  # profile "a2dp"
 }
+
+# pcm.!default {
+#   type hw
+#   card 1
+#   # card bytcrrt5640
+# }
+#
+# ctl.!default {
+#   type hw
+#   card 1
+#   #card bytcrrt5640
+# }
+#
+# default.!bluealsa {
+#  type plug
+#  # service "org.bluealsa"
+#  device "33:29:E8:26:C5:7C"
+#  # profile "a2dp"
+# }
+#
+# default.!bluetooth {
+#   type bluealsa
+#   device "33:29:E8:26:C5:7C"
+#   # profile "a2dp"
+# }
