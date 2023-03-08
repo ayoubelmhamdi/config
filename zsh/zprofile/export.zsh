@@ -4,6 +4,12 @@
 # export GRADLE_HOME="/opt/sdk/gradle/gradle-7.1.1"
 # export GRADLE_USER_HOME="/opt/sdk/gradlec"
 # export JAVA_HOME="$HOME/.cache/ltex-ls-15.2.0/jdk-11.0.12+7"
+
+# API
+
+export OPENAI_API_KEY="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"
+
+# SETTING
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
