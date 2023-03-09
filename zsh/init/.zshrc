@@ -9,7 +9,7 @@ elif [ -d "$HOME/data" ] && [ "$(stat -c '%U' "$HOME/data")" = "$USER" ]; then
   builtin cd $HOME/data
   echo "/data $(stat -c '%U' $HOME/data) ? ${USER}" >> ~/zsh.log
 fi
- 
+
 
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -118,6 +118,6 @@ if [[ -s $HOME/.config/zsh  ]];then
 fi
 
 if [[ -s /home/mhamdi/.config/zsh_post/zsh_post  ]];then
-  zi ice silent wait 0.2
+  zi ice silent wait 2.4
   zi snippet /home/mhamdi/.config/zsh_post/zsh_post
 fi
