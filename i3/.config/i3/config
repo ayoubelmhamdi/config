@@ -176,6 +176,11 @@ assign [class="Vlc"]   $ws3
 for_window [class="Anki"] floating enable;
 for_window [class="Anki"] resize set 500 500;
 
+for_window [class="Matplotlib"] floating enable;
+for_window [class="Matplotlib"] resize set 500 740;
+for_window [class="Matplotlib"] move absolute position 866px 24px;
+
+
 for_window [title="Volume Control"] floating enable;
 for_window [title="Volume Control"] resize set 800 800;
 for_window [title="Volume Control"] move position 560 140;
