@@ -35,4 +35,6 @@ else
     fi
 fi
 unset __conda_setup
+
+conda activate pyTorch-1.12.1
 # <<< conda initialize <<<
