@@ -1,6 +1,16 @@
 # !/bin/zsh
 
-builtin cd /data
+#!/bin/bash
+
+if [ -d "/data" ] && [ "$(stat -c '%U' /data)" = "$USER" ]; then
+  builtin cd /data
+  echo "/data $(stat -c '%U' /data) ? ${USER}" >> ~/zsh.log
+elif [ -d "$HOME/data" ] && [ "$(stat -c '%U' "$HOME/data")" = "$USER" ]; then
+  builtin cd $HOME/data
+  echo "/data $(stat -c '%U' $HOME/data) ? ${USER}" >> ~/zsh.log
+fi
+ 
+
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -111,19 +121,3 @@ if [[ -s /home/mhamdi/.config/zsh_post/zsh_post  ]];then
   zi ice silent wait 0.2
   zi snippet /home/mhamdi/.config/zsh_post/zsh_post
 fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/mhamdi/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/mhamdi/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/mhamdi/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-

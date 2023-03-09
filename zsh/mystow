@@ -1,7 +1,6 @@
 #!/bin/bash
 
 LINUX=${1:-void}
-root=${2:-ayoub}
 
 mkdir -p "$HOME/.config/zsh"
 mkdir -p "$HOME/.texmf"
@@ -10,32 +9,24 @@ mkdir -p "$HOME/.config/zprofile"
 mkdir -p "$HOME/.config/zsh_post"
 
 
-# "$HOME/stow/zsh/universe"
-# declare -a all_linux_dirs=(
-#   "universe"
-#   "zprofile"
-# )
 
 _stow(){
-  local dir="$1"
-  # target: where we store new files
-  local target="${2:-$HOME/.config/zsh}"
-  if [[ -d "$HOME/stow/zsh/$dir" ]];then
-    stow --dir="$HOME/stow/zsh" --target="$target" "$dir"
+  # from at ~/stow/zsh/*
+  # to: where we store new files
+  local from="${1:-}"
+  local to="${2:-$HOME/.config/zsh}"
+
+  if [ -z "$from" ]; then
+    # should select an directory inside ~/stow
+    echo "   no dir selected"
+    exit 1
+  fi
+
+  if [[ -d "$HOME/stow/zsh/$from" ]];then
+    stow --dir="$HOME/stow/zsh" --target="$to" "$from"
   fi
 }
 
-# stow_for_all_linux(){
-#   for dir in "${all_linux_dirs[@]}";do
-#     _stow "$dir"
-#   done
-# }
-
-# stow_init(){
-#   if [[ -d $HOME/stow/zsh/init ]];then
-#     stow --dir="$HOME"/stow/zsh --target="$HOME" init
-#   fi
-# }
 
 # stow_init
 _stow init     "$HOME"
@@ -44,13 +35,7 @@ _stow zsh_post "$HOME/.config/zsh_post"
 _stow universe
 
 case "$LINUX" in
-  void)
-    _stow void
-    if [[ "$root" == "root" ]];then
-      _stow void-root
-    else
-      _stow void-home
-    fi
-    ;;
+  termux) _stow termux ;;
+  void) _stow void ;;
   *) echo "$LINUX not define" ;;
 esac

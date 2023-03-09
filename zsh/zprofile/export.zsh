@@ -10,6 +10,10 @@
 export OPENAI_API_KEY="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"
 
 # SETTING
+export EDITOR=nvim
+export PAGER=bat
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
