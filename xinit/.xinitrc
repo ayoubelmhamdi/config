@@ -60,28 +60,6 @@ enable_numlock(){
   numlockx on &
 }
 
-
-start_sound2(){
-  echo "=====$(date)=========" >> /tmp/log.pipewire.log
-  exec pipewire &
-  if [ $? -eq 0 ];then
-    sleep 3
-    exec pulseaudio --start &
-    if [ $? -eq 0 ];then
-      sleep 3
-      exec pipewire-pulse &
-      if [ $? -ne 0 ];then
-        echo 'pipewire-pulse not start' >> /tmp/log.pipewire.log
-      fi
-    else
-      echo 'pulseaudio not start' >> /tmp/log.pipewire.log
-    fi
-  else
-    echo 'pipewire not start' >> /tmp/log.pipewire.log
-  fi
-}
-
-
 start_sound(){
   echo "=====$(date)=========" >> /tmp/log.pipewire.log
   exec pipewire  >> /tmp/log.pipewire.log 2>&1 &
@@ -112,7 +90,7 @@ xinit_lazy(){
   start_feh
   first_ls
   set_volume
-  # start_sound
+  start_sound
   screen_sleep
   remap_keyboard
   enable_numlock
