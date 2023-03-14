@@ -23,8 +23,8 @@ set_env_var_and_path(){
   fi
 }
 
-set_env_var_and_path
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  set_env_var_and_path
   init_zsh &
   exec startx
 fi
