@@ -17,14 +17,14 @@ set_env_var_and_path(){
   export CGO_CFLAGS="-g -O2 -Wno-return-local-addr"
 
   if [[ -s $HOME/.config/zprofile  ]];then
-    for file in $HOME/.config/zprofile/*;do
+    for file in $HOME/.config/zprofile/* $HOME/.config/zsh_post/*;do
       source "$file"
     done
   fi
 }
 
+set_env_var_and_path
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-  set_env_var_and_path
-  init_zs &
+  init_zsh &
   exec startx
 fi
