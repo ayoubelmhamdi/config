@@ -116,8 +116,3 @@ if [[ -s $HOME/.config/zsh  ]];then
     zi snippet $file
   done
 fi
-
-if [[ -s /home/mhamdi/.config/zsh_post/zsh_post  ]];then
-  zi ice silent wait 2.4
-  zi snippet /home/mhamdi/.config/zsh_post/zsh_post
-fi
