@@ -49,7 +49,7 @@ cpu = ""
 block = "custom"
 command = "get_bandwith"
 interval = 1
-# json = true
+json = true
 
 # [[block]]
 # block = "custom"
