@@ -177,8 +177,8 @@ for_window [class="Anki"] floating enable;
 for_window [class="Anki"] resize set 500 500;
 
 for_window [class="Matplotlib"] floating enable;
-for_window [class="Matplotlib"] resize set 500 740;
-for_window [class="Matplotlib"] move absolute position 866px 24px;
+for_window [class="Matplotlib"] resize set 500 440;
+for_window [class="Matplotlib"] move absolute position 866px 326px;
 
 
 for_window [title="Volume Control"] floating enable;
