@@ -28,7 +28,8 @@ alias sv='sudo sv'
 alias mount="sudo mount"
 alias umount="sudo umount"
 
-alias sed="sudo sed"
+# when i use password i do not need to use it every time
+# alias sed="sudo sed"
 
 # fix sudo
 # alis ln

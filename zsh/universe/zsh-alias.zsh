@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
 #
-#         _   _               
-#  __ _  | | (_)   __ _   ___ 
+#         _   _
+#  __ _  | | (_)   __ _   ___
 # / _` | | | | |  / _` | / __|
 #| (_| | | | | | | (_| | \__ \
 # \__,_| |_| |_|  \__,_| |___/
@@ -26,7 +26,7 @@ alias history='history 0|fzf'
 
 
 function ig () {
- command grep -i --color=auto $@ 
+ command grep -i --color=auto $@
 }
 
 
@@ -60,7 +60,6 @@ alias checkout='git checkout'
 alias push='git push '
 alias pull='git pull '
 alias sta='git status -s'
-alias gdiff='git diff'
 alias up='git commit -m "up"'
 
 
@@ -81,6 +80,10 @@ alias gc-main='git clone --depth=1 --branch=main'
 alias co='git commit -m'
 
 alias log='git log --oneline'
+alias show=" git show | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta"
+alias gdiff="git diff | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta"
+alias show_full="git show |  PAGER='bat -p' delta"
+alias gdiff="    git diff | PAGER='bat -p' delta"
 
 
 # xclip

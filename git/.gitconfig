@@ -36,31 +36,34 @@
   autoStash = true
 
 [core]
-  pager = delta --dark
+  pager = delta
   editor = nvim
   excludesfile = $HOME/.gitignore
 
-[interactive]
-  diffFilter = delta --color-only
+; [interactive]
+;   diffFilter = delta --color-only
 
 [delta]
   navigate = true  # use n and N to move between diff sections
   light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
   side-by-side = true
+  width = 104
+  ; line-numbers = false
+  ; features = 24-bit-color,minus-emphasis,dark
 
 [alias]
-  ignore = !echo "$2" >> $(git rev-parse --show-toplevel)/.git/info/exclude 
+  ignore = !echo "$2" >> $(git rev-parse --show-toplevel)/.git/info/exclude
 
 [merge]
   conflictstyle = diff3
   tool=nvim
 [mergetool "nvim"]
   cmd = nvim -f -c \"vert diffsplit\" \"$MERGED\"
-[difftool]
-  prompt = false
 [diff]
   colorMoved = default
   tool = nvimdiff
+[difftool]
+  prompt = false
 [difftool "nvimdiff"]
   cmd = "nvim -d"
 
