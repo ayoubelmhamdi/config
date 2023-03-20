@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# shellcheck disable=2181
+# shellcheck disable=2181,2086,2093
 #xrandr --setprovideroutputsource modesetting NVIDIA-0
 #xrandr --auto
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
@@ -80,6 +80,9 @@ start_sound(){
   fi
 }
 
+ping_status(){
+  $HOME/scripts/bin/ping-status &
+}
 
 
 xinit_lazy(){
