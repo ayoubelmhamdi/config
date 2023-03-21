@@ -81,11 +81,12 @@ start_sound(){
 }
 
 ping_status(){
-  $HOME/scripts/bin/ping-status &
+  ping-status &
 }
 
 
 xinit_lazy(){
+  ping_status # NOTE: work when put it first not last started
   sleep 1
   start_st
   start_sxhkd
