@@ -1,9 +1,3 @@
-# $package\
-
-# $cmake\
-# $container\
-# $fill\
-
 format = """
 $directory\
 $sudo\
@@ -63,6 +57,7 @@ disabled = true
 disabled = true
 
 [directory]
+style	= 'bold blue'
 read_only = " "
 # fish_style_pwd_dir_length = 3
 truncate_to_repo = true
@@ -168,12 +163,14 @@ disabled = true
 disabled = true
 
 [conda]
-disabled = false
+format = '[$symbol]($style) '
 
 [crystal]
 disabled = true
 
 [character]
+#   ❯
+success_symbol = '[❯ ](bold blue)'
 error_symbol = "[✗](bold red) "
 
 [memory_usage]
@@ -193,20 +190,20 @@ style = "yellow"
 min_time = 5_000
 
 
-[battery]
-format = "[$symbol]($style)"
-
-[[battery.display]]
-threshold = 10
-style = "bold red"
-
-[[battery.display]]
-threshold = 30
-style = "bold yellow"
-
-[[battery.display]]
-threshold = 99
-style = "bold green"
+# [battery]
+# format = "[$symbol]($style)"
+#
+# [[battery.display]]
+# threshold = 10
+# style = "bold red"
+#
+# [[battery.display]]
+# threshold = 30
+# style = "bold yellow"
+#
+# [[battery.display]]
+# threshold = 99
+# style = "bold green"
 
 [custom.direnv]
 # command = "cat .envrc | grep -v -E '^[ ]*#|^$' | wc -l"
@@ -216,3 +213,7 @@ format = "[env]($style) "
 
 
 [python]
+format='[${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+version_format='v${major}.${minor}'
+detect_extensions=[]
+
