@@ -108,4 +108,5 @@ while true; do
     # exec gnome-shell
     #exec metacity
     exec i3
+    # exec dwm
 done
