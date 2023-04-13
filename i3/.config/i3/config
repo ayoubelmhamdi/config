@@ -20,6 +20,9 @@ font pango:monospace 8
 floating_modifier    Mod4
 tiling_drag modifier titlebar
 
+
+set $mod  Mod4
+
 set $up    k
 set $down  j
 set $left  h
@@ -29,7 +32,8 @@ set $right l
 
 
 
-bindsym Mod4+Return    exec --no-startup-id st
+bindsym Mod4+Return    exec --no-startup-id wezterm-gui
+# bindsym Mod4+Return    exec --no-startup-id kitty
 bindsym Mod4+r         mode "resize"
 bindsym Mod4+Shift+r   restart
 bindsym Mod4+Shift+q   kill
@@ -40,7 +44,6 @@ bindsym Mod4+v         split v
 
 bindsym Mod4+a         focus      parent
 bindsym Mod4+space     focus      mode_toggle
-
 bindsym Mod4+Tab       workspace  back_and_forth
 bindsym Mod4+Shift+m   fullscreen toggle
 bindsym Mod4+Shift+f   floating   toggle
@@ -155,8 +158,16 @@ bar {
   }
 }
 
+new_window pixel 0
+new_float pixel 0
+
+# Hide borders when there is only one window
+hide_edge_borders smart
+
+# Keep borders when there are multiple windows
+
 # All Apps after overriding
-for_window [class=".*"]      border pixel 2
+for_window [class=".*"]      border pixel 4
 for_window [class="Firefox"] border none
 
 # firefox
@@ -187,10 +198,12 @@ for_window [title="Volume Control"] move position 560 140;
 
 for_window [class="feh"] floating enable;
 for_window [class="Nautilus"] floating enable
+for_window [class="iwgtk"] floating enable
+for_window [title="iwgtk"] move position 920 70;
 # for_window [class="mpv"] floating enable
 # # gpas
 # for_window [class="^.*"] border pixel 0
-# gaps inner 6
+# gaps inner iwgtk6
 # gaps outer 0
 # for_window [title="SPad ST"] move scratchpad
 # for_window [class="Skype" title="Options"] floating enable
