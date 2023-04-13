@@ -81,21 +81,21 @@ icons_format = "| "
 
 
 
-[[block]]
-block = "backlight"
-device = "intel_backlight"
-format  = "{brightness:5#100}"
-icons_format = ""
-[block.theme_overrides]
-idle_bg="#202020"
+# [[block]]
+# block = "backlight"
+# device = "intel_backlight"
+# format  = "{brightness:5#100}"
+# icons_format = ""
+# [block.theme_overrides]
+# idle_bg="#202020"
 
 
-[[block]]
-block = "sound"
-format = "{volume:5#100}"
-icons_format = ""
-[block.theme_overrides]
-idle_bg="#040404"
+# [[block]]
+# block = "sound"
+# format = "{volume:5#100}"
+# icons_format = ""
+# [block.theme_overrides]
+# idle_bg="#040404"
 
 
 [[block]]
