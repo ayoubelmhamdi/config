@@ -61,23 +61,7 @@ enable_numlock(){
 }
 
 start_sound(){
-  echo "=====$(date)=========" >> /tmp/log.pipewire.log
-  exec pipewire  >> /tmp/log.pipewire.log 2>&1 &
-  if [ $? -eq 0 ];then
-    sleep 3
-    exec pulseaudio --start  >> /tmp/log.pipewire.log 2>&1 &
-    if [ $? -eq 0 ];then
-      sleep 3
-      exec pipewire-pulse  >> /tmp/log.pipewire.log 2>&1 &
-      if [ $? -ne 0 ];then
-        echo 'pipewire-pulse not start' >> /tmp/log.pipewire.log
-      fi
-    else
-      echo 'pulseaudio not start' >> /tmp/log.pipewire.log
-    fi
-  else
-    echo 'pipewire not start' >> /tmp/log.pipewire.log
-  fi
+  /home/mhamdi/scripts/bin/sound-switch &
 }
 
 ping_status(){
