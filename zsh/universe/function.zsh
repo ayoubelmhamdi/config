@@ -51,3 +51,16 @@ get_archive_root(){
     echo 'args > 1'
   fi
 }
+
+pwd() {
+  if which xclip >/dev/null 2>&1; then
+    command pwd
+    command pwd | xclip -selection clipboard
+  else
+    command pwd
+  fi
+}
+
+\=() {
+  math-eval "$@"
+}
