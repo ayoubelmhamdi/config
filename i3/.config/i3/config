@@ -32,7 +32,7 @@ set $right l
 
 
 
-bindsym Mod4+Return    exec --no-startup-id wezterm-gui
+bindsym Mod4+Return    exec --no-startup-id st
 # bindsym Mod4+Return    exec --no-startup-id kitty
 bindsym Mod4+r         mode "resize"
 bindsym Mod4+Shift+r   restart
