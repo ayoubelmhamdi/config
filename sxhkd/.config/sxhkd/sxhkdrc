@@ -18,7 +18,7 @@ Print
 
 ctrl + shift + 1
   setxkbmap us
-  
+
 ctrl + shift + 2
   setxkbmap ara
 
@@ -30,6 +30,12 @@ super + w
 
 super + q
   bash /tmp/run
+
+super + b
+  binggpt
+
+super + n
+  neovide
 
 # use xdotool to grep url
 super + shift + y
@@ -61,14 +67,14 @@ super + shift + p
 super + o
 mpv --loop "$(xclip -o -sel clip)"
 
-#connect
-super + shift + c
-    kdeconnect-cli -d ca4847d95527874b --pair
+# #connect
+# super + shift + c
+#     kdeconnect-cli -d ca4847d95527874b --pair
 
-# super + 
+# super + k
 #     kdeconnect-cli -d ca4847d95527874b --share-text $(xclip -o -sel clip)
 
-# super + c 
+# super + c
 #   wpa_cli reassociate 1
 
 super + w
