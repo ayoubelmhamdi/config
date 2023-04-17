@@ -17,3 +17,9 @@ bindkey '^[[P' delete-char                   # key <delete>
 
 #set -o ignoreeof
 #bindkey '^D' delete-char                   # key <delete>
+
+
+# assert default
+bindkey "^E" end-of-line
+bindkey "^M" accept-line
+bindkey "^[[P" delete-char
