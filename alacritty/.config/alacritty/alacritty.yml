@@ -1,0 +1,63 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator
+#
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override existing
+# variables set by your shell.
+env:
+  TERM: xterm-256color
+
+# Font configuration (changes require restart)
+font:
+  # Normal (roman) font face
+  normal:
+    family: FiraCode Nerd Font
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: FiraCode Nerd Font
+    style: Bold
+
+# Colors (changes require restart)
+colors:
+  # Default colors
+  primary:
+    background: '0x1d1f21'
+    foreground: '0xc5c8c6'
+
+  # Normal colors
+  normal:
+    black:   '0x1d1f21'
+    red:     '0xcc6666'
+    green:   '0xb5bd68'
+    yellow:  '0xf0c674'
+    blue:    '0x81a2be'
+    magenta: '0xb294bb'
+    cyan:    '0x8abeb7'
+    white:   '0xf5f5f5'
+
+  # Bright colors
+  bright:
+    black:   '0x666666'
+    red:     '0xff3334'
+    green:   '0x9ec400'
+    yellow:  '0xe7c547'
+    blue:    '0x7aa6da'
+    magenta: '0xc397d8'
+    cyan:    '0x70c0b1'
+    white:   '0xd9d9d9'
+
+# Cursor configuration
+cursor:
+  # Style of the cursor
+  style: Block
+
+  # Whether to animate the cursor blinking
+  # Possible values are true, false, and system.
+  # If set to system, the cursor will blink if your terminal's
+  # visual bell is enabled and the terminal requests that the cursor blink.
+  # If set to true, the cursor will always blink.
+  # If set to false, the cursor will never blink.
+  # Default value is false.
+  # Note that this feature may not work correctly on all systems.
+  blink_wait_time : "500"
