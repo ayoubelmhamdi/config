@@ -6,20 +6,21 @@
 # Example zenity prompt:
 #   name="$(zenity --entry --display=:0.0 --text "rename $file to")" 2> /dev/null
 
-while read -r file
-do
-    case "$1" in
-        "C-r")
-                name="$(dmenu -p "rename $file to: ")" 2> /dev/null
-                if [ -n "$name" ]; then
-                    mv "$file" "$name"
-                fi
-                ;;
-        "C-c")
-                printf "%s" "$file" | xclip -selection clipboard ;;
-        *)
-                printf "Sorry, I don't understand"
-                exit 1
-                ;;
+while read -r file; do
+  case "$1" in
+    "r")
+      convert -rotate 90 "$file" "$file"
+        # # name="$(dmenu -p "rename $file to: ")" 2> /dev/null
+        # name=$(printf "%s" "sss" | dmenu -c -l 4 -h 40 -i)
+        # if [ -n "$name" ]; then
+        #     mv "$file" "$name"
+        # fi
+        ;;
+      "C-c")
+        printf "%s" "$file" | xclip -selection clipboard ;;
+      *)
+        printf "Sorry, I don't understand"
+        exit 1
+        ;;
     esac
-done
+  done
