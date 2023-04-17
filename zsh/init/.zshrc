@@ -2,12 +2,10 @@
 
 #!/bin/bash
 
-if [ -d "/data" ] && [ "$(stat -c '%U' /data)" = "$USER" ]; then
+if touch "/data" ; then
   builtin cd /data
-  echo "/data $(stat -c '%U' /data) ? ${USER}" >> ~/zsh.log
-elif [ -d "$HOME/data" ] && [ "$(stat -c '%U' "$HOME/data")" = "$USER" ]; then
+elif touch "$HOME/data" ; then
   builtin cd $HOME/data
-  echo "/data $(stat -c '%U' $HOME/data) ? ${USER}" >> ~/zsh.log
 fi
 
 
@@ -93,6 +91,7 @@ zinit lucid light-mode wait depth=1 for             \
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+# TODOL move to zprofile path env
 
 # ENV VARIABLE
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1  # make prompt faster
@@ -111,24 +110,8 @@ export GOPATH="$HOME/go/"
 export PATH="$GOPATH/bin:$PATH"
 
 if [[ -s $HOME/.config/zsh  ]];then
-  for file in $HOME/.config/zsh/*;do
-    zi ice silent wait 0.1
+  for file in $HOME/.config/zsh/* $HOME/.config/zsh_post/*;do
+    zi ice silent wait 5.1
     zi snippet $file
   done
 fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/mhamdi/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/mhamdi/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/mhamdi/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
