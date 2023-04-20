@@ -81,13 +81,13 @@ icons_format = "| "
 
 
 
-# [[block]]
-# block = "backlight"
-# device = "intel_backlight"
-# format  = "{brightness:5#100}"
-# icons_format = ""
-# [block.theme_overrides]
-# idle_bg="#202020"
+[[block]]
+block = "backlight"
+device = "intel_backlight"
+format  = "{brightness:5#100}"
+icons_format = ""
+[block.theme_overrides]
+idle_bg="#202020"
 
 
 # [[block]]
