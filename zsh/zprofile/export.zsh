@@ -38,7 +38,7 @@ export LC_PAPER="POSIX"
 export LC_TELEPHONE="POSIX"
 export LC_TIME="POSIX"
 
-export TERM="st-256color"
+# export TERM="st-256color"
 export TIME="\n%E CPU=%P"
 
 
