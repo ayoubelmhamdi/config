@@ -41,12 +41,12 @@ cd (){
     fi
 
     if ! [ "$1" != ".." ];then
-        builtin cd "$(pwd)/.."
+        builtin cd ..
         return
     fi
 
     if ! [ "$1" != "..." ];then
-        builtin cd "$(pwd)/../.."
+        builtin cd ../..
         return
     fi
 
@@ -56,7 +56,7 @@ cd (){
     fi
 
     if ! [ "$1" != "-" ];then
-        builtin cd $HOME
+        builtin cd -
         return
     fi
 
