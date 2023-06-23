@@ -2,6 +2,5 @@
 
 (palette "Browns And Yellows")
 (font "Z003 Italic")
-(box-mode fixed)
 
 # end of gimp-text-tool options

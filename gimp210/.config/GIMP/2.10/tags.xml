@@ -1177,7 +1177,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="d46d79233ae90ba92f3f1a568464edfe">
+  <resource identifier="gimp-palette-color-history" checksum="6c850bdfcb837af7d13ba90ccdd617ac">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1562,6 +1562,105 @@
   </resource>
 
   <resource identifier="Cascadia Mono Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Bright Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Bright Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Bright Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Bright Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Bright Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Bright Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Classical Serif Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Concrete Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Concrete Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Concrete Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Concrete Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Sans Serif Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Sans Serif Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Sans Serif Demi Condensed, Semi-Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Sans Serif Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Sans Serif Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Serif Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Serif Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Serif Extra Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Serif Extra Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Serif Extra Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Serif Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Serif Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Serif Upright Italic, Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Typewriter Text Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Typewriter Text Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Typewriter Text Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Typewriter Text Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Typewriter Text Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Typewriter Text Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Typewriter Text Ultra-Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Typewriter Text Variable Width Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="CMU Typewriter Text Variable Width Medium Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Courier" checksum="(null)">
