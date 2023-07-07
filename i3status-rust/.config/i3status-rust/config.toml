@@ -89,6 +89,9 @@ icons_format = ""
 [block.theme_overrides]
 idle_bg="#202020"
 
+[[block]]
+block = "battery"
+
 
 # [[block]]
 # block = "sound"
