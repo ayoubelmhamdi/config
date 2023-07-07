@@ -1,13 +1,20 @@
 #!/bin/bash
 
-LINUX=${1:-void}
+LINUX=${1:-}
+if [ -z "$LINUX" ];then
+  echo "Usage:"
+  echo "  ./mystow void"
+  echo "  ./mystow termux"
+  echo "  ./mystow any"
+  exit 1
+fi
 
 mkdir -p "$HOME/.config/zsh"
 mkdir -p "$HOME/.texmf"
 mkdir -p "$HOME/.cpan/build"
 mkdir -p "$HOME/.config/zprofile"
 mkdir -p "$HOME/.config/zsh_post"
-
+mkdir -p "$HOME/.config/fpath"
 
 
 _stow(){
@@ -32,6 +39,7 @@ _stow(){
 _stow init     "$HOME"
 _stow zprofile "$HOME/.config/zprofile"
 _stow zsh_post "$HOME/.config/zsh_post"
+_stow fpath    "$HOME/.config/fpath"
 _stow universe
 
 case "$LINUX" in
