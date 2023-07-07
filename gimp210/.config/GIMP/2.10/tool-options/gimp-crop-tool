@@ -1,7 +1,9 @@
 # GIMP gimp-crop-tool options
 
-(aspect-denominator 551)
-(aspect-numerator 768)
+(aspect-denominator 1024)
+(aspect-numerator 1024)
+(foreground (color-rgb 1 1 1))
+(background (color-rgb 0.90588235294117647 0.59999999999999998 0.50196078431372548))
 (pattern "Rain")
 
 # end of gimp-crop-tool options
