@@ -44,6 +44,7 @@
 ;   diffFilter = delta --color-only
 
 [delta]
+  ; syntax-theme = gruvbox
   navigate = true  # use n and N to move between diff sections
   light = false    # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
   side-by-side = true
@@ -52,7 +53,10 @@
   ; features = 24-bit-color,minus-emphasis,dark
 
 [alias]
-  ignore = !echo "$2" >> $(git rev-parse --show-toplevel)/.git/info/exclude
+  ; not work att all
+  ; ignore = !echo "$2" >> $(git rev-parse --show-toplevel)/.git/info/exclude
+  # Thanks r00k, this creates a pretty graph view of the log
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 
 [merge]
   conflictstyle = diff3
