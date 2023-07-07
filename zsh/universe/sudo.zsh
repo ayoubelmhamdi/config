@@ -1,5 +1,6 @@
 #!/bin/bash
 
+alias update-grub='sudo update-grub'
 alias reboot="sudo reboot"
 
 # mv, rm, cp
