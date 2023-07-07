@@ -3,8 +3,8 @@
 # TODO: mouve to xinitrc this lazy func
 init_zsh(){
     sleep 0.1
-    sudo mkdir -p /tmp/ayoub /tmp/nvim
-    sudo chown -R mhamdi /tmp/ayoub /tmp/nvim
+    mkdir -p /tmp/ayoub /tmp/nvim
+    # sudo chown -R mhamdi /tmp/ayoub /tmp/nvim
     echo "1 1" | tee /tmp/ayoub/cpu
     echo " "   | tee /tmp/ayoub/status
     #sudo chmod -R 7755 /home/mhamdi/.local/share/zinit
