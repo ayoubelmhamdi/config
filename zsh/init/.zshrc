@@ -1,6 +1,5 @@
 # !/bin/zsh
 
-#!/bin/bash
 
 if touch "/data" ; then
   builtin cd /data
@@ -8,6 +7,7 @@ elif touch "$HOME/data" ; then
   builtin cd $HOME/data
 fi
 
+fpath=(~/.config/fpath $fpath)
 
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -111,7 +111,17 @@ export PATH="$GOPATH/bin:$PATH"
 
 if [[ -s $HOME/.config/zsh  ]];then
   for file in $HOME/.config/zsh/* $HOME/.config/zsh_post/*;do
-    zi ice silent wait 5.1
-    zi snippet $file
+    zi ice silent wait 0.1
+    zi snippet "$file"
   done
 fi
+
+builtin cd /data/projects/typst/PFE
+
+PATH="/home/mhamdi/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/mhamdi/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/mhamdi/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/mhamdi/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/mhamdi/perl5"; export PERL_MM_OPT;
+
+sleep 0.01
