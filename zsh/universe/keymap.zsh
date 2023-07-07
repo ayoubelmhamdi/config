@@ -23,3 +23,7 @@ bindkey '^[[P' delete-char                   # key <delete>
 bindkey "^E" end-of-line
 bindkey "^M" accept-line
 bindkey "^[[P" delete-char
+bindkey "^[[3~" delete-char
+# bindkey "^[LEFT" "exec chvt 2"
+# bindkey "^[RIGHT" "exec ls"
+# bindkey "\e[1;3C" "exec ls"
