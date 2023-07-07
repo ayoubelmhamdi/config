@@ -17,7 +17,7 @@ alias b=cd_book
 
 alias stat="stat -c '%a  user:%U group:%G'"
 
-alias lsblk='echo;lsblk --output LABEL,FSUSE%,NAME,MOUNTPOINT'
+alias lsblk='echo;lsblk --output LABEL,FSUSE%,NAME,MOUNTPOINT,UUID'
 # alias ip=/usr/local/bin/ip
 alias cu='curl -LO'
 alias c=clear
@@ -80,11 +80,27 @@ alias gc-main='git clone --depth=1 --branch=main'
 alias co='git commit -m'
 
 alias log='git log --oneline'
-alias show=" git show | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta"
-alias gdiff="git diff | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta"
-alias show_full="git show |  PAGER='bat -p' delta"
-alias gdiff="    git diff | PAGER='bat -p' delta"
+# alias gdiff="git diff | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta"
+# alias show_full="git show |  PAGER='bat -p' delta"
+# alias gdiff="    git diff | PAGER='bat -p' delta"
 
+show(){
+  local file="${1:-}"
+  if [ -z "$file" ];then
+    git show | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta
+  else
+    git show $file | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta
+  fi
+}
+
+gdiff(){
+  local file="${1:-}"
+  if [ -z "$file" ];then
+    git diff | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta
+  else
+    git diff $file | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta
+  fi
+}
 
 # xclip
 alias xc='xclip -selection clipboard'
@@ -93,6 +109,7 @@ alias wget='wget -c'
 
 # nvim alias
 # alias v='nvim -u $avim/init.lua'
+alias pager="nvim -c 'setf markdown|set noswapfile| setlocal buftype=nofile'  -"
 alias which='command -v'
 #alias e='nvimdir=~/.config/nvim nvim'
 # alias v='nvim'
