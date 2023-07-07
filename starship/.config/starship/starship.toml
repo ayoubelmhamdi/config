@@ -163,7 +163,7 @@ disabled = true
 disabled = true
 
 [conda]
-format = '[$symbol]($style) '
+format = '[$symbol$environment]($style) '
 
 [crystal]
 disabled = true
