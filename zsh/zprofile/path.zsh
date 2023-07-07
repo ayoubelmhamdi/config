@@ -29,4 +29,4 @@ export PATH=$PATH:$MY_PATH
 
 
 # PYTHON
-export PYTHONPATH=$PYTHONPATH:/data/book/pyTorch/v01/scripts
+export PYTHONPATH=$PYTHONPATH:/data/book/pyTorch/v01/scripts:/data/github/lyrapdf
