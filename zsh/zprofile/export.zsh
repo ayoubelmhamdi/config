@@ -7,7 +7,6 @@
 
 # API
 
-export OPENAI_API_KEY="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"
 
 # SETTING
 # interdit to change default editor and pager
