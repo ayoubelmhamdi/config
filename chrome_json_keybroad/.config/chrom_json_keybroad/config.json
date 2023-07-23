@@ -1,0 +1,27 @@
+[
+  {
+    "key": "j",
+    "action": "scrolldown",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "h",
+    "action": "scrollup",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "ctrl+shift+c",
+    "action": "javascript",
+    "code": "document.execCommand('copy')",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  }
+]
