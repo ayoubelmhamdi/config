@@ -5,11 +5,15 @@
 #xrandr --auto
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
 start_st(){
-  exec st &
+  exec wezterm &
 }
 
 start_sl(){
   sl &
+}
+
+start_flameshot(){
+  sleep 10 && flameshot screen -c
 }
 
 set_brightness(){
@@ -82,6 +86,7 @@ xinit_lazy(){
   screen_sleep
   remap_keyboard
   enable_numlock
+  start_flameshot &
   # firefox_ramdisk
 }
 
