@@ -1,0 +1,10 @@
+#compdef mark
+
+_arguments \
+  '*::file:_files'
+
+# _arguments \
+#   '(-l --list)'{-l,--list}'[List all marks]' \
+#   '(-d --delete)'{-d,--delete}'[Delete a mark]:mark:_marks' \
+#   '(-c --clear)'{-c,--clear}'[Clear all marks]' \
+#   '*::file:_files'
