@@ -1,7 +1,7 @@
 MY_PATH=
 
 # USER c codes
-export MY_PATH=/data/projects/c/ayoub/i3status/bin:$MY_PATH
+export MY_PATH=/data/projects/c/ayoub/getbandwith/bin:$MY_PATH
 
 # USER bash scripts
 export MY_PATH=$HOME/scripts/bin:$MY_PATH
@@ -23,10 +23,15 @@ export MY_PATH=/app/android-studio/bin:$MY_PATH
 
 # cuda
 export MY_PATH="/usr/local/cuda-10.1/bin:$MY_PATH"
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
-# FINAL
+
+# pylyzer
+export MY_PATH="/home/mhamdi/.erg/bin:$MY_PATH"
+
+#####  FINAL
 export PATH=$PATH:$MY_PATH
 
 
-# PYTHON
+# LIBRARY
+export ERG_PATH=/home/mhamdi/.erg
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
 export PYTHONPATH=$PYTHONPATH:/data/book/pyTorch/v01/scripts:/data/github/lyrapdf
