@@ -4,11 +4,11 @@
 init_zsh(){
     sleep 0.1
     mkdir -p /tmp/ayoub /tmp/nvim
-    # sudo chown -R mhamdi /tmp/ayoub /tmp/nvim
+    # doas chown -R mhamdi /tmp/ayoub /tmp/nvim
     echo "1 1" | tee /tmp/ayoub/cpu
     echo " "   | tee /tmp/ayoub/status
-    #sudo chmod -R 7755 /home/mhamdi/.local/share/zinit
-    #sudo rmmod wl && sudo modprobe wl
+    #doas chmod -R 7755 /home/mhamdi/.local/share/zinit
+    #doas rmmod wl && sudo modprobe wl
 }
 
 set_env_var_and_path(){

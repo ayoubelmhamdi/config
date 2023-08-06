@@ -1,38 +1,38 @@
 #!/bin/bash
 
-alias update-grub='sudo update-grub'
-alias reboot="sudo reboot"
+alias update-grub='doas update-grub'
+alias reboot="doas reboot"
 
 # mv, rm, cp
-alias rm="sudo rm -ivr"
+alias rm="doas rm -ivr"
 # alias rm='rm -Ivr'
 alias trash-list="trash-list --trash-dir=/root/.Trash-0"
 alias trash-restore="trash-restore --trash-dir=/root/.Trash-0"
 alias rmt='trash_rm'
-alias rmf='sudo /sbin/rm -vrf'
+alias rmf='doas /sbin/rm -vrf'
 
 
-alias chown='sudo chown'
-alias chmod='sudo chmod'
-alias x='sudo chmod +x'
+alias chown='doas chown'
+alias chmod='doas chmod'
+alias x='doas chmod +x'
 
-alias poweroff='sudo poweroff'
-alias reboot='sudo reboot'
-alias zzz='sudo zzz'
-alias pkill='sudo pkill'
+alias poweroff='doas poweroff'
+alias reboot='doas reboot'
+alias zzz='doas zzz'
+alias pkill='doas pkill'
 
-alias rmmod='sudo rmmod'
-alias modprobe='sudo modprobe'
+alias rmmod='doas rmmod'
+alias modprobe='doas modprobe'
 
-alias sv='sudo sv'
+alias sv='doas sv'
 
-alias mount="sudo mount"
-alias umount="sudo umount"
+alias mount="doas mount"
+alias umount="doas umount"
 
 # when i use password i do not need to use it every time
-# alias sed="sudo sed"
+# alias sed="doas sed"
 
-# fix sudo
+# fix doas
 # alis ln
 alias cp="cp -ivr"
 alias mv='mv -iv'
