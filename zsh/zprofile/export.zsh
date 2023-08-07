@@ -94,3 +94,6 @@ export DIRENV_LOG_FORMAT=
 
 # override ncrustify global config
 export UNCRUSTIFY_CONFIG=$HOME/.config/uncrustify/uncrustify.cfg
+
+# Tenserflow Deactive Logs
+export TF_CPP_MIN_LOG_LEVEL=3
