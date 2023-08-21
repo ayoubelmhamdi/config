@@ -2,15 +2,15 @@
 separator = ""
 idle_bg = "#222222"
 
+good_bg = "#222222"
+# good_fg = "#222222"
+# idle_fg = "#ff00ff"
 # separator_bg = "#222222"
 # separator_fg = "#222222"
-# idle_fg = "#ff00ff"
 # alternating_tint_bg = "#222222"
 # alternating_tint_fg = "#222222"
 # critical_bg = "#222222"
 # critical_fg = "#222222"
-good_bg = "#222222"
-# good_fg = "#222222"
 # info_bg = "#222222"
 # info_fg = "#222222"
 # separator = "#222222"
@@ -18,9 +18,11 @@ good_bg = "#222222"
 # warning_fg = "#222222"
 
 
+[global]
+log_file = "/tmp/i3status-rs.log"
+
 [icons]
-name = "awesome6"
-# name = "material-nf"
+icons = "awesome6"
 [icons.overrides]
 cpu = ""
 
@@ -59,16 +61,18 @@ json = true
 
 [[block]]
 block = "cpu"
-icons_format = "| "
+#icons_format = "| "
 
 
 [[block]]
 block = "memory"
-format_mem = "{mem_used}"
-display_type = "memory"
-interval = 5
-warning_mem = 80
-critical_mem = 95
+#format = " $mem_used.eng(prefix:Mi)/$mem_total.eng(prefix:Mi)($mem_used_percents.eng(w:2)) "
+format = "\\| $mem_used.eng(prefix:Mi) "
+#format_mem = "{mem_used}"
+#display_type = "memory"
+#interval = 5
+#warning_mem = 80
+#critical_mem = 95
 icons_format = "| "
 
 
@@ -84,13 +88,20 @@ icons_format = "| "
 [[block]]
 block = "backlight"
 device = "intel_backlight"
-format  = "{brightness:5#100}"
-icons_format = ""
+format  = "\\| $brightness $icon "
+cycle = [99, 20]
+missing_format = ""
 [block.theme_overrides]
 idle_bg="#202020"
 
 [[block]]
 block = "battery"
+driver = "sysfs" # "apc_ups", or "upower" or "sysfs"
+format = " \\|  $percentage  $time  $icon  \\|"
+[block.theme_overrides]
+idle_bg="#202020"
+good_fg = "#202020"
+info_bg = "#202020"
 
 
 # [[block]]
@@ -103,6 +114,5 @@ block = "battery"
 
 [[block]]
 block = "time"
+format = " $timestamp.datetime(f:' %a %d %b %H:%M:%S ', l:fr_BE) "
 interval = 1
-format = " %a %d %b %H:%M:%S "
-icons_format = ""
