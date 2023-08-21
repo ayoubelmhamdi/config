@@ -1,6 +1,6 @@
 # GIMP gimp-unified-transform-tool options
 
-(background (color-rgb 0.90588235294117647 0.59999999999999998 0.50196078431372548))
+(background (color-rgb 0 0 0))
 (interpolation linear)
 
 # end of gimp-unified-transform-tool options
