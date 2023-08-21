@@ -150,7 +150,7 @@ bar {
   font pango:FONT AWESOME 6 FREE BOLD 10, FiraCode Nerd Font 10
   # font pango:FiraCode Nerd Font
   position top
-  status_command /usr/bin/i3status-rs
+  status_command $HOME/.cargo/bin/i3status-rs --never-pause
   colors {
     background #222222
     statusline #dddddd
