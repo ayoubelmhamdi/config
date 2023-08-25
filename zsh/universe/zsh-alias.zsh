@@ -21,8 +21,9 @@ alias lsblk='echo;lsblk --output LABEL,FSUSE%,NAME,MOUNTPOINT,UUID'
 # alias ip=/usr/local/bin/ip
 alias cu='curl -LO'
 alias c=clear
-alias nv='devour neovide --nofork'
 alias history='history 0|fzf'
+
+alias nv='devour neovide --nofork'
 
 
 function ig () {
@@ -63,10 +64,8 @@ alias sta='git status -s'
 alias up='git commit -m "up"'
 
 
-alias tarxf='tar xvf'
 alias untar='tar xvf'
-alias tarcf='tar cvf'
-alias viewtar='tar -tf'
+alias vtar='tar -tf'
 # alias c='clear && tmux clear-history  >/dev/null 2>&1;echo'
 
 
@@ -76,10 +75,10 @@ alias viewtar='tar -tf'
 
 
 alias gc='git clone --depth=1'
-alias gc-main='git clone --depth=1 --branch=main'
 alias co='git commit -m'
 
 alias log='git log --oneline'
+alias lg='git lg'
 # alias gdiff="git diff | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta"
 # alias show_full="git show |  PAGER='bat -p' delta"
 # alias gdiff="    git diff | PAGER='bat -p' delta"
@@ -154,3 +153,11 @@ alias ...='builtin cd ../..'
 alias ....='builtin cd ../../..'
 
 alias cg=cd_git_root
+
+if command -v unbuffer;then
+  alias jq="unbuffer jq"
+fi
+
+function jqv(){
+  command jq $@ | nvim +Man! +"setf json"
+}
