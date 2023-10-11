@@ -4,7 +4,7 @@
 
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-align-tool")
+    (active-tool "gimp-move-tool")
     (children
         (GimpToolInfo "gimp-move-tool"
             (icon-name "gimp-tool-move")
@@ -88,7 +88,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-gradient-tool")
+    (active-tool "gimp-bucket-fill-tool")
     (children
         (GimpToolInfo "gimp-bucket-fill-tool"
             (icon-name "gimp-tool-bucket-fill")
@@ -98,7 +98,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-mypaint-brush-tool")
+    (active-tool "gimp-paintbrush-tool")
     (children
         (GimpToolInfo "gimp-paintbrush-tool"
             (icon-name "gimp-tool-paintbrush")

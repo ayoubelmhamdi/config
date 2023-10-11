@@ -1,6 +1,6 @@
 # GIMP gimp-fuzzy-select-tool options
 
 (diagonal-neighbors yes)
-(threshold 162.90000000000001)
+(threshold 41.399999999999999)
 
 # end of gimp-fuzzy-select-tool options
