@@ -154,10 +154,18 @@ alias ....='builtin cd ../../..'
 
 alias cg=cd_git_root
 
-if command -v unbuffer;then
-  alias jq="unbuffer jq"
+if command -v unbuffer >/dev/null;then
+  alias ujq="unbuffer jq"
 fi
 
 function jqv(){
   command jq $@ | nvim +Man! +"setf json"
 }
+
+if command -v doas >/dev/null;then
+  alias sudo=doas
+fi
+
+if command -v openvpn >/dev/null;then
+  alias openvpn='sudo openvpn --data-ciphers AES-256-GCM:AES-128-GCM:CHACHA20-POLY1305:AES-128-CBC --config'
+fi
