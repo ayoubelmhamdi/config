@@ -90,20 +90,20 @@ icons_format = "| "
 [[block]]
 block = "backlight"
 device = "intel_backlight"
-format  = "\\| $brightness $icon"
+format  = "\\| $icon"
 cycle = [99, 20]
 missing_format = ""
 [block.theme_overrides]
 idle_bg="#202020"
 
-[[block]]
-block = "battery"
-driver = "sysfs" # "apc_ups", or "upower" or "sysfs"
-format = " \\|  $time \\| $percentage $icon  \\|"
-[block.theme_overrides]
-idle_bg="#202020"
-good_fg = "#b0b0b0"
-info_bg = "#202020"
+# [[block]]
+# block = "battery"
+# driver = "sysfs" # "apc_ups", or "upower" or "sysfs"
+# # format = " \\|  $time \\| $percentage $icon  \\|"
+# [block.theme_overrides]
+# idle_bg="#202020"
+# good_fg = "#b0b0b0"
+# info_bg = "#202020"
 
 
 # [[block]]
