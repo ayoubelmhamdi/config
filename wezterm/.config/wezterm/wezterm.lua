@@ -3,6 +3,15 @@ local act = wezterm.action
 
 local ALTKEY = "ALT"
 local SUPPER = "SUPER"
+-- local colors = {
+--     background = "#fbf1c7",
+--     foreground = "#a89984",
+--     cursor_bg = "#a89984",
+--     cursor_fg = "#fbf1c7",
+--     cursor_border = "#a89984",
+--     selection_bg = "#a89984",
+--     selection_fg = "#fbf1c7",
+-- }
 local colors = {
 	foreground = "#a89984",
 	background = "#21262D",
@@ -62,15 +71,33 @@ for i = 1, 8 do
 	})
 end
 
+-- if false then
+--   Colors_switcher = "Gruvbox"
+-- else
+--   Colors_switcher = "Github"
+-- end
+
+local f = io.open("/tmp/day", "r")
+if f ~= nil then
+	io.close(f)
+	Colors_switcher = "Github"
+  colors = nil
+else
+	Colors_switcher = "Gruvbox"
+end
+
 return {
 	default_cursor_style = "SteadyBar",
 	font = wezterm.font("FiraCode Nerd Font"),
-	color_scheme = "Gruvbox Dark",
+	-- color_scheme = "Gruvbox Dark",
+	-- color_scheme = 'Github',
+	color_scheme = Colors_switcher,
 	colors = colors,
 	font_size = 16,
 	-- window_background_opacity = 0.15,
 	-- enable_tab_bar = false,
 	adjust_window_size_when_changing_font_size = false,
+	hide_tab_bar_if_only_one_tab = true,
 	-- background = "#2e3440",
 	window_padding = {
 		left = 0,
