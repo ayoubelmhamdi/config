@@ -27,6 +27,7 @@ super + shift + p
 
 super + w
     iwgtk
+    # wpa_gui 
 
 super + q
   bash /tmp/run
@@ -77,8 +78,6 @@ mpv --loop "$(xclip -o -sel clip)"
 # super + c
 #   wpa_cli reassociate 1
 
-super + w
-    fix_wifi
 
 XF86Audio{Raise,Lower}Volume
     amixer sset Master {10+,10-} unmute
