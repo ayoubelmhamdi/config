@@ -86,16 +86,17 @@ xinit_lazy(){
   screen_sleep
   remap_keyboard
   enable_numlock
-  start_flameshot &
+    start_flameshot
   # firefox_ramdisk
 }
 
 
 xinit_lazy &
+
 while true; do
     # exec dwm >/dev/null 2>&1
     # exec gnome-shell
     #exec metacity
-    exec i3
     # exec dwm
+    i3
 done
