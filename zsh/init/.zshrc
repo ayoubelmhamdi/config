@@ -35,8 +35,6 @@ export TIMEFMT=$TIMEFMT       # Format for reporting usage with time
 export WATCHFMT=$WATCHFMT     # Format of reports for $watch
 
 
-alias ls=exa
-alias myexls=exa
 ### Added by Zinit's installer
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -72,17 +70,17 @@ zinit wait lucid for \
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 # plugin
-zinit lucid light-mode wait depth=1 for             \
-    atinit"typeset -gA FAST_HIGHLIGHT; FAST_HIGHLIGHT[git-cmsg-len]=100; zpcompinit; zpcdreplay" \
-        zdharma/fast-syntax-highlighting           \
-	atinit"zicompinit; zicdreplay"             \
-        zsh-users/zsh-history-substring-search \
-    blockf atpull'zinit creinstall -q .'       \
-        zsh-users/zsh-completions              \
-    atload"_zsh_autosuggest_start"             \
-        zsh-users/zsh-autosuggestions          \
-    # atload                                   \
-    #     romkatv/powerlevel10k                \
+zinit lucid light-mode wait depth=1 for    \
+  atinit"typeset -gA FAST_HIGHLIGHT; FAST_HIGHLIGHT[git-cmsg-len]=100; zpcompinit; zpcdreplay" \
+    zdharma/fast-syntax-highlighting       \
+  atinit"zicompinit; zicdreplay"           \
+    zsh-users/zsh-history-substring-search \
+  blockf atpull'zinit creinstall -q .'   \
+    zsh-users/zsh-completions              \
+  atload"_zsh_autosuggest_start"         \
+    zsh-users/zsh-autosuggestions          \
+  # atload                                   \
+  #     romkatv/powerlevel10k                \
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 
@@ -109,6 +107,9 @@ export CGO_CFLAGS="-g -O2 -Wno-return-local-addr"
 export GOPATH="$HOME/go/"
 export PATH="$GOPATH/bin:$PATH"
 
+# alias ls="command ls"
+unalias ls 2>/dev/null
+
 if [[ -s $HOME/.config/zsh  ]];then
   for file in $HOME/.config/zsh/* $HOME/.config/zsh_post/*;do
     zi ice silent wait 0.1
@@ -116,7 +117,22 @@ if [[ -s $HOME/.config/zsh  ]];then
   done
 fi
 
-builtin cd /data/projects/typst/PFE
+va(){
+  unset PIP_TARGET;
+  unset PYTHONPATH;
+  source venv/bin/activate;
+}
+
+venv(){
+  unset PIP_TARGET;
+  unset PYTHONPATH;
+  python3 -m venv venv;
+  source venv/bin/activate;
+}
+
+# builtin cd /data/projects/typst/PFE
+
+
 
 PATH="/home/mhamdi/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/mhamdi/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
