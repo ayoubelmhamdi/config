@@ -65,10 +65,24 @@ alias up='git commit -m "up"'
 
 
 alias untar='tar xvf'
-alias vtar='tar -tf'
+# alias vtar='tar -tf'
 # alias c='clear && tmux clear-history  >/dev/null 2>&1;echo'
 
 
+# function ls(){
+#   clear 
+#   /bin/exa --icons --color=always --group-directories-first "$@"
+# }
+# function nls(){
+#   /bin/exa --icons --color=always --group-directories-first "$@"
+# }
+# function la(){
+#   /bin/exa -a --icons --color=always --group-directories-first "$@"
+# }
+# function ll(){
+#   /bin/exa -l --icons --color=always --group-directories-first "$@"
+# }
+#
 
 
 
