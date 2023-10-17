@@ -3,15 +3,7 @@ local act = wezterm.action
 
 local ALTKEY = "ALT"
 local SUPPER = "SUPER"
--- local colors = {
---     background = "#fbf1c7",
---     foreground = "#a89984",
---     cursor_bg = "#a89984",
---     cursor_fg = "#fbf1c7",
---     cursor_border = "#a89984",
---     selection_bg = "#a89984",
---     selection_fg = "#fbf1c7",
--- }
+
 local colors = {
 	foreground = "#a89984",
 	background = "#21262D",
@@ -40,31 +32,27 @@ local new_tab = wezterm.action({ SpawnTab = "CurrentPaneDomain" })
 local next_tab = wezterm.action({ ActivateTabRelative = -1 })
 local prev_tab = wezterm.action({ ActivateTabRelative = 1 })
 local searching = wezterm.action({ Search = { CaseSensitiveString = "" } })
-local coping = wezterm.action({ CopyTo = "Clipboard" })
-local pasting = wezterm.action({ PasteFrom = "Clipboard" })
 local selecting = wezterm.action({ PasteFrom = "PrimarySelection" })
 
-local mykeys = {
-	{ mods = SUPPER, key = "E", action = rename_title },
+local keys = {
+	{ mods = SUPPER,       key = "E", action = rename_title },
 	--
 	{ mods = "CTRL|SHIFT", key = "F", action = searching },
-	{ mods = "CTRL|SHIFT", key = "C", action = coping },
-	{ mods = "CTRL|SHIFT", key = "V", action = pasting },
 	--
-	{ mods = ALTKEY, key = "n", action = split_pane },
-	{ mods = "CTRL", key = "=", action = "IncreaseFontSize" },
-	{ mods = "CTRL", key = "-", action = "DecreaseFontSize" },
-	{ mods = "CTRL", key = "0", action = "ResetFontSize" },
-	{ mods = ALTKEY, key = "h", action = next_tab },
-	{ mods = ALTKEY, key = "l", action = prev_tab },
-	{ mods = SUPPER, key = "n", action = new_tab },
+	{ mods = ALTKEY,       key = "n", action = split_pane },
+	{ mods = "CTRL",       key = "=", action = "IncreaseFontSize" },
+	{ mods = "CTRL",       key = "-", action = "DecreaseFontSize" },
+	{ mods = "CTRL",       key = "0", action = "ResetFontSize" },
+	{ mods = ALTKEY,       key = "h", action = next_tab },
+	{ mods = ALTKEY,       key = "l", action = prev_tab },
+	{ mods = SUPPER,       key = "n", action = new_tab },
 	--
-	{ key = "Insert", action = selecting },
-	{ key = "F11", action = toggleFullScreen },
+	{ key = "Insert",                 action = selecting },
+	{ key = "F11",                    action = toggleFullScreen },
 } -- fin keys
 
 for i = 1, 8 do
-	table.insert(mykeys, {
+	table.insert(keys, {
 		key = tostring(i),
 		mods = "ALT",
 		action = wezterm.action({ ActivateTab = i - 1 }),
@@ -80,10 +68,10 @@ end
 local f = io.open("/tmp/day", "r")
 if f ~= nil then
 	io.close(f)
-	Colors_switcher = "Github"
-  colors = nil
+	Colors_switcher = "Github (base16)"
+	colors = nil
 else
-	Colors_switcher = "Gruvbox"
+	Colors_switcher = "Gruvbox Dark (Gogh)"
 end
 
 return {
@@ -105,5 +93,5 @@ return {
 		top = 0,
 		bottom = 0,
 	},
-	keys = mykeys,
+	keys = keys,
 }
