@@ -26,8 +26,13 @@ super + shift + p
     passmenu
 
 super + w
-    iwgtk
+    wezterm cli split-pane --right --percent 50 -- nmtui
+    # iwgtk
     # wpa_gui 
+
+#super + s
+  # wezterm cli split-pane --right --percent 30 -- nmtui
+  # wezterm start -- bash -l
 
 super + q
   bash /tmp/run
@@ -46,8 +51,8 @@ super + shift + y
 super + y
   /home/mhamdi/scripts/bin/yt >/tmp/log.yt.log 2>&1
 
-super + s
-  bash /home/mhamdi/scripts/bin/super >/tmp/log.super.log 2>&1
+# super + s
+#   bash /home/mhamdi/scripts/bin/super >/tmp/log.super.log 2>&1
 
 
 #super + shift + q
