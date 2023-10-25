@@ -9,7 +9,10 @@
 
 # Utilities
 
-# Source
+# testin aliases
+alias fg='fg 2>/dev/null|| true'
+alias termux='command termux'
+alias termuxsd='command termux -t sd'
 
 # TODO: mouve to cd
 source $HOME/scripts/app/cdf
