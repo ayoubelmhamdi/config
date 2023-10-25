@@ -37,7 +37,7 @@ bindsym $mod+Return    exec --no-startup-id wezterm
 bindsym $mod+r         mode "resize"
 bindsym $mod+Shift+r   restart
 bindsym $mod+Shift+q   kill
-bindsym $mod+p         exec --no-startup-id dmenu_run
+# bindsym $mod+p         exec --no-startup-id dmenu_run
 
 bindsym $mod+semicolon split h
 bindsym $mod+v         split v
@@ -53,8 +53,11 @@ bindsym $mod+t         layout     toggle   tabbed
 bindsym $mod+e         layout     toggle   split
 
 
-bindsym $mod+Shift+minus scratchpad show
-bindsym $mod+minus       move scratchpad
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+bindsym $mod+s sticky toggle
+
 
 
 
