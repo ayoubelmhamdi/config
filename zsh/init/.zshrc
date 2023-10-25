@@ -124,10 +124,14 @@ va(){
 }
 
 venv(){
-  unset PIP_TARGET;
-  unset PYTHONPATH;
-  python3 -m venv venv;
-  source venv/bin/activate;
+  conda activate py310
+  unset PIP_TARGET
+  unset PYTHONPATH
+  python3 -m venv venv
+  conda deactivate
+  source venv/bin/activate
+  echo -e 'unset PIP_TARGET;\nunset PYTHONPATH;\nsource venv/bin/activate;' > ./.envrc
+  direnv allow .
 }
 
 # builtin cd /data/projects/typst/PFE
