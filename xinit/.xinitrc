@@ -65,13 +65,17 @@ enable_numlock(){
 }
 
 start_sound(){
-  /home/mhamdi/scripts/bin/sound-switch &
+  # /home/mhamdi/scripts/bin/sound-switch &
+  :
 }
 
 ping_status(){
   ping-status &
 }
 
+start_NetworkManager(){
+  nm-applet &
+}
 
 xinit_lazy(){
   ping_status # NOTE: work when put it first not last started
@@ -86,7 +90,8 @@ xinit_lazy(){
   screen_sleep
   remap_keyboard
   enable_numlock
-    start_flameshot
+  start_flameshot
+  start_NetworkManager
   # firefox_ramdisk
 }
 
