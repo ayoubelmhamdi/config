@@ -2,6 +2,8 @@
 
 (aspect-denominator 506)
 (aspect-numerator 543)
+(foreground (color-rgb 1 1 1))
+(background (color-rgb 0 0 0))
 (pattern "Rain")
 
 # end of gimp-crop-tool options

@@ -103,7 +103,7 @@
     (size 948 643))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
-    (position 27 0)
+    (position 107 24)
     (size 948 643))
 (session-info "toplevel"
     (factory-entry "gimp-offset-tool-dialog")
@@ -121,7 +121,7 @@
     (position 193 90))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
-    (position 0 5))
+    (position 0 1))
 (session-info "toplevel"
     (factory-entry "gimp-scale-tool-dialog")
     (position 774 50))
