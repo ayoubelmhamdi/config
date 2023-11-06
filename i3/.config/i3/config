@@ -33,6 +33,8 @@ set $right l
 
 
 bindsym $mod+Return    exec --no-startup-id wezterm
+# bindsym Print exec --no-startup-id flameshot gui
+
 # bindsym $mod+Return    exec --no-startup-id kitty
 bindsym $mod+r         mode "resize"
 bindsym $mod+Shift+r   restart
