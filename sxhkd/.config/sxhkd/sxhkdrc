@@ -5,7 +5,7 @@
 super  + Escape
 	pkill  -USR1 -x sxhkd
 
-super  + {z,p}
+super  + {o,p}
   dmenu_run -m 0 -fn 'JetBrainsMono Nerd Font Mono:size=10' -nb '#2F343F' -nf '#bbbbbb' -sb '#f05577' -sf '#eeeeee'
 
 super  + f
