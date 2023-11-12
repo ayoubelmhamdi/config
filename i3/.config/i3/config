@@ -58,6 +58,7 @@ bindsym $mod+e         layout     toggle   split
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
+# use a floating windows in all tags
 bindsym $mod+s sticky toggle
 
 
