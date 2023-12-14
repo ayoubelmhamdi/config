@@ -1,4 +1,10 @@
-
+cf(){
+  if [ -z "$1" ]; then
+    echo "usage: cf <file>"
+    exit 1
+  fi
+  builtin cd $(dirname $(which $1))
+}
 cd_book(){
     BOOK="/data/book"
 
