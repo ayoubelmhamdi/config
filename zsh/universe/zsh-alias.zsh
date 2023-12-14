@@ -112,9 +112,9 @@ show(){
 gdiff(){
   local file="${1:-}"
   if [ -z "$file" ];then
-    git diff | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta
+    git diff | sed -E 's#^(.{140}).*#\1...#' | PAGER='bat -p' delta
   else
-    git diff $file | sed -E 's#^(.{40}).*#\1...#' | PAGER='bat -p' delta
+    git diff $file | sed -E 's#^(.{140}).*#\1...#' | PAGER='bat -p' delta
   fi
 }
 
