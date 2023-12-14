@@ -8,11 +8,12 @@ super  + Escape
 super  + {o,p}
   dmenu_run -m 0 -fn 'JetBrainsMono Nerd Font Mono:size=10' -nb '#2F343F' -nf '#bbbbbb' -sb '#f05577' -sf '#eeeeee'
 
-super  + f
+super  + shift + f
   "$HOME/scripts/bin/launch_brave"
 
 Print
   flameshot gui --raw | xclip -sel clip -t image/png
+  # flameshot gui
 
 ctrl  + shift + 1
   setxkbmap us
