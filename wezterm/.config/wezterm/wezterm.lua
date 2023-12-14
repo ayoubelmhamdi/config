@@ -81,7 +81,7 @@ return {
 	-- color_scheme = 'Github',
 	color_scheme = Colors_switcher,
 	colors = colors,
-	font_size = 16,
+	font_size = 10,
 	-- window_background_opacity = 0.15,
 	-- enable_tab_bar = false,
 	adjust_window_size_when_changing_font_size = false,
