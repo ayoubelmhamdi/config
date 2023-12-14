@@ -5,7 +5,7 @@
 #xrandr --auto
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
 start_st(){
-  exec wezterm &
+  exec st &
 }
 
 start_sl(){
@@ -64,10 +64,10 @@ enable_numlock(){
   numlockx on &
 }
 
-start_sound(){
-  # /home/mhamdi/scripts/bin/sound-switch &
-  :
-}
+# start_sound(){
+#   # /home/mhamdi/scripts/bin/sound-switch &
+#   :
+# }
 
 ping_status(){
   ping-status &
@@ -75,6 +75,11 @@ ping_status(){
 
 start_NetworkManager(){
   nm-applet &
+}
+
+status_dwmblocks(){
+  dwmblocks
+  xsetroot -name "Faild;"
 }
 
 xinit_lazy(){
@@ -86,22 +91,24 @@ xinit_lazy(){
   start_feh
   first_ls
   set_volume
-  start_sound
+  pipewire &
+  dwmblocks 2>/tmp/dwmblocks.log &
+  status_dwmblocks &
+  setxkbmap -layout us,ara -option grp:lalt_lshift_toggle -option caps:escape &
   screen_sleep
   remap_keyboard
   enable_numlock
-  start_flameshot
+  # start_flameshot
   start_NetworkManager
   # firefox_ramdisk
 }
 
-
-xinit_lazy &
+xinit_lazy
 
 while true; do
     # exec dwm >/dev/null 2>&1
     # exec gnome-shell
     #exec metacity
-    # exec dwm
-    exec i3 --shmlog-size=26214400
+    dwm >> /tmp/dwm.log 2>&1
+    # exec i3 --shmlog-size=26214400
 done
