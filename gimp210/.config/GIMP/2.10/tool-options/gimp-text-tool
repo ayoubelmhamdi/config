@@ -1,6 +1,6 @@
 # GIMP gimp-text-tool options
 
-(foreground (color-rgb 1 1 1))
+(foreground (color-rgb 0.12104189456878456 0.17946472052422183 0.78414096916299558))
 (palette "Browns And Yellows")
 (font "CMU Bright Bold")
 (font-size 22)

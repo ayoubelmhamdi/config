@@ -60,7 +60,7 @@
 (toolbox-wilber no)
 (toolbox-group-menu-mode hover)
 (icon-theme "Color")
-(selection-feather-radius 30)
+(selection-feather-radius 100)
 (selection-border-radius 1)
 (fill-options
     (style solid)
