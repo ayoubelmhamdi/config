@@ -1,18 +1,19 @@
 # !/bin/zsh
 
+# if touch "/data" ; then
+#   builtin cd /data
+# elif touch "$HOME/data" ; then
+#   builtin cd $HOME/data
+# fi
+#
 
-if touch "/data" ; then
-  builtin cd /data
-elif touch "$HOME/data" ; then
-  builtin cd $HOME/data
-fi
+eval "$(starship init zsh)"
 
 fpath=(~/.config/fpath $fpath)
 
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval "$(starship init zsh)"
 
 # SETOPT
 # ===== Basics
@@ -52,7 +53,6 @@ autoload -Uz _zinit
 
 
 
-
 ##########################
 # OMZ Libs and Plugins   #
 ##########################
@@ -69,24 +69,31 @@ zinit wait lucid for \
 
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
-# plugin
-zinit lucid light-mode wait depth=1 for    \
+# # plugin
+# zinit lucid light-mode wait depth=1 for    \
+#   atinit"typeset -gA FAST_HIGHLIGHT; FAST_HIGHLIGHT[git-cmsg-len]=100; zpcompinit; zpcdreplay" \
+#     zdharma/fast-syntax-highlighting       \
+#   atinit"zicompinit; zicdreplay"           \
+#     zsh-users/zsh-history-substring-search \
+#   blockf atpull'zinit creinstall -q .'   \
+#     zsh-users/zsh-completions              \
+#   atload"_zsh_autosuggest_start"         \
+#     zsh-users/zsh-autosuggestions          \
+#   # atload                                   \
+#   #     romkatv/powerlevel10k                \
+#
+# # plugin
+zinit wait lucid light-modedepth=1 for    \
   atinit"typeset -gA FAST_HIGHLIGHT; FAST_HIGHLIGHT[git-cmsg-len]=100; zpcompinit; zpcdreplay" \
     zdharma/fast-syntax-highlighting       \
   atinit"zicompinit; zicdreplay"           \
     zsh-users/zsh-history-substring-search \
-  blockf atpull'zinit creinstall -q .'   \
+  atload"zicompinit; zicdreplay" blockf  \
     zsh-users/zsh-completions              \
   atload"_zsh_autosuggest_start"         \
     zsh-users/zsh-autosuggestions          \
-  # atload                                   \
-  #     romkatv/powerlevel10k                \
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-
-# zinit ice depth=1;
-# zinit light romkatv/powerlevel10k
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# prevent /etc/zshrc to call 
 
 
 # TODOL move to zprofile path env
@@ -112,7 +119,7 @@ unalias ls 2>/dev/null
 
 if [[ -s $HOME/.config/zsh  ]];then
   for file in $HOME/.config/zsh/* $HOME/.config/zsh_post/*;do
-    zi ice silent wait 0.1
+    zi ice lucid wait
     zi snippet "$file"
   done
 fi
@@ -143,3 +150,37 @@ PERL5LIB="/home/mhamdi/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LI
 PERL_LOCAL_LIB_ROOT="/home/mhamdi/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/mhamdi/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/mhamdi/perl5"; export PERL_MM_OPT;
+
+# myapp(){
+#   nvim -c 'set buftype=nofile' -c "0r ! $*" -c ':norm gg'
+# }
+# debug_trap() {
+#     cmd="${history[$HISTCMD]}";
+#
+#     if [ "$cmd" ]; then
+#         if [ "$cmd" = "unwrap" ]; then
+#             print 'Unwrapping command-line';
+#             trap - DEBUG;
+#             return;
+#         fi
+#         if [ "${cmd}" != "ls" ]; then
+#             echo "cmd1: ${cmd}";
+#             return;
+#         fi
+#         if [ "$handled" != "$HISTCMD;$cmd" ]; then
+#               handled="$HISTCMD;$cmd";
+#               myapp $cmd;
+#         fi
+#         setopt ERR_EXIT;
+#     fi
+# }
+#
+# wrap() {
+#     print 'Wrapping command-line';
+#     trap 'debug_trap' DEBUG;
+# }
+# unwrap() {}
+#
+# wrap
+
+
