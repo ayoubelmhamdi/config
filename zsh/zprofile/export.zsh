@@ -1,3 +1,7 @@
+export DELTA_PAGER="less --mouse -nR"
+# fix java on dwm
+export AWT_TOOLKIT=MToolKit
+export _JAVA_AWT_WM_NONREPARENTING=1 wmname LG3D
 # export ANDROID_HOME="/opt/sdk/android"
 # export ANDROID_SDK_HOME="/opt/sdk/android-HOME"
 # export ANDROID_SDK_root="/opt/sdk/android"
