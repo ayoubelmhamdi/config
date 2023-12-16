@@ -47,3 +47,7 @@ case "$LINUX" in
   void) _stow void ;;
   *) echo "$LINUX not define" ;;
 esac
+
+if [[ -f "$HOME/env.zsh" ]];then
+    ln -s "$HOME/env.zsh" "$HOME/.config/zprofile/env.zsh"
+fi
