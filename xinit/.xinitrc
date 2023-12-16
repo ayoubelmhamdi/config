@@ -94,6 +94,7 @@ xinit_lazy(){
   pipewire &
   dwmblocks 2>/tmp/dwmblocks.log &
   status_dwmblocks &
+  get_bandwith_stream &
   setxkbmap -layout us,ara -option grp:lalt_lshift_toggle -option caps:escape &
   screen_sleep
   remap_keyboard
