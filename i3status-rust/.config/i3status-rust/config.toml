@@ -96,13 +96,13 @@ missing_format = ""
 [block.theme_overrides]
 idle_bg="#202020"
 
-[[block]]
-block = "battery"
-driver = "sysfs" # "apc_ups", or "upower" or "sysfs"
-[block.theme_overrides]
-idle_bg="#202020"
-good_fg = "#b0b0b0"
-info_bg = "#202020"
+# [[block]]
+# block = "battery"
+# driver = "sysfs" # "apc_ups", or "upower" or "sysfs"
+# [block.theme_overrides]
+# idle_bg="#202020"
+# good_fg = "#b0b0b0"
+# info_bg = "#202020"
 
 
 # [[block]]
