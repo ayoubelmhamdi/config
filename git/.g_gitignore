@@ -1,0 +1,8 @@
+# suckless projects
+config.h
+*.orig
+*.rej
+*.o
+my.diff
+tags
+.env
