@@ -5,4 +5,12 @@ config.h
 *.o
 my.diff
 tags
+
+# python
 .env
+.envrc
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+venv/
+variables/
