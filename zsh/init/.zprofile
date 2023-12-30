@@ -23,10 +23,11 @@ set_env_var_and_path(){
   fi
 }
 
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];then
+  touch /tmp/first_start
   set_env_var_and_path
-  init_zsh &
-  exec startx
+  init_zsh
+  [[ ! -f /tmp/first_start ]] && exec startx
 fi
 
 # Ensure XDG_RUNTIME_DIR is set
