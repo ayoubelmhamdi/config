@@ -127,18 +127,26 @@ fi
 va(){
   unset PIP_TARGET;
   unset PYTHONPATH;
-  source venv/bin/activate;
+# source venv/bin/activate;  # commented out by conda initialize
 }
 
 venv(){
-  conda activate py310
-  unset PIP_TARGET
-  unset PYTHONPATH
-  python3 -m venv venv
-  conda deactivate
-  source venv/bin/activate
-  echo -e 'unset PIP_TARGET;\nunset PYTHONPATH;\nsource venv/bin/activate;' > ./.envrc
-  direnv allow .
+    . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
+    # we can not use the original python miniconda to create venv but we should
+    # have the `conda create -n colab python3.7` to use it as pyenv python==3.7
+    conda activate 
+
+    #1 eval "$(pyenv init -)"
+    #1 eval "$(pyenv virtualenv-init -)"
+    #1 pyenv local 3.10.0
+
+    unset PIP_TARGET
+    unset PYTHONPATH
+    python3 -m venv venv
+    #1 rm -f ./.python-version # don't remove this file before creating the venv 
+    #1 #source venv/bin/activate
+    echo -e 'unset PIP_TARGET;\nunset PYTHONPATH;\nsource venv/bin/activate;' > ./.envrc
+    direnv allow .
 }
 
 # builtin cd /data/projects/typst/PFE
@@ -182,5 +190,3 @@ PERL_MM_OPT="INSTALL_BASE=/home/mhamdi/perl5"; export PERL_MM_OPT;
 # unwrap() {}
 #
 # wrap
-
-
