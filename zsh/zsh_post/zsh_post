@@ -22,17 +22,17 @@ if command -v dbus-launch &>/dev/null; then
   eval "$(dbus-launch --auto-syntax)"
 fi
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/mhamdi/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-    if [ -f "/home/mhamdi/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="$PATH:/home/mhamdi/miniconda3/bin"
-    fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<
+#1 >>> conda initialize >>>
+#1 !! Contents within this block are managed by 'conda init' !!
+#1 __conda_setup="$('/home/mhamdi/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#1 if [ $? -eq 0 ]; then
+#1     eval "$__conda_setup"
+#1 else
+#2  if [ -f "/home/mhamdi/miniconda3/etc/profile.d/conda.sh" ]; then
+#2      . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
+#2  else
+#2      export PATH="$PATH:/home/mhamdi/miniconda3/bin"
+#2  fi
+#1 fi
+#1 unset __conda_setup
+#1 <<< conda initialize <<<
