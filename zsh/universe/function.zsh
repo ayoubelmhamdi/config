@@ -1,3 +1,11 @@
+ls(){
+    if command -v exa >/dev/null; then
+        command exa "$@"
+    else
+        command ls "$@"
+    fi
+}
+
 cf(){
   if [ -z "$1" ]; then
     echo "usage: cf <file>"
