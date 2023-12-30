@@ -34,4 +34,4 @@ export PATH=$PATH:$MY_PATH
 # LIBRARY
 export ERG_PATH=/home/mhamdi/.erg
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
-export PYTHONPATH=$PYTHONPATH:/data/book/pyTorch/v01/scripts:/data/github/lyrapdf:/data/projects/py/pptgpt_root
+export PYTHONPATH=$PYTHONPATH:/data/github/lyrapdf
