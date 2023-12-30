@@ -61,13 +61,13 @@ zinit wait lucid for \
     OMZL::completion.zsh \
     # OMZL::compfix.zsh \
     # OMZL::correction.zsh \
-	# OMZL::clipboard.zsh \
-	# OMZL::history.zsh \
-	# OMZL::key-bindings.zsh \
-	# OMZL::spectrum.zsh \
-	# OMZL::termsupport.zsh \
+    # OMZL::clipboard.zsh \
+    # OMZL::history.zsh \
+    # OMZL::key-bindings.zsh \
+    # OMZL::spectrum.zsh \
+    # OMZL::termsupport.zsh \
 
-export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+    export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 # # plugin
 # zinit lucid light-mode wait depth=1 for    \
@@ -84,13 +84,13 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 #
 # # plugin
 zinit wait lucid light-modedepth=1 for    \
-  atinit"typeset -gA FAST_HIGHLIGHT; FAST_HIGHLIGHT[git-cmsg-len]=100; zpcompinit; zpcdreplay" \
+    atinit"typeset -gA FAST_HIGHLIGHT; FAST_HIGHLIGHT[git-cmsg-len]=100; zpcompinit; zpcdreplay" \
     zdharma/fast-syntax-highlighting       \
-  atinit"zicompinit; zicdreplay"           \
+    atinit"zicompinit; zicdreplay"           \
     zsh-users/zsh-history-substring-search \
-  atload"zicompinit; zicdreplay" blockf  \
+    atload"zicompinit; zicdreplay" blockf  \
     zsh-users/zsh-completions              \
-  atload"_zsh_autosuggest_start"         \
+    atload"_zsh_autosuggest_start"         \
     zsh-users/zsh-autosuggestions          \
 
 # prevent /etc/zshrc to call 
@@ -118,16 +118,16 @@ export PATH="$GOPATH/bin:$PATH"
 unalias ls 2>/dev/null
 
 if [[ -s $HOME/.config/zsh  ]];then
-  for file in $HOME/.config/zsh/* $HOME/.config/zsh_post/*;do
-    zi ice lucid wait
-    zi snippet "$file"
-  done
+    for file in $HOME/.config/zsh/* $HOME/.config/zsh_post/*;do
+        zi ice lucid wait
+        zi snippet "$file"
+    done
 fi
 
 va(){
-  unset PIP_TARGET;
-  unset PYTHONPATH;
-# source venv/bin/activate;  # commented out by conda initialize
+    unset PIP_TARGET;
+    unset PYTHONPATH;
+    # source venv/bin/activate;  # commented out by conda initialize
 }
 
 venv(){
