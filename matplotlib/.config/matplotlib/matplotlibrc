@@ -1,5 +1,5 @@
 # DATAPATH:
-savefig.directory : /tmp/matplotlib
+savefig.directory : /tmp
 
 # THEME:
 
@@ -18,13 +18,13 @@ grid.linestyle: -
 lines.solid_capstyle: round
 
 ## Seaborn darkgrid parameters
-axes.grid: True
+# axes.grid: False
 axes.edgecolor: white
-axes.linewidth: 0
-xtick.major.size: 0
-ytick.major.size: 0
-xtick.minor.size: 0
-ytick.minor.size: 0
+axes.linewidth: 0.05
+xtick.major.size: 1
+ytick.major.size: 1
+xtick.minor.size: 1
+ytick.minor.size: 1
 
 ## from mplcyberpunk
 text.color: 0.9
