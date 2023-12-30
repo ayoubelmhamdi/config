@@ -1,1 +1,1 @@
-export DRI_PRIME=1
+#export DRI_PRIME=1
