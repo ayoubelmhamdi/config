@@ -1,1 +1,3 @@
 set history save on
+# show safe-path
+set auto-load safe-path /
