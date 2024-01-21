@@ -69,6 +69,12 @@
             "rank": 100
         },
         {
+            "name": "interfaceSwitcher",
+            "command": "",
+            "disabled": false,
+            "rank": 990
+        },
+        {
             "name": "kernelName",
             "command": "",
             "disabled": false,
