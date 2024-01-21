@@ -10,6 +10,7 @@
 # Utilities
 
 # testin aliases
+alias upip='pip install -U pip'
 alias fg='fg 2>/dev/null|| true'
 alias termux='command termux'
 alias termuxsd='command termux -t sd'
