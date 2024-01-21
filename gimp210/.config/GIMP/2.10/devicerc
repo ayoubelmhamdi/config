@@ -3,8 +3,8 @@
 (GimpDeviceInfo "Core Pointer"
     (icon-name "gimp-cursor")
     (name "Core Pointer")
-    (tool-options "GimpIscissorsOptions"
-        (tool "gimp-iscissors-tool"))
+    (tool-options "GimpAlignOptions"
+        (tool "gimp-align-tool"))
     (use-fg-bg no)
     (use-opacity-paint-mode no)
     (use-brush no)
