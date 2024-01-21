@@ -6,6 +6,10 @@
             "disabled": false,
             "type": "spacer",
             "rank": 50
-        }
+        },
+        {
+           "name": "user-menu",
+           "disabled": false
+         }
     ]
 }
