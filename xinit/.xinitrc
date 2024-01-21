@@ -88,7 +88,7 @@ xinit_lazy(){
   start_st
   start_sxhkd
   set_brightness
-  start_feh
+  # start_feh
   first_ls
   set_volume
   pipewire &
@@ -106,11 +106,11 @@ xinit_lazy(){
 
 xinit_lazy
 
-dwm >> /tmp/dwm.log 2>&1
-# while true; do
-#     # exec dwm >/dev/null 2>&1
-#     # exec gnome-shell
-#     #exec metacity
-#     dwm >> /tmp/dwm.log 2>&1
-#     # exec i3 --shmlog-size=26214400
-# done
+#dwm >> /tmp/dwm.log 2>&1
+while true; do
+    # exec dwm >/dev/null 2>&1
+    # exec gnome-shell
+    #exec metacity
+    dwm >> /tmp/dwm.log 2>&1
+    # exec i3 --shmlog-size=26214400
+done
