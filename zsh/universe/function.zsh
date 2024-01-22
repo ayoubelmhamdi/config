@@ -1,3 +1,14 @@
+
+generate-nasm(){
+    file=$1
+    file=${file%.*}
+    gcc -fno-asynchronous-unwind-tables  -c -g -O3 -s "$file.c" -o "$file.o" && objconv -fnasm "$file.o" "$file.asm"
+
+    rm "$file.o" -rf
+    nasm -f elf64 -g "$file.asm"
+    gcc -no-pie -m64 -o "$file" "$file.o"
+}
+
 ls(){
     if command -v exa >/dev/null; then
         command exa "$@"
