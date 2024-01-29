@@ -60,9 +60,6 @@ remap_keyboard(){
   xmodmap ~/.Xmodmap
 }
 
-enable_numlock(){
-  numlockx on &
-}
 
 # start_sound(){
 #   # /home/mhamdi/scripts/bin/sound-switch &
@@ -98,7 +95,7 @@ xinit_lazy(){
   setxkbmap -layout us,ara -option grp:lalt_lshift_toggle -option caps:escape &
   screen_sleep
   remap_keyboard
-  enable_numlock
+  numlockx on
   # start_flameshot
   start_NetworkManager
   # firefox_ramdisk
