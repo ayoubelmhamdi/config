@@ -1,5 +1,7 @@
 #!/bin/bash
 
+alias date='doas date'
+
 alias update-grub='doas update-grub'
 alias reboot="doas reboot"
 
