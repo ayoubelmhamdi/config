@@ -17,7 +17,6 @@ alias termuxsd='command termux -t sd'
 
 # TODO: mouve to cd
 source $HOME/scripts/app/cdf
-alias b=cd_book
 
 alias stat="stat -c '%a  user:%U group:%G'"
 
