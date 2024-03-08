@@ -3,15 +3,11 @@
 declare -a bookmark=(
     't:/tmp'
     'T:~/tmp'
-    'd:/mnt/simple/Download'
-    'D:~/tmp/simple_download'
-    'm:/mnt/simple/movies'
-    'b:~/book/new'
-    'W:~/tmp/whatsapp'
-    'w:/mnt/simple/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents'
+    'd:/mnt/termux/Download'
+    'm:/mnt/termux/Movies'
+    'w:/mnt/termux/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Documents'
     'u:/mnt'
     's:/mnt/winD/s3'
-    'S:~/tmp/s3'
     'r:/'
 )
 
