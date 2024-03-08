@@ -88,7 +88,7 @@ xinit_lazy(){
   # start_feh
   first_ls
   set_volume
-  pipewire &
+  # pipewire &
   dwmblocks 2>/tmp/dwmblocks.log &
   status_dwmblocks &
   get_bandwith_stream &
@@ -108,6 +108,7 @@ while true; do
     # exec dwm >/dev/null 2>&1
     # exec gnome-shell
     #exec metacity
+    # dbus-run-session dwm /tmp/dwm.log 2>&1 # does not work for dwm
     dwm >> /tmp/dwm.log 2>&1
     # exec i3 --shmlog-size=26214400
 done
