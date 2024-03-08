@@ -1,2 +1,2 @@
-export TEXMFHOME=~/.texmf
-export PERL5LIB="/usr/share/texmf-dist/tlpkg:$HOME/tlpkg:$HOME/.cpan/build:$PERL5LIB"
+export TEXMFHOME="$HOME/.texmf"
+export PERL5LIB="$HOME/tlpkg:$HOME/.cpan/build:/usr/share/texmf-dist/tlpkg:"
