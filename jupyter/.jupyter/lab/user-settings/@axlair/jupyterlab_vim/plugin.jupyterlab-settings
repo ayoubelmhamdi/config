@@ -1,0 +1,10 @@
+{
+    // Notebook Vim
+    // @axlair/jupyterlab_vim:plugin
+    // Notebook Vim Settings
+    // *****************************
+
+    // Enabled
+    // Enable/disable vim extension (may require a page refresh)
+    "enabled": true
+}

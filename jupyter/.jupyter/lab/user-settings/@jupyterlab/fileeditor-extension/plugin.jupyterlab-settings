@@ -1,0 +1,8 @@
+{
+    "scrollPastEnd": true,
+    "toolbar": [],
+    "editorConfig": {
+        "autoClosingBrackets": true,
+        "lineWrap": true
+    }
+}
