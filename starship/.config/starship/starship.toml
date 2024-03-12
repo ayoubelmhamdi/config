@@ -10,12 +10,12 @@ $git_state\
 $git_metrics\
 $env_var\
 $python\
-$conda\
 $cmd_duration\
 $custom\
 $memory_usage\
 $line_break\
 $character"""
+#-1$conda\
 #-1$dart\
 #-1$deno\
 #-1$golang\
@@ -204,6 +204,20 @@ min_time = 5_000
 # [[battery.display]]
 # threshold = 99
 # style = "bold green"
+# [battery]
+# format = "[$symbol]($style)"
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 99
+style = "bold green"
 
 [custom.direnv]
 # command = "cat .envrc | grep -v -E '^[ ]*#|^$' | wc -l"
@@ -216,4 +230,3 @@ format = "[env]($style) "
 format='[${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 version_format='v${major}.${minor}'
 detect_extensions=[]
-

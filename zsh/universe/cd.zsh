@@ -36,7 +36,11 @@ fork(){
 cd (){
     if [ $# -eq 0 ];then
         # builtin cd $HOME
-        builtin cd /data
+        if touch /data 2>/dev/null;then
+          builtin cd /data
+        else
+          builtin cd
+        fi
         return
     fi
 

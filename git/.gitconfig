@@ -52,12 +52,6 @@
   ; line-numbers = false
   ; features = 24-bit-color,minus-emphasis,dark
 
-[alias]
-  ; not work att all
-  ; ignore = !echo "$2" >> $(git rev-parse --show-toplevel)/.git/info/exclude
-  # Thanks r00k, this creates a pretty graph view of the log
-  lg = log --graph --pretty=format:'%Cred%p%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-
 [merge]
   conflictstyle = diff3
   tool=nvim
@@ -74,8 +68,8 @@
 [push]
 	default = current
 [credential "https://github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
