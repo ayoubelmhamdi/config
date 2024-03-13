@@ -1,10 +1,9 @@
 {
-    // Notebook Vim
-    // @axlair/jupyterlab_vim:plugin
-    // Notebook Vim Settings
-    // *****************************
-
-    // Enabled
-    // Enable/disable vim extension (may require a page refresh)
-    "enabled": true
+    "enabled": true,
+    "enabledInEditors": true,
+    "cmdModeKeys": {
+        "escToCmdMode": false,
+        "shiftEscOverrideBrowser": false
+    },
+    "extraKeybindings": []
 }

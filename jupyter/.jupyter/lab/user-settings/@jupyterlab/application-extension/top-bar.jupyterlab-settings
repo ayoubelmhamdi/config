@@ -8,8 +8,10 @@
             "rank": 50
         },
         {
-           "name": "user-menu",
-           "disabled": false
-         }
+            "command": "",
+            "disabled": false,
+            "rank": 50,
+            "name": "user-menu"
+        }
     ]
 }
