@@ -1,11 +1,15 @@
 #!/bin/bash
 
 LINUX=${1:-}
-if [ -z "$LINUX" ];then
-  echo "Usage:"
-  echo "  ./mystow void"
-  echo "  ./mystow termux"
-  echo "  ./mystow any"
+if [ -z "$LINUX" ] || [ "$LINUX" != "void" ] && [ "$LINUX" != "termux" ];then
+  echo "  Usage:"
+  echo "    ./mystow void"
+  echo "    ./mystow termux"
+  exit 1
+fi
+
+if ! command -v stow >/dev/null  2>&1; then
+  echo "check if stow installed"
   exit 1
 fi
 
@@ -23,31 +27,24 @@ _stow(){
   local from="${1:-}"
   local to="${2:-$HOME/.config/zsh}"
 
-  if [ -z "$from" ]; then
-    # should select an directory inside ~/stow
+  if [ -z "$from" ] || [ ! -d "$HOME/stow/zsh/$from/" ]; then
+    #  check if $1 ~/stow/zsh/$1/ exsit.
     echo "   no dir selected"
     exit 1
   fi
 
-  if [[ -d "$HOME/stow/zsh/$from" ]];then
-    stow --dir="$HOME/stow/zsh" --target="$to" "$from"
-  fi
+  stow "$from" --dir="$HOME/stow/zsh" --target="$to"
 }
 
 
-# stow_init
-_stow init     "$HOME"
-_stow zprofile "$HOME/.config/zprofile"
-_stow zsh_post "$HOME/.config/zsh_post"
-_stow fpath    "$HOME/.config/fpath"
-_stow universe
+# stow one by one
+_stow "init"     "$HOME"
+_stow "zprofile" "$HOME/.config/zprofile"
+_stow "zsh_post" "$HOME/.config/zsh_post"
+_stow "fpath"    "$HOME/.config/fpath"
+_stow "universe" "$HOME/.config/zsh"
+_stow "$LINUX"   "$HOME/.config/zsh"
 
-case "$LINUX" in
-  termux) _stow termux ;;
-  void) _stow void ;;
-  *) echo "$LINUX not define" ;;
-esac
 
-if [[ -f "$HOME/env.zsh" ]];then
-    ln -s "$HOME/env.zsh" "$HOME/.config/zprofile/env.zsh"
-fi
+touch "$HOME/env.zsh"
+ln -s "$HOME/env.zsh" "$HOME/.config/zprofile/env.zsh" 2>/dev/null || true
