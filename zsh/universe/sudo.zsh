@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if ! command -v doas 2>/dev/null;then
+  alias doas=""
+fi
+
 alias date='doas date'
 
 alias update-grub='doas update-grub'

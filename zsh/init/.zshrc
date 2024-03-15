@@ -115,12 +115,16 @@ export PATH="$GOPATH/bin:$PATH"
 # alias ls="command ls"
 unalias ls 2>/dev/null
 
+
 if [[ -s $HOME/.config/zsh  ]];then
     for file in $HOME/.config/zsh/* $HOME/.config/zsh_post/*;do
         zi ice lucid wait
         zi snippet "$file"
     done
 fi
+
+return
+
 
 va(){
     unset PIP_TARGET;

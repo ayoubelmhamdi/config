@@ -39,4 +39,3 @@ for _path in "${MY_PATHS[@]}"; do
     export MY_PATH="$_path:$MY_PATH"
 done
 export PATH=$PATH:$MY_PATH
-

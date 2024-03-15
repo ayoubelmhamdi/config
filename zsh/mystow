@@ -50,5 +50,5 @@ touch "$HOME/env.zsh"
 ln -s "$HOME/env.zsh" "$HOME/.config/zprofile/env.zsh" 2>/dev/null || true
 
 if [ "$LINUX" = "termux" ]; then
-    ln -s "$HOME/scripts/termux-sc/termux-url-opener" "$HOME/bin/termux-url-opener"
+  [ -e "$HOME/bin/termux-url-opener" ] || ln -s "$HOME/scripts/termux-sc/termux-url-opener" "$HOME/bin/termux-url-opener" || true
 fi

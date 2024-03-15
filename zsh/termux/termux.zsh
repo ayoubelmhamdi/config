@@ -1,7 +1,10 @@
 #!/bin/zsh
 
+
+
 alias t=termux-url-opener
 # cd $HOME/storage/downloads/
+return
 
 pdf_lang2(){
   lang="${1:-}"
@@ -83,3 +86,17 @@ alias pdf="pdf_lang en correct_ocr paraphrasing" # file.pdf
 alias pdf-fr="pdf_lang fr correct_ocr paraphrasing" # file.pdf
 # alias pdf-fr="pdf_lang fr correct_ocr" # file.pdf
 sshd
+
+
+
+# zprofile doesnt loaded in termux
+export ayoub="best2"
+if [[ -e $HOME/.config/zprofile  ]];then
+    export ayoub="best1"
+    for file in $HOME/.config/zprofile/*;do
+        zi ice lucid wait
+        zi snippet "$file"
+    done
+fi
+
+export ayoub="ok"
