@@ -123,7 +123,6 @@ if [[ -s $HOME/.config/zsh  ]];then
     done
 fi
 
-return
 
 
 va(){
