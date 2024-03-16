@@ -14,7 +14,6 @@ fpath=(~/.config/fpath $fpath)
 
 
 # SETOPT
-# ===== Basics
 unsetopt beep         #turn off bell
 unsetopt list_beep
 set bell-style none
@@ -132,22 +131,36 @@ va(){
 }
 
 venv(){
-    . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
+    # . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
     # we can not use the original python miniconda to create venv but we should
     # have the `conda create -n colab python3.7` to use it as pyenv python==3.7
-    conda activate
+    # conda activate
     # conda activate py36
-
-    #1 eval "$(pyenv init -)"
-    #1 eval "$(pyenv virtualenv-init -)"
-    #1 pyenv local 3.10.0
 
     unset PIP_TARGET
     unset PYTHONPATH
     python3 --version
     python3 -m venv venv
-    #1 rm -f ./.python-version # don't remove this file before creating the venv
-    #1 #source venv/bin/activate
-    echo -e 'unset PIP_TARGET;\nunset PYTHONPATH;\nsource venv/bin/activate;' > ./.envrc
+
+    version="$(python3 --version)"
+    if   [[ "$version" == "Python 3.12"* ]]; then pyenv="py312"; pylib="python3.12";
+    elif [[ "$version" == "Python 3.11"* ]]; then pyenv="py311"; pylib="python3.11";
+    elif [[ "$version" == "Python 3.10"* ]]; then pyenv="py310"; pylib="python3.10";
+    elif [[ "$version" == "Python 3.6"*  ]]; then pyenv="py306"; pylib="python3.6" ;
+    else exit 1;fi
+
+    cat >> ./.envrc << EOL
+#!/bin/bash
+
+# $(python3 --version)
+
+unset PIP_TARGET
+unset PYTHONPATH
+source venv/bin/activate
+
+export PYTHONPATH="\$PYTHONPATH:/data/local_tmp/pyenvs/${pyenv}/venv/lib/${pylib}/site-packages"
+export PATH="\$PATH:/data/local_tmp/pyenvs/${pyenv}/venv/bin"
+EOL
+
     direnv allow .
 }
