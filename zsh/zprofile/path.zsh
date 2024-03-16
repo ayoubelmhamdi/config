@@ -13,17 +13,22 @@ export GRADLE_USER_HOME="/app/sdk/gradlec"
 # LIBRARY
 export ERG_PATH=/home/mhamdi/.erg
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
-export PYTHONPATH=$PYTHONPATH:/data/github/lyrapdf
+# export PYTHONPATH=$PYTHONPATH:/data/github/lyrapdf
 
 declare -a MY_PATHS=(
     "/data/projects/c/ayoub/getbandwith/bin"
-    "$HOME/scripts/bin:$HOME/bin:$HOME/.local/bin"
-    "$HOME/go/bin:$HOME/.cargo/bin:$HOME/.erg/bin"
+    "$HOME/scripts/bin"
+    "$HOME/bin"
+    "$HOME/.local/bin"
+    "$HOME/go/bin"
+    "$HOME/.cargo/bin"
+    "$HOME/.erg/bin"
     "/app/flutter/bin"
     "/app/android-studio/bin"
     # "/app/sdk/gradle/gradle-7.3/bin"                          # flutter doesn't need it
     "/usr/local/cuda-10.1/bin"
-    "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools"
+    "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"
+    "$ANDROID_SDK_ROOT/platform-tools"
 )
 
 # mkdir -p $ANDROID_SDK_ROOT
@@ -35,7 +40,13 @@ declare -a MY_PATHS=(
 
 
 # Iterate over the array and append each path to the PATH variable
+MY_PATH=""
 for _path in "${MY_PATHS[@]}"; do
-    export MY_PATH="$_path:$MY_PATH"
+  if [ -e "$_path" ];then
+    MY_PATH="$_path:$MY_PATH"
+  fi
 done
+
 export PATH=$PATH:$MY_PATH
+# export PATH="$PATH"
+# export PATH="$MY_PATH"
