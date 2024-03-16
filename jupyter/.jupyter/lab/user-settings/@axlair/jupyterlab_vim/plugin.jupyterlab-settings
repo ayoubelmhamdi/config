@@ -1,6 +1,6 @@
 {
     "enabled": true,
-    "enabledInEditors": true,
+    "enabledInEditors": false,
     "cmdModeKeys": {
         "escToCmdMode": false,
         "shiftEscOverrideBrowser": false

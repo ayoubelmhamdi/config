@@ -1,90 +1,86 @@
 {
     "toolbar": [
         {
-            "name": "save",
-            "command": "",
-            "disabled": false,
-            "rank": 10
-        },
-        {
             "name": "insert",
             "command": "notebook:insert-cell-below",
-            "disabled": false,
             "icon": "ui-components:add",
             "rank": 20
         },
         {
             "name": "cut",
             "command": "notebook:cut-cell",
-            "disabled": false,
             "rank": 21
         },
         {
             "name": "copy",
             "command": "notebook:copy-cell",
-            "disabled": false,
             "rank": 22
         },
         {
             "name": "paste",
             "command": "notebook:paste-cell-below",
-            "disabled": false,
             "rank": 23
         },
         {
             "name": "run",
             "command": "notebook:run-cell-and-select-next",
+            "rank": 30,
             "disabled": false,
-            "rank": 30
+            "icon": "ui-components:add"
         },
         {
             "name": "interrupt",
             "command": "notebook:interrupt-kernel",
+            "rank": 31,
             "disabled": false,
-            "rank": 31
+            "icon": "ui-components:add"
         },
         {
             "name": "restart",
             "command": "notebook:restart-kernel",
-            "disabled": false,
             "rank": 32
         },
         {
             "name": "restart-and-run",
             "command": "notebook:restart-run-all",
-            "disabled": false,
             "rank": 33
         },
         {
             "name": "cellType",
+            "rank": 40,
             "command": "",
-            "disabled": false,
-            "rank": 40
+            "disabled": false
         },
         {
             "name": "spacer",
-            "command": "",
-            "disabled": false,
             "type": "spacer",
             "rank": 100
         },
         {
             "name": "interfaceSwitcher",
+            "rank": 990,
             "command": "",
             "disabled": false,
-            "rank": 990
+            "type": "spacer"
         },
         {
             "name": "kernelName",
+            "rank": 1000,
             "command": "",
             "disabled": false,
-            "rank": 1000
+            "type": "spacer"
         },
         {
             "name": "executionProgress",
+            "rank": 1002,
             "command": "",
             "disabled": false,
-            "rank": 1002
+            "type": "spacer"
+        },
+        {
+            "name": "scrollbar",
+            "command": "notebook:toggle-virtual-scrollbar",
+            "rank": 1003
         }
     ]
 }
