@@ -1,10 +1,8 @@
-#!/bin/zsh
-
+#!/usr/bin/zsh
 
 
 alias t=termux-url-opener
 # cd $HOME/storage/downloads/
-return
 
 pdf_lang2(){
   lang="${1:-}"
@@ -90,13 +88,13 @@ sshd
 
 
 # zprofile doesnt loaded in termux
-export ayoub="best2"
-if [[ -e $HOME/.config/zprofile  ]];then
-    export ayoub="best1"
-    for file in $HOME/.config/zprofile/*;do
-        zi ice lucid wait
-        zi snippet "$file"
-    done
-fi
-
+#1export ayoub="best2"
+#1if [[ -e $HOME/.config/zprofile  ]];then
+#1    export ayoub="best1"
+#1    for file in $HOME/.config/zprofile/*;do
+#1        zi ice lucid wait
+#1        zi snippet "$file"
+#1    done
+#1fi
+#1
 export ayoub="ok"
