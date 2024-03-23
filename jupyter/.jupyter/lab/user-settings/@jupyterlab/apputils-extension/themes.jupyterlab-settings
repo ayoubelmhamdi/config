@@ -6,7 +6,7 @@
 
     // Selected Theme
     // Application-level visual styling theme. Ignored when Adaptive Theme is enabled.
-    "theme": "jupyterlab_darkside_theme",
+    "theme": "JupyterLab Horizon",
 
     // Scrollbar Theming
     // Enable/disable styling of the application scrollbars

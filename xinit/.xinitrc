@@ -92,7 +92,8 @@ xinit_lazy(){
   dwmblocks 2>/tmp/dwmblocks.log &
   status_dwmblocks &
   get_bandwith_stream &
-  setxkbmap -layout us,ara -option grp:lalt_lshift_toggle -option caps:escape &
+  # setxkbmap -layout us,ara -option grp:lalt_lshift_toggle -option caps:ctrl_modifier &
+  setxkbmap -layout us,ara -option grp:lalt_lshift_toggle -option caps:ctrl_modifier &
   screen_sleep
   remap_keyboard
   numlockx on

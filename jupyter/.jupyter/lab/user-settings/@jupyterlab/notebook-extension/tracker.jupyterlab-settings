@@ -1,4 +1,18 @@
 {
-    "scrollPastEnd": false,
-    "scrollHeadingToTop": false
+    // Notebook
+    // @jupyterlab/notebook-extension:tracker
+    // Notebook settings.
+    // **************************************
+
+    // Automatically Start Preferred Kernel
+    // Whether to automatically start the preferred kernel.
+    "autoStartDefaultKernel": true,
+
+    // Scroll heading to top
+    // Whether to scroll heading to the document top when selecting it in the table of contents.
+    "scrollHeadingToTop": false,
+
+    // Scroll past last cell
+    // Whether to be able to scroll so the last cell is at the top of the panel
+    "scrollPastEnd": false
 }

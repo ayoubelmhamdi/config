@@ -10,6 +10,9 @@
 # Utilities
 
 # testin aliases
+
+alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
+
 alias upip='pip install -U pip'
 alias fg='fg 2>/dev/null|| true'
 alias termux='command termux'
