@@ -1,5 +1,4 @@
 #!/bin/zsh
-
 # if touch "/data" ; then
 #   builtin cd /data
 # elif touch "$HOME/data" ; then
@@ -101,45 +100,39 @@ if [[ -s $HOME/.config/zsh  ]];then
     done
 fi
 
+venv(){
+    # . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
+    # we can not use the original python miniconda to create venv but we should
+    # have the `conda create -n colab python3.7` to use it as pyenv python==3.7
+    # conda activate
+    # conda activate py36
 
+    unset PIP_TARGET
+    unset PYTHONPATH
+    python3 --version
+    python3 -m venv venv
 
-#2va(){
-#2    unset PIP_TARGET;
-#2    unset PYTHONPATH;
-#2    # source venv/bin/activate;  # commented out by conda initialize
-#2}
-#2
-#2venv(){
-#2    # . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
-#2    # we can not use the original python miniconda to create venv but we should
-#2    # have the `conda create -n colab python3.7` to use it as pyenv python==3.7
-#2    # conda activate
-#2    # conda activate py36
-#2
-#2    unset PIP_TARGET
-#2    unset PYTHONPATH
-#2    python3 --version
-#2    python3 -m venv venv
-#2
-#2    version="$(python3 --version)"
-#2    if   [[ "$version" == "Python 3.12"* ]]; then pyenv="py312"; pylib="python3.12";
-#2    elif [[ "$version" == "Python 3.11"* ]]; then pyenv="py311"; pylib="python3.11";
-#2    elif [[ "$version" == "Python 3.10"* ]]; then pyenv="py310"; pylib="python3.10";
-#2    elif [[ "$version" == "Python 3.6"*  ]]; then pyenv="py306"; pylib="python3.6" ;
-#2    else exit 1;fi
-#2
-#2    cat >> ./.envrc << EOL
-#2#!/bin/bash
-#2
-#2# $(python3 --version)
-#2
-#2unset PIP_TARGET
-#2unset PYTHONPATH
-#2source venv/bin/activate
-#2
-#2export PYTHONPATH="\$PYTHONPATH:/data/local_tmp/pyenvs/${pyenv}/venv/lib/${pylib}/site-packages"
-#2export PATH="\$PATH:/data/local_tmp/pyenvs/${pyenv}/venv/bin"
-#2EOL
-#2
-#2    direnv allow .
-#2}
+    version="$(python3 --version)"
+    if   [[ "$version" == "Python 3.12"* ]]; then pyenv="py312"; pylib="python3.12";
+    elif [[ "$version" == "Python 3.11"* ]]; then pyenv="py311"; pylib="python3.11";
+    elif [[ "$version" == "Python 3.10"* ]]; then pyenv="py310"; pylib="python3.10";
+    elif [[ "$version" == "Python 3.6"*  ]]; then pyenv="py306"; pylib="python3.6" ;
+    else exit 1;fi
+
+    cat >> ./.envrc << EOL
+#!/bin/bash
+
+# $(python3 --version)
+
+unset PIP_TARGET
+unset PYTHONPATH
+source venv/bin/activate
+
+export PYTHONPATH="\$PYTHONPATH:/data/local_tmp/pyenvs/${pyenv}/venv/lib/${pylib}/site-packages"
+export PATH="\$PATH:/data/local_tmp/pyenvs/${pyenv}/venv/bin"
+EOL
+
+    direnv allow .
+}
+
+bindkey -e
