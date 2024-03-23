@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/zsh
 
 declare -a bookmark=(
     't:/tmp'
@@ -20,7 +20,7 @@ export NNN_BMS
 export NNN_SSHFS="sshfs -o follow_symlinks"        # make sshfs follow symlinks on the remote
 export NNN_COLORS="2136"                           # use a different color for each context
 export NNN_TRASH=0
-export NNN_FIFO=/tmp/nnn.fifo
+# export NNN_FIFO="${TMPFILE:-/tmp}/nnn.fifo"
 export NNN_TMPFILE="/tmp/nnn"
 
 # export VISUAL=ewrap
@@ -35,4 +35,3 @@ NNN_U='u:-'         ; NNN_V='v:-imgview'   ; NNN_W='w:-'       ; NNN_X='x:-!chmo
 NNN_Y='y:-'         ; NNN_Z='z:-'          ;
 
 export NNN_PLUG="$NNN_A;$NNN_B;$NNN_C;$NNN_D;$NNN_E;$NNN_F;$NNN_G;$NNN_H;$NNN_I;$NNN_J;$NNN_K;$NNN_L;$NNN_M;$NNN_N;$NNN_O;$NNN_P;$NNN_Q;$NNN_R;$NNN_S;$NNN_T;$NNN_U;$NNN_V;$NNN_W;$NNN_X;$NNN_Y;$NNN_Z;"
-
