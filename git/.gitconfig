@@ -36,7 +36,7 @@
   autoStash = true
 
 [core]
-  pager = delta
+  pager = delta --dark
   editor = nvim
 	excludesFile = ~/.g_gitignore
 
