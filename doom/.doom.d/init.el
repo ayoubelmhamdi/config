@@ -1,19 +1,5 @@
 ;;; init.el -*- lexical-binding: t; -*-
 
-;; This file controls what Doom modules are enabled and what order they load
-;; in. Remember to run 'doom sync' after modifying it!
-
-;; NOTE Press 'SPC h d h' (or 'C-h d h' for non-vim users) to access Doom's
-;;      documentation. There you'll find a link to Doom's Module Index where all
-;;      of our modules are listed, including what flags they support.
-
-;; NOTE Move your cursor over a module's name (or its flags) and press 'K' (or
-;;      'C-c c k' for non-vim users) to view its documentation. This works on
-;;      flags as well (those symbols that start with a plus).
-;;
-;;      Alternatively, press 'gd' (or 'C-c c d') on a module to browse its
-;;      directory (for easy access to its source code).
-
 (doom! :input
        ;;bidi              ; (tfel ot) thgir etirw uoy gnipleh
        ;;chinese
@@ -116,7 +102,7 @@
        :lang
        ;;agda              ; types of types of types of types...
        ;;beancount         ; mind the GAAP
-       (cc +lsp)         ; C > C++ == 1
+       ;;(cc +lsp)         ; C > C++ == 1
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
@@ -195,73 +181,3 @@
        (default +bindings +smartparens))
 
 
-
-;;
-(xterm-mouse-mode 1)
-;; Scrolloff
-(setq scroll-margin 1)
-
-;; Shiftround and Breakindent
-(setq-default indent-tabs-mode nil)
-(setq tab-width 4)
-(setq-default c-basic-offset 4)
-(setq-default tab-stop-list (number-sequence 4 120 4))
-(setq-default tab-always-indent t)
-
-;; Wildignore
-(setq completion-ignored-extensions '("__pycache__" "*.o" "*~" "*.pyc" "*pycache*" "Cargo.lock" "Cargo.Bazel.lock"))
-
-;; Pumblend and Wildmode
-(setq completion-cycle-threshold 5)
-(setq completion-styles '(partial-completion flex))
-(setq completion-auto-help t)
-
-;; Equalalways
-(setq window-resize-pixelwise t)
-
-;; Hidden, Splitbelow, Splitright
-(setq-default hidden-buffer-list nil)
-(setq split-height-threshold nil)
-(setq split-width-threshold nil)
-
-;; Tabstop, Softtabstop, Shiftwidth, Expandtab
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
-(setq-default c-basic-offset 4)
-
-;; Wrap
-(setq-default truncate-lines t)
-
-;; Undo
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
-(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
-(setq undo-tree-auto-save-history t)
-(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
-
-;; Search
-(setq-default case-fold-search t)
-(setq-default search-highlight t)
-(setq-default query-replace-highlight t)
-(setq-default isearch-lazy-highlight t)
-
-;; Termguicolors, Updatetime, Linebreak, Linespace
-(add-to-list 'default-frame-alist '(font . "Fira Code-12"))
-(setq-default display-line-spacing 5)
-(setq-default display-time-interval 300)
-
-;; Autoindent, Mouse
-(setq-default auto-indent t)
-(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
-(setq mouse-wheel-progressive-speed nil)
-(setq mouse-wheel-follow-mouse 't)
-(setq scroll-step 1)
-
-;; Inccommand, Spellsuggest
-(setq-default ispell-program-name "aspell")
-(setq-default ispell-list-command "--list")
-(setq-default ispell-dictionary "en_US")
-(setq-default ispell-extra-args '("--sug-mode=ultra"))
-
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
