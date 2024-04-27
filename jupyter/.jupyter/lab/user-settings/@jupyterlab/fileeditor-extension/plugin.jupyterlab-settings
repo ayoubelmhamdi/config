@@ -10,7 +10,7 @@
     // values from current theme are used.
     "editorConfig": {
         "lineNumbers": true,
-        "theme": "codemirror"
+        "theme": "jupyter"
     },
 
     // Scroll behavior

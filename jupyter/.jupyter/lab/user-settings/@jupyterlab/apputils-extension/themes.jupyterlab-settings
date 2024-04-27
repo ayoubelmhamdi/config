@@ -4,9 +4,16 @@
     // Theme manager settings.
     // *************************************
 
+    // Theme CSS Overrides
+    // Override theme CSS variables by setting key-value pairs here
+    "overrides": {
+        "code-font-size": "12.5px",
+        "content-font-size1": "13px"
+    },
+
     // Selected Theme
     // Application-level visual styling theme. Ignored when Adaptive Theme is enabled.
-    "theme": "JupyterLab Horizon",
+    "theme": "JupyterLab Dark",
 
     // Scrollbar Theming
     // Enable/disable styling of the application scrollbars
