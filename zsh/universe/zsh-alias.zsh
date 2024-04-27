@@ -11,6 +11,8 @@
 
 # testin aliases
 
+alias py='python3'
+alias unstow='stow -D'
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
 
 alias upip='pip install -U pip'
@@ -71,7 +73,8 @@ alias up='git commit -m "up"'
 
 
 alias untar='tar xvf'
-# alias vtar='tar -tf'
+alias vzip='zip -sf'
+# alias vtar='~/scripts/bin/vtar'
 # alias c='clear && tmux clear-history  >/dev/null 2>&1;echo'
 
 
