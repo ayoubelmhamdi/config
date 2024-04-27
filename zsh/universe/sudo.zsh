@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! command -v doas 2>/dev/null;then
+if ! command -v doas >/dev/null 2>&1;then
   alias doas=""
 fi
 
