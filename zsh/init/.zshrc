@@ -135,4 +135,11 @@ EOL
     direnv allow .
 }
 
+mkdir -p $HOME/.local/share/nvim/lazyastro/lazy.nvim
+
+alias vc='NVIM_APPNAME=nvim-nvchad nvim'    # NvChad
+alias vk='NVIM_APPNAME=nvim-kickstart nvim' # Kickstart
+alias va='NVIM_APPNAME=nvim-astrovim LAZY=$HOME/.local/share/nvim/lazyastro/lazy.nvim nvim'  # AstroVim
+alias vl='NVIM_APPNAME=nvim-lunarvim nvim'  # LunarVim
+
 bindkey -e
