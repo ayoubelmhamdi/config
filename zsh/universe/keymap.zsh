@@ -31,8 +31,17 @@ bindkey "^[[3~" delete-char
 
 bindkey '^B' backward-char
 
+####################################
 # kitty
 
+zmodload -i zsh/parameter
+
+insert-last-command-output() {
+  LBUFFER+="$(eval $history[$((HISTCMD-1))])"
+}
+zle -N insert-last-command-output
+
+bindkey "\e[105;5u" insert-last-command-output # ctrl + I
 
 # bindkey '\e[46;5u'  a # map ctrl+.
 # bindkey '\e[44;5u'  a # map ctrl+,
@@ -42,8 +51,6 @@ bindkey '^B' backward-char
 bindkey '\e[13;5u'  .accept-line # ctrl + Enter
 
 # bindkey '\e[13;2u'  a # shift + Enter
-
-# bindkey '\e[105;5u' a # ctrl + I
 
 # bindkey '\e[72;6u'  a # map ctrl+shift+h
 # bindkey '\e[74;6u'  a # map ctrl+shift+j
