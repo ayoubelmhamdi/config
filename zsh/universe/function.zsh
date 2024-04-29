@@ -1,3 +1,8 @@
+#!/usr/bin/zsh
+
+function vv(){
+    NVIM_APPNAME=nvim-ayoub nvim -c ":lua require('ayoub.rm').run(\"bash -c '${*}'   \")"
+}
 
 generate-nasm(){
     file=$1
