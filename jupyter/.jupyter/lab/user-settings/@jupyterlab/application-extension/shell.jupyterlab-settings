@@ -4,13 +4,16 @@
     // JupyterLab Shell layout settings.
     // ***************************************
 
+    // Hidden mode of main panel widgets
+    // The method for hiding widgets in the main dock panel. Using `scale` will increase performance on Firefox but don't use it with Chrome, Chromium or Edge. Similar performance gains are seen with `contentVisibility` which is only available in Chromium-based browsers.
+    "hiddenMode": "display",
+
     // Customize shell widget positioning
     // Overrides default widget position in the application layout
     // e.g. to position terminals in the right sidebar in multiple documents mode and in the down are in single document mode, {
     //   "single": { "Terminal": { "area": "down" } },
     //   "multiple": { "Terminal": { "area": "right" } }
     // }.
-    "hiddenMode": "display",
     "layout": {
         "single": {
             "Linked Console": {
@@ -29,7 +32,7 @@
                 "area": "right"
             },
             "File Browser": {
-                "area": "right"
+                "area": "left"
             }
         },
         "multiple": {
@@ -40,7 +43,7 @@
                 "area": "right"
             },
             "File Browser": {
-                "area": "right"
+                "area": "left"
             }
         }
     }
