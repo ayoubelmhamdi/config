@@ -135,7 +135,7 @@ alias pager="nvim -c 'setf markdown|set noswapfile| setlocal buftype=nofile'  -"
 alias which='command -v'
 #alias e='nvimdir=~/.config/nvim nvim'
 # alias v='nvim'
-alias vv='v -c "Telescope frecency default_text=:CWD:"'
+# alias vv='v -c "Telescope frecency default_text=:CWD:"'
 alias atmux='tmux a|| tmux'
 
 #alias ping='ping -c 1'
