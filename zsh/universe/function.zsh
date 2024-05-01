@@ -1,8 +1,8 @@
 #!/usr/bin/zsh
 
-function vv(){
-    NVIM_APPNAME=nvim-ayoub nvim -c ":lua require('ayoub.stream_to.nvim').run(\"bash -c '${*}'   \")"
-}
+# function vv(){
+#     NVIM_APPNAME=nvim-ayoub nvim -c ":lua require('ayoub.stream_to_nvim').run(\"bash -c '${*}'   \")"
+# }
 
 generate-nasm(){
     file=$1
