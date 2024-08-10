@@ -48,7 +48,7 @@ firefox_ramdisk(){
   exec firefox-ram 5kc8rznt.default-default &
   sleep 3
   exec shm "$HOME"/.local/share/nvim/site/pack &&
-    exec shm "$HOME"/.config/nvim
+  exec shm "$HOME"/.config/nvim
 }
 
 screen_sleep(){
@@ -98,8 +98,9 @@ xinit_lazy(){
   remap_keyboard
   numlockx on
   # start_flameshot
-  start_NetworkManager
   # firefox_ramdisk
+  start_NetworkManager
+  slock &
 }
 
 xinit_lazy
@@ -109,7 +110,7 @@ while true; do
     # exec dwm >/dev/null 2>&1
     # exec gnome-shell
     #exec metacity
-    # dbus-run-session dwm /tmp/dwm.log 2>&1 # does not work for dwm
-    dwm >> /tmp/dwm.log 2>&1
+    dbus-run-session dwm >>/tmp/dwm.log 2>&1 # does not work for dwm
+    # dwm >> /tmp/dwm.log 2>&1
     # exec i3 --shmlog-size=26214400
 done
