@@ -100,40 +100,7 @@ if [[ -s $HOME/.config/zsh  ]];then
     done
 fi
 
-venv(){
-    # . "/home/mhamdi/miniconda3/etc/profile.d/conda.sh"
-    # we can not use the original python miniconda to create venv but we should
-    # have the `conda create -n colab python3.7` to use it as pyenv python==3.7
-    # conda activate
-    # conda activate py36
 
-    unset PIP_TARGET
-    unset PYTHONPATH
-    python3 --version
-    python3 -m venv venv
-
-    version="$(python3 --version)"
-    if   [[ "$version" == "Python 3.12"* ]]; then pyenv="py312"; pylib="python3.12";
-    elif [[ "$version" == "Python 3.11"* ]]; then pyenv="py311"; pylib="python3.11";
-    elif [[ "$version" == "Python 3.10"* ]]; then pyenv="py310"; pylib="python3.10";
-    elif [[ "$version" == "Python 3.6"*  ]]; then pyenv="py306"; pylib="python3.6" ;
-    else exit 1;fi
-
-    cat >> ./.envrc << EOL
-#!/bin/bash
-
-# $(python3 --version)
-
-unset PIP_TARGET
-unset PYTHONPATH
-source venv/bin/activate
-
-export PYTHONPATH="\$PYTHONPATH:/data/local_tmp/pyenvs/${pyenv}/venv/lib/${pylib}/site-packages"
-export PATH="\$PATH:/data/local_tmp/pyenvs/${pyenv}/venv/bin"
-EOL
-
-    direnv allow .
-}
 
 alias vn='NVIM_APPNAME=nvim-nvchad     nvim' # NvChad
 alias vk='NVIM_APPNAME=nvim-kickstart  nvim' # Kickstart
