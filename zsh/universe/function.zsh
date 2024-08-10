@@ -22,6 +22,14 @@ ls(){
     fi
 }
 
+la(){
+    if command -v exa >/dev/null; then
+        command exa -al "$@"
+    else
+        command ls -al "$@"
+    fi
+}
+
 cf(){
   if [ -z "$1" ]; then
     echo "usage: cf <file>"
@@ -29,6 +37,7 @@ cf(){
   fi
   builtin cd $(dirname $(which $1))
 }
+
 cd_book(){
     BOOK="/data/book"
 
