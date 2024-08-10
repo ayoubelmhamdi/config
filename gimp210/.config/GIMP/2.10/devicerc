@@ -3,10 +3,10 @@
 (GimpDeviceInfo "Core Pointer"
     (icon-name "gimp-cursor")
     (name "Core Pointer")
-    (tool-options "GimpTransformGridOptions"
-        (tool "gimp-scale-tool")
-        (preview-opacity 0.5))
-    (use-fg-bg yes)
+    (tool-options "GimpRectangleSelectOptions"
+        (tool "gimp-rect-select-tool")
+        (operation intersect))
+    (use-fg-bg no)
     (use-opacity-paint-mode no)
     (use-brush no)
     (use-dynamics no)
