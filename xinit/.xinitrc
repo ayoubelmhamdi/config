@@ -6,6 +6,7 @@
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
 start_st(){
   exec st &
+  sleep 0.3 && exec slock &
 }
 
 start_sl(){
@@ -100,7 +101,6 @@ xinit_lazy(){
   # start_flameshot
   # firefox_ramdisk
   start_NetworkManager
-  slock &
 }
 
 xinit_lazy

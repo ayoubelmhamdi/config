@@ -1,0 +1,29 @@
+#!/bin/bash
+
+stow alacritty \
+     cargo \
+     direnv \
+     fonts \
+     gimp210 \
+     git \
+     gtk2 \
+     gtk3 \
+     helix \
+     i3 \
+     i3status-rust \
+     jupyter \
+     latex \
+     latexmk \
+     matplotlib \
+     mpv \
+     nnn \
+     nsxiv \
+     pipewire \
+     starship \
+     sxhkd \
+     sxiv \
+     tealdeer \
+     tmux \
+     wezterm \
+     xinit \
+     zathura
