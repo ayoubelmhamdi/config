@@ -6,6 +6,5 @@
 (justify center)
 (line-spacing -7)
 (letter-spacing 3)
-(box-mode fixed)
 
 # end of gimp-text-tool options

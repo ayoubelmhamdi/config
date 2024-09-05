@@ -1180,7 +1180,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="4c9ce68eb217b24c7893218875a5cdff">
+  <resource identifier="gimp-palette-color-history" checksum="622b9c1dc945c73bed57850e628d83e1">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1778,6 +1778,42 @@
   </resource>
 
   <resource identifier="Frank Ruehl CLM Medium Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeMono" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeMono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeMono Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeMono Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeSans" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeSans Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeSans Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeSans Semi-Bold Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeSerif" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeSerif Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeSerif Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="FreeSerif Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Gentium Basic" checksum="(null)">
