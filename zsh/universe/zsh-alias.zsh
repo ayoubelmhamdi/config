@@ -109,5 +109,5 @@ fi
 }
 
 function jqv(){
-  command jq $@ | NVIM_APPNAME=nvim-ayoub nvim +Man! +"setf json foldlevel=99 nornu buftype=nofile noswapfile'
+  command jq $@ | NVIM_APPNAME=nvim-ayoub nvim +Man! +"setf json foldlevel=99 nornu buftype=nofile noswapfile"
 }
