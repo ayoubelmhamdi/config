@@ -4,7 +4,7 @@ export CD_NNN="/tmp/nnn"
 export CD_FORK="/tmp/fork"
 
 n(){
-    nnn "$@"
+    NNN_FIFO="${TMPFILE:-/tmp}/nnn.fifo" NVIM_APPNAME=nvim-ayoub nnn "$@"
 
     if [ -f $CD_NNN ]; then
         . $CD_NNN
