@@ -1,0 +1,38 @@
+[colors.bright]
+black = "0x666666"
+blue = "0x7aa6da"
+cyan = "0x70c0b1"
+green = "0x9ec400"
+magenta = "0xc397d8"
+red = "0xff3334"
+white = "0xd9d9d9"
+yellow = "0xe7c547"
+
+[colors.normal]
+black = "0x1d1f21"
+blue = "0x81a2be"
+cyan = "0x8abeb7"
+green = "0xb5bd68"
+magenta = "0xb294bb"
+red = "0xcc6666"
+white = "0xf5f5f5"
+yellow = "0xf0c674"
+
+[colors.primary]
+background = "0x1d1f21"
+foreground = "0xc5c8c6"
+
+[cursor]
+# blink_wait_time = "500"
+style = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font.bold]
+family = "FiraCode Nerd Font"
+style = "Bold"
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
