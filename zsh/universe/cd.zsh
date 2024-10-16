@@ -5,11 +5,6 @@ export CD_FORK="/tmp/fork"
 
 n(){
     NNN_FIFO="${TMPFILE:-/tmp}/nnn.fifo" NVIM_APPNAME=nvim-ayoub nnn "$@"
-
-    if [ -f $CD_NNN ]; then
-        . $CD_NNN
-        rm $CD_NNN
-    fi
 }
 
 fork(){
@@ -118,7 +113,8 @@ cd_book(){
 }
 
 
-cd_git_root(){
+cg(){
+    # cd_git_root: cd to the root of git repo:
     GITROOT="$(git rev-parse --show-toplevel)"
     if [ -d "$GITROOT" ];then
         builtin cd "$GITROOT"
