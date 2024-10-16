@@ -14,7 +14,7 @@ setopt pushd_ignore_dups
 setopt pushdminus
 
 
-alias tmux='command tmux a 2>/dev/null || command tmux'
+# alias tmux='command tmux a 2>/dev/null || command tmux' # use one termux on every termials
 alias ls='normalls'
 alias cal='cal -m'
 alias vc='dvim c'
@@ -48,8 +48,7 @@ alias up='git commit -m "up"'
 alias gc='git clone --depth=1'
 alias co='git commit -m'
 
-alias log='git log --oneline'
-alias lg='git lg'
+alias lg='git log --oneline'
 
 
 
