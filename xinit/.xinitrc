@@ -110,7 +110,9 @@ while true; do
     # exec dwm >/dev/null 2>&1
     # exec gnome-shell
     #exec metacity
-    dbus-run-session dwm >>/tmp/dwm.log 2>&1 # does not work for dwm
+    # dbus-run-session dwm >>/tmp/dwm.log 2>&1 # does not work for dwm
+    dwm
     # dwm >> /tmp/dwm.log 2>&1
     # exec i3 --shmlog-size=26214400
+    # dbus-run-session i3 --shmlog-size=26214400
 done
