@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # TODO: mouve to xinitrc this lazy func
 init_zsh(){
@@ -23,15 +23,10 @@ set_env_var_and_path(){
   fi
 }
 
+set_env_var_and_path
+init_zsh
+
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];then
-  set_env_var_and_path
-  init_zsh
   [[ ! -f /tmp/first_start ]] && exec startx
   touch /tmp/first_start
 fi
-
-#1#Ensure XDG_RUNTIME_DIR is set
-#1if test -z "$XDG_RUNTIME_DIR"; then
-#1    #export XDG_RUNTIME_DIR=$(mktemp -d /tmp/$(id -u)-runtime-dir.XXX)
-#1    :
-#1fi
