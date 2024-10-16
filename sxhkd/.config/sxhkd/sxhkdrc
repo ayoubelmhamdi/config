@@ -2,27 +2,31 @@
 
 #  dmenu not load setxkbmap in xinitrc
 
-super  + Escape
-	pkill  -USR1 -x sxhkd
+super + e
+    /data/projects/c/ayoub/panim/game_launch.sh
+	# /data/projects/c/raylib/game2/game_launch.sh
 
-super  + {o,p}
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + {o,p}
   dmenu_run -m 0 -fn 'JetBrainsMono Nerd Font Mono:size=10' -nb '#2F343F' -nf '#bbbbbb' -sb '#f05577' -sf '#eeeeee'
 
-super  + shift + f
+super + shift + f
   "$HOME/scripts/bin/launch_brave"
 
 Print
   flameshot gui --raw | xclip -sel clip -t image/png
   # flameshot gui
 
-ctrl  + shift + 1
+ctrl + shift + 1
   setxkbmap us
 
-ctrl  + shift + 2
+ctrl + shift + 2
   setxkbmap ara
 
 
-super  + w
+super + w
   nm-applet
   # wezterm cli split-pane --right --percent 50 -- nmtui
   # iwgtk
@@ -39,15 +43,15 @@ XF86AudioMute
 # shift + Print
 #   "$HOME/scripts/video/record.sh"
 
-# super  + shift + p
+# super + shift + p
 #   passmenu
 
 # # use xdotool to grep url
-# super  + shift + y
+# super + shift + y
 #   /home/mhamdi/scripts/bin/yt use_xdotool >/tmp/log.yt.log 2>&1
 
 # # use url that already yanked
-# super  + y
+# super + y
 #   /home/mhamdi/scripts/bin/yt >/tmp/log.yt.log 2>&1
 
 # alt + c
