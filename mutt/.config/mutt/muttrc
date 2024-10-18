@@ -1,0 +1,6 @@
+source /usr/local/share/mutt-wizard/mutt-wizard.muttrc
+source /home/mhamdi/.config/mutt/accounts/smp.ayoub@gmail.com.muttrc
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/mhamdi/.config/mutt/accounts/smp.ayoub@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to smp.ayoub@gmail.com"
+
+
+set sidebar_visible = no
