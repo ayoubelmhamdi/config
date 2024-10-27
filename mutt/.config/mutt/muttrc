@@ -4,3 +4,6 @@ macro index,pager i1 '<sync-mailbox><enter-command>source /home/mhamdi/.config/m
 
 
 set sidebar_visible = no
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+set mailcap_path = ~/.mailcap
