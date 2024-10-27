@@ -15,6 +15,7 @@ setopt pushdminus
 
 
 # alias tmux='command tmux a 2>/dev/null || command tmux' # use one termux on every termials
+alias proj='builtin cd "$(shuff-projects)"'
 alias ls='normalls'
 alias cal='cal -m'
 alias vc='dvim c'
