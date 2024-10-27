@@ -2,6 +2,9 @@
 
 #  dmenu not load setxkbmap in xinitrc
 
+super + z
+    zathura /data/book/pdf_inputs2/TRPM-2.pdf
+
 super + e
     /data/projects/c/ayoub/panim/game_launch.sh
 	# /data/projects/c/raylib/game2/game_launch.sh
