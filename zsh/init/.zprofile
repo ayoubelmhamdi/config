@@ -3,10 +3,10 @@
 # TODO: mouve to xinitrc this lazy func
 init_zsh(){
     sleep 0.1
-    mkdir -p /tmp/ayoub /tmp/nvim
+    mkdir -p $TMPDIR/ayoub $TMPDIR/nvim
     # doas chown -R mhamdi /tmp/ayoub /tmp/nvim
-    echo "1 1" | tee /tmp/ayoub/cpu
-    echo " "   | tee /tmp/ayoub/status
+    echo "1 1" | tee $TMPDIR/ayoub/cpu
+    echo " "   | tee $TMPDIR/ayoub/status
     #doas chmod -R 7755 /home/mhamdi/.local/share/zinit
     #doas rmmod wl && sudo modprobe wl
 }
@@ -24,9 +24,9 @@ set_env_var_and_path(){
 }
 
 set_env_var_and_path
-init_zsh
 
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];then
-  [[ ! -f /tmp/first_start ]] && exec startx
-  touch /tmp/first_start
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] && [[ ! -f /tmp/first_start ]];then
+    touch /tmp/first_start
+    init_zsh
+    exec startx
 fi
