@@ -15,6 +15,7 @@ setopt pushdminus
 
 
 # alias tmux='command tmux a 2>/dev/null || command tmux' # use one termux on every termials
+alias pipu="pip install --upgrade pip"
 alias proj='builtin cd "$(shuff-projects)"'
 alias ls='normalls'
 alias cal='cal -m'
@@ -47,7 +48,6 @@ alias pull='git pull '
 alias sta='git status -s'
 alias up='git commit -m "up"'
 alias gc='git clone --depth=1'
-alias co='git commit -m'
 
 alias lg='git log --oneline'
 
