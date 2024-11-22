@@ -34,13 +34,3 @@ alias sv='doas sv'
 
 alias mount="doas mount"
 alias umount="doas umount"
-
-# when i use password i do not need to use it every time
-# alias sed="doas sed"
-
-# fix doas
-# alis ln
-alias cp="cp -ivr"
-alias mv='mv -iv'
-alias ncat='/sbin/cat'
-alias cat='bat -p'
