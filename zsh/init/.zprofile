@@ -3,6 +3,8 @@
 # TODO: mouve to xinitrc this lazy func
 init_zsh(){
     sleep 0.1
+    TMPDIR="${TMPDIR:-$TMP}"
+    TMPDIR="${TMPDIR:-/tmp}"
     mkdir -p $TMPDIR/ayoub $TMPDIR/nvim
     # doas chown -R mhamdi /tmp/ayoub /tmp/nvim
     echo "1 1" | tee $TMPDIR/ayoub/cpu
