@@ -81,6 +81,7 @@ status_dwmblocks(){
 }
 
 xinit_lazy(){
+  doas ntpdate 0.pool.ntp.org &
   ping_status # NOTE: work when put it first not last started
   sleep 1
   start_st
