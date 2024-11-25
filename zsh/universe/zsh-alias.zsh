@@ -16,7 +16,7 @@ setopt pushdminus
 
 # alias tmux='command tmux a 2>/dev/null || command tmux' # use one termux on every termials
 
-function check_command() {
+function is_exist() {
     command -v "$1" >/dev/null
 }
 
