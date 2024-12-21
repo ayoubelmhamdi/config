@@ -30,5 +30,6 @@ set_env_var_and_path
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] && [[ ! -f /tmp/first_start ]];then
     touch /tmp/first_start
     init_zsh
-    exec startx
+    # exec startx
+    dbus-run-session startx
 fi
