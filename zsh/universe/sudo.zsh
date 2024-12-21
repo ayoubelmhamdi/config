@@ -4,6 +4,7 @@ if ! command -v doas >/dev/null 2>&1;then
   alias doas=""
 fi
 
+alias ntpdate='doas ntpdate'
 alias date='doas date'
 
 alias update-grub='doas update-grub'
