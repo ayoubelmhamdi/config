@@ -21,6 +21,7 @@ function is_exist() {
 }
 
 
+alias ag="ag --vimgrep"
 alias cp="cp -ivr"
 alias mv='mv -iv'
 alias ncat='/sbin/cat'
