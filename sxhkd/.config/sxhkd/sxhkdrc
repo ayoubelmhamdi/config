@@ -7,60 +7,61 @@ super + z
 
 super + e
     /data/projects/c/ayoub/panim/game_launch.sh
-	# /data/projects/c/raylib/game2/game_launch.sh
+    # /data/projects/c/raylib/game2/game_launch.sh
 
 super + Escape
-	pkill -USR1 -x sxhkd
+    pkill -USR1 -x sxhkd
 
-super + {o,p}
-  dmenu_run -m 0 -fn 'JetBrainsMono Nerd Font Mono:size=10' -nb '#2F343F' -nf '#bbbbbb' -sb '#f05577' -sf '#eeeeee'
+super + p
+    dmenu_run -m 0 -fn 'JetBrainsMono Nerd Font Mono:size=10' -nb '#2F343F' -nf '#bbbbbb' -sb '#f05577' -sf '#eeeeee'
+
+super + o:
+    xclip -selection clipboard -o > /data/local_tmp/mdbook-tmp/src/chapter_1.md
 
 super + shift + f
-  "$HOME/scripts/bin/launch_brave"
+    "$HOME/scripts/bin/launch_brave"
 
 Print
-  flameshot gui --raw | xclip -sel clip -t image/png
-  # flameshot gui
+    flameshot gui
+    # flameshot gui --raw | xclip -sel clip -t image/png
 
-ctrl + shift + 1
-  setxkbmap us
+# ctrl + shift + 1
+#     setxkbmap us
 
-ctrl + shift + 2
-  setxkbmap ara
+# ctrl + shift + 2
+#     setxkbmap ara
 
 
 super + w
-  nm-applet
-  # wezterm cli split-pane --right --percent 50 -- nmtui
-  # iwgtk
-  # wpa_gui 
+    nm-applet
+    # wezterm cli split-pane --right --percent 50 -- nmtui
+    # iwgtk
+    # wpa_gui 
 
 
 XF86Audio{Raise,Lower}Volume
-  amixer sset Master {10+,10-} unmute
+    amixer sset Master {10+,10-} unmute
 
 XF86AudioMute
-  amixer sset 'Master' 70%
+    amixer sset 'Master' 70%
 
 
 # shift + Print
-#   "$HOME/scripts/video/record.sh"
+#     "$HOME/scripts/video/record.sh"
 
 # super + shift + p
-#   passmenu
+#     passmenu
 
 # # use xdotool to grep url
 # super + shift + y
-#   /home/mhamdi/scripts/bin/yt use_xdotool >/tmp/log.yt.log 2>&1
+#     /home/mhamdi/scripts/bin/yt use_xdotool >/tmp/log.yt.log 2>&1
 
 # # use url that already yanked
 # super + y
-#   /home/mhamdi/scripts/bin/yt >/tmp/log.yt.log 2>&1
+#     /home/mhamdi/scripts/bin/yt >/tmp/log.yt.log 2>&1
 
 # alt + c
-#   xdotool key --clearmodifiers ctrl+shift+c &&   sleep 0.1 && xclip -o -sel -clip > /tmp/sxhkd_paste && echo "---alt+c---"
+#     xdotool key --clearmodifiers ctrl+shift+c &&   sleep 0.1 && xclip -o -sel -clip > /tmp/sxhkd_paste && echo "---alt+c---"
 
 # alt + v
-#   xdotool key --clearmodifiers ctrl+shift+v && echo "---alt+v---"
-
-
+#     xdotool key --clearmodifiers ctrl+shift+v && echo "---alt+v---"
