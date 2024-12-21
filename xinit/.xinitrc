@@ -1,50 +1,14 @@
 #!/bin/bash
 
-# shellcheck disable=2181,2086,2093
+# this is a magic to initialise dbus.
+eval $(dbus-launch --sh-syntax)
+
 #xrandr --setprovideroutputsource modesetting NVIDIA-0
 #xrandr --auto
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
-start_st(){
-  exec st &
-  sleep 0.3 && exec slock &
+doas_exist() {
+    command -v doas >/dev/null
 }
-
-start_sl(){
-  sl &
-}
-
-start_flameshot(){
-  sleep 10 && flameshot screen -c
-}
-
-set_brightness(){
-  if [ -f "$HOME/.config/brightness/brightness-kernel" ];then
-    # cat "$HOME/.config/brightness/xbps-install -Sy gtkbrightness-kernel" | sudo tee /sys/class/backlight/intel_backlight/brightness &
-    xbacklight -set "$(cat "$HOME/.config/brightness/brightness-kernel")"
-  fi
-}
-
-start_feh(){
-  ~/.fehbg &
-}
-
-start_sxhkd(){
-  sxhkd > /tmp/log.xshkd.log  &
-}
-
-first_ls(){
-  ls /data ~ &
-}
-
-_enable_execution(){
-  mount -o remount,exec /tmp
-}
-
-set_volume(){
-  amixer sset 'Master' 90% &
-}
-
-
 firefox_ramdisk(){
   exec firefox-ram 5kc8rznt.default-default &
   sleep 3
@@ -52,67 +16,56 @@ firefox_ramdisk(){
   exec shm "$HOME"/.config/nvim
 }
 
-screen_sleep(){
-  # turn off screen after 300 seconds
-  xset s 300
+lazy(){
+    while ! pgrep st; do
+        sleep 0.1
+    done
+    sleep 0.9
+    "$@"
 }
 
-remap_keyboard(){
-  xmodmap ~/.Xmodmap
-}
+
+if [ -f "$HOME/.config/brightness/brightness-kernel" ];then
+    # xbps-install -Sy xbacklight
+    xbacklight -set "$(cat "$HOME/.config/brightness/brightness-kernel")" &
+fi
+
+# Daemons
+st &
+lazy flameshot screen -c &
+# ~/.fehbg &
+sxhkd > /tmp/log.xshkd.log  &
+ping-status &
+nm-applet &
+
+lazy ping-status & # NOTE: work when put it first not last started
+lazy pipewire &
+lazy /home/mhamdi/scripts/bin/get_bandwith_stream &
+lazy xsetroot -name "Faild;" &
+lazy dwmblocks 2>/tmp/dwmblocks.log &
+
+# setting
+amixer sset 'Master' 90% &
+xset s 300 # turn off screen after 300 seconds
+xmodmap ~/.Xmodmap
+setxkbmap -layout us,ara -option grp:lalt_lshift_toggle -option caps:ctrl_modifier
+numlockx on
+
+doas_exist && lazy doas ntpdate 0.pool.ntp.org &
+doas_exist && (doas modprobe -r wl && doas modprobe wl) &
+
+lazy slock &
 
 
-# start_sound(){
-#   # /home/mhamdi/scripts/bin/sound-switch &
-#   :
-# }
-
-ping_status(){
-  ping-status &
-}
-
-start_NetworkManager(){
-  nm-applet &
-}
-
-status_dwmblocks(){
-  dwmblocks
-  xsetroot -name "Faild;"
-}
-
-xinit_lazy(){
-  doas ntpdate 0.pool.ntp.org &
-  ping_status # NOTE: work when put it first not last started
-  sleep 1
-  start_st
-  start_sxhkd
-  set_brightness
-  # start_feh
-  first_ls
-  set_volume
-  # pipewire &
-  dwmblocks 2>/tmp/dwmblocks.log &
-  status_dwmblocks &
-  get_bandwith_stream &
-  # setxkbmap -layout us,ara -option grp:lalt_lshift_toggle -option caps:ctrl_modifier &
-  setxkbmap -layout us,ara -option grp:lalt_lshift_toggle -option caps:ctrl_modifier &
-  screen_sleep
-  remap_keyboard
-  numlockx on
-  # start_flameshot
-  # firefox_ramdisk
-  start_NetworkManager
-}
-
-xinit_lazy
-
-#dwm >> /tmp/dwm.log 2>&1
 while true; do
     # exec dwm >/dev/null 2>&1
     # exec gnome-shell
     #exec metacity
     # dbus-run-session dwm >>/tmp/dwm.log 2>&1 # does not work for dwm
-    dwm
+    # exec dwm
+    # exec dbus-run-session dwm
+    exec dwm
+
     # dwm >> /tmp/dwm.log 2>&1
     # exec i3 --shmlog-size=26214400
     # dbus-run-session i3 --shmlog-size=26214400
