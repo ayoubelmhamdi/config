@@ -1,9 +1,8 @@
 #!/bin/bash
 
-until img="$(curl -s 'https://www.bing.com/HPImageArchive.aspx?format=js\&mkt=en-IN\&n=1' | jq -r '.images[0].urlbase')"; do
-  sleep 5
+until img="$(curl -sf 'https://www.bing.com/HPImageArchive.aspx?format=js&mkt=en-IN&n=1' | jq -r '.images[0].urlbase' 2>/dev/null)" && [ -n "$img" ]; do
+  sleep 1
 done
 
 wget -q "https://bing.com${img}_1366x768.jpg" -O /tmp/bing.jpg
 feh --no-fehbg --bg-tile /tmp/bing.jpg
-
