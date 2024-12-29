@@ -107,3 +107,9 @@ alias vk='NVIM_APPNAME=nvim-kickstart  nvim' # Kickstart
 alias va='NVIM_APPNAME=nvim-astrovim   nvim' # AstroVim
 
 bindkey -e
+
+#  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --prefix=/tmp/rust -y
+#  /tmp/rust/cargo/bin/rustup toolchain install nightly
+#  export RUSTUP_HOME="/tmp/rust/rustup"
+#  export CARGO_HOME="/tmp/rust/cargo"
+#  cargo install --git https://github.com/user/repo.git
