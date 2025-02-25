@@ -1,4 +1,5 @@
 #!/bin/zsh
+
 # if touch "/data" ; then
 #   builtin cd /data
 # elif touch "$HOME/data" ; then
@@ -100,7 +101,7 @@ if [[ -s $HOME/.config/zsh  ]];then
     done
 fi
 
-
+export SPACESHIP_EXIT_CODE_SHOW=true
 
 alias vn='NVIM_APPNAME=nvim-nvchad     nvim' # NvChad
 alias vk='NVIM_APPNAME=nvim-kickstart  nvim' # Kickstart
