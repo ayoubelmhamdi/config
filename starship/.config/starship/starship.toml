@@ -13,6 +13,7 @@ $python\
 $cmd_duration\
 $custom\
 $memory_usage\
+$status\
 $line_break\
 $character"""
 #-1$conda\
@@ -28,7 +29,6 @@ $character"""
 # $jobs\
 # $rust\
 
-# $status\
 
 scan_timeout = 1000
 command_timeout = 1000
@@ -170,8 +170,8 @@ disabled = true
 
 [character]
 #   ❯
-success_symbol = '[❯ ](bold blue)'
-error_symbol = "[✗](bold red) "
+success_symbol = '[\$](bold)'
+error_symbol = '[\$](bold)'
 
 [memory_usage]
 disabled = false
@@ -181,8 +181,7 @@ style = "bold dimmed red"
 
 [status]
 disabled = false
-map_symbol = true
-success_symbol = "✓"
+pipestatus = true
 
 [cmd_duration]
 format = "[$duration]($style)"
@@ -190,14 +189,8 @@ style = "yellow"
 min_time = 5_000
 
 
-[custom.direnv]
-# command = "cat .envrc | grep -v -E '^[ ]*#|^$' | wc -l"
-files = [".envrc"]
-style = "bg:white fg:black"
-format = "[env]($style) "
-
-
-[python]
-format='[${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-version_format='v${major}.${minor}'
-detect_extensions=[]
+#[custom.direnv]
+## command = "cat .envrc | grep -v -E '^[ ]*#|^$' | wc -l"
+#files = [".envrc"]
+#style = "bg:white fg:black"
+#format = "[env]($style) "
