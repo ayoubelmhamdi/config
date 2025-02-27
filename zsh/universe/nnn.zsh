@@ -20,8 +20,8 @@ export NNN_BMS
 export NNN_SSHFS="sshfs -o follow_symlinks"        # make sshfs follow symlinks on the remote
 export NNN_COLORS="2136"                           # use a different color for each context
 export NNN_TRASH=0
-# export NNN_FIFO="${TMPFILE:-/tmp}/nnn.fifo"
-export NNN_TMPFILE="/tmp/nnn"
+export NNN_FIFO="${TMPDIR:/tmp}/nnn.fifo"
+export NNN_TMPFILE="${TMPDIR:/tmp}"
 
 # export VISUAL=ewrap
 export NNN_SSHFS='sshfs -o reconnect,idmap=user,cache_timeout=3600'

@@ -1,5 +1,17 @@
 #!/usr/bin/zsh
 
+function yo(){
+    termux-open --content-type video "$(yt-dlp --cookies $HOME/cookies.txt --get-url "$1" 2>/dev/null)"
+}   
+
+function yt(){
+    yt-dlp "$1" -o "$2" \
+        && am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d "file://$(pwd)/$2"
+}
+
+
+export download=/storage/emulated/0/Download
+alias dd="cd $download"
 
 alias t=termux-url-opener
 # cd $HOME/storage/downloads/
