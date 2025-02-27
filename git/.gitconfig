@@ -30,6 +30,7 @@
   directory = /mnt/termux/scripts
   directory = /home/mhamdi/book/TRPM
   directory = /root/.config/nvim
+  directory = .
 [pull]
   rebase = true
 [rebase]
