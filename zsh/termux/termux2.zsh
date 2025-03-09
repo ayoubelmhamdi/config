@@ -10,10 +10,10 @@ function yt(){
 }
 
 
-export download=/storage/emulated/0/Download
-alias dd="cd $download"
+export dd=/storage/emulated/0/Download
+alias dd="cd $dd"
 
-alias t=termux-url-opener
+# alias t=termux-url-opener
 # cd $HOME/storage/downloads/
 
 pdf_lang2(){
