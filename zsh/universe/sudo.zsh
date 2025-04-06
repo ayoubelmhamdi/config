@@ -1,37 +1,38 @@
 #!/bin/bash
 
-if ! command -v doas >/dev/null 2>&1;then
-  alias doas=""
+SUDO="sudo"
+if command -v doas >/dev/null 2>&1;then
+  SUDO="doas"
 fi
 
-alias ntpdate='doas ntpdate'
-alias date='doas date'
+alias ntpdate="$SUDO ntpdate"
+alias date="$SUDO date"
 
-alias update-grub='doas update-grub'
-alias reboot="doas reboot"
+alias update-grub="$SUDO update-grub"
+alias reboot="$SUDO reboot"
 
 # mv, rm, cp
-alias rm="doas rm -ivr"
-# alias rm='rm -Ivr'
+alias rm="$SUDO rm -ivr"
+# alias rm="rm -Ivr"
 alias trash-list="trash-list --trash-dir=/root/.Trash-0"
 alias trash-restore="trash-restore --trash-dir=/root/.Trash-0"
-alias rmt='trash_rm'
-alias rmf='doas /sbin/rm -vrf'
+alias rmt="trash_rm"
+alias rmf="$SUDO /sbin/rm -vrf"
 
 
-alias chown='doas chown'
-alias chmod='doas chmod'
-alias x='doas chmod +x'
+alias chown="$SUDO chown"
+alias chmod="$SUDO chmod"
+alias x="$SUDO chmod +x"
 
-alias poweroff='doas poweroff'
-alias reboot='doas reboot'
-alias zzz='doas zzz'
-alias pkill='doas pkill'
+alias poweroff="$SUDO poweroff"
+alias reboot="$SUDO reboot"
+alias zzz="$SUDO zzz"
+alias pkill="$SUDO pkill"
 
-alias rmmod='doas rmmod'
-alias modprobe='doas modprobe'
+alias rmmod="$SUDO rmmod"
+alias modprobe="$SUDO modprobe"
 
-alias sv='doas sv'
+alias sv="$SUDO sv"
 
-alias mount="doas mount"
-alias umount="doas umount"
+alias mount="$SUDO mount"
+alias umount="$SUDO umount"
