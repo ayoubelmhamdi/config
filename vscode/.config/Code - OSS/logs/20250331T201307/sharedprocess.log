@@ -1,0 +1,38 @@
+2025-03-31 20:13:13.897 [info] Deleted marked for removal extension from disk ms-toolsai.jupyter /home/mhamdi/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64
+2025-03-31 20:13:24.653 [info] Getting Manifest... ms-python.python
+2025-03-31 20:13:24.656 [info] Getting Manifest... ms-toolsai.jupyter
+2025-03-31 20:13:24.872 [info] Installing extension: ms-toolsai.jupyter {"installPreReleaseVersion":false,"context":{"skipWalkthrough":true},"pinned":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"},"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}
+2025-03-31 20:13:24.884 [info] Installing extension: ms-python.python {"installPreReleaseVersion":false,"context":{"skipWalkthrough":true},"pinned":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"},"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}
+2025-03-31 20:13:25.102 [info] Extension installed successfully: ms-python.python vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:13:28.136 [info] Getting Manifest... ms-toolsai.jupyter-keymap
+2025-03-31 20:13:28.163 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2025-03-31 20:13:28.188 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2025-03-31 20:13:28.216 [info] Getting Manifest... ms-toolsai.vscode-jupyter-slideshow
+2025-03-31 20:13:28.359 [error] Error while installing the extension ms-toolsai.jupyter Cannot read the extension from /home/mhamdi/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:14:31.085 [info] Uninstalling extension from the profile: ms-toolsai.jupyter@2025.1.0 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:14:31.177 [error] Error: Unable to read file '/home/mhamdi/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/package.json' (Error: Unable to resolve nonexistent file '/home/mhamdi/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/package.json')
+    at wh.F (file:///usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:86401)
+    at wh.D (file:///usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:86226)
+    at async wh.C (file:///usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:85598)
+    at async oa.u (file:///usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:43870)
+    at async oa.scanExtension (file:///usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:42469)
+    at async Fu.scanExistingExtension (file:///usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:34586)
+    at async dh.scanUserExtensionAtLocation (file:///usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:67604)
+    at async Promise.all (index 0)
+    at async w2.C (file:///usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:56796)
+2025-03-31 20:14:31.178 [info] Extension not found at the location file:///home/mhamdi/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64
+2025-03-31 20:14:31.446 [info] Successfully uninstalled extension from the profile ms-toolsai.jupyter@2025.1.0 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:14:33.488 [info] Getting Manifest... ms-toolsai.jupyter
+2025-03-31 20:14:33.506 [info] Installing extension: ms-toolsai.jupyter {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"},"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}
+2025-03-31 20:14:33.922 [info] Getting Manifest... ms-toolsai.jupyter-keymap
+2025-03-31 20:14:33.949 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2025-03-31 20:14:33.967 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2025-03-31 20:14:33.983 [info] Getting Manifest... ms-toolsai.vscode-jupyter-slideshow
+2025-03-31 20:14:36.561 [error] Could not load vsce-sign module Cannot find package '@vscode/vsce-sign' imported from /usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js
+2025-03-31 20:14:36.561 [info] Extension signature verification is not done: ms-toolsai.jupyter
+2025-03-31 20:14:37.437 [info] Extracted extension to file:///home/mhamdi/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64: ms-toolsai.jupyter
+2025-03-31 20:14:37.487 [info] Renamed to /home/mhamdi/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64
+2025-03-31 20:14:37.541 [info] Extension installed successfully: ms-toolsai.jupyter vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:16:43.607 [info] Getting Manifest... ms-toolsai.jupyter
+2025-03-31 20:16:43.637 [info] Installing extension: ms-toolsai.jupyter {"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"}}
+2025-03-31 20:16:43.850 [info] Extension installed successfully: ms-toolsai.jupyter vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json

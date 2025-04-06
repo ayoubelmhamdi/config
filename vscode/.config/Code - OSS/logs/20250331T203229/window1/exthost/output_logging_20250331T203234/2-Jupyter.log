@@ -1,0 +1,19 @@
+Code - OSS (1.97.2, undefined, desktop)
+Jupyter Extension Version: 2025.1.0.
+Python Extension Version: 2025.2.0.
+Pylance Extension Version: 2025.3.2.
+Platform: linux (x64).
+Home = /home/mhamdi
+Temp Storage folder ~/.config/Code - OSS/User/globalStorage/ms-toolsai.jupyter/version-2025.1.0
+Workspace folder /data/tmp/rm-test-async/layers/api
+20:32:39.157 [warn] No interpreter with path /data/local_tmp/pyenvs/py312/venv/bin/python3 found in Python API, will convert Uri path to string as Id /data/local_tmp/pyenvs/py312/venv/bin/python3
+20:32:41.553 [info] Starting Kernel (Python Path: /data/tmp/rm-test-async/layers/api/venv/bin/python, Venv, 3.12.8) for '/data/tmp/rm-test-async/layers/api/nb.ipynb' (disableUI=true)
+20:32:43.619 [info] Process Execution: /data/tmp/rm-test-async/layers/api/venv/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+20:32:43.650 [info] Process Execution: /data/tmp/rm-test-async/layers/api/venv/bin/python -m ipykernel_launcher --f=/home/~/.local/share/jupyter/runtime/kernel-v376a740db7a6dc1ab3b15b13b5018065c50f2fe1f.json
+    > cwd: /data/tmp/rm-test-async/layers/api
+20:32:43.702 [info] Process Execution: /data/tmp/rm-test-async/layers/api/venv/bin/python -m pip list
+20:32:45.534 [info] Kernel successfully started
+20:32:45.555 [info] Process Execution: /data/tmp/rm-test-async/layers/api/venv/bin/python /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/pythonFiles/printJupyterDataDir.py
+20:32:54.137 [info] Disposing request as the cell (1) was deleted /data/tmp/rm-test-async/layers/api/nb.ipynb
+20:32:54.137 [info] Dispose Kernel '/data/tmp/rm-test-async/layers/api/nb.ipynb' associated with '/data/tmp/rm-test-async/layers/api/nb.ipynb'
+20:33:07.821 [info] Dispose Kernel '/data/tmp/rm-test-async/layers/api/nb.ipynb' associated with '/data/tmp/rm-test-async/layers/api/nb.ipynb'

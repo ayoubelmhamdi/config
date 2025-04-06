@@ -1,0 +1,147 @@
+2025-04-01 06:36:46.741 [warning] Dir "/data/tmp/rm-test-async/layers/api/.pixi/envs" is not watchable (directory does not exist)
+2025-04-01 06:36:46.741 [error] Unable to check if shell integration is active [Error: Extension 'ms-python.python' CANNOT use API proposal: terminalDataWriteEvent.
+Its package.json#enabledApiProposals-property declares:  but NOT terminalDataWriteEvent.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at a.onDidWriteTerminalData (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:46213)
+	at new v (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:877941)
+	at ge (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1684578)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687942
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687970
+	at Se (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688037)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688517
+	at we (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688458)
+	at Pe (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688492)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1685731
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687336
+	at Array.reduce (<anonymous>)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687308
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687590
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687970
+	at Se (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688037)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688517
+	at we (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688458)
+	at Pe (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688492)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1685731
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1715401
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1715422
+	at e._get (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1714435)
+	at e._getButThrowIfAsync (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1714495)
+	at e.get (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1710204)
+	at e.dynamicValue (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1699937)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1686114
+	at Ee (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1686370)
+	at Se (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688086)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688517
+	at we (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688458)
+	at Pe (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688492)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1685731
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1685665
+	at Array.map (<anonymous>)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1685636
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687336
+	at Array.reduce (<anonymous>)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687308
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687590
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1687970
+	at Se (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688037)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688517
+	at we (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688458)
+	at Pe (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1688492)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1685731
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1715401
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1715422
+	at e._get (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1714435)
+	at e._getButThrowIfAsync (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1714495)
+	at e.get (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:1710204)
+	at a.get (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:536568)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:451405
+	at async t.activateComponents (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:449685)
+	at async /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2639567
+	at async e (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2639099)
+	at async aw.n (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:4447)
+	at async aw.m (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:4410)
+	at async aw.l (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:3866)]
+2025-04-01 06:36:46.741 [info] Python interpreter path: ./venv/bin/python
+2025-04-01 06:36:51.403 [info] Starting Environment refresh
+2025-04-01 06:36:51.403 [info] Searching for interpreters in posix paths locator
+2025-04-01 06:36:51.407 [info] Searching for pyenv environments
+2025-04-01 06:36:51.407 [info] Searching for conda environments
+2025-04-01 06:36:51.408 [info] Searching for global virtual environments
+2025-04-01 06:36:51.408 [info] Searching for custom virtual environments
+2025-04-01 06:36:51.470 [info] pyenv is not installed
+2025-04-01 06:36:51.470 [info] Finished searching for pyenv environments: 66 milliseconds
+2025-04-01 06:36:51.470 [info] Finished searching for custom virtual envs: 63 milliseconds
+2025-04-01 06:36:51.489 [info] > conda info --json
+2025-04-01 06:36:51.509 [info] > hatch env show --json
+2025-04-01 06:36:51.509 [info] cwd: .
+2025-04-01 06:36:53.115 [info] > pyenv which python
+2025-04-01 06:36:53.115 [info] cwd: .
+2025-04-01 06:36:53.252 [info] Finished searching for global virtual envs: 1845 milliseconds
+2025-04-01 06:36:53.647 [info] Found: /bin/python --> /bin/python3.13
+2025-04-01 06:36:53.673 [info] > ~/.conda/bin/conda info --json
+2025-04-01 06:36:53.693 [info] > ~/miniconda3/bin/conda info --json
+2025-04-01 06:36:53.716 [info] Found: /bin/python3 --> /bin/python3.13
+2025-04-01 06:36:53.721 [info] Found: /bin/python3.13 --> /bin/python3.13
+2025-04-01 06:36:54.084 [error] [
+  'Failed to activate a workspace, Class name = v, completed in 7532ms, has a falsy return value, Arg 1: <Uri:/data/tmp/rm-test-async/layers/api>, Arg 2: {"started":1743485805557}, Return Value: undefined',
+  Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+  Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+   The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+      at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+      at Object.get testResults [as testResults] (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:39426)
+      at C.activate (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:908493)
+      at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2457
+      at Array.map (<anonymous>)
+      at v.activateWorkspace (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2447)
+]
+2025-04-01 06:36:54.084 [error] Failure during activation. Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+    at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+    at Object.get testResults [as testResults] (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:39426)
+    at C.activate (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:908493)
+    at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2457
+    at Array.map (<anonymous>)
+    at v.activateWorkspace (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2447)
+2025-04-01 06:36:54.085 [error] sendStartupTelemetry() failed. Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+    at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+    at Object.get testResults [as testResults] (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:39426)
+    at C.activate (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:908493)
+    at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2457
+    at Array.map (<anonymous>)
+    at v.activateWorkspace (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2447)
+2025-04-01 06:36:54.180 [info] Found: /sbin/python --> /sbin/python3.13
+2025-04-01 06:36:54.237 [info] Starting Pylance language server.
+2025-04-01 06:36:54.267 [info] > ./venv/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:54.272 [info] Found: /sbin/python3 --> /sbin/python3.13
+2025-04-01 06:36:54.278 [info] Found: /sbin/python3.13 --> /sbin/python3.13
+2025-04-01 06:36:54.310 [info] Found: /usr/bin/python --> /usr/bin/python3.13
+2025-04-01 06:36:54.330 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariables.py
+2025-04-01 06:36:54.331 [info] shell: bash
+2025-04-01 06:36:54.356 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariables.py
+2025-04-01 06:36:54.356 [info] shell: bash
+2025-04-01 06:36:54.362 [info] Found: /usr/bin/python3 --> /usr/bin/python3.13
+2025-04-01 06:36:54.366 [info] Found: /usr/bin/python3.13 --> /usr/bin/python3.13
+2025-04-01 06:36:54.917 [info] Found: /usr/sbin/python --> /usr/sbin/python3.13
+2025-04-01 06:36:54.922 [info] Found: /usr/sbin/python3 --> /usr/sbin/python3.13
+2025-04-01 06:36:54.923 [info] Found: /usr/sbin/python3.13 --> /usr/sbin/python3.13
+2025-04-01 06:36:54.987 [info] > /bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:55.040 [info] > /sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:55.101 [info] Finished searching for interpreters in posix paths locator: 3699 milliseconds
+2025-04-01 06:36:55.261 [info] > /usr/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:55.287 [info] > /usr/sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:58.326 [info] > ~/miniconda3/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:58.354 [info] > ~/miniconda3/envs/py306/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:58.367 [info] Finished searching for conda environments: 6962 milliseconds
+2025-04-01 06:36:58.377 [info] Environments refresh paths discovered (event): 6977 milliseconds
+2025-04-01 06:36:58.377 [info] Environments refresh paths discovered: 6977 milliseconds
+2025-04-01 06:36:58.478 [info] > ~/miniconda3/envs/py310/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:58.543 [info] > ~/miniconda3/envs/py311/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:58.635 [info] > ~/miniconda3/envs/py312/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:36:58.711 [info] Environments refresh finished (event): 7311 milliseconds
+2025-04-01 06:36:58.756 [info] Environment refresh took 7358 milliseconds
+2025-04-01 06:36:58.825 [info] > /data/local_tmp/pyenvs/py312/venv/bin/python3 -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-04-01 06:41:42.087 [info] Discover tests for workspace name: api - uri: /data/tmp/rm-test-async/layers/api/rm.py

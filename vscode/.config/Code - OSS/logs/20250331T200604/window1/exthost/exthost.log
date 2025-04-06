@@ -1,0 +1,104 @@
+2025-03-31 20:06:09.444 [info] Extension host with pid 29736 started
+2025-03-31 20:06:09.444 [info] Skipping acquiring lock for /home/mhamdi/.config/Code - OSS/User/workspaceStorage/d8eda7006e08bd8efc643602fbbd06ad.
+2025-03-31 20:06:09.504 [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: false, activationEvent: 'onNotebookSerializer:jupyter-notebook'
+2025-03-31 20:06:09.607 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-03-31 20:06:09.617 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+2025-03-31 20:06:10.606 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-03-31 20:06:10.971 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-03-31 20:06:11.812 [info] Eager extensions activated
+2025-03-31 20:06:11.815 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onNotebook:jupyter-notebook'
+2025-03-31 20:06:11.851 [info] ExtensionService#_doActivateExtension ms-toolsai.vscode-jupyter-cell-tags, startup: false, activationEvent: 'onNotebook:jupyter-notebook'
+2025-03-31 20:06:11.862 [info] ExtensionService#_doActivateExtension ms-toolsai.vscode-jupyter-slideshow, startup: false, activationEvent: 'onNotebook:jupyter-notebook'
+2025-03-31 20:06:11.936 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-31 20:06:12.305 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-31 20:06:12.319 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-03-31 20:06:13.271 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'api', root cause: ms-python.python
+2025-03-31 20:06:14.185 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter-renderers, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2025-03-31 20:06:14.215 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-03-31 20:06:15.343 [error] Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at get testResults (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:39426)
+	at C.activate (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:908493)
+	at /home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2457
+	at Array.map (<anonymous>)
+	at v.activateWorkspace (/home/mhamdi/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/out/client/extension.js:2:2447)
+2025-03-31 20:07:20.513 [info] Extension host terminating: renderer closed the MessagePort
+2025-03-31 20:07:20.568 [error] Canceled: Canceled
+	at new XR (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:110406)
+	at Uy.U (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:115016)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:112510)
+	at mw.g (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:32221)
+	at mw.executeCommand (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:31725)
+	at r.registerCommand.description (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:31055)
+	at mw.h (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:32741)
+	at mw.g (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:31818)
+	at mw.executeCommand (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:31725)
+	at Object.executeCommand (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37254)
+	at Ah.L [as value] (/usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:997602)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at Object.p [as dispose] (/usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:1020242)
+	at /usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:1026621
+	at Array.forEach (<anonymous>)
+	at b.dispose (/usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:1026607)
+	at cv.<anonymous> (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:20084)
+	at cv.dispose (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:20180)
+	at cv.<anonymous> (/usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:1000086)
+	at cv.dispose (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:20180)
+	at ui (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:699)
+	at file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:14992
+	at file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1009
+	at Object.dispose (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+	at PW.eb (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11919)
+	at file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9874
+	at Array.map (<anonymous>)
+	at PW.$ (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9862)
+	at PW.terminate (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10105)
+	at wC.terminate (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15080)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11628)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-03-31 20:07:20.571 [error] Canceled: Canceled
+	at new XR (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:110406)
+	at Uy.U (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:115016)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:112510)
+	at mw.g (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:32221)
+	at mw.executeCommand (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:31725)
+	at r.registerCommand.description (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:31055)
+	at mw.h (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:32741)
+	at mw.g (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:31818)
+	at mw.executeCommand (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:112:31725)
+	at Object.executeCommand (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:37254)
+	at set hasGitHubRepositories (/usr/lib/code-oss/resources/app/extensions/github/dist/extension.js:2:344164)
+	at /usr/lib/code-oss/resources/app/extensions/github/dist/extension.js:2:345123
+	at Ah.value (/usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:1117802)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at Object.p [as dispose] (/usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:1020242)
+	at /usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:1026621
+	at Array.forEach (<anonymous>)
+	at b.dispose (/usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:1026607)
+	at cv.<anonymous> (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:20084)
+	at cv.dispose (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:20180)
+	at cv.<anonymous> (/usr/lib/code-oss/resources/app/extensions/git/dist/main.js:2:1000086)
+	at cv.dispose (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:106:20180)
+	at ui (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:699)
+	at file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:14992
+	at file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:25:1009
+	at Object.dispose (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+	at PW.eb (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:11919)
+	at file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9874
+	at Array.map (<anonymous>)
+	at PW.$ (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:9862)
+	at PW.terminate (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:10105)
+	at wC.terminate (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:15080)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:190:11628)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949) setContext undefined
+2025-03-31 20:07:20.571 [info] Extension host with pid 29736 exiting with code 0

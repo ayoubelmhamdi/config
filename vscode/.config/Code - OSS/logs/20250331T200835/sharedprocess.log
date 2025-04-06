@@ -1,0 +1,46 @@
+2025-03-31 20:10:14.368 [info] Getting Manifest... ms-toolsai.jupyter
+2025-03-31 20:10:14.460 [info] Installing extension: ms-toolsai.jupyter {"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"}}
+2025-03-31 20:10:14.648 [info] Extension installed successfully: ms-toolsai.jupyter vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:16.636 [info] Uninstalling extension from the profile: ms-toolsai.jupyter@2025.1.0 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:16.636 [info] Uninstalling extension from the profile: ms-toolsai.jupyter-keymap@1.1.2 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:16.636 [info] Uninstalling extension from the profile: ms-toolsai.jupyter-renderers@1.1.0 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:16.637 [info] Uninstalling extension from the profile: ms-toolsai.vscode-jupyter-cell-tags@0.1.9 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:16.637 [info] Uninstalling extension from the profile: ms-toolsai.vscode-jupyter-slideshow@0.1.6 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:16.661 [info] Extensions is already requested to uninstall ms-toolsai.jupyter-keymap
+2025-03-31 20:10:16.661 [info] Extensions is already requested to uninstall ms-toolsai.jupyter-renderers
+2025-03-31 20:10:16.662 [info] Extensions is already requested to uninstall ms-toolsai.vscode-jupyter-cell-tags
+2025-03-31 20:10:16.662 [info] Extensions is already requested to uninstall ms-toolsai.vscode-jupyter-slideshow
+2025-03-31 20:10:16.693 [info] Marked extension as removed ms-toolsai.jupyter-2025.1.0
+2025-03-31 20:10:16.707 [info] Marked extension as removed ms-toolsai.jupyter-keymap-1.1.2
+2025-03-31 20:10:16.719 [info] Marked extension as removed ms-toolsai.jupyter-renderers-1.1.0
+2025-03-31 20:10:16.731 [info] Marked extension as removed ms-toolsai.vscode-jupyter-cell-tags-0.1.9
+2025-03-31 20:10:16.741 [info] Marked extension as removed ms-toolsai.vscode-jupyter-slideshow-0.1.6
+2025-03-31 20:10:17.150 [info] Successfully uninstalled extension from the profile ms-toolsai.jupyter@2025.1.0 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:17.153 [info] Successfully uninstalled extension from the profile ms-toolsai.jupyter-keymap@1.1.2 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:17.154 [info] Successfully uninstalled extension from the profile ms-toolsai.jupyter-renderers@1.1.0 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:17.155 [info] Successfully uninstalled extension from the profile ms-toolsai.vscode-jupyter-cell-tags@0.1.9 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:17.156 [info] Successfully uninstalled extension from the profile ms-toolsai.vscode-jupyter-slideshow@0.1.6 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:28.959 [info] Getting Manifest... ms-python.python
+2025-03-31 20:10:29.065 [info] Installing extension: ms-python.python {"installPreReleaseVersion":false,"context":{"skipWalkthrough":true},"pinned":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"},"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}
+2025-03-31 20:10:29.246 [info] Extension installed successfully: ms-python.python vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:30.285 [info] Getting Manifest... ms-toolsai.jupyter
+2025-03-31 20:10:30.308 [info] Installing extension: ms-toolsai.jupyter {"installPreReleaseVersion":false,"context":{"skipWalkthrough":true},"pinned":false,"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"}}
+2025-03-31 20:10:30.670 [info] Getting Manifest... ms-toolsai.jupyter-keymap
+2025-03-31 20:10:30.691 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2025-03-31 20:10:30.713 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2025-03-31 20:10:30.748 [info] Getting Manifest... ms-toolsai.vscode-jupyter-slideshow
+2025-03-31 20:10:30.855 [info] Installing extension: ms-toolsai.jupyter-keymap {"installPreReleaseVersion":false,"context":{"skipWalkthrough":true,"dependecyOrPackExtensionInstall":true},"pinned":false,"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"}}
+2025-03-31 20:10:30.855 [info] Installing extension: ms-toolsai.jupyter-renderers {"installPreReleaseVersion":false,"context":{"skipWalkthrough":true,"dependecyOrPackExtensionInstall":true},"pinned":false,"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"}}
+2025-03-31 20:10:30.856 [info] Installing extension: ms-toolsai.vscode-jupyter-cell-tags {"installPreReleaseVersion":false,"context":{"skipWalkthrough":true,"dependecyOrPackExtensionInstall":true},"pinned":false,"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"}}
+2025-03-31 20:10:30.856 [info] Installing extension: ms-toolsai.vscode-jupyter-slideshow {"installPreReleaseVersion":false,"context":{"skipWalkthrough":true,"dependecyOrPackExtensionInstall":true},"pinned":false,"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"}}
+2025-03-31 20:10:30.896 [info] Removed the extension from removed list: ms-toolsai.jupyter-keymap
+2025-03-31 20:10:30.907 [info] Removed the extension from removed list: ms-toolsai.jupyter-renderers
+2025-03-31 20:10:30.932 [info] Removed the extension from removed list: ms-toolsai.vscode-jupyter-cell-tags
+2025-03-31 20:10:30.955 [info] Removed the extension from removed list: ms-toolsai.vscode-jupyter-slideshow
+2025-03-31 20:10:33.648 [error] Could not load vsce-sign module Cannot find package '@vscode/vsce-sign' imported from /usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js
+2025-03-31 20:10:33.649 [info] Extension signature verification is not done: ms-toolsai.jupyter
+2025-03-31 20:10:33.712 [info] Extension installed successfully: ms-toolsai.jupyter-keymap vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:33.713 [info] Extension installed successfully: ms-toolsai.jupyter-renderers vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:33.713 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-cell-tags vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:33.713 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-slideshow vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-03-31 20:10:33.714 [info] Extension installed successfully: ms-toolsai.jupyter vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json

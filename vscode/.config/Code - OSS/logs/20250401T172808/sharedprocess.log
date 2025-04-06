@@ -1,0 +1,10 @@
+2025-04-01 17:28:37.290 [info] Getting Manifest... nobuhito.printcode
+2025-04-01 17:28:37.546 [info] Installing extension: nobuhito.printcode {"isMachineScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json","path":"/home/mhamdi/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-18T03:23:28.185Z"}}
+2025-04-01 17:28:41.134 [error] Could not load vsce-sign module Cannot find package '@vscode/vsce-sign' imported from /usr/lib/code-oss/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js
+2025-04-01 17:28:41.135 [info] Extension signature verification is not done: nobuhito.printcode
+2025-04-01 17:28:44.361 [info] Extracted extension to file:///home/mhamdi/.vscode-oss/extensions/nobuhito.printcode-3.0.0: nobuhito.printcode
+2025-04-01 17:28:44.522 [info] Renamed to /home/mhamdi/.vscode-oss/extensions/nobuhito.printcode-3.0.0
+2025-04-01 17:28:44.577 [info] Extension installed successfully: nobuhito.printcode vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-04-01 17:30:07.642 [info] Uninstalling extension from the profile: nobuhito.printcode@3.0.0 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json
+2025-04-01 17:30:07.753 [info] Marked extension as removed nobuhito.printcode-3.0.0
+2025-04-01 17:30:08.258 [info] Successfully uninstalled extension from the profile nobuhito.printcode@3.0.0 vscode-userdata:/home/mhamdi/.vscode-oss/extensions/extensions.json

@@ -1,0 +1,9 @@
+2025-03-31 20:22:43.940 [info] Started local extension host with pid 14363.
+2025-03-31 20:22:44.029 [info] Started initializing default profile extensions in extensions installation folder. file:///home/mhamdi/.vscode-oss/extensions
+2025-03-31 20:22:44.899 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/mhamdi/.vscode-oss/extensions
+2025-03-31 20:22:49.995 [info] [perf] Render performance baseline is 64ms
+2025-03-31 20:23:13.618 [error] Extension 'ms-toolsai.jupyter-renderers CANNOT USE these API proposals 'contribNotebookStaticPreloads'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-03-31 20:23:28.531 [error] Extension 'ms-python.debugpy CANNOT USE these API proposals 'portsAttributes, debugVisualization, contribViewsWelcome'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-03-31 20:23:28.531 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, codeActionAI, notebookReplDocument, notebookVariableProvider'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-03-31 20:23:28.559 [error] [ms-python.python]: editor/content is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-python.python
+2025-03-31 20:23:32.192 [error] An unknown error occurred. Please consult the log for more details.

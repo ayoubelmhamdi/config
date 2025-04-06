@@ -1,0 +1,55 @@
+2025-03-31 20:32:39.398 [warning] Dir "/data/tmp/rm-test-async/layers/api/.pixi/envs" is not watchable (directory does not exist)
+2025-03-31 20:32:39.398 [info] Python interpreter path: ./venv/bin/python
+2025-03-31 20:32:41.374 [info] Starting Environment refresh
+2025-03-31 20:32:41.374 [info] Searching for interpreters in posix paths locator
+2025-03-31 20:32:41.378 [info] Searching for pyenv environments
+2025-03-31 20:32:41.378 [info] Searching for conda environments
+2025-03-31 20:32:41.379 [info] Searching for global virtual environments
+2025-03-31 20:32:41.379 [info] Searching for custom virtual environments
+2025-03-31 20:32:41.403 [info] pyenv is not installed
+2025-03-31 20:32:41.403 [info] Finished searching for pyenv environments: 28 milliseconds
+2025-03-31 20:32:41.404 [info] Finished searching for custom virtual envs: 27 milliseconds
+2025-03-31 20:32:41.419 [info] > conda info --json
+2025-03-31 20:32:41.432 [info] > hatch env show --json
+2025-03-31 20:32:41.432 [info] cwd: .
+2025-03-31 20:32:41.545 [info] > pyenv which python
+2025-03-31 20:32:41.545 [info] cwd: .
+2025-03-31 20:32:41.558 [info] Finished searching for global virtual envs: 181 milliseconds
+2025-03-31 20:32:41.734 [info] Found: /bin/python --> /bin/python3.13
+2025-03-31 20:32:41.781 [info] > /data/local_tmp/pyenvs/py312/venv/bin/python3 -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:41.806 [info] > ~/.conda/bin/conda info --json
+2025-03-31 20:32:41.833 [info] > ~/miniconda3/bin/conda info --json
+2025-03-31 20:32:41.992 [info] Found: /bin/python3 --> /bin/python3.13
+2025-03-31 20:32:42.003 [info] Found: /bin/python3.13 --> /bin/python3.13
+2025-03-31 20:32:42.198 [info] > ./venv/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:42.208 [info] Found: /sbin/python --> /sbin/python3.13
+2025-03-31 20:32:42.209 [info] Found: /sbin/python3 --> /sbin/python3.13
+2025-03-31 20:32:42.214 [info] Found: /sbin/python3.13 --> /sbin/python3.13
+2025-03-31 20:32:42.237 [info] Found: /usr/bin/python --> /usr/bin/python3.13
+2025-03-31 20:32:42.237 [info] Found: /usr/bin/python3 --> /usr/bin/python3.13
+2025-03-31 20:32:42.238 [info] Found: /usr/bin/python3.13 --> /usr/bin/python3.13
+2025-03-31 20:32:42.297 [info] Found: /usr/sbin/python --> /usr/sbin/python3.13
+2025-03-31 20:32:42.297 [info] Found: /usr/sbin/python3 --> /usr/sbin/python3.13
+2025-03-31 20:32:42.298 [info] Found: /usr/sbin/python3.13 --> /usr/sbin/python3.13
+2025-03-31 20:32:42.335 [info] > /bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:42.378 [info] > /sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:42.407 [info] Finished searching for interpreters in posix paths locator: 1035 milliseconds
+2025-03-31 20:32:42.649 [info] > /usr/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:42.739 [info] Starting Pylance language server.
+2025-03-31 20:32:42.858 [info] > /usr/sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:43.329 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariables.py
+2025-03-31 20:32:43.329 [info] shell: bash
+2025-03-31 20:32:43.349 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariables.py
+2025-03-31 20:32:43.349 [info] shell: bash
+2025-03-31 20:32:43.375 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/printEnvVariables.py
+2025-03-31 20:32:43.375 [info] shell: bash
+2025-03-31 20:32:44.742 [info] > ~/miniconda3/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:44.780 [info] > ~/miniconda3/envs/py306/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:44.791 [info] Finished searching for conda environments: 3415 milliseconds
+2025-03-31 20:32:44.798 [info] Environments refresh paths discovered (event): 3427 milliseconds
+2025-03-31 20:32:44.798 [info] Environments refresh paths discovered: 3427 milliseconds
+2025-03-31 20:32:44.887 [info] > ~/miniconda3/envs/py310/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:44.928 [info] > ~/miniconda3/envs/py311/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:44.994 [info] > ~/miniconda3/envs/py312/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.2.0-linux-x64/python_files/interpreterInfo.py
+2025-03-31 20:32:45.096 [info] Environments refresh finished (event): 3725 milliseconds
+2025-03-31 20:32:45.121 [info] Environment refresh took 3751 milliseconds

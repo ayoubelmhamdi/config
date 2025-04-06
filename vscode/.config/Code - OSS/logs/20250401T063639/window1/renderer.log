@@ -1,0 +1,67 @@
+2025-04-01 06:36:42.796 [info] Started local extension host with pid 6426.
+2025-04-01 06:36:43.402 [error] Extension 'GitHub.copilot CANNOT USE these API proposals 'inlineCompletionsAdditions'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-04-01 06:36:43.405 [error] Extension 'github.copilot-chat' wants API proposal 'findFiles2@2' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-01 06:36:43.405 [error] Extension 'github.copilot-chat' wants API proposal 'defaultChatParticipant@2' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-01 06:36:43.405 [error] Extension 'github.copilot-chat' wants API proposal 'aiTextSearchProvider@2' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-01 06:36:43.406 [error] Extension 'github.copilot-chat' wants API proposal 'chatParticipantPrivate@2' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-01 06:36:43.407 [error] Extension 'GitHub.copilot-chat CANNOT USE these API proposals 'extensionsAny, newSymbolNamesProvider, interactive, codeActionAI, activeComment, commentReveal, contribCommentThreadAdditionalMenu, contribCommentsViewThreadMenus, documentFiltersExclusive, embeddings, findTextInFiles, textSearchProvider, terminalDataWriteEvent, terminalExecuteCommandEvent, terminalSelection, terminalQuickFixProvider, mappedEditsProvider, aiRelatedInformation, chatParticipantAdditions, chatEditing, chatVariableResolver, contribSourceControlInputBoxMenu, authLearnMore, testObserver, chatProvider, contribDebugCreateConfiguration, inlineEdit, chatReadonlyPromptReference, textSearchProvider2, chatReferenceBinaryData'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-04-01 06:36:43.407 [error] Extension 'ms-python.debugpy CANNOT USE these API proposals 'portsAttributes, debugVisualization, contribViewsWelcome'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-04-01 06:36:43.408 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, codeActionAI, notebookReplDocument, notebookVariableProvider'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-04-01 06:36:43.408 [error] Extension 'ms-toolsai.jupyter CANNOT USE these API proposals 'notebookDeprecated, notebookMessaging, notebookMime, contribNotebookStaticPreloads, portsAttributes, quickPickSortByLabel, notebookKernelSource, interactiveWindow, quickPickItemTooltip, notebookExecution, notebookCellExecution, notebookVariableProvider, notebookReplDocument'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-04-01 06:36:43.409 [error] Extension 'ms-toolsai.jupyter-renderers CANNOT USE these API proposals 'contribNotebookStaticPreloads'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2025-04-01 06:36:43.469 [error] [GitHub.copilot]: editor/inlineCompletions/actions is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["inlineCompletionsAdditions"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api GitHub.copilot
+2025-04-01 06:36:43.470 [error] [GitHub.copilot-chat]: commentsView/commentThread/context is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribCommentsViewThreadMenus"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api GitHub.copilot-chat
+2025-04-01 06:36:43.471 [error] [GitHub.copilot-chat]: comments/commentThread/additionalActions is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribCommentThreadAdditionalMenu"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api GitHub.copilot-chat
+2025-04-01 06:36:43.472 [error] [GitHub.copilot-chat]: scm/inputBox is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribSourceControlInputBoxMenu"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api GitHub.copilot-chat
+2025-04-01 06:36:43.476 [error] [GitHub.copilot-chat]: debug/createConfiguration is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribDebugCreateConfiguration"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api GitHub.copilot-chat
+2025-04-01 06:36:43.476 [error] [ms-python.python]: editor/content is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-python.python
+2025-04-01 06:36:43.613 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.616 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.616 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.617 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.617 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.618 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.618 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.618 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.619 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.619 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.620 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.620 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.621 [error] Extension 'GitHub.copilot-chat' CANNOT register tool with name starting with "vscode_" or "copilot_"
+2025-04-01 06:36:43.621 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: defaultChatParticipant.
+2025-04-01 06:36:43.622 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: defaultChatParticipant.
+2025-04-01 06:36:43.622 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: defaultChatParticipant.
+2025-04-01 06:36:43.623 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: defaultChatParticipant.
+2025-04-01 06:36:43.623 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: defaultChatParticipant.
+2025-04-01 06:36:43.624 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: chatParticipantAdditions.
+2025-04-01 06:36:43.624 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: chatParticipantAdditions.
+2025-04-01 06:36:43.624 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: defaultChatParticipant.
+2025-04-01 06:36:43.625 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: chatParticipantAdditions.
+2025-04-01 06:36:43.625 [error] Extension 'GitHub.copilot-chat' CANNOT use API proposal: chatParticipantPrivate.
+Its package.json#enabledApiProposals-property declares:  but NOT chatParticipantPrivate.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api GitHub.copilot-chat: Error: Extension 'GitHub.copilot-chat' CANNOT use API proposal: chatParticipantPrivate.
+Its package.json#enabledApiProposals-property declares:  but NOT chatParticipantPrivate.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api GitHub.copilot-chat
+    at F_i (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:486:18479)
+    at Kji.a (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:1943:19691)
+    at Kji.d (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:483:66372)
+    at Kji.acceptUsers (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:483:66305)
+    at qht.Jb (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:3249:5437)
+    at eut.Gb (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:3249:4467)
+    at eut.lb (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:3248:14063)
+    at async eut.kb (vscode-file://vscode-app/usr/lib/code-oss/resources/app/out/vs/workbench/workbench.desktop.main.js:3248:12575)
+2025-04-01 06:36:44.188 [error] [GitHub.copilot-chat]: This contribution point requires the 'chatProvider' proposal.
+2025-04-01 06:36:49.125 [error] Error while getting the latest version for the extension github.copilot. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:49.126 [error] Error while getting the latest version for the extension github.copilot-chat. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:49.128 [error] Error while getting the latest version for the extension ms-python.debugpy. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:49.129 [error] Error while getting the latest version for the extension ms-python.python. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:49.133 [error] Error while getting the latest version for the extension ms-python.vscode-pylance. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:49.134 [error] Error while getting the latest version for the extension ms-toolsai.jupyter. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:49.135 [error] Error while getting the latest version for the extension ms-toolsai.jupyter-keymap. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:49.135 [error] Error while getting the latest version for the extension ms-toolsai.jupyter-renderers. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:49.136 [error] Error while getting the latest version for the extension ms-toolsai.vscode-jupyter-cell-tags. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:49.144 [error] Error while getting the latest version for the extension ms-toolsai.vscode-jupyter-slideshow. Cannot read properties of undefined (reading 'replace')
+2025-04-01 06:36:50.744 [info] [perf] Render performance baseline is 56ms
+2025-04-01 06:36:54.008 [error] An unknown error occurred. Please consult the log for more details.
+2025-04-01 06:36:55.110 [error] An unknown error occurred. Please consult the log for more details.
+2025-04-01 06:36:58.498 [error] An unknown error occurred. Please consult the log for more details.

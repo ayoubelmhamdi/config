@@ -1,0 +1,609 @@
+Code - OSS (1.97.2, undefined, desktop)
+Jupyter Extension Version: 2025.1.0.
+Python Extension Version: 2025.2.0.
+Pylance Extension Version: 2025.3.2.
+Platform: linux (x64).
+Home = /home/mhamdi
+Temp Storage folder ~/.config/Code - OSS/User/globalStorage/ms-toolsai.jupyter/version-2025.1.0
+Workspace folder /data/tmp/rm-test-async/layers/api
+20:08:43.160 [error] Error in activating extension, failed in wy [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookKernelSource.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookKernelSource.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at Object.createNotebookControllerDetectionTask (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:59121)
+	at i (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:6630)
+	at wy.startRefreshWithPython (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:6853)
+	at wy.activate (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:5077)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:382:27934
+	at Array.map (<anonymous>)
+	at hI.activate (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:382:27920)
+	at QG (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:445:2137)
+	at async Ehe (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:447:454)]
+20:08:43.168 [error] Error in activating extension, failed in ob [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookKernelSource.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookKernelSource.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at Object.registerKernelSourceActionProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:172:59243)
+	at ob.activate (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:116884)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:382:27934
+	at Array.map (<anonymous>)
+	at hI.activate (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:382:27920)
+	at QG (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:445:2137)
+	at async Ehe (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:447:454)]
+20:08:44.533 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.535 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.539 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.540 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.544 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.545 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.548 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.549 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.551 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.552 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.555 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.556 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.560 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.561 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.564 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.565 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.569 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.569 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.573 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:44.574 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:47.675 [warn] No interpreter with path /data/local_tmp/pyenvs/py312/venv/bin/python3 found in Python API, will convert Uri path to string as Id /data/local_tmp/pyenvs/py312/venv/bin/python3
+20:08:47.798 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at sf.writeToCache (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:36232)
+	at sf.updateCache (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:35517)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:60:12513
+	at yz (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:60:12090)
+	at i.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:60:12494)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at lu.updateCache (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:31258)
+	at lu.appendNewKernels (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:32425)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:32076
+	at async Promise.all (index 1)
+	at async lu.listKernelsImplementation (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:32097)
+	at async /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:29723]
+20:08:47.799 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at sf.writeToCache (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:36232)
+	at sf.updateCache (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:35517)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:60:12513
+	at yz (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:60:12090)
+	at i.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:60:12494)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at lu.updateCache (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:31258)
+	at lu.appendNewKernels (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:32425)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:32076
+	at async Promise.all (index 1)
+	at async lu.listKernelsImplementation (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:32097)
+	at async /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:299:29723]
+20:08:47.804 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]
+20:08:47.804 [warn] Failed to attach variable provider [Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookVariableProvider.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookVariableProvider.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+	at N (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:110:16858)
+	at set variableProvider (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:171:20783)
+	at n.create (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:87851)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101516
+	at Array.forEach (<anonymous>)
+	at Xy.addImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:101489)
+	at /home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100569
+	at Array.forEach (<anonymous>)
+	at Xy.batchAdd (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:100539)
+	at Xy.createNotebookControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99597)
+	at Xy.loadControllersImpl (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:99057)
+	at Xy.loadControllers (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98807)
+	at Xy.<anonymous> (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:98175)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2591)
+	at Ah.value (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:285:19835)
+	at D.B (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2373)
+	at D.C (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2443)
+	at D.fire (file:///usr/lib/code-oss/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:27:2660)
+	at lb.buildDummyEnvironment (/home/~/.vscode-oss/extensions/ms-toolsai.jupyter-2025.1.0-linux-x64/dist/extension.node.js:304:145848)]

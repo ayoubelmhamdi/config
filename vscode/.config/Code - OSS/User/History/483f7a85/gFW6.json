@@ -1,0 +1,18 @@
+{
+  "terminal.integrated.shellArgs.windows": [ "--login", "-i" ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": {
+      "when": "$(basename)"
+    }
+  },
+  "files.hotExit": "onExit",
+  "vim.leader": "<Space>",
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
+  "python.terminal.activateEnvironment": false
+}
