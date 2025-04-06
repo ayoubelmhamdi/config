@@ -9,7 +9,6 @@ $git_commit\
 $git_state\
 $git_metrics\
 $env_var\
-$python\
 $cmd_duration\
 $custom\
 $memory_usage\
@@ -189,8 +188,8 @@ style = "yellow"
 min_time = 5_000
 
 
-#[custom.direnv]
-## command = "cat .envrc | grep -v -E '^[ ]*#|^$' | wc -l"
-#files = [".envrc"]
-#style = "bg:white fg:black"
-#format = "[env]($style) "
+[custom.direnv]
+# command = "cat .envrc | grep -v -E '^[ ]*#|^$' | wc -l"
+files = [".envrc"]
+style = "bg:white fg:black"
+format = "[env]($style) "
