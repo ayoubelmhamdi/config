@@ -6,7 +6,8 @@ function yo(){
 
 function yt(){
     yt-dlp "$1" -o "$2" \
-        && am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d "file://$(pwd)/$2"
+        && am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d "file://$(pwd)/$2" \
+        && termux-share "$2"
 }
 
 
