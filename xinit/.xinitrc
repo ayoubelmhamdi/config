@@ -32,7 +32,7 @@ fi
 
 # Daemons
 st &
-lazy flameshot screen -c &
+# lazy flameshot screen -c &
 # ~/.fehbg &
 sxhkd > /tmp/log.xshkd.log  &
 ping-status &
