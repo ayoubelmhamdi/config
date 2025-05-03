@@ -54,7 +54,7 @@ numlockx on
 doas_exist && lazy doas ntpdate 0.pool.ntp.org &
 doas_exist && (doas modprobe -r wl && doas modprobe wl) &
 
-lazy slock &
+# lazy slock &
 
 
 while true; do
