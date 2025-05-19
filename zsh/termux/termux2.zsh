@@ -1,8 +1,5 @@
 #!/usr/bin/zsh
 
-function yo(){
-    termux-open --content-type video "$(yt-dlp --cookies $HOME/cookies.txt --get-url "$1" 2>/dev/null)"
-}   
 
 function yt(){
     yt-dlp "$1" -o "$2" \
