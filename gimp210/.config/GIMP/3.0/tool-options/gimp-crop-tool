@@ -1,0 +1,7 @@
+# GIMP gimp-crop-tool options
+
+(foreground
+    (color "R'G'B'A double" 32 "\0\0\0\300\76\73\353\77\0\0\0\300\233\233\353\77\0\0\0\140\1\376\355\77\0\0\0\0\0\0\360\77" 0))
+(pattern "Rain")
+
+# end of gimp-crop-tool options
