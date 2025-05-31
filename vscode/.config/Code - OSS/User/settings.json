@@ -17,5 +17,9 @@
   "security.workspace.trust.untrustedFiles": "open",
   "jupyter.allowUnauthorizedRemoteConnection": true,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "editor.inlineSuggest.edits.renderSideBySide": "never"
+  "editor.inlineSuggest.edits.renderSideBySide": "never",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  }
 }

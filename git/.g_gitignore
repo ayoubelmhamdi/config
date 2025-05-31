@@ -14,3 +14,16 @@ tags
 __pycache__/
 venv/
 variables/
+
+
+tests/job.json
+tests/job.txt
+tests/job2.json
+tests/job2.txt
+tests/job3.json
+tests/job3.txt
+tests/job4.txt
+tests/test_function_calling.ipynb
+
+*.encode
+todo.md

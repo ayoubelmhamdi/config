@@ -17,3 +17,12 @@ texmf/
 .uuid
 mpv/.config/mpv/watch_later/
 nnn/.config/nnn/mounts/
+
+vscode/.config/Code\ -\ OSS/Backups/
+vscode/.config/Code\ -\ OSS/Cache/
+vscode/.config/Code\ -\ OSS/User/History/
+
+vscode/.config/Code\ -\ OSS/CachedProfilesData
+vscode/.config/Code\ -\ OSS/User/workspaceStorage
+vscode/.config/Code\ -\ OSS/WebStorage/
+vscode/.config/Code\ -\ OSS/logs/

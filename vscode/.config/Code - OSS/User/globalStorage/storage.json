@@ -1,12 +1,18 @@
 {
     "telemetry.sqmId": "",
     "telemetry.machineId": "18521022b935c4a2969d56a8d03689ede3b89509280669d9208316001f38a00c",
-    "telemetry.devDeviceId": "e374a121-c118-43d3-af99-be57fb236508",
+    "telemetry.devDeviceId": "1ebc9ff0-4a87-41ab-9cf8-63e7a7b20f3a",
     "backupWorkspaces": {
         "workspaces": [],
         "folders": [
             {
                 "folderUri": "file:///data/tmp/rm-test-async/layers/api"
+            },
+            {
+                "folderUri": "file:///data/book/mdbook/linux"
+            },
+            {
+                "folderUri": "file:///data/projects/py/askg"
             }
         ],
         "emptyWindows": []
@@ -14,14 +20,17 @@
     "profileAssociations": {
         "workspaces": {
             "file:///data/projects/py/g4f-api": "__default__profile__",
-            "file:///data/tmp/rm-test-async/layers/api": "__default__profile__"
+            "file:///data/tmp/rm-test-async/layers/api": "__default__profile__",
+            "file:///data/book/mdbook/linux": "__default__profile__",
+            "file:///data/projects/py/transformer": "__default__profile__",
+            "file:///data/projects/py/askg": "__default__profile__"
         },
         "emptyWindows": {}
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///data/tmp/rm-test-async/layers/api",
-            "backupPath": "/home/mhamdi/.config/Code - OSS/Backups/cbac0855eec7fcb143c74b1a1289d33a",
+            "folder": "file:///data/projects/py/askg",
+            "backupPath": "/home/mhamdi/.config/Code - OSS/Backups/7b88da25955f2a5e73000051e5228b44",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -92,6 +101,39 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///data/projects/py/askg",
+                                        "path": "/data/projects/py/askg",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/data/projects/py/askg"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///data/projects/py/transformer",
+                                        "path": "/data/projects/py/transformer",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/data/projects/py/transformer"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///data/book/mdbook/linux",
+                                        "path": "/data/book/mdbook/linux",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/data/book/mdbook/linux"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///data/tmp/rm-test-async/layers/api",
                                         "path": "/data/tmp/rm-test-async/layers/api",
                                         "scheme": "file"
@@ -112,6 +154,28 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///data/projects/py/transformer/ms-toolsai.jupyter",
+                                        "path": "/data/projects/py/transformer/ms-toolsai.jupyter",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/data/projects/py/transformer/ms-toolsai.jupyter"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///data/book/mdbook/linux/ms-toolsai.jupyter",
+                                        "path": "/data/book/mdbook/linux/ms-toolsai.jupyter",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/data/book/mdbook/linux/ms-toolsai.jupyter"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -852,8 +916,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap",
-                        "enabled": false
+                        "label": "&&Word Wrap"
                     }
                 ]
             },
@@ -870,8 +933,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1191,7 +1253,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
