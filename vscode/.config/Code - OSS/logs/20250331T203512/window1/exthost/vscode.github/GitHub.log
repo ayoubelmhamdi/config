@@ -1,7 +1,0 @@
-2025-03-31 20:35:23.679 [info] Log level: Info
-2025-03-31 20:35:24.697 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
-2025-03-31 20:35:57.533 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for ayoubelmhamdi/g4f-api: Error: No GitHub authentication session available.
-2025-03-31 20:42:51.894 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
-2025-03-31 20:42:51.897 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
-2025-03-31 20:44:33.206 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
-2025-03-31 20:46:14.802 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for ayoubelmhamdi/g4f-api: Error: No GitHub authentication session available.

@@ -13,6 +13,9 @@
             },
             {
                 "folderUri": "file:///data/projects/py/askg"
+            },
+            {
+                "folderUri": "file:///data/projects/py/alwadifa"
             }
         ],
         "emptyWindows": []
@@ -23,14 +26,15 @@
             "file:///data/tmp/rm-test-async/layers/api": "__default__profile__",
             "file:///data/book/mdbook/linux": "__default__profile__",
             "file:///data/projects/py/transformer": "__default__profile__",
-            "file:///data/projects/py/askg": "__default__profile__"
+            "file:///data/projects/py/askg": "__default__profile__",
+            "file:///data/projects/py/alwadifa": "__default__profile__"
         },
         "emptyWindows": {}
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///data/projects/py/askg",
-            "backupPath": "/home/mhamdi/.config/Code - OSS/Backups/7b88da25955f2a5e73000051e5228b44",
+            "folder": "file:///data/projects/py/alwadifa",
+            "backupPath": "/home/mhamdi/.config/Code - OSS/Backups/a9dc071dfa48c921fb8b525b88072b35",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -1828,9 +1832,9 @@
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
-            "titleBarHeight": 0,
+            "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 358,
+            "sideBarWidth": 0,
             "auxiliarySideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
@@ -1841,7 +1845,16 @@
             "auxiliarySideBarWidth": [
                 300,
                 []
-            ]
+            ],
+            "sideBarWidth": 358,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "ecd7d7109b9cc9883f1d64c7080721a6": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": false
+                }
+            }
         }
-    }
+    },
+    "windowControlHeight": 35
 }
