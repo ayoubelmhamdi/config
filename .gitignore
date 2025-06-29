@@ -26,3 +26,7 @@ vscode/.config/Code\ -\ OSS/CachedProfilesData
 vscode/.config/Code\ -\ OSS/User/workspaceStorage
 vscode/.config/Code\ -\ OSS/WebStorage/
 vscode/.config/Code\ -\ OSS/logs/
+
+vscode/.config/Code\ -\ OSS/CachedExtensionVSIXs/
+vscode/.config/Code\ -\ OSS/Code Cache/js/
+vscode/.config/Code\ -\ OSS/Service Worker
