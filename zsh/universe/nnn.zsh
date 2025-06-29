@@ -16,12 +16,14 @@ for b in  "${bookmark[@]}";do
     NNN_BMS+="$b;"
 done
 
+TMPDIR="${TMPDIR:-/tmp}"
+
 export NNN_BMS
 export NNN_SSHFS="sshfs -o follow_symlinks"        # make sshfs follow symlinks on the remote
 export NNN_COLORS="2136"                           # use a different color for each context
-export NNN_TRASH=0
-export NNN_FIFO="${TMPDIR:-/tmp}/nnn.fifo"
-export NNN_TMPFILE="${TMPDIR:-/tmp}"
+#export NNN_TRASH=0 # xargs panics if NNN_TRASH set to 0.
+export NNN_FIFO="$TMPDIR/nnn.fifo"
+export NNN_TMPFILE="$TMPDIR"
 
 # export VISUAL=ewrap
 export NNN_SSHFS='sshfs -o reconnect,idmap=user,cache_timeout=3600'
