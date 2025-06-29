@@ -1,10 +1,9 @@
 #!/bin/zsh
 
-export CD_NNN="/tmp/nnn"
-export CD_FORK="/tmp/fork"
 
 n(){
-    NNN_FIFO="${TMPFILE:-/tmp}/nnn.fifo" NVIM_APPNAME=nvim-ayoub nnn "$@"
+    TMPFILE="${TMPFILE:-/tmp}"
+    NNN_FIFO="$TMPFILE/nnn.fifo" NVIM_APPNAME=nvim-ayoub nnn "$@"
 }
 
 fork(){
