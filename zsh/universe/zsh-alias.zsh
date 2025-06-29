@@ -34,7 +34,6 @@ alias y='yt-dlp'
 alias ls='normalls'
 alias cal='cal -m'
 alias vc='dvim c'
-alias nnn='NNN_FIFO="${TMPDIR:-/tmp}/nnn.fifo" NVIM_APPNAME=nvim-ayoub nnn'
 alias py='python3'
 alias unstow='stow -D'
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
