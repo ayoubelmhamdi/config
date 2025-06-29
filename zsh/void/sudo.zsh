@@ -5,6 +5,10 @@ if command -v doas >/dev/null 2>&1;then
   SUDO="doas"
 fi
 
+alias fd="$SUDO fd"
+alias xbps-reconfigure="$SUDO xbps-reconfigure"
+alias vkpurge="$SUDO vkpurge"
+
 alias ntpdate="$SUDO ntpdate"
 alias date="$SUDO date"
 
