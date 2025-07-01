@@ -189,11 +189,11 @@ style = "yellow"
 min_time = 5_000
 
 
-[custom.direnv]
-# command = "cat .envrc | grep -v -E '^[ ]*#|^$' | wc -l"
-files = [".envrc"]
-style = "bg:white fg:black"
-format = "[.envrc]($style) "
+# [custom.direnv]
+# # command = "cat .envrc | grep -v -E '^[ ]*#|^$' | wc -l"
+# files = [".envrc"]
+# style = "bg:white fg:black"
+# format = "[.envrc]($style) "
 
 [python]
 format = '[${virtualenv}_${version} ]($style)'
