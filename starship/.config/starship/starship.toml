@@ -201,5 +201,5 @@ min_time = 5_000
 # format = "[.envrc]($style) "
 
 [python]
-format = '[${virtualenv}_${version} ]($style)'
+format = '[v_${version} ]($style)'
 version_format = 'v${major}.${minor}'
