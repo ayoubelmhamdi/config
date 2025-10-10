@@ -27,3 +27,4 @@ tests/test_function_calling.ipynb
 
 *.encode
 todo.md
+foo.txt

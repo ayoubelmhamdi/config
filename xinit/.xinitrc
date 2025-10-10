@@ -57,16 +57,14 @@ doas_exist && (doas modprobe -r wl && doas modprobe wl) &
 # lazy slock &
 
 
-while true; do
-    # exec dwm >/dev/null 2>&1
-    # exec gnome-shell
-    #exec metacity
-    # dbus-run-session dwm >>/tmp/dwm.log 2>&1 # does not work for dwm
-    # exec dwm
-    # exec dbus-run-session dwm
-    exec dwm
+# exec dwm >/dev/null 2>&1
+# exec gnome-shell
+#exec metacity
+# dbus-run-session dwm >>/tmp/dwm.log 2>&1 # does not work for dwm
+# exec dbus-run-session dwm
 
-    # dwm >> /tmp/dwm.log 2>&1
-    # exec i3 --shmlog-size=26214400
-    # dbus-run-session i3 --shmlog-size=26214400
-done
+# exec i3 --shmlog-size=26214400
+# dbus-run-session i3 --shmlog-size=26214400
+
+# dwm >> /tmp/dwm.log 2>&1
+exec dwm

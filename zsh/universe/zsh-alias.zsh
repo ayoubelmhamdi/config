@@ -21,7 +21,7 @@ function is_exist() {
 }
 
 
-alias ag="ag --vimgrep"
+
 alias cp="cp -ivr"
 alias mv='mv -iv'
 alias ncat='/sbin/cat'
@@ -72,8 +72,8 @@ alias vzip='zip -sf'
 
 
 # xclip
-alias xc='xclip -selection clipboard'
-alias xo='xclip -o -sel clip'
+alias xc='xclip -selection clipboard 2>/dev/null'
+alias xo='xclip -o -sel clip 2>/dev/null'
 
 
 alias du='du -h '
@@ -108,6 +108,7 @@ is_exist doas && alias sudo=doas
 is_exist openvpn && alias openvpn='sudo openvpn --data-ciphers AES-256-GCM:AES-128-GCM:CHACHA20-POLY1305:AES-128-CBC --config'
 [ -f /home/mhamdi/scripts/tools/cat ] && alias cat=/home/mhamdi/scripts/tools/cat
 
+alias ag="sudo ag -f --vimgrep 2>/dev/null"
 
 \=() {
   math-eval "$@"

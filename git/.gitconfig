@@ -39,7 +39,7 @@
 [core]
   ; pager = delta --dark
   editor = nvim
-  excludesfile = /home/mhamdi/.g_gitignore
+  ; excludesfile = /home/mhamdi/.g_gitignore
 
 ; [interactive]
 ;   diffFilter = delta --color-only
