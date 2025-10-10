@@ -52,15 +52,25 @@ cd (){
         return
     fi
 
-    query=$( zoxide query "$1" >/dev/null 2>&1 | head -1)
-    if [ $? -eq 0 ] && [ -d "$query" ];then
+    n=$(zoxide query "$1" -l 2>/dev/null | wc -l)
+    if [ $n -eq 0 ] ;then
+        builtin cd "$1"
+    elif [ $n -ge 2 ] ;then
+        query=$(zoxide query "$1" -i 2>/dev/null)
         builtin cd "$query"
         zoxide add "$query"
+    elif [ $n -eq 1 ] ;then
+        query=$(zoxide query "$1" 2>/dev/null)
+        if [ $? -eq 0 ] && [ -d "$query" ];then
+            builtin cd "$query"
+            zoxide add "$query"
+        else
+            echo "cd.zsh: Unreacheble zoxide: query=1 and zoxide faild or directory not exit" >&1
+            return 1
+        fi
     else
-        case "$1" in
-            "pack"*) builtin cd "$packerdir" ;;
-            *) echo 'zoxide: no match found !!' ;;
-        esac
+        echo "cd.zsh: Unreacheble zoxide \$n < 0" >&1
+        return 1
     fi
 }
 
