@@ -37,9 +37,9 @@
   autoStash = true
 
 [core]
-  pager = delta --dark
+  ; pager = delta --dark
   editor = nvim
-	excludesFile = ~/.g_gitignore
+  excludesfile = /home/mhamdi/.g_gitignore
 
 ; [interactive]
 ;   diffFilter = delta --color-only
