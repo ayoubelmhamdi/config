@@ -26,5 +26,4 @@ tests/job4.txt
 tests/test_function_calling.ipynb
 
 *.encode
-todo.md
-foo.txt
+.mdbook
