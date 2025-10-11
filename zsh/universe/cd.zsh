@@ -54,9 +54,15 @@ cd (){
 
     n=$(zoxide query "$1" -l 2>/dev/null | wc -l)
     if [ $n -eq 0 ] ;then
-        builtin cd "$1"
+        echo "cd: no such file or directory: $1"
+        return
     elif [ $n -ge 2 ] ;then
-        query=$(zoxide query "$1" -i 2>/dev/null)
+        # if top score >= 10x second, skip interactive picker
+        if zoxide query "$1" -ls 2>/dev/null | awk 'NR==1{a=$1} NR==2{b=$1} END{exit !(a>=10*b)}'; then
+            query=$(zoxide query "$1" 2>/dev/null)
+        else
+            query=$(zoxide query "$1" -i 2>/dev/null)
+        fi
         builtin cd "$query"
         zoxide add "$query"
     elif [ $n -eq 1 ] ;then
