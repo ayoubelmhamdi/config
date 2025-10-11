@@ -57,7 +57,6 @@ cd (){
         echo "cd: no such file or directory: $1"
         return
     elif [ $n -ge 2 ] ;then
-        # if top score >= 10x second, skip interactive picker
         if zoxide query "$1" -ls 2>/dev/null | awk 'NR==1{a=$1} NR==2{b=$1} END{exit !(a>=10*b)}'; then
             query=$(zoxide query "$1" 2>/dev/null)
         else
