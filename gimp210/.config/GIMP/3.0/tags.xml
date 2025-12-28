@@ -1234,127 +1234,127 @@
   <resource identifier="external:${gimp_data_dir}/gradients/Yellow_Orange.ggr//Yellow Orange" checksum="c7f332150f1c1d8cb8100add34b0ef55">
   </resource>
 
-  <resource identifier="internal:gimp-palette-color-history//Color History" checksum="639c3083efa19156a270f7c37e2825a6">
+  <resource identifier="internal:gimp-palette-color-history//Color History" checksum="a8156200f2bc2e2b93af857a99072149">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Bears.gpl//Bears" checksum="c24922e50887936dc1361039a5e8026b">
+  <resource identifier="external:${gimp_data_dir}/palettes/Bears.gpl//Bears" checksum="4c763aa54683619a8a092af408cc9daf">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Bgold.gpl//Bgold" checksum="a847ca55a76214c5faf4a429af9c473c">
+  <resource identifier="external:${gimp_data_dir}/palettes/Bgold.gpl//Bgold" checksum="0fd0d29da139f57b900fc65baa1927e9">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Blues.gpl//Blues" checksum="72f12de09cc8976a5d8909d169f9ac45">
+  <resource identifier="external:${gimp_data_dir}/palettes/Blues.gpl//Blues" checksum="853454b67e9b703a593d34313af02ad6">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Borders.gpl//Borders" checksum="9b16597f38f06db7cfeb73b7eb5fdf6c">
+  <resource identifier="external:${gimp_data_dir}/palettes/Borders.gpl//Borders" checksum="a13b9f8ffc4057c7a8b0bc3ed2bd45cb">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Browns_And_Yellows.gpl//Browns And Yellows" checksum="75bed8da592a8a6e013a303447669a9f">
+  <resource identifier="external:${gimp_data_dir}/palettes/Browns_And_Yellows.gpl//Browns And Yellows" checksum="19897527f9b0fd28c034eb9304bc0036">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Caramel.gpl//Caramel" checksum="bdd6a07c4ac77bc2c1a73f429aad1804">
+  <resource identifier="external:${gimp_data_dir}/palettes/Caramel.gpl//Caramel" checksum="36d383cd3f7305396d52b0ccc6235824">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Cascade.gpl//Cascade" checksum="cbac400ee6abc947672540a09a43f0e4">
+  <resource identifier="external:${gimp_data_dir}/palettes/Cascade.gpl//Cascade" checksum="cc2a08ffeb68c3c03fe26eea8d05d64d">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/China.gpl//China" checksum="ce363a9070f1aae7eee0ede9b145ff71">
+  <resource identifier="external:${gimp_data_dir}/palettes/China.gpl//China" checksum="6caa501c5515d3d4e28d043b6d3cd20d">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Coldfire.gpl//Coldfire" checksum="322670a9477e9a5740badb14c8e7e182">
+  <resource identifier="external:${gimp_data_dir}/palettes/Coldfire.gpl//Coldfire" checksum="a14258d88516d546fbb6269404ed256c">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Cool_Colors.gpl//Cool Colors" checksum="4938b5152727c8b68841986e91ff84d2">
+  <resource identifier="external:${gimp_data_dir}/palettes/Cool_Colors.gpl//Cool Colors" checksum="c046a21e7ab417d5e087115235ac8af1">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Cranes.gpl//Cranes" checksum="f5d864642291a36aba198f270ce38f4f">
+  <resource identifier="external:${gimp_data_dir}/palettes/Cranes.gpl//Cranes" checksum="10ddb0ae0290f17547ea3581ae8034c1">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Dark_pastels.gpl//Dark pastels" checksum="eaa1c09f35db109b33360ee34148c55a">
+  <resource identifier="external:${gimp_data_dir}/palettes/Dark_pastels.gpl//Dark pastels" checksum="1611e31146bc210a3773ce48ce1c7323">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Default.gpl//Default" checksum="9d83e20dd07be816f1cfef4098f82ef8">
+  <resource identifier="external:${gimp_data_dir}/palettes/Default.gpl//Default" checksum="6a5f88cb5beeb2ef75f8ef171c6a4c79">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Ega.gpl//Ega" checksum="02ea6a0507dc4eb7dcc33e273da25da1">
+  <resource identifier="external:${gimp_data_dir}/palettes/Ega.gpl//Ega" checksum="915c2c1fc571796be269d98e9aa5d1c3">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Firecode.gpl//Firecode" checksum="1b2ee38a5c433649c1ecfc5a9a747a63">
+  <resource identifier="external:${gimp_data_dir}/palettes/Firecode.gpl//Firecode" checksum="17edebf87a620d6aef26029808c9aeb5">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Gold.gpl//Gold" checksum="1e91d906a05a376bf3681070b83cdbee">
+  <resource identifier="external:${gimp_data_dir}/palettes/Gold.gpl//Gold" checksum="750669c236f71520e59a958c57163bc4">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Grayblue.gpl//Grayblue" checksum="19f5979362a68aeaee560511ffb851c5">
+  <resource identifier="external:${gimp_data_dir}/palettes/Grayblue.gpl//Grayblue" checksum="d2e5d1ca9889b0a0895f5b8cd276f9ee">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Grays.gpl//Grays" checksum="3ec6a657a0ad16bd5aa17fa2c4c368cb">
+  <resource identifier="external:${gimp_data_dir}/palettes/Grays.gpl//Grays" checksum="46cb246e86d530b6379604fc67d60fae">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/GrayViolet.gpl//GrayViolet" checksum="b62aa5ab93d7506ce51a26374e773b05">
+  <resource identifier="external:${gimp_data_dir}/palettes/GrayViolet.gpl//GrayViolet" checksum="c5e4fa4a9235f29c1a1584271db6ad03">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Greens.gpl//Greens" checksum="e9419cdeb2eac47e6195d00bf1cbcac8">
+  <resource identifier="external:${gimp_data_dir}/palettes/Greens.gpl//Greens" checksum="27484c873967001c131e00ff18cb4dcd">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Hilite.gpl//Hilite" checksum="6feff7e0e2c31f449382e7805a3c2991">
+  <resource identifier="external:${gimp_data_dir}/palettes/Hilite.gpl//Hilite" checksum="2cf80206732eede7157083e56bb81583">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Khaki.gpl//Khaki" checksum="3741279a8e5859bf039469d95e051850">
+  <resource identifier="external:${gimp_data_dir}/palettes/Khaki.gpl//Khaki" checksum="8dfb2628ca2841e4224ce8961a380e49">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Lights.gpl//Lights" checksum="0fe6dd32eb9a09b3b8f40e634cd2a294">
+  <resource identifier="external:${gimp_data_dir}/palettes/Lights.gpl//Lights" checksum="78730c146b44d0adcdae86ead3964bf7">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Muted.gpl//Muted" checksum="26fa90fce4b1e023f0a4cdca2b9f88a0">
+  <resource identifier="external:${gimp_data_dir}/palettes/Muted.gpl//Muted" checksum="e315d2e23514dd2ff6728ef9cd4fea12">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Named_Colors.gpl//Named Colors" checksum="13cab7f9cc18ae076b3edec74d6c1652">
+  <resource identifier="external:${gimp_data_dir}/palettes/Named_Colors.gpl//Named Colors" checksum="7b84510b2bc344b50a4fc241b0f79d09">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/News3.gpl//News3" checksum="79bd19325d4fa2d5602bb89f9345e1b7">
+  <resource identifier="external:${gimp_data_dir}/palettes/News3.gpl//News3" checksum="cea53b4b90b971c087dcb2784b5526b6">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Op2.gpl//Op2" checksum="53b4ec0dee753a78186e6c89a0db62c5">
+  <resource identifier="external:${gimp_data_dir}/palettes/Op2.gpl//Op2" checksum="75db331bef0a8ffd9fe8b7aaaeffdb22">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Paintjet.gpl//Paintjet" checksum="1f7cf73a74745359e6fc8a5b4535150a">
+  <resource identifier="external:${gimp_data_dir}/palettes/Paintjet.gpl//Paintjet" checksum="a7ff0098403f6db9a4839eb052885c4c">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Pastels.gpl//Pastels" checksum="54cb471f2c6faff695fb89d15609b59e">
+  <resource identifier="external:${gimp_data_dir}/palettes/Pastels.gpl//Pastels" checksum="78f40f4e15c4e8d88c4ad73a39bc9f31">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Plasma.gpl//Plasma" checksum="223e920cdadaa0f07d817032b76fc3d9">
+  <resource identifier="external:${gimp_data_dir}/palettes/Plasma.gpl//Plasma" checksum="cf1ecc98c7e29c8f97b19b467f82651a">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Reds.gpl//Reds" checksum="fa34fd2af840fd4b9187e2ec039bc63a">
+  <resource identifier="external:${gimp_data_dir}/palettes/Reds.gpl//Reds" checksum="e48a65b9968703fdb64f790c6a8f1ade">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Reds_And_Purples.gpl//Reds And Purples" checksum="d7486b227561beb128985ceae73efafc">
+  <resource identifier="external:${gimp_data_dir}/palettes/Reds_And_Purples.gpl//Reds And Purples" checksum="fbef5457daa211c7170ed2cabca35a48">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Royal.gpl//Royal" checksum="2f7b346cf365d20779b5933546f9c315">
+  <resource identifier="external:${gimp_data_dir}/palettes/Royal.gpl//Royal" checksum="2e5c672c8211488f3da37c7ab16adc05">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Tango.gpl//Tango Icon Theme" checksum="01a5e75c386e297d2286eddcd76b1fd3">
+  <resource identifier="external:${gimp_data_dir}/palettes/Tango.gpl//Tango Icon Theme" checksum="4ed6957ff315b856a72b080e4344f24a">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Topographic.gpl//Topographic" checksum="05a63fa662820d56268cba4290892045">
+  <resource identifier="external:${gimp_data_dir}/palettes/Topographic.gpl//Topographic" checksum="cd09b6a3853c559156a53352d31ace18">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Visibone.gpl//Visibone" checksum="3cf5718f0b7321086b86a96702f59755">
+  <resource identifier="external:${gimp_data_dir}/palettes/Visibone.gpl//Visibone" checksum="e82b8bdc84dd61f81f9184ed0f39c601">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Visibone_2.gpl//Visibone 2" checksum="20a26bff92ca856a2718b0eb8d4c2641">
+  <resource identifier="external:${gimp_data_dir}/palettes/Visibone_2.gpl//Visibone 2" checksum="63cf6ac1cee3b5303688990eab952f43">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Volcano.gpl//Volcano" checksum="59a8f4850672b5fe99cea04e32d634ff">
+  <resource identifier="external:${gimp_data_dir}/palettes/Volcano.gpl//Volcano" checksum="90426e408e44a26a60f38a8b5f09e997">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Warm_Colors.gpl//Warm Colors" checksum="e16a021e3e8f0a3b5a2b83a4dd0f28f3">
+  <resource identifier="external:${gimp_data_dir}/palettes/Warm_Colors.gpl//Warm Colors" checksum="cad7702b1e73f8d375f489d2c2144651">
   </resource>
 
-  <resource identifier="external:${gimp_data_dir}/palettes/Web.gpl//Web" checksum="6985bc9d5cfdc0af40876e2fa80a0d06">
+  <resource identifier="external:${gimp_data_dir}/palettes/Web.gpl//Web" checksum="6c3c1520d37293ff600797d02f032c3a">
   </resource>
 
   <resource identifier="internal:gimp-font-standard-alias: Monospace//Monospace" checksum="(null)">
@@ -1393,16 +1393,82 @@
   <resource identifier="internal:gimp-font-standard-alias: Serif Italic//Serif Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaMono-Bold.ttf//Adwaita Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaMono-BoldItalic.ttf//Adwaita Mono Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaMono-Italic.ttf//Adwaita Mono Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaMono-Regular.ttf//Adwaita Mono Regular" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf//Adwaita Sans Black" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Italic.ttf//Adwaita Sans Black Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf//Adwaita Sans Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Italic.ttf//Adwaita Sans Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf//Adwaita Sans ExtraBold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Italic.ttf//Adwaita Sans ExtraBold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf//Adwaita Sans ExtraLight" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Italic.ttf//Adwaita Sans ExtraLight Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Italic.ttf//Adwaita Sans Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf//Adwaita Sans Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Italic.ttf//Adwaita Sans Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf//Adwaita Sans Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Italic.ttf//Adwaita Sans Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf//Adwaita Sans Regular" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf//Adwaita Sans SemiBold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Italic.ttf//Adwaita Sans SemiBold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf//Adwaita Sans Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/Adwaita/AdwaitaSans-Italic.ttf//Adwaita Sans Thin Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="external:/usr/share/fonts/TTF/hebrew/Alef-Bold.ttf//Alef Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/hebrew/Alef-Regular.ttf//Alef Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/Amiri-Bold.ttf//Amiri Bold" checksum="(null)">
+  <resource identifier="external:/home/mhamdi/.fonts/amiri/Amiri-Bold.ttf//Amiri Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/home/mhamdi/.fonts/amiri/Amiri-Bold.ttf//Amiri Bold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/Amiri-Bold.ttf//Amiri Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/Amiri-BoldItalic.ttf//Amiri Bold Italic" checksum="(null)">
@@ -1435,22 +1501,22 @@
   <resource identifier="external:/home/mhamdi/.fonts/Arial1.ttf//Arial Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/C059-Bold.ttf//C059 Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/OTF/C059-Bold.otf//C059 Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/C059-BdIta.ttf//C059 Bold Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/C059-Bold.ttf//C059 Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/C059-BdIta.otf//C059 Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/C059-Italic.ttf//C059 Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/C059-BdIta.ttf//C059 Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/C059-Italic.otf//C059 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/C059-Italic.ttf//C059 Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/C059-Roman.ttf//C059 Roman" checksum="(null)">
@@ -1459,10 +1525,10 @@
   <resource identifier="external:/usr/share/fonts/OTF/C059-Roman.otf//C059 Roman" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/crosextra/Caladea-Bold.otf//Caladea Bold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/crosextra/Caladea-Bold.ttf//Caladea Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/crosextra/Caladea-Bold.ttf//Caladea Bold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/crosextra/Caladea-Bold.otf//Caladea Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/crosextra/Caladea-BoldItalic.ttf//Caladea Bold Italic" checksum="(null)">
@@ -1471,16 +1537,16 @@
   <resource identifier="external:/usr/share/fonts/OTF/crosextra/Caladea-BoldItalic.otf//Caladea Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/crosextra/Caladea-Italic.otf//Caladea Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/TTF/crosextra/Caladea-Italic.ttf//Caladea Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/crosextra/Caladea-Regular.otf//Caladea Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/crosextra/Caladea-Italic.otf//Caladea Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/crosextra/Caladea-Regular.ttf//Caladea Regular" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/OTF/crosextra/Caladea-Regular.otf//Caladea Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/cantarell/Cantarell-VF.otf//Cantarell Bold" checksum="(null)">
@@ -1903,10 +1969,10 @@
   <resource identifier="external:/home/mhamdi/.fonts/kawkab/kawkab-mono-0.500/KawkabMono-Light.otf//Kawkab Mono Light" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/home/mhamdi/.fonts/kawkab/kawkab-mono-0.500/KawkabMono-Regular.otf//Kawkab Mono Regular" checksum="(null)">
+  <resource identifier="external:/home/mhamdi/.fonts/kawkab/kawkab-mono-0.500/KawkabMono-Regular.ttf//Kawkab Mono Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/home/mhamdi/.fonts/kawkab/kawkab-mono-0.500/KawkabMono-Regular.ttf//Kawkab Mono Regular" checksum="(null)">
+  <resource identifier="external:/home/mhamdi/.fonts/kawkab/kawkab-mono-0.500/KawkabMono-Regular.otf//Kawkab Mono Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/KeterYG-Bold.ttf//Keter YG Bold" checksum="(null)">
@@ -2065,10 +2131,10 @@
   <resource identifier="external:/home/mhamdi/.fonts/corsiva1.ttf//Monotype Corsiva Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/NimbusMonoPS-Bold.ttf//Nimbus Mono PS Bold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/NimbusMonoPS-Bold.otf//Nimbus Mono PS Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/NimbusMonoPS-Bold.otf//Nimbus Mono PS Bold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/NimbusMonoPS-Bold.ttf//Nimbus Mono PS Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/NimbusMonoPS-BoldItalic.otf//Nimbus Mono PS Bold Italic" checksum="(null)">
@@ -2077,16 +2143,16 @@
   <resource identifier="external:/usr/share/fonts/TTF/NimbusMonoPS-BoldItalic.ttf//Nimbus Mono PS Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/NimbusMonoPS-Italic.otf//Nimbus Mono PS Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/TTF/NimbusMonoPS-Italic.ttf//Nimbus Mono PS Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/NimbusMonoPS-Regular.otf//Nimbus Mono PS Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/NimbusMonoPS-Italic.otf//Nimbus Mono PS Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/NimbusMonoPS-Regular.ttf//Nimbus Mono PS Regular" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/OTF/NimbusMonoPS-Regular.otf//Nimbus Mono PS Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/NimbusRoman-Bold.ttf//Nimbus Roman Bold" checksum="(null)">
@@ -2095,34 +2161,34 @@
   <resource identifier="external:/usr/share/fonts/OTF/NimbusRoman-Bold.otf//Nimbus Roman Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/NimbusRoman-BoldItalic.ttf//Nimbus Roman Bold Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/OTF/NimbusRoman-BoldItalic.otf//Nimbus Roman Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/NimbusRoman-Italic.otf//Nimbus Roman Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/NimbusRoman-BoldItalic.ttf//Nimbus Roman Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/NimbusRoman-Italic.ttf//Nimbus Roman Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/NimbusRoman-Regular.ttf//Nimbus Roman Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/NimbusRoman-Italic.otf//Nimbus Roman Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/NimbusRoman-Regular.otf//Nimbus Roman Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/NimbusSans-Bold.otf//Nimbus Sans Bold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/NimbusRoman-Regular.ttf//Nimbus Roman Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/NimbusSans-Bold.ttf//Nimbus Sans Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/NimbusSans-BoldItalic.otf//Nimbus Sans Bold Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/NimbusSans-Bold.otf//Nimbus Sans Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/NimbusSans-BoldItalic.ttf//Nimbus Sans Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/OTF/NimbusSans-BoldItalic.otf//Nimbus Sans Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/NimbusSans-Italic.otf//Nimbus Sans Italic" checksum="(null)">
@@ -2143,16 +2209,16 @@
   <resource identifier="external:/usr/share/fonts/OTF/NimbusSansNarrow-BoldOblique.otf//Nimbus Sans Narrow Bold Oblique" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/NimbusSansNarrow-Oblique.otf//Nimbus Sans Narrow Oblique" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/TTF/NimbusSansNarrow-Oblique.ttf//Nimbus Sans Narrow Oblique" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/NimbusSansNarrow-Regular.otf//Nimbus Sans Narrow Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/NimbusSansNarrow-Oblique.otf//Nimbus Sans Narrow Oblique" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/NimbusSansNarrow-Regular.ttf//Nimbus Sans Narrow Regular" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/OTF/NimbusSansNarrow-Regular.otf//Nimbus Sans Narrow Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/NimbusSans-Regular.ttf//Nimbus Sans Regular" checksum="(null)">
@@ -2167,10 +2233,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoFangsongKSSVertical-Regular.ttf//Noto Fangsong KSS Vertical Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Black" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Black.ttf//Noto Kufi Arabic Black" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Black.ttf//Noto Kufi Arabic Black" checksum="(null)">
+  <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Black" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Bold.ttf//Noto Kufi Arabic Bold" checksum="(null)">
@@ -2191,22 +2257,22 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-ExtraLight.ttf//Noto Kufi Arabic ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Light" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Light.ttf//Noto Kufi Arabic Light" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Medium.ttf//Noto Kufi Arabic Medium" checksum="(null)">
+  <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Light" checksum="(null)">
   </resource>
 
   <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Medium" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Medium.ttf//Noto Kufi Arabic Medium" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Regular.ttf//Noto Kufi Arabic Regular" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Semi Bold" checksum="(null)">
@@ -2215,10 +2281,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-SemiBold.ttf//Noto Kufi Arabic SemiBold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Thin" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Thin.ttf//Noto Kufi Arabic Thin" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoKufiArabic-Thin.ttf//Noto Kufi Arabic Thin" checksum="(null)">
+  <resource identifier="external:/home/mhamdi/.fonts/noto_arabic.ttf//Noto Kufi Arabic Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoMusic-Regular.ttf//Noto Music Regular" checksum="(null)">
@@ -2674,13 +2740,61 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Bold.ttf//Noto Sans Bengali Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Condensed.ttf//Noto Sans Bengali Condensed Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Condensed.ttf//Noto Sans Bengali Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-CondensedBlack.ttf//Noto Sans Bengali Condensed Black" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-CondensedBold.ttf//Noto Sans Bengali Condensed Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-CondensedExtraBold.ttf//Noto Sans Bengali Condensed ExtraBold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-CondensedExtraLight.ttf//Noto Sans Bengali Condensed ExtraLight" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-CondensedLight.ttf//Noto Sans Bengali Condensed Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-CondensedMedium.ttf//Noto Sans Bengali Condensed Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-CondensedSemiBold.ttf//Noto Sans Bengali Condensed SemiBold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-CondensedThin.ttf//Noto Sans Bengali Condensed Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraBold.ttf//Noto Sans Bengali ExtraBold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensed.ttf//Noto Sans Bengali ExtraCondensed Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensed.ttf//Noto Sans Bengali ExtraCondensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensedBlack.ttf//Noto Sans Bengali ExtraCondensed Black" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensedBold.ttf//Noto Sans Bengali ExtraCondensed Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensedExtraBold.ttf//Noto Sans Bengali ExtraCondensed ExtraBold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensedExtraLight.ttf//Noto Sans Bengali ExtraCondensed ExtraLight" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensedLight.ttf//Noto Sans Bengali ExtraCondensed Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensedMedium.ttf//Noto Sans Bengali ExtraCondensed Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensedSemiBold.ttf//Noto Sans Bengali ExtraCondensed SemiBold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraCondensedThin.ttf//Noto Sans Bengali ExtraCondensed Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-ExtraLight.ttf//Noto Sans Bengali ExtraLight" checksum="(null)">
@@ -2698,7 +2812,31 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiBold.ttf//Noto Sans Bengali SemiBold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensed.ttf//Noto Sans Bengali SemiCondensed Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensed.ttf//Noto Sans Bengali SemiCondensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensedBlack.ttf//Noto Sans Bengali SemiCondensed Black" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensedBold.ttf//Noto Sans Bengali SemiCondensed Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensedExtraBold.ttf//Noto Sans Bengali SemiCondensed ExtraBold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensedExtraLight.ttf//Noto Sans Bengali SemiCondensed ExtraLight" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensedLight.ttf//Noto Sans Bengali SemiCondensed Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensedMedium.ttf//Noto Sans Bengali SemiCondensed Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensedSemiBold.ttf//Noto Sans Bengali SemiCondensed SemiBold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-SemiCondensedThin.ttf//Noto Sans Bengali SemiCondensed Thin" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSansBengali-Thin.ttf//Noto Sans Bengali Thin" checksum="(null)">
@@ -5635,6 +5773,9 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSundanese-SemiBold.ttf//Noto Sans Sundanese SemiBold" checksum="(null)">
   </resource>
 
+  <resource identifier="external:/usr/share/fonts/noto/NotoSansSunuwar-Regular.ttf//Noto Sans Sunuwar Regular" checksum="(null)">
+  </resource>
+
   <resource identifier="external:/usr/share/fonts/noto/NotoSansSylotiNagri-Regular.ttf//Noto Sans Syloti Nagri Regular" checksum="(null)">
   </resource>
 
@@ -6610,6 +6751,9 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Bold.ttf//Noto Serif Bengali Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Condensed.ttf//Noto Serif Bengali Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-CondensedBlack.ttf//Noto Serif Bengali Condensed Black" checksum="(null)">
   </resource>
 
@@ -6628,9 +6772,6 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-CondensedMedium.ttf//Noto Serif Bengali Condensed Medium" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-Condensed.ttf//Noto Serif Bengali Condensed Regular" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-CondensedSemiBold.ttf//Noto Serif Bengali Condensed SemiBold" checksum="(null)">
   </resource>
 
@@ -6638,6 +6779,9 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-ExtraBold.ttf//Noto Serif Bengali ExtraBold" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-ExtraCondensed.ttf//Noto Serif Bengali ExtraCondensed" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-ExtraCondensedBlack.ttf//Noto Serif Bengali ExtraCondensed Black" checksum="(null)">
@@ -6656,9 +6800,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-ExtraCondensedMedium.ttf//Noto Serif Bengali ExtraCondensed Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-ExtraCondensed.ttf//Noto Serif Bengali ExtraCondensed Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-ExtraCondensedSemiBold.ttf//Noto Serif Bengali ExtraCondensed SemiBold" checksum="(null)">
@@ -6682,6 +6823,9 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-SemiBold.ttf//Noto Serif Bengali SemiBold" checksum="(null)">
   </resource>
 
+  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-SemiCondensed.ttf//Noto Serif Bengali SemiCondensed" checksum="(null)">
+  </resource>
+
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-SemiCondensedBlack.ttf//Noto Serif Bengali SemiCondensed Black" checksum="(null)">
   </resource>
 
@@ -6698,9 +6842,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-SemiCondensedMedium.ttf//Noto Serif Bengali SemiCondensed Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-SemiCondensed.ttf//Noto Serif Bengali SemiCondensed Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/noto/NotoSerifBengali-SemiCondensedSemiBold.ttf//Noto Serif Bengali SemiCondensed SemiBold" checksum="(null)">
@@ -8602,10 +8743,10 @@
   <resource identifier="external:/usr/share/fonts/noto/NotoZnamennyMusicalNotation-Regular.ttf//Noto Znamenny Musical Notation Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/P052-Bold.ttf//P052 Bold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/P052-Bold.otf//P052 Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/P052-Bold.otf//P052 Bold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/P052-Bold.ttf//P052 Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/P052-BoldItalic.ttf//P052 Bold Italic" checksum="(null)">
@@ -8624,9 +8765,6 @@
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/P052-Roman.ttf//P052 Roman" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/TTF/arabic/ReemKufi-Bold.ttf//Reem Kufi Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/arabic/ReemKufi.ttf//Reem Kufi Bold" checksum="(null)">
@@ -8650,19 +8788,10 @@
   <resource identifier="external:/usr/share/fonts/TTF/arabic/ReemKufiInk-Regular.ttf//Reem Kufi Ink Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/arabic/ReemKufi-Medium.ttf//Reem Kufi Medium" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/TTF/arabic/ReemKufi.ttf//Reem Kufi Medium" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/arabic/ReemKufi.ttf//Reem Kufi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/TTF/arabic/ReemKufi-Regular.ttf//Reem Kufi Regular" checksum="(null)">
-  </resource>
-
-  <resource identifier="external:/usr/share/fonts/TTF/arabic/ReemKufi-SemiBold.ttf//Reem Kufi SemiBold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/arabic/ReemKufi.ttf//Reem Kufi SemiBold" checksum="(null)">
@@ -8788,34 +8917,34 @@
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-Black.ttf//Source Sans Pro Black" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-BlackIt.ttf//Source Sans Pro Black Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-BlackIt.otf//Source Sans Pro Black Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-Bold.ttf//Source Sans Pro Bold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-BlackIt.ttf//Source Sans Pro Black Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-Bold.otf//Source Sans Pro Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-BoldIt.otf//Source Sans Pro Bold Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-Bold.ttf//Source Sans Pro Bold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-BoldIt.ttf//Source Sans Pro Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-ExtraLight.otf//Source Sans Pro ExtraLight" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-BoldIt.otf//Source Sans Pro Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-ExtraLight.ttf//Source Sans Pro ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-ExtraLightIt.otf//Source Sans Pro ExtraLight Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-ExtraLight.otf//Source Sans Pro ExtraLight" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-ExtraLightIt.ttf//Source Sans Pro ExtraLight Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-ExtraLightIt.otf//Source Sans Pro ExtraLight Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-It.otf//Source Sans Pro Italic" checksum="(null)">
@@ -8830,40 +8959,40 @@
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-Light.ttf//Source Sans Pro Light" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-LightIt.ttf//Source Sans Pro Light Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-LightIt.otf//Source Sans Pro Light Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-Regular.ttf//Source Sans Pro Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-LightIt.ttf//Source Sans Pro Light Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-Regular.otf//Source Sans Pro Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-Semibold.ttf//Source Sans Pro Semibold" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-Regular.ttf//Source Sans Pro Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-Semibold.otf//Source Sans Pro Semibold" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-SemiboldIt.otf//Source Sans Pro Semibold Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-Semibold.ttf//Source Sans Pro Semibold" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSansPro-SemiboldIt.ttf//Source Sans Pro Semibold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-Black.ttf//Source Serif Pro Black" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSansPro-SemiboldIt.otf//Source Sans Pro Semibold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSerifPro-Black.otf//Source Serif Pro Black" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSerifPro-BlackIt.otf//Source Serif Pro Black Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-Black.ttf//Source Serif Pro Black" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-BlackIt.ttf//Source Serif Pro Black Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSerifPro-BlackIt.otf//Source Serif Pro Black Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-Bold.ttf//Source Serif Pro Bold" checksum="(null)">
@@ -8884,10 +9013,10 @@
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-ExtraLight.ttf//Source Serif Pro ExtraLight" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-ExtraLightIt.ttf//Source Serif Pro ExtraLight Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSerifPro-ExtraLightIt.otf//Source Serif Pro ExtraLight Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSerifPro-ExtraLightIt.otf//Source Serif Pro ExtraLight Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-ExtraLightIt.ttf//Source Serif Pro ExtraLight Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSerifPro-It.otf//Source Serif Pro Italic" checksum="(null)">
@@ -8902,16 +9031,16 @@
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-Light.ttf//Source Serif Pro Light" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSerifPro-LightIt.otf//Source Serif Pro Light Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-LightIt.ttf//Source Serif Pro Light Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-Regular.ttf//Source Serif Pro Regular" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSerifPro-LightIt.otf//Source Serif Pro Light Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/adobe/SourceSerifPro-Regular.otf//Source Serif Pro Regular" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-Regular.ttf//Source Serif Pro Regular" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/adobe/SourceSerifPro-Semibold.ttf//Source Serif Pro Semibold" checksum="(null)">
@@ -8941,10 +9070,10 @@
   <resource identifier="external:/home/mhamdi/.fonts/symbola.otf//Symbola Regular" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/URWBookman-Demi.ttf//URW Bookman Demi" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/URWBookman-Demi.otf//URW Bookman Demi" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/URWBookman-Demi.otf//URW Bookman Demi" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/URWBookman-Demi.ttf//URW Bookman Demi" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/URWBookman-DemiItalic.ttf//URW Bookman Demi Italic" checksum="(null)">
@@ -8953,16 +9082,16 @@
   <resource identifier="external:/usr/share/fonts/OTF/URWBookman-DemiItalic.otf//URW Bookman Demi Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/URWBookman-Light.otf//URW Bookman Light" checksum="(null)">
-  </resource>
-
   <resource identifier="external:/usr/share/fonts/TTF/URWBookman-Light.ttf//URW Bookman Light" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/URWBookman-LightItalic.ttf//URW Bookman Light Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/URWBookman-Light.otf//URW Bookman Light" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/OTF/URWBookman-LightItalic.otf//URW Bookman Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="external:/usr/share/fonts/TTF/URWBookman-LightItalic.ttf//URW Bookman Light Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/URWGothic-Book.ttf//URW Gothic Book" checksum="(null)">
@@ -8977,10 +9106,10 @@
   <resource identifier="external:/usr/share/fonts/OTF/URWGothic-BookOblique.otf//URW Gothic Book Oblique" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/URWGothic-Demi.otf//URW Gothic Demi" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/URWGothic-Demi.ttf//URW Gothic Demi" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/URWGothic-Demi.ttf//URW Gothic Demi" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/URWGothic-Demi.otf//URW Gothic Demi" checksum="(null)">
   </resource>
 
   <resource identifier="external:/usr/share/fonts/TTF/URWGothic-DemiOblique.ttf//URW Gothic Demi Oblique" checksum="(null)">
@@ -8989,10 +9118,10 @@
   <resource identifier="external:/usr/share/fonts/OTF/URWGothic-DemiOblique.otf//URW Gothic Demi Oblique" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/TTF/Z003-MediumItalic.ttf//Z003 Medium Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/OTF/Z003-MediumItalic.otf//Z003 Medium Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="external:/usr/share/fonts/OTF/Z003-MediumItalic.otf//Z003 Medium Italic" checksum="(null)">
+  <resource identifier="external:/usr/share/fonts/TTF/Z003-MediumItalic.ttf//Z003 Medium Italic" checksum="(null)">
   </resource>
 
   <resource identifier="external:${gimp_data_dir}/tool-presets/Crop/16_10.gtp//16×10" checksum="(null)">

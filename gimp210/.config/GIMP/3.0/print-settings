@@ -12,6 +12,6 @@ reverse=false
 
 [image-setup]
 unit=1
-center-mode=3
+center-mode=0
 use-full-page=false
 crop-marks=false
