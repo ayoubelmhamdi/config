@@ -103,3 +103,6 @@ export UNCRUSTIFY_CONFIG=$HOME/.config/uncrustify/uncrustify.cfg
 
 # Tenserflow Deactive Logs
 export TF_CPP_MIN_LOG_LEVEL=3
+
+
+export G4_ROOT_PATH=/data/projects/third-party/Geant4/Geant4-v11.3.2
