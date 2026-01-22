@@ -1,4 +1,5 @@
 format = """
+$env_var\
 $directory\
 $sudo\
 $username\
@@ -8,7 +9,6 @@ $git_status\
 $git_commit\
 $git_state\
 $git_metrics\
-$env_var\
 $python\
 $cmd_duration\
 $custom\
@@ -56,11 +56,16 @@ disabled = true
 [singularity]
 disabled = true
 
+[env_var.FOO]
+format = '[$env_value]($style)'
+style = 'bold blue'
+
 [directory]
 style	= 'bold blue'
 read_only = " "
 # fish_style_pwd_dir_length = 3
 truncate_to_repo = true
+format = '[$path]($style)[$read_only]($read_only_style) '
 
 [vcsh]
 disabled = true
