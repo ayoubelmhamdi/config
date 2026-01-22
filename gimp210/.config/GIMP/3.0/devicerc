@@ -3,16 +3,26 @@
 (GimpDeviceInfo "Virtual core pointer"
     (icon-name "gimp-cursor")
     (name "Virtual core pointer")
-    (tool-options "GimpRectangleSelectOptions"
-        (tool "gimp-rect-select-tool"))
-    (use-fg-bg no)
+    (tool-options "GimpEraserOptions"
+        (tool "gimp-eraser-tool")
+        (foreground
+            (color "R'G'B'A u8" 4 "\377\377\377\377" 0))
+        (background
+            (color "R'G'B'A double" 32 "\0\0\0\140A\73\353\77\0\0\0\300\233\233\353\77\0\0\0\140\2\376\355\77\0\0\0\0\0\0\360\77" 0))
+        (opacity 0.029999999999999999)
+        (brush "2. Hardness 075")
+        (dynamics "Pressure Size")
+        (palette "Browns And Yellows")
+        (brush-size 51)
+        (brush-hardness 0.31))
+    (use-fg-bg yes)
     (use-opacity-paint-mode no)
-    (use-brush no)
-    (use-dynamics no)
+    (use-brush yes)
+    (use-dynamics yes)
     (use-mypaint-brush no)
     (use-gradient no)
     (use-pattern no)
-    (use-palette no)
+    (use-palette yes)
     (use-font no)
     (mode screen)
     (axes 4 ignore ignore ignore ignore)
@@ -88,7 +98,7 @@
     (tool-options "GimpBucketFillOptions"
         (tool "gimp-bucket-fill-tool")
         (foreground
-            (color "R'G'B'A double" 32 "\0\0\0\100\77\73\353\77\0\0\0\300\233\233\353\77\0\0\0\240\1\376\355\77\0\0\0\0\0\0\360\77" 0))
+            (color "R'G'B'A double" 32 "\0\0\0\200\100\73\353\77\0\0\0\300\233\233\353\77\0\0\0\140\2\376\355\77\0\0\0\0\0\0\360\77" 0))
         (pattern "Rain")
         (brush-size 51)
         (brush-hardness 0.5)
