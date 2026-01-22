@@ -73,6 +73,7 @@ setopt list_ambiguous         # complete as much of a completion until it gets a
 setopt nolisttypes
 setopt listpacked
 setopt automenu
+setopt interactivecomments
 
 # ENV VARIABLE
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1  # make prompt faster
