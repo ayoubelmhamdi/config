@@ -33,7 +33,8 @@ Print
 
 
 super + w
-    nm-applet
+    xclip -selection clipboard -t image/png -o 2>/dev/null | tesseract-ocr -l eng -l fra stdin stdout  | xclip -selection clipboard 2>/dev/null
+    # nm-applet
     # wezterm cli split-pane --right --percent 50 -- nmtui
     # iwgtk
     # wpa_gui 
