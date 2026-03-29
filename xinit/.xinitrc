@@ -67,4 +67,6 @@ doas_exist && (doas modprobe -r wl && doas modprobe wl) &
 # dbus-run-session i3 --shmlog-size=26214400
 
 # dwm >> /tmp/dwm.log 2>&1
-exec dwm
+while true;do
+    dwm
+done

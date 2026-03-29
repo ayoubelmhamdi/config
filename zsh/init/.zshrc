@@ -42,10 +42,28 @@ source "${ZINIT_HOME}/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^X^E' edit-command-line
+
+function copy-buffer-to-clipboard() {
+  echo -n "$BUFFER" | pbcopy
+  zle -M "Copied to clipboard"
+}
+zle -N copy-buffer-to-clipboard
+bindkey '^X^C' copy-buffer-to-clipboard
+
 
 ##########################
 # OMZ Libs and Plugins   #
 ##########################
+
+# put abbr after zsh-completion to make sure the completion work at least fine.
+export ABBR_EXPAND_AND_ACCEPT_PUSH_ABBREVIATED_LINE_TO_HISTORY=0
+export ABBR_EXPAND_PUSH_ABBREVIATED_LINE_TO_HISTORY=0
+zinit wait:1 lucid atload for olets/zsh-abbr
+
+
 
 zinit wait lucid for \
     OMZL::completion.zsh \
@@ -68,6 +86,8 @@ zinit wait lucid light-modedepth=1 for    \
     zsh-users/zsh-completions              \
     atload"_zsh_autosuggest_start"         \
     zsh-users/zsh-autosuggestions          \
+
+
 
 # prevent /etc/zshrc to call
 

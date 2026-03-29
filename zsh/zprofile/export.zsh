@@ -106,3 +106,6 @@ export TF_CPP_MIN_LOG_LEVEL=3
 
 
 export G4_ROOT_PATH=/data/projects/third-party/Geant4/Geant4-v11.3.2
+
+
+export CHROME_FLAGS='--enable-gpu-rasterization --force-dark-mode --oauth2-client-id=77185425430.apps.googleusercontent.com --oauth2-client-secret=OTJgUOQcT7lO7GsGZq2G4IlT --disable-features=ExtensionManifestV2Unsupported,ExtensionManifestV2Disable'

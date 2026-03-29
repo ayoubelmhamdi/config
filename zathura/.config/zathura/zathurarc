@@ -2,3 +2,4 @@ map j navigate next
 map k navigate previous
 
 set selection-clipboard clipboard
+set database sqlite

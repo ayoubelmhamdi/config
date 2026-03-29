@@ -5,8 +5,8 @@ TMPDIR="${TMPDIR:-$TMP}"
 TMPDIR="${TMPDIR:-/tmp}"
 mkdir -p $TMPDIR/ayoub $TMPDIR/nvim
 # doas chown -R mhamdi /tmp/ayoub /tmp/nvim
-echo "1 1" | tee $TMPDIR/ayoub/cpu
-echo " "   | tee $TMPDIR/ayoub/status
+echo "1 1" > $TMPDIR/ayoub/cpu
+echo " "   > $TMPDIR/ayoub/status
 #doas chmod -R 7755 /home/mhamdi/.local/share/zinit
 #doas rmmod wl && sudo modprobe wl
 

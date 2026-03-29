@@ -26,6 +26,7 @@ declare -a MY_PATHS=(
     "$HOME/.cargo/bin"
     "$HOME/.erg/bin"
     "/usr/local/cuda-10.1/bin"
+    "/data/tmp-local/bin"
 )
 
 
