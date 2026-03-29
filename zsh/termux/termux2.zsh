@@ -1,10 +1,15 @@
 #!/usr/bin/zsh
 
 
-function yt(){
-    yt-dlp "$1" -o "$2" \
-        && am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d "file://$(pwd)/$2" \
-        && termux-share "$2"
+function yt2(){
+    file="$(ls "$2"* 2>/dev/null)"
+    [ -f "$file" -a "$3" != "-y" ] && { echo "ERROR: file ${2} already exist, tp.ovvride pass -y as arg \$3"; return 1; }
+    yt-dlp "$1" -o "$2" || return 1
+    file="$(ls "$2"* 2>/dev/null)"
+    [ -f "$file" ] || { echo "no file ${2}* found"; return 1; }
+    file="$(realpath "$file")"
+    am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d "file://$file"
+    termux-share "$file"
 }
 
 
@@ -107,4 +112,14 @@ sshd
 #1    done
 #1fi
 #1
-export ayoub="ok"
+
+alias i='apt install'
+alias epip='pip install --extra-index-url https://termux-user-repository.github.io/pypi/ --prefer-binary'
+alias o='termux-open --view'
+alias mpv=yo
+alias ip="ifconfig 2>/dev/null| grep 'inet ' | grep -v '127.0.0.1' | awk '{print $2}'"
+alias xl='apt-file search'
+alias xc=termux-clipboard-set
+alias xo=termux-clipboard-get
+alias tmux='/bin/tmux a 2>/dev/null || [ -z $TMUX ] && /bin/tmux'
+

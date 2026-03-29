@@ -47,7 +47,8 @@ alias stat="stat -c '%a  user:%U group:%G'"
 alias lsblk='echo;lsblk --output LABEL,FSUSE%,NAME,MOUNTPOINT,UUID'
 alias cu='curl -LO'
 alias c='printf "\033c"; clear ; pidof tmux 1>/dev/null && tmux clear-history || true'
-alias history='builtin history 0|fzf'
+alias c='printf "\033c"; clear ; pidof tmux 1>/dev/null && tmux clear-history 2>/dev/null || true'
+alias history='history 0'
 alias time='/usr/bin/time'
 alias df="echo ;df -x squashfs -x tmpfs -x devtmpfs -h"
 
@@ -73,9 +74,10 @@ alias vzip='zip -sf'
 
 
 # xclip
-alias xc='xclip -selection clipboard 2>/dev/null'
-alias xo='xclip -o -sel clip 2>/dev/null'
-
+if command xclip 2>/dev/null;then
+    alias xc='xclip -selection clipboard 2>/dev/null'
+    alias xo='xclip -o -sel clip 2>/dev/null'
+fi
 
 alias du='du -h '
 alias wget='wget -c'
