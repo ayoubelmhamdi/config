@@ -1,14 +1,15 @@
 # GIMP gimp-eraser-tool options
 
 (foreground
-    (color "R'G'B'A u8" 4 "\377\377\377\377" 0))
+    (color "HSVA float" 16 "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\77" 0))
 (background
-    (color "R'G'B'A double" 32 "\0\0\0\140A\73\353\77\0\0\0\300\233\233\353\77\0\0\0\140\2\376\355\77\0\0\0\0\0\0\360\77" 0))
-(opacity 0.029999999999999999)
+    (color "R'G'B'A u8" 4 "\331\334\357\377" 0))
+(opacity 0.14999999999999999)
 (brush "2. Hardness 075")
-(dynamics "Pressure Size")
+(dynamics "Pencil Shader")
 (palette "Browns And Yellows")
-(brush-size 51)
+(brush-size 49)
+(brush-aspect-ratio -0.30000000000000004)
 (brush-hardness 0.31)
 
 # end of gimp-eraser-tool options

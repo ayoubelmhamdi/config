@@ -1,9 +1,9 @@
 # GIMP gimp-ink-tool options
 
 (foreground
-    (color "R'G'B'A u8" 4 "\377\377\377\377" 0))
+    (color "HSVA float" 16 "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\200\77" 0))
 (background
-    (color "R'G'B'A double" 32 "\0\0\0\140A\73\353\77\0\0\0\300\233\233\353\77\0\0\0\140\2\376\355\77\0\0\0\0\0\0\360\77" 0))
+    (color "R'G'B'A u8" 4 "\331\334\357\377" 0))
 (pattern "Rain")
 (brush-size 51)
 (brush-hardness 0.5)

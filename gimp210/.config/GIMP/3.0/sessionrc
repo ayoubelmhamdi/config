@@ -96,7 +96,7 @@
     (size 948 643))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
-    (position 388 179))
+    (position 389 179))
 (session-info "toplevel"
     (factory-entry "gimp-file-save-dialog")
     (position 112 0)
