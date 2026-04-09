@@ -32,7 +32,6 @@ alias ncat='/sbin/cat'
 alias pipu="pip install --upgrade pip"
 alias proj='builtin cd "$(shuff-projects)"'
 alias y='yt-dlp'
-alias ls='normalls'
 alias cal='cal -m'
 alias vc='dvim c'
 alias py='python3'
@@ -74,7 +73,7 @@ alias vzip='zip -sf'
 
 
 # xclip
-if command xclip 2>/dev/null;then
+if command -v xclip >/dev/null; then
     alias xc='xclip -selection clipboard 2>/dev/null'
     alias xo='xclip -o -sel clip 2>/dev/null'
 fi
@@ -105,13 +104,14 @@ alias ...='builtin cd ../..'
 alias ....='builtin cd ../../..'
 
 
-is_exist inxi && alias sysinfo="inxi -Fxxxz" # we need to check the inxi if exist
+is_exist inxi && alias sysinfo="inxi -Fxxxz"
 is_exist unbuffer && alias jq="unbuffer jq"
 is_exist doas && alias sudo=doas
 is_exist openvpn && alias openvpn='sudo openvpn --data-ciphers AES-256-GCM:AES-128-GCM:CHACHA20-POLY1305:AES-128-CBC --config'
+is_exist normalls && alias ls='normalls'
 [ -f /home/mhamdi/scripts/tools/cat ] && alias cat=/home/mhamdi/scripts/tools/cat
 
-alias ag="sudo ag -f --vimgrep 2>/dev/null"
+alias ag="sudo ag -f --vimgrep --ignore venv --ignore .venv 2>/dev/null"
 
 \=() {
   math-eval "$@"
