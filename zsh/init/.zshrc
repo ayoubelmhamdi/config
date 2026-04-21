@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+
+
 # if touch "/data" ; then
 #   builtin cd /data
 # elif touch "$HOME/data" ; then
@@ -58,11 +60,18 @@ bindkey '^X^C' copy-buffer-to-clipboard
 # OMZ Libs and Plugins   #
 ##########################
 
-# put abbr after zsh-completion to make sure the completion work at least fine.
+
+# PLUGIN CONFIG
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+export HISTORY_SUBSTRING_SEARCH_PREFIXED=1      # UP/dwon without fuzzy finder
+export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1 # do no duplicate search
+export ZSH_AUTOSUGGEST_MANUAL_REBIND=1          # make prompt faster
 export ABBR_EXPAND_AND_ACCEPT_PUSH_ABBREVIATED_LINE_TO_HISTORY=0
 export ABBR_EXPAND_PUSH_ABBREVIATED_LINE_TO_HISTORY=0
-zinit wait:1 lucid atload for olets/zsh-abbr
 
+
+# # put abbr after zsh-completion to make sure the completion work at least fine and not make abbr fuck up my complition.
+# zinit wait:1 lucid atload for olets/zsh-abbr
 
 
 zinit wait lucid for \
@@ -74,28 +83,58 @@ zinit wait lucid for \
     # OMZL::key-bindings.zsh \
     # OMZL::spectrum.zsh \
 
-export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
-# # plugin
-zinit wait lucid light-modedepth=1 for    \
+# Plugin
+# <condition>..then..<plugin>
+zinit wait lucid light-mode depth=1 for \
     atinit"typeset -gA FAST_HIGHLIGHT; FAST_HIGHLIGHT[git-cmsg-len]=100; zpcompinit; zpcdreplay" \
-    zdharma/fast-syntax-highlighting       \
-    atinit"zicompinit; zicdreplay"           \
-    zsh-users/zsh-history-substring-search \
-    atload"zicompinit; zicdreplay" blockf  \
-    zsh-users/zsh-completions              \
-    atload"_zsh_autosuggest_start"         \
-    zsh-users/zsh-autosuggestions          \
+        zdharma/fast-syntax-highlighting    \
+    atinit"zicompinit; zicdreplay"          \
+    atload"                                 \
+        bindkey '^[[A' history-substring-search-up;   \
+        bindkey '^[[B' history-substring-search-down; \
+        bindkey '^P'   history-substring-search-up;   \
+        bindkey '^N'   history-substring-search-down" \
+        zsh-users/zsh-history-substring-search  \
+    atload"zicompinit; zicdreplay" blockf   \
+        zsh-users/zsh-completions           \
+    wait'1'          \
+        olets/zsh-abbr                      \
+    wait'1' atload"_zsh_autosuggest_start"          \
+        zsh-users/zsh-autosuggestions       \
+
+# complete
+bindkey '^@'        forward-word   # key <C-Space>
+bindkey '^[[1;5C'   forward-word   # key <C-right>
+bindkey '^[[1;5D'   backward-word  # key <C-Left>
+bindkey '^B'        backward-char
 
 
+bindkey '\e[13;5u'  accept-line # ctrl + Enter
 
-# prevent /etc/zshrc to call
+# assert default
+bindkey "^E"        end-of-line
+bindkey "^M"        accept-line
+bindkey "^[[P"      delete-char
+bindkey "^[[3~"     delete-char
 
 
-# TODOL move to zprofile path env
+####################################
+# kitty
+
+zmodload -i zsh/parameter
+
+insert-last-command-output() {
+  LBUFFER+="$(eval $history[$((HISTCMD-1))])"
+}
+zle -N insert-last-command-output
+
+bindkey "\e[105;5u" insert-last-command-output # ctrl + I
+bindkey "^I"        insert-last-command-output # ctrl + I (maybe kitty)
+
+
 
 # ENV VARIABLE
-export ZSH_AUTOSUGGEST_MANUAL_REBIND=1  # make prompt faster
 export DISABLE_MAGIC_FUNCTIONS=true     # make pasting into terminal faster
 export EDITOR=nvim
 export PAGER=bat
@@ -128,9 +167,3 @@ alias vk='NVIM_APPNAME=nvim-kickstart  nvim' # Kickstart
 alias va='NVIM_APPNAME=nvim-astrovim   nvim' # AstroVim
 
 bindkey -e
-
-#  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --prefix=/tmp/rust -y
-#  /tmp/rust/cargo/bin/rustup toolchain install nightly
-#  export RUSTUP_HOME="/tmp/rust/rustup"
-#  export CARGO_HOME="/tmp/rust/cargo"
-#  cargo install --git https://github.com/user/repo.git
