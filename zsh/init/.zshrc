@@ -120,17 +120,18 @@ bindkey "^[[3~"     delete-char
 
 
 ####################################
-# kitty
-
-zmodload -i zsh/parameter
-
-insert-last-command-output() {
-  LBUFFER+="$(eval $history[$((HISTCMD-1))])"
-}
-zle -N insert-last-command-output
-
-bindkey "\e[105;5u" insert-last-command-output # ctrl + I
-bindkey "^I"        insert-last-command-output # ctrl + I (maybe kitty)
+#2# kitty
+#2
+#2zmodload -i zsh/parameter
+#2
+#2insert-last-command-output() {
+#2  LBUFFER+="$(eval $history[$((HISTCMD-1))])"
+#2}
+#2zle -N insert-last-command-output
+#2
+#2# only kitty that have tab and ctrl+i different: but not easy to figureout, so no terminal agnositc keybinds.
+#2bindkey "\e[105;5u" insert-last-command-output # ctrl + I
+#2bindkey "^I"        insert-last-command-output # ctrl + I (maybe kitty)
 
 
 
