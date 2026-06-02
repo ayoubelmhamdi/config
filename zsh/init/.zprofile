@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/zsh
+
 
 # TODO: mouve to xinitrc this lazy func
-TMPDIR="${TMPDIR:-$TMP}"
-TMPDIR="${TMPDIR:-/tmp}"
+export TMPDIR="${TMPDIR:-/tmp}"
 mkdir -p $TMPDIR/ayoub $TMPDIR/nvim
 # doas chown -R mhamdi /tmp/ayoub /tmp/nvim
 echo "1 1" > $TMPDIR/ayoub/cpu
@@ -17,8 +17,14 @@ if [[ -s $HOME/.config/zprofile  ]];then
 fi
 
 
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] && [[ ! -f $TMPDIR/first_start ]];then
-    touch $TMPDIR/first_start
-    # exec startx
-    dbus-run-session startx
+# TODO:
+# try to see if dbus not pollution the /tmp directories
+# export DBUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/dbus-1"
+# not work for me?
+
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] && [[ ! -f $TMPDIR/first_start ]]; then
+    touch "$TMPDIR/first_start"
+    #2exec startx
+    #1dbus-run-session startx
 fi
