@@ -9,3 +9,9 @@ zstyle ':completion:*:*:-command-:*:*' group-order alias parameter builtins func
 zstyle ':completion:*' complete-options true
 
 
+flatten-line() {
+  BUFFER=$(printf '%s' "$BUFFER" | perl -0 -pe 's/\\\n\s*/ /g; s/^\s+|\s+$//g')
+  CURSOR=$#BUFFER
+}
+zle -N flatten-line
+bindkey '^F' flatten-line
