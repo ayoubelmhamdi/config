@@ -8,14 +8,31 @@
 #   builtin cd $HOME/data
 # fi
 #
-eval "$(starship init zsh &!)"
+if command -v zoxide >/dev/null 2>&1; then
+    eval "$(starship init zsh &)"
+fi
+
+if command -v zoxide >/dev/null 2>&1; then
+    eval "$(zoxide init zsh &)"
+fi
+
 fpath=(~/.config/fpath $fpath)
 
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+##############################################
 # SETOPT
+
+# Do not trigger filename/glob errors when there is no match.
+# Makes zsh behave more like bash (leaves patterns unchanged).
+# Useful for using '?' in URLs, etc.
+# Example:
+#   $ echo a?=3
+#   a?=3
+setopt NO_NOMATCH
+
 unsetopt beep         #turn off bell
 unsetopt list_beep
 set bell-style none
@@ -166,5 +183,9 @@ export SPACESHIP_EXIT_CODE_SHOW=true
 alias vn='NVIM_APPNAME=nvim-nvchad     nvim' # NvChad
 alias vk='NVIM_APPNAME=nvim-kickstart  nvim' # Kickstart
 alias va='NVIM_APPNAME=nvim-astrovim   nvim' # AstroVim
+
+xcp-cookies(){
+    /data/projects/py/netscape-cookies-2-json/main.py "$1" | xclip -selection clipboard
+}
 
 bindkey -e
