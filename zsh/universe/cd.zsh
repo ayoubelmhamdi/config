@@ -16,6 +16,7 @@ fork(){
 }
 
 cd (){
+    dir_path="$1"
     if [ $# -eq 0 ];then
         # builtin cd $HOME
         if touch /data 2>/dev/null;then
@@ -26,56 +27,59 @@ cd (){
         return
     fi
 
-    if ! [ "$1" != ".." ];then
+    if ! [ "$dir_path" != ".." ];then
         builtin cd ..
         return
     fi
 
-    if ! [ "$1" != "..." ];then
+    if ! [ "$dir_path" != "..." ];then
         builtin cd ../..
         return
     fi
 
-    if ! [ "$1" != "~" ];then
+    if ! [ "$dir_path" != "~" ];then
         builtin cd $HOME
         return
     fi
 
-    if ! [ "$1" != "-" ];then
+    if ! [ "$dir_path" != "-" ];then
         builtin cd -
         return
     fi
 
-    if [ -d "$1" ];then
-        builtin cd "$1"
+    if [ -d "$dir_path" ];then
+        builtin cd "$dir_path"
         zoxide add .
         return
     fi
 
-    n=$(zoxide query "$1" -l 2>/dev/null | wc -l)
+    n=$(zoxide query "$dir_path" -l 2>/dev/null | wc -l)
+    [ $n -eq 0 ] && dir_path="${dir_path%/}"
+    n=$(zoxide query "$dir_path" -l 2>/dev/null | wc -l)
+
     if [ $n -eq 0 ] ;then
-        echo "cd: no such file or directory: $1"
-        return
+        echo "cd: no such file or directory: $dir_path"
+        return 3
     elif [ $n -ge 2 ] ;then
-        if zoxide query "$1" -ls 2>/dev/null | awk 'NR==1{a=$1} NR==2{b=$1} END{exit !(a>=10*b)}'; then
-            query=$(zoxide query "$1" 2>/dev/null)
+        if zoxide query "$dir_path" -ls 2>/dev/null | awk 'NR==1{a=$dir_path} NR==2{b=$dir_path} END{exit !(a>=10*b)}'; then
+            query=$(zoxide query "$dir_path" 2>/dev/null)
         else
-            query=$(zoxide query "$1" -i 2>/dev/null)
+            query=$(zoxide query "$dir_path" -i 2>/dev/null)
         fi
-        builtin cd "$query"
+        builtin cd "$query" || { echo "cd.zsh: Unreacheble zoxide: cd $query" >&1; return 4; }
         zoxide add "$query"
     elif [ $n -eq 1 ] ;then
-        query=$(zoxide query "$1" 2>/dev/null)
+        query=$(zoxide query "$dir_path" 2>/dev/null)
         if [ $? -eq 0 ] && [ -d "$query" ];then
-            builtin cd "$query"
+            builtin cd "$query" || { echo "cd.zsh: Unreacheble zoxide: cd $query" >&1; return 5; }
             zoxide add "$query"
         else
             echo "cd.zsh: Unreacheble zoxide: query=1 and zoxide faild or directory not exit" >&1
-            return 1
+            return 6
         fi
     else
         echo "cd.zsh: Unreacheble zoxide \$n < 0" >&1
-        return 1
+        return 7
     fi
 }
 
