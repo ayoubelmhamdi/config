@@ -27,3 +27,5 @@ tests/test_function_calling.ipynb
 
 *.encode
 .mdbook
+
+**/.claude/settings.local.json
