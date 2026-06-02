@@ -18,8 +18,8 @@ good_bg = "#222222"
 # warning_fg = "#222222"
 
 
-[global]
-log_file = "/tmp/i3status-rs.log"
+# [global]
+# log_file = "/tmp/i3status-rs.log"
 
 [icons]
 icons = "awesome6"
@@ -52,7 +52,7 @@ block = "custom"
 format = "$text \\|"
 command = "get_bandwith"
 interval = 1
-json = true
+# json = true
 
 # [[block]]
 # block = "custom"
