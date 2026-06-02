@@ -1,14 +1,20 @@
 #!/bin/bash
 
-# this is a magic to initialise dbus.
-eval $(dbus-launch --sh-syntax)
+doas_exist() { command -v doas >/dev/null; }
+
 
 #xrandr --setprovideroutputsource modesetting NVIDIA-0
 #xrandr --auto
 #kitty sh -c 'nvim --listen ~/.cache/nvim/server.pipe &'
-doas_exist() {
-    command -v doas >/dev/null
-}
+
+
+/usr/libexec/polkit-gnome-authentication-agent-1 &
+
+# try  to back to agetty
+#1 export XDG_SESSION_TYPE=x11 XDG_CURRENT_DESKTOP=dwm XDG_SESSION_DESKTOP=dwm DESKTOP_SESSION=dwm GTK_USE_PORTAL=1 XDG_VTNR=1
+#1 doas_exist && eval "$(dbus-launch --auto-syntax)"
+
+
 firefox_ramdisk(){
   exec firefox-ram 5kc8rznt.default-default &
   sleep 3
@@ -67,6 +73,8 @@ doas_exist && (doas modprobe -r wl && doas modprobe wl) &
 # dbus-run-session i3 --shmlog-size=26214400
 
 # dwm >> /tmp/dwm.log 2>&1
-while true;do
-    dwm
-done
+# while true;do
+#     dwm
+# done
+dwm
+# i3
